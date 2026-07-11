@@ -4,7 +4,11 @@ title: "clinical-rag-neurophysio-data: research data for the empirical quantific
 type: dataset
 version: "1.0.0"
 date-released: '2026-07-11'
-license: CC-BY-4.0
+# Two licences: the data are CC BY 4.0 (see LICENSE); the code under code/ is MIT
+# (see code/LICENSE-CODE). NOTICE.md is the authoritative statement of the scope of each.
+license:
+  - CC-BY-4.0
+  - MIT
 repository-code: "https://github.com/UM-Ruben/clinical-rag-neurophysio-data"
 authors:
   - family-names: "Fernández García"
@@ -36,10 +40,19 @@ abstract: >-
   detectability labels, and the author reviewed and endorsed them without
   modification (131 of 131 categories unchanged), so no human-machine agreement is
   published or computable. Accuracies of the two protocols are not comparable with
-  each other, as the number of options and the abstention policy differ. The teaching
-  corpus and the system source code are not published; the retrieved passages of
-  Study P2 are released as SHA-256 digests so that a holder of a licensed copy of the
-  corpus can verify the retrieval without the corpus being redistributed.
+  each other, as the number of options and the abstention policy differ. The source
+  code is published under code/ (MIT licence, distinct from the CC BY 4.0 of the
+  data): an analysis layer that regenerates every regenerable aggregate from the
+  published data alone, verifiable with a single command (python code/reproduce.py,
+  exit 0 when everything matches), and an inference layer published for inspection,
+  which requires the corpus and a local Ollama server. The teaching corpus is NOT
+  published (third-party copyright), and neither is the QLoRA fine-tuning pipeline,
+  whose training data derives from that corpus; consequently the QLoRA arm of the
+  study is not reproducible by third parties, while the other three models
+  (llama3.1:8b, qwen2.5:7b, thewindmom/llama3-med42-8b, all public on Ollama) are.
+  The retrieved passages of Study P2 are released as SHA-256 digests so that a holder
+  of a licensed copy of the corpus can verify the retrieval without the corpus being
+  redistributed.
 keywords:
   - RAG
   - retrieval-augmented generation
@@ -48,6 +61,7 @@ keywords:
   - Spanish
   - neurorehabilitation
   - LLM evaluation
+  - reproducibility
 preferred-citation:
   type: article
   title: "Las Bondades del RAG"

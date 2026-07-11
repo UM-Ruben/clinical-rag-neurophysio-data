@@ -2,7 +2,7 @@
   "profile": "data-package",
   "name": "clinical-rag-neurophysio-data",
   "title": "Clinical RAG in neurophysiotherapy (Spanish): research data",
-  "description": "Research data accompanying the article 'Las Bondades del RAG' (The Benefits of RAG), under review at the Journal of Artificial Intelligence Research. Contains the three question banks, the raw inference records of the two definitive experiments (Study P1, ablation with/without RAG, 424 inferences; Study P2, hallucination with abstention permitted, 760 inferences), the pre-computed aggregates behind every figure of the article, the review material of the error taxonomy and the detectability panel, and the partially preserved raw data of the deprecated preliminary campaign. IMPORTANT: there is no independent human annotator in this dataset. The blind detectability panel is composed of three language models (two weak local, one frontier); the files under annotation/ hold the frontier judge's own labels, which the author reviewed and endorsed without modification (taxonomy: 131/131 categories unchanged; detectability: all 240 values identical). No human-machine agreement is published, because none can be computed. The teaching corpus and the system source code are NOT published; in Study P2 the retrieved passages are given as SHA-256 digests. Accuracies of protocols P1 and P2 are not comparable with each other. Every field is documented in the DATA_DICTIONARY.md of its folder.",
+  "description": "Research data accompanying the article 'Las Bondades del RAG' (The Benefits of RAG), under review at the Journal of Artificial Intelligence Research. Contains the three question banks, the raw inference records of the two definitive experiments (Study P1, ablation with/without RAG, 424 inferences; Study P2, hallucination with abstention permitted, 760 inferences), the pre-computed aggregates behind every figure of the article, the review material of the error taxonomy and the detectability panel, the four raw reports of the exploratory retrieval campaign (212 inferences) that are the source of the article's recall@k = 88.7 % and of the retrieved fragments replayed by Study P1, and the partially preserved raw data of the deprecated preliminary campaign. IMPORTANT: there is no independent human annotator in this dataset. The blind detectability panel is composed of three language models (two weak local, one frontier); the files under annotation/ hold the frontier judge's own labels, which the author reviewed and endorsed without modification (taxonomy: 131/131 categories unchanged; detectability: all 240 values identical). No human-machine agreement is published, because none can be computed. The source code IS published, under code/ (MIT licence, distinct from the CC BY 4.0 of the data): an analysis layer (13 files) that regenerates every regenerable aggregate from the published data alone -- `python code/reproduce.py` re-derives them and cross-checks them field by field, exit 0 when everything matches -- and an inference layer (9 scripts) published for inspection only, since running it requires the corpus and/or a local Ollama server. The teaching corpus is NOT published (third-party copyright), and neither is the QLoRA fine-tuning pipeline, whose training data derives from that corpus: consequently the QLoRA arm is NOT reproducible by third parties, while the other three models (llama3.1:8b, qwen2.5:7b, thewindmom/llama3-med42-8b, all public on Ollama) are. aggregates/distractor_efecto.json has no producer script and is the one file reproduce.py does not vouch for. In Study P2 and in the exploratory retrieval reports the retrieved passages are given as SHA-256 digests. recall@k is an automatic token-overlap heuristic (threshold 0.35), not a human relevance judgement: see caveat (e) of VERIFICATION.md. Accuracies of protocols P1 and P2 are not comparable with each other. Every field is documented in the DATA_DICTIONARY.md of its folder.",
   "version": "1.0.0",
   "created": "2026-07-11",
   "homepage": "https://github.com/UM-Ruben/clinical-rag-neurophysio-data",
@@ -19,7 +19,14 @@
     {
       "name": "CC-BY-4.0",
       "path": "https://creativecommons.org/licenses/by/4.0/",
-      "title": "Creative Commons Attribution 4.0 International"
+      "title": "Creative Commons Attribution 4.0 International",
+      "scope": "All data files and documentation. See LICENSE and NOTICE.md."
+    },
+    {
+      "name": "MIT",
+      "path": "https://opensource.org/licenses/MIT",
+      "title": "MIT License",
+      "scope": "The source code under code/ only. See code/LICENSE-CODE."
     }
   ],
   "contributors": [
@@ -109,6 +116,18 @@
       "title": "Study P2 (hallucination, abstention permitted): 24 raw reports = 760 inferences; retrieved passages replaced by SHA-256 digests",
       "description": "Multipart resource: the 24 report files of Study P2 (4 models x 2 arms x 3 banks). The retrieved context (fragmentos) is published as SHA-256 digests, not verbatim text. Fields are documented in results_hallucination_p2_sanitized/DATA_DICTIONARY.md.",
       "profile": "data-resource"
+    },
+    {
+      "name": "results_retrieval_exploratory_sanitized",
+      "path": [
+        "results_retrieval_exploratory_sanitized/report_llama3.1_8b_GPU_Local_Win11_9doc_llama8b_bge-m3_20260623_231909_SANITIZED.json",
+        "results_retrieval_exploratory_sanitized/report_neurofisio-qlora_GPU_Local_Win11_9doc_qlora_bge-m3_20260623_235311_SANITIZED.json",
+        "results_retrieval_exploratory_sanitized/report_qwen2.5_7b_GPU_Local_Win11_9doc_qwen7b_bge-m3_20260624_003033_SANITIZED.json",
+        "results_retrieval_exploratory_sanitized/report_thewindmom_llama3-med42-8b_GPU_Local_Win11_9doc_med42_bge-m3_20260624_010701_SANITIZED.json"
+      ],
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Exploratory retrieval campaign - 4 raw reports (4 models x with-RAG x 53 gold-standard questions = 212 inferences). Source of the article's recall@k = 88.7 % (47/53 in each file) and of the retrieved fragments replayed by Study P1. 'fragmentos' sanitised to {sha256, n_chars, documento, pagina}."
     },
     {
       "name": "rag_benefit_summary",
@@ -285,6 +304,82 @@
       "format": "json",
       "mediatype": "application/json",
       "title": "Figures reported in the article with no pre-computed source file, recomputed from the raw records with their exact formula and source files"
+    },
+    {
+      "name": "errores_prelabel",
+      "path": "aggregates/errores_prelabel.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Error taxonomy: judge 1's raw pre-labelling (qwen2.5:7b), 131 errors",
+      "description": "Raw pre-labelling by the first local LLM judge (qwen2.5:7b) of all 131 erroneous Study-P1 responses (52 with RAG, 79 without). This is the INPUT of analysis/analyze_taxonomia.py, which produces taxonomia_errores.json and taxonomia_resumen.json; publishing it closes the reproduction chain of the taxonomy. 7 of its cita_soporte fields are redacted (array indices 12, 18, 50, 83, 85, 90, 123; 398 words) because they reproduced 50 or more consecutive words of the copyrighted corpus."
+    },
+    {
+      "name": "errores_prelabel_juez2",
+      "path": "aggregates/errores_prelabel_juez2.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Error taxonomy: judge 2's raw pre-labelling (llama3.1:8b), 40-case subsample",
+      "description": "Raw pre-labelling by the second local LLM judge (llama3.1:8b) over a fixed random subsample of 40 of the 131 errors (seed 42). It is the other half of the judge-vs-judge Cohen's kappa (0.468, n = 40) reported in taxonomia_resumen.json. Carries no redaction."
+    },
+    {
+      "name": "resolucion_no_parseadas",
+      "path": "aggregates/resolucion_no_parseadas.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "The 20 unparseable Study-P2 answers, resolved by a deterministic rule",
+      "description": "The 20 Study-P2 records whose answer could not be parsed into a letter (opcion_detectada == 'desconocida'), resolved by a deterministic rule: 6 rechazo, 8 d, 4 indeterminado, 1 c, 1 b. It is the INPUT of the sensitivity analysis in hallucination_summary_resuelto.json. Regenerated and self-tested by analysis/resolve_unparsed.py. One of the 20 'cola' fields is redacted (51 words)."
+    },
+    {
+      "name": "code",
+      "path": [
+        "code/README.md",
+        "code/EXCLUDED.md",
+        "code/LICENSE-CODE",
+        "code/requirements.txt",
+        "code/requirements-inference.txt",
+        "code/reproduce.py"
+      ],
+      "format": "py",
+      "title": "Source code of the study (MIT licence, NOT CC BY 4.0)",
+      "description": "The study's source code. `python code/reproduce.py` regenerates every regenerable aggregate from the published raw records and cross-checks it field by field against the published file, exiting 0 only if everything matches; it needs no corpus, no GPU, no network. code/analysis/ (13 files) is runnable against the published data alone. code/inference/ (9 scripts) is published for inspection only: running it requires the copyrighted corpus and/or a local Ollama server. code/EXCLUDED.md lists every script NOT published and why -- notably the QLoRA fine-tuning pipeline, whose training data derives from the copyrighted corpus, which is why the QLoRA arm is not reproducible by third parties. Licensed MIT (code/LICENSE-CODE), deliberately distinct from the CC BY 4.0 of the data."
+    },
+    {
+      "name": "code_analysis",
+      "path": [
+        "code/analysis/_repo.py",
+        "code/analysis/aggregate_hallucination.py",
+        "code/analysis/analyze_detectability.py",
+        "code/analysis/analyze_embeddings.py",
+        "code/analysis/analyze_taxonomia.py",
+        "code/analysis/audit_reports.py",
+        "code/analysis/finalizar_anotacion.py",
+        "code/analysis/json_to_csv.py",
+        "code/analysis/make_hallucination_figures.py",
+        "code/analysis/make_hallucination_tables.py",
+        "code/analysis/plot_tradeoff.py",
+        "code/analysis/resolve_unparsed.py",
+        "code/analysis/stats_hallucination.py"
+      ],
+      "format": "py",
+      "title": "Analysis layer: runnable against the published data alone",
+      "description": "13 files (12 executable scripts plus the shared _repo.py helper). The full statistical layer: the P1 audit, the P2 aggregation, the error taxonomy, the detectability panel, the LaTeX tables and the figures. Every script takes --data-root and --out-dir and never writes inside a published data folder. No corpus, GPU, model server or network required."
+    },
+    {
+      "name": "code_inference",
+      "path": [
+        "code/inference/build_banks.py",
+        "code/inference/chunk_provenance.py",
+        "code/inference/classify_errors.py",
+        "code/inference/create_gold_standard.py",
+        "code/inference/detectability_study.py",
+        "code/inference/evaluate_rag.py",
+        "code/inference/final_rerun.py",
+        "code/inference/run_hallucination_arms.py",
+        "code/inference/validate_banks.py"
+      ],
+      "format": "py",
+      "title": "Inference layer: published for inspection, NOT runnable by third parties",
+      "description": "9 scripts covering the retrieval engine, the two experimental protocols, the LLM judges and the question-bank builders. They are published to be read, not executed: they require the nine copyrighted corpus PDFs (not distributable) and/or a local Ollama server. Each file states this in its header."
     }
   ]
 }

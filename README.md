@@ -5,8 +5,11 @@ Research data accompanying the article **"Las Bondades del RAG"** (*The Benefits
 **Authors:** Rubén Fernández García (<ruben.fernandezg@um.es>), José Manuel García Carrasco (<jmgarcia@um.es>) — Universidad de Murcia, Spain.
 **Article status:** submitted to the *Journal of Artificial Intelligence Research* (JAIR), **under review**.
 **Data license:** [CC BY 4.0](LICENSE) — see the [scope note](#license): short third-party quotations are excluded.
+**Code license:** [MIT](code/LICENSE-CODE) — the code in `code/` is licensed separately from the data.
 
-> This repository contains **data only**. The system's source code and the teaching corpus are **not** published. See [What is NOT included and why](#what-is-not-included-and-why).
+> This repository contains **the data and the code**. The **teaching corpus is not** published (third-party copyright), and neither is the **QLoRA fine-tuning pipeline**, whose training data derives from that corpus. See [What is NOT included and why](#what-is-not-included-and-why).
+>
+> `python code/reproduce.py` regenerates every regenerable aggregate **from the published data alone** — no corpus, no GPU, no network — and cross-checks it against the published files. **Exit 0 means everything matches.**
 
 ---
 
@@ -22,6 +25,7 @@ Research data accompanying the article **"Las Bondades del RAG"** (*The Benefits
 
 - [Relation to the article](#relation-to-the-article)
 - [What this repository contains](#what-this-repository-contains)
+- [The code](#the-code)
 - [What is NOT included and why](#what-is-not-included-and-why)
 - [Repository structure](#repository-structure)
 - [How to verify the data](#how-to-verify-the-data)
@@ -62,11 +66,34 @@ Two further analyses are also published: an adjudicated **taxonomy of the 131 er
 | `datasets/` | The three question banks: the 53-item Gold Standard, the 24-item TRAP bank (false premise embedded in the stem) and the 18-item OOD bank (unanswerable from the corpus). |
 | `results_ablation_p1/` | The 8 raw reports of Study P1 (4 models × 2 arms), 53 records each = **424 inferences**, including each model's full free-text reasoning. These reports carry **no corpus fragments**. |
 | `results_hallucination_p2_sanitized/` | The 24 raw reports of Study P2 (4 models × 2 arms × 3 banks) = **760 inferences**. The retrieved context (`fragmentos`) has been **replaced by SHA-256 hashes** — see below. |
-| `aggregates/` | 13 pre-computed summary and per-item analysis files: RAG benefit, hallucination, error taxonomy, detectability panel, retrieval provenance and distractor effect. |
+| `results_retrieval_exploratory_sanitized/` | The 4 raw reports of the exploratory retrieval campaign over the definitive 9-document index (4 models × with-RAG × 53 questions) = **212 inferences**. They are the **source of the article's `recall@k = 88.7 %`** (47/53 in each of the four) and they hold the **retrieved context that Study P1 replayed**, so they close the provenance chain of `results_ablation_p1/`. `fragmentos` is hashed here too. **Their accuracy figures are not P1's** — see the dictionary in the folder. |
+| `aggregates/` | 16 pre-computed summary and per-item analysis files: RAG benefit, hallucination, error taxonomy (including the two LLM judges' pre-labelling), detectability panel, retrieval provenance, resolution of the unparsed answers and distractor effect. |
 | `annotation/` | The review material and the answer keys for the detectability panel and the error taxonomy. **Despite the file names, it holds no independent human ratings** — see [point 6](#6-there-is-no-independent-human-validation). |
 | `exploratory/` | Partial raw data and rankings from the preliminary scale-oriented campaign. **Deprecated** — see the caveats below and in `exploratory/DATA_DICTIONARY.md`. |
+| `code/` | The study's source code: an **analysis layer** (13 files) runnable against the published data alone, an **inference layer** (9 scripts) published for inspection, and `reproduce.py`, which verifies the whole study with one command. **MIT licence**, separate from the data. See [The code](#the-code). |
 
 Field names inside the data files are in **Spanish** (`pregunta`, `respuesta_ia`, `es_correcta`, `abstiene`, `alucina`, …). Every field is documented **in English** in the `DATA_DICTIONARY.md` of its folder.
+
+## The code
+
+The code is published in [`code/`](code/), under the **MIT licence** ([`code/LICENSE-CODE`](code/LICENSE-CODE)) — deliberately **different from the CC BY 4.0 of the data**, so that the scripts can be reused without the attribution conditions attaching to the dataset. `code/README.md` documents it in full, and `code/EXCLUDED.md` lists every script of the working project that is *not* published, with its reason.
+
+**Verify the whole study with one command:**
+
+```bash
+pip install -r code/requirements.txt
+python code/reproduce.py          # exit 0 = every regenerable figure matches the published one
+```
+
+`reproduce.py` needs **no corpus, no GPU, no model server and no network**. It regenerates each regenerable aggregate from the raw published records, compares it field by field with the published file, prints an `ARTEFACT | REGENERATED | PUBLISHED | MATCHES?` table, and exits non-zero if anything fails to match. It ends by listing, explicitly, everything that is *not* reproducible and why. It currently reports **two controlled divergences**, both documented in `VERIFICATION.md`; neither changes a figure of the article.
+
+**Two layers, and an honest line between them:**
+
+- **`code/analysis/` — runs on the published data alone.** The entire statistical layer: the ablation audit, the hallucination aggregation, the error taxonomy, the detectability panel, the LaTeX tables and the figures. This layer is fully reproducible by anyone.
+- **`code/inference/` — published to be *read*, not run.** The retrieval engine, the two experimental protocols, the LLM judges and the question-bank builders. Running them requires the **teaching corpus** (nine copyrighted PDFs, not distributable) and/or a local **Ollama** server. Each file states this in its header.
+- **The QLoRA fine-tuning pipeline is not published at all.** Its training data is derived from the copyrighted corpus, so neither the adapter weights nor the training scripts can be released. **The consequence, stated plainly: the QLoRA arm of this study is not reproducible by third parties.** The other three models — `llama3.1:8b`, `qwen2.5:7b` and `thewindmom/llama3-med42-8b` — are public on Ollama and **are** reproducible. Everything downstream of inference remains verifiable for all four models, because the raw per-question outputs of all four are published.
+
+No script under `code/` contains a redacted corpus quotation: the copyright redaction described below touches the data files only.
 
 ## What is NOT included and why
 
@@ -78,9 +105,15 @@ The thematic documents that constitute the knowledge base are teaching material 
 
 Consequence: the retrieval pipeline **cannot be re-run end to end** from this repository alone. What *can* be done is to re-derive every reported number from the raw inference records, which are complete.
 
-### 2. The system's source code is not published (authors' decision)
+### 2. The QLoRA fine-tuning pipeline is not published — so the QLoRA arm is not reproducible
 
-The RAG pipeline, the evaluation harness and the judging scripts are not released. This is a deliberate decision by the authors, not an oversight. Technical reproducibility is therefore supported by documentation rather than by code: the article gives an exhaustive description of software versions, hardware, hyperparameters and random seeds, and the operative parameters are additionally repeated in the `header` block of every raw report published here (`retrieved_top_k`, `context_max_tokens`, `num_ctx`, `temperature`, …). Note that `embedding_model` (`BAAI/bge-m3`) is recorded in the header of the **24 Study-P2 reports only**; the 8 Study-P1 reports do not carry that field, and for them the embedding model is documented in the article and in this README rather than in the file itself.
+**The source code *is* published** (in `code/` — see [The code](#the-code)); this section records the one part of it that is not, and the consequence.
+
+The `neurofisio-qlora` adapter was fine-tuned on data **derived from the copyrighted teaching corpus**. Publishing the training scripts would mean publishing the corpus passages they embed, and publishing the adapter weights would mean distributing a model trained on material we may not redistribute. Neither the weights nor the dataset-generation and fine-tuning scripts are therefore released; `code/EXCLUDED.md` names each excluded file.
+
+**The honest consequence: the QLoRA arm of this study cannot be reproduced by a third party.** The other three models — `llama3.1:8b`, `qwen2.5:7b` and `thewindmom/llama3-med42-8b` — are all public on Ollama, and their arms *are* reproducible end to end by anyone who also holds a licensed copy of the corpus. Everything **downstream of inference** — every statistic, table and figure — remains verifiable for all four models, because the raw per-question outputs of all four are published and `code/analysis/` recomputes the numbers from them.
+
+The operative parameters are additionally repeated in the `header` block of every raw report published here (`retrieved_top_k`, `context_max_tokens`, `num_ctx`, `temperature`, …). Note that `embedding_model` (`BAAI/bge-m3`) is recorded in the header of the **24 Study-P2 reports only**; the 8 Study-P1 reports do not carry that field, and for them the embedding model is documented in the article, in this README and in `code/inference/evaluate_rag.py` rather than in the file itself.
 
 ### 3. In the P2 reports, the retrieved passages were replaced by SHA-256 hashes
 
@@ -95,7 +128,7 @@ The 24 raw reports of Study P2 originally carried, for every question in the wit
 
 This preserves the scientific function of the field while removing only the protected text itself. A reader who holds a licensed copy of the corpus can rebuild the chunks with the published parameters, hash them, and **verify exactly which passage was retrieved for every question** — without a single line of protected text being redistributed here. Document and page are resolvable only for the `original` bank (via `aggregates/chunk_provenance.json`); for the TRAP and OOD banks no provenance mapping exists, and those fragments carry `"documento": null, "pagina": null, "provenance": "no_disponible"`. The full schema is documented in `results_hallucination_p2_sanitized/DATA_DICTIONARY.md`.
 
-The P1 reports never contained the retrieved passages, so they required no such treatment.
+The same treatment is applied to the four reports of `results_retrieval_exploratory_sanitized/` (1 472 fragments, **all** of them carrying document and page, since they belong to the `original` bank). The P1 reports never contained the retrieved passages, so they required no such treatment — and the context they consumed is not lost: they **replayed** the fragments of those four exploratory reports, whose 1 472 hashes match, position for position, the ones published for P2.
 
 ### 4. Long verbatim quotations of the corpus were redacted, in every free-text field
 
@@ -105,11 +138,25 @@ The models were instructed to ground their answers in the retrieved evidence, an
 [CITA REDACTADA: N palabras del corpus fuente, retiradas por derechos de autor]
 ```
 
-where *N* is the number of words removed. Only the overlapping span is replaced; the surrounding text (the model's own reasoning, or the rest of the field) is preserved untouched. This affects **29 spans across 8 files**, the longest being 101 words: **18** in `respuesta_ia` (`results_ablation_p1/` and `results_hallucination_p2_sanitized/`, all in the with-RAG arm), **7** in `cita_soporte` (`aggregates/taxonomia_errores.json`) and **4** in `traza_cita` (`datasets/dataset_gold_standard.json`).
+where *N* is the number of words removed. Only the overlapping span is replaced; the surrounding text (the model's own reasoning, or the rest of the field) is preserved untouched.
+
+This affects **43 spans across 13 files, 2 468 words removed in total**, the longest span being 101 words and the shortest 50. By folder:
+
+| Folder | Spans | Files | Words removed |
+|---|---|---|---|
+| `results_ablation_p1/` | 9 | 2 | 550 |
+| `results_hallucination_p2_sanitized/` | 9 | 4 | 490 |
+| `results_retrieval_exploratory_sanitized/` | 6 | 3 | 350 |
+| `datasets/` | 4 | 1 | 231 |
+| `aggregates/` | 15 | 3 | 847 |
+| `code/` | **0** | 0 | 0 |
+| **Total** | **43** | **13** | **2 468** |
+
+By field: **24** in `respuesta_ia` (1 390 words — the three report folders, all in the with-RAG arm), **14** in `cita_soporte` (796 words — 7 in `aggregates/taxonomia_errores.json` and 7 in `aggregates/errores_prelabel.json`, which carries the same judge citations), **4** in `traza_cita` (231 words — `datasets/dataset_gold_standard.json`) and **1** in `cola` (51 words — `aggregates/resolucion_no_parseadas.json`). **No script under `code/` contains a redacted span**: no published script reproduces 50 or more consecutive words of the corpus.
 
 For the two evidence fields the provenance is retained so the field still does its job: `dataset_gold_standard.json` keeps its `documento_fuente` and `traza_pagina` siblings, and in `taxonomia_errores.json` the marker is followed by an explicit `Ref.: <document>, p. <page>`. `dataset_trap_validado.json` was audited and required no redaction (longest overlap: 49 words).
 
-**Shorter quotations are preserved** under the academic right of quotation: 1 219 spans of 12 to 49 words remain, amounting to 1.30 % of the distinct 12-grams of the corpus. Redaction is cosmetic and strictly posterior to the experiments: `es_correcta`, `opcion_detectada`, `abstiene`, `alucina` and every other derived field were computed on the original, unredacted answers and remain valid; no record was dropped and no count changed. Caveat (d) of `VERIFICATION.md` documents the audit method and the full per-file breakdown.
+**Shorter quotations are preserved** under the academic right of quotation: spans of 12 to 49 consecutive words remain in the free-text fields, scattered and non-contiguous, and they do not permit the reconstruction of any source document. A census of those short quotations can only be produced against the source corpus, which is not published here, so no count of them is asserted in this release. Redaction is cosmetic and strictly posterior to the experiments: `es_correcta`, `opcion_detectada`, `abstiene`, `alucina`, `retrieval_recall_hit` and every other derived field were computed on the original, unredacted answers and remain valid; no record was dropped and no count changed. Caveat (d) of `VERIFICATION.md` documents the audit method and the full per-file breakdown.
 
 **The complete, unredacted raw data is held by the authors and is available on reasonable request for verification purposes** — for instance, to a reviewer or editor who needs to audit the full model outputs — subject to the copyright constraints of the underlying teaching corpus.
 
@@ -141,13 +188,22 @@ The article states the same thing. We would rather publish a weak claim honestly
 ```
 clinical-rag-neurophysio-data/
 ├── README.md                  this file
-├── LICENSE                    CC BY 4.0 full legal code
-├── NOTICE.md                  scope of the licence: what is ours and what is third-party (EN/ES)
+├── LICENSE                    CC BY 4.0 full legal code (the DATA)
+├── NOTICE.md                  scope of the licences: what is ours and what is third-party (EN/ES)
 ├── CITATION.cff               machine-readable citation metadata
 ├── datapackage.json           Frictionless Data descriptor
 ├── MANIFEST.sha256            SHA-256 digest of every published file
 ├── VERIFICATION.md            release audit: what was re-derived, what matched, what did not
 ├── derived_metrics.json       figures recomputed from the raw records for this release
+├── code/                      the study's source code — MIT licence (NOT CC BY 4.0)
+│   ├── README.md              what runs without the corpus, what does not, and why
+│   ├── EXCLUDED.md            every script NOT published, and the reason for each
+│   ├── LICENSE-CODE           MIT
+│   ├── requirements.txt       analysis layer — all that `reproduce.py` needs
+│   ├── requirements-inference.txt   inference layer — documented, not sufficient to re-run
+│   ├── reproduce.py           ONE COMMAND: regenerates the aggregates and cross-checks them
+│   ├── analysis/              13 files, runnable against the published data alone
+│   └── inference/             9 scripts, published for inspection (need the corpus and/or Ollama)
 ├── datasets/
 │   ├── dataset_gold_standard.json      53 answerable questions (a/b/c)
 │   ├── dataset_trap_validado.json      24 false-premise questions (a/b/c/d)
@@ -159,15 +215,27 @@ clinical-rag-neurophysio-data/
 ├── results_hallucination_p2_sanitized/ Study P2 — 24 reports = 760 inferences
 │   ├── report_{tag}_P2abstain_{original,trap,ood}_{con,sin}_{timestamp}_SANITIZED.json
 │   └── DATA_DICTIONARY.md
-├── aggregates/
+├── results_retrieval_exploratory_sanitized/  Exploratory retrieval campaign — 4 reports × 53
+│   │                                         = 212 inferences. Source of recall@k = 88.7 %
+│   │                                         (47/53) and of the fragments P1 replayed.
+│   ├── report_{model}_GPU_Local_Win11_9doc_{tag}_bge-m3_{timestamp}_SANITIZED.json
+│   └── DATA_DICTIONARY.md
+├── aggregates/                            16 files
 │   ├── rag_benefit_summary.json                     P1 per-model accuracy, delta, CI, McNemar
 │   ├── hallucination_summary.json                   P2 per-model and pooled rates
 │   ├── hallucination_summary_resuelto.json          P2 sensitivity analysis (unparsed answers resolved)
+│   ├── resolucion_no_parseadas.json                 the 20 unparseable answers, resolved by rule;
+│   │                                                input to the sensitivity analysis above
 │   ├── taxonomia_{resumen,errores,frontera}.json    error taxonomy over the 131 P1 errors
+│   ├── errores_prelabel.json                        judge 1's (qwen2.5:7b) pre-labelling of the 131
+│   │                                                errors — the INPUT of analyze_taxonomia.py
+│   ├── errores_prelabel_juez2.json                  judge 2's (llama3.1:8b) pre-labelling, 40-case
+│   │                                                subsample — the other half of the judge-judge kappa
 │   ├── detectability_{resumen,frontera_resumen,frontera,qwen,llama}.json   blind detectability panel
 │   ├── chunk_provenance.json                        document + page of the 368 chunks retrieved for the
 │   │                                                53 `original`-bank questions (no TRAP/OOD provenance)
 │   ├── distractor_efecto.json                       effect of distractor chunks on the error rate
+│   │                                                (NO producer script — see VERIFICATION.md)
 │   └── DATA_DICTIONARY.md
 ├── annotation/                            NOT an independent human panel — see point 6 above
 │   ├── detectabilidad_humano.csv          the frontier judge's 80 ratings, endorsed unchanged by the author
@@ -184,7 +252,16 @@ clinical-rag-neurophysio-data/
 
 ## How to verify the data
 
-Three artefacts let you check this release without having to trust us.
+Four artefacts let you check this release without having to trust us.
+
+**0. Re-run the analysis — `code/reproduce.py`.** The strongest check, and the one that needs nothing but this repository and Python:
+
+```bash
+pip install -r code/requirements.txt
+python code/reproduce.py          # exit 0 = everything matches
+```
+
+It regenerates every regenerable aggregate from the raw published records and compares it, field by field, with the published file. It also declares what it *cannot* regenerate, and why. Two controlled divergences are reported and explained in `VERIFICATION.md`; neither alters a figure of the article.
 
 **1. File integrity — `MANIFEST.sha256`.** Lists the SHA-256 digest of every published file:
 
@@ -202,15 +279,23 @@ The repository ships a `.gitattributes` containing `* -text`, which disables end
 
 ## License
 
-The data in this repository are released under the **Creative Commons Attribution 4.0 International licence (CC BY 4.0)**. The full legal code is in [`LICENSE`](LICENSE), and the **scope of the licence is set out in [`NOTICE.md`](NOTICE.md)** (bilingual EN/ES), which is the authoritative statement of what is ours and what belongs to third parties. In short: you may share and adapt the material for any purpose, including commercially, provided you give appropriate credit.
+This repository carries **two licences**, one for the data and one for the code:
 
-**Scope note — the licence covers our own material only.** CC BY 4.0 applies to everything in this repository that we created: the question banks, the inference records, the annotations, the aggregate analyses and the documentation. The summary below reproduces the essentials of [`NOTICE.md`](NOTICE.md); if the two ever diverge, `NOTICE.md` governs.
+| What | Licence | Text |
+|---|---|---|
+| **The data** — question banks, inference records, annotations, aggregates, documentation | **CC BY 4.0** | [`LICENSE`](LICENSE) |
+| **The code** — everything under `code/` | **MIT** | [`code/LICENSE-CODE`](code/LICENSE-CODE) |
+
+The code is MIT rather than CC BY on purpose: MIT is the customary licence for software and lets the scripts be reused, modified and embedded without the attribution machinery of a data licence. The **scope of both is set out in [`NOTICE.md`](NOTICE.md)** (bilingual EN/ES), which is the authoritative statement of what is ours and what belongs to third parties. In short: you may share and adapt the material for any purpose, including commercially, provided you give appropriate credit.
+
+**Scope note — the licences cover our own material only.** CC BY 4.0 applies to everything in this repository that we created and that is data: the question banks, the inference records, the annotations, the aggregate analyses and the documentation. MIT applies to the code. The summary below reproduces the essentials of [`NOTICE.md`](NOTICE.md); if the two ever diverge, `NOTICE.md` governs.
 
 It does **not** — and cannot — apply to the short verbatim quotations from the third-party teaching corpus that a few fields still carry, because those are not ours to license. They are retained under the **academic right of quotation**: they are short, they are strictly necessary for the record to be auditable (they are the evidence on which a label or a validation rests), and they are always attributed to their source document and page. They are:
 
 - `traza_cita` in `datasets/dataset_trap_validado.json` (all 24 items) — the corpus sentence that the item's false premise contradicts, attributed via `documento_fuente` and `traza_pagina`;
 - `traza_cita` in `datasets/dataset_gold_standard.json` (the 30 items that carry source metadata, of which 4 are redacted) — the sentence supporting the gold answer, likewise attributed;
-- `cita_soporte` in `aggregates/taxonomia_errores.json` (131 records, of which 7 are redacted) — the excerpt on which the adjudicated error category rests;
+- `cita_soporte` in `aggregates/taxonomia_errores.json` (131 records, of which 7 are redacted) and in `aggregates/errores_prelabel.json` (the same 131 judge citations, likewise 7 redacted) — the excerpt on which the adjudicated error category rests;
+- `cola` in `aggregates/resolucion_no_parseadas.json` (20 records, of which 1 is redacted) — the tail of the unparseable answer, kept so the resolution rule can be checked;
 - the short quotations that models made of the retrieved evidence inside `respuesta_ia`, which are preserved.
 
 In all of the above, only quotations **shorter than 50 consecutive words** remain; every span of 50 words or more was redacted (see [point 4 above](#4-long-verbatim-quotations-of-the-corpus-were-redacted-in-every-free-text-field)).
@@ -237,6 +322,7 @@ Questions about the data, requests for clarification, and reports of errors are 
 
 - [Relación con el artículo](#relación-con-el-artículo)
 - [Qué contiene este repositorio](#qué-contiene-este-repositorio)
+- [El código](#el-código)
 - [Qué NO se incluye y por qué](#qué-no-se-incluye-y-por-qué)
 - [Estructura del repositorio](#estructura-del-repositorio)
 - [Cómo verificar los datos](#cómo-verificar-los-datos)
@@ -277,11 +363,34 @@ Se publican además dos análisis complementarios: una **taxonomía adjudicada d
 | `datasets/` | Los tres bancos de preguntas: el Gold Standard de 53 ítems, el banco TRAP de 24 (premisa falsa en el enunciado) y el banco OOD de 18 (irresolubles con el corpus). |
 | `results_ablation_p1/` | Los 8 reports crudos del estudio P1 (4 modelos × 2 brazos), 53 registros cada uno = **424 inferencias**, con el razonamiento libre completo de cada modelo. Estos reports **no contienen fragmentos del corpus**. |
 | `results_hallucination_p2_sanitized/` | Los 24 reports crudos del estudio P2 (4 modelos × 2 brazos × 3 bancos) = **760 inferencias**. El contexto recuperado (`fragmentos`) se ha **sustituido por hashes SHA-256** (véase más abajo). |
-| `aggregates/` | 13 ficheros de resumen precalculado y de análisis por ítem: beneficio del RAG, alucinación, taxonomía de errores, panel de detectabilidad, procedencia del *retrieval* y efecto de los distractores. |
+| `results_retrieval_exploratory_sanitized/` | Los 4 reports crudos de la campaña exploratoria de recuperación sobre el índice definitivo de 9 documentos (4 modelos × con RAG × 53 preguntas) = **212 inferencias**. Son el **origen del `recall@k = 88,7 %` del artículo** (47/53 en cada uno de los cuatro) y contienen el **contexto recuperado que el estudio P1 reutilizó**, con lo que cierran la cadena de procedencia de `results_ablation_p1/`. Aquí `fragmentos` también va hasheado. **Sus cifras de precisión no son las de P1**: véase el diccionario de la carpeta. |
+| `aggregates/` | 16 ficheros de resumen precalculado y de análisis por ítem: beneficio del RAG, alucinación, taxonomía de errores (incluido el pre-etiquetado de los dos jueces LLM), panel de detectabilidad, procedencia del *retrieval*, resolución de las respuestas no parseables y efecto de los distractores. |
 | `annotation/` | El material de revisión y las claves del panel de detectabilidad y de la taxonomía de errores. **Pese a los nombres de los ficheros, no contiene valoraciones humanas independientes** — véase el [punto 6](#6-no-hay-validación-humana-independiente). |
 | `exploratory/` | Crudos parciales y rankings de la campaña preliminar de escala. **Fase deprecada** — véanse las salvedades más abajo y en `exploratory/DATA_DICTIONARY.md`. |
+| `code/` | El código fuente del estudio: una **capa de análisis** (13 ficheros) ejecutable solo con los datos publicados, una **capa de inferencia** (9 scripts) publicada para inspección, y `reproduce.py`, que verifica el estudio entero con un solo comando. **Licencia MIT**, distinta de la de los datos. Véase [El código](#el-código). |
 
 Los nombres de campo de los ficheros están en **español** (`pregunta`, `respuesta_ia`, `es_correcta`, `abstiene`, `alucina`…). Todos ellos se documentan **en inglés** en el `DATA_DICTIONARY.md` de su carpeta.
+
+## El código
+
+El código se publica en [`code/`](code/), bajo **licencia MIT** ([`code/LICENSE-CODE`](code/LICENSE-CODE)), deliberadamente **distinta de la CC BY 4.0 de los datos**, para que los scripts puedan reutilizarse sin arrastrar las condiciones de atribución propias de un conjunto de datos. `code/README.md` lo documenta por extenso y `code/EXCLUDED.md` enumera todos los scripts del proyecto de trabajo que *no* se publican, con su motivo.
+
+**Verificar el estudio entero con un solo comando:**
+
+```bash
+pip install -r code/requirements.txt
+python code/reproduce.py          # exit 0 = todas las cifras regenerables cuadran con las publicadas
+```
+
+`reproduce.py` no necesita **corpus, ni GPU, ni servidor de modelos, ni red**. Regenera cada agregado regenerable a partir de los registros crudos publicados, lo coteja campo a campo con el fichero publicado, imprime una tabla `ARTEFACTO | REGENERADO | PUBLICADO | ¿COINCIDE?` y termina con código distinto de cero si algo no cuadra. Al final enumera, de forma explícita, todo lo que *no* es reproducible y por qué. Actualmente declara **dos divergencias controladas**, documentadas ambas en `VERIFICATION.md`; ninguna cambia una cifra del artículo.
+
+**Dos capas, y una raya honesta entre ellas:**
+
+- **`code/analysis/` — se ejecuta solo con los datos publicados.** Toda la capa estadística: la auditoría del ablativo, la agregación de alucinaciones, la taxonomía de errores, el panel de detectabilidad, las tablas LaTeX y las figuras. Esta capa es reproducible por cualquiera.
+- **`code/inference/` — se publica para *leerlo*, no para ejecutarlo.** El motor de recuperación, los dos protocolos experimentales, los jueces LLM y los constructores de los bancos de preguntas. Ejecutarlos exige el **corpus docente** (nueve PDF con derechos de autor, no distribuibles) y/o un servidor **Ollama** local. Cada fichero lo advierte en su cabecera.
+- **El pipeline de ajuste fino QLoRA no se publica en absoluto.** Sus datos de entrenamiento derivan del corpus con derechos de autor, de modo que ni los pesos del adaptador ni los scripts de entrenamiento pueden liberarse. **La consecuencia, dicha sin rodeos: el brazo QLoRA de este estudio no es reproducible por terceros.** Los otros tres modelos —`llama3.1:8b`, `qwen2.5:7b` y `thewindmom/llama3-med42-8b`— son públicos en Ollama y **sí** lo son. Todo lo que viene después de la inferencia sigue siendo verificable para los cuatro modelos, porque las salidas crudas pregunta a pregunta de los cuatro están publicadas.
+
+Ningún script de `code/` contiene una cita redactada del corpus: la redacción por derechos de autor que se describe más abajo afecta solo a los ficheros de datos.
 
 ## Qué NO se incluye y por qué
 
@@ -293,9 +402,15 @@ Los documentos temáticos que constituyen la base de conocimiento son material d
 
 Consecuencia: la cadena de recuperación **no puede reejecutarse de principio a fin** solo con este repositorio. Lo que sí puede hacerse es volver a derivar cualquier cifra publicada a partir de los registros crudos de inferencia, que están completos.
 
-### 2. El código del sistema no se publica (decisión de los autores)
+### 2. El pipeline de ajuste fino QLoRA no se publica: el brazo QLoRA no es reproducible
 
-Ni la cadena RAG, ni el arnés de evaluación, ni los guiones de los jueces se liberan. Es una decisión deliberada de los autores, no un descuido. La reproducibilidad técnica se apoya, por tanto, en la documentación y no en el código: el artículo describe de forma exhaustiva las versiones de software, el hardware, los hiperparámetros y las semillas aleatorias, y los parámetros operativos se repiten además en el bloque `header` de cada report crudo aquí publicado (`retrieved_top_k`, `context_max_tokens`, `num_ctx`, `temperature`…). Conviene precisar que `embedding_model` (`BAAI/bge-m3`) consta en la cabecera de **los 24 reports del estudio P2 únicamente**; los 8 reports del estudio P1 no llevan ese campo, y para ellos el modelo de *embeddings* está documentado en el artículo y en este README, no en el propio fichero.
+**El código fuente sí se publica** (en `code/` — véase [El código](#el-código)); esta sección deja constancia de la única parte que no, y de su consecuencia.
+
+El adaptador `neurofisio-qlora` se afinó sobre datos **derivados del corpus docente con derechos de autor**. Publicar los scripts de entrenamiento implicaría publicar los pasajes del corpus que llevan incrustados, y publicar los pesos del adaptador implicaría distribuir un modelo entrenado sobre material que no podemos redistribuir. Ni los pesos ni los scripts de generación del dataset y de afinado se liberan, por tanto; `code/EXCLUDED.md` nombra cada fichero excluido.
+
+**La consecuencia honesta: el brazo QLoRA de este estudio no puede reproducirlo un tercero.** Los otros tres modelos —`llama3.1:8b`, `qwen2.5:7b` y `thewindmom/llama3-med42-8b`— son públicos en Ollama, y sus brazos *sí* son reproducibles de principio a fin por quien disponga además de una copia lícita del corpus. Todo lo que viene **después de la inferencia** —cada estadístico, cada tabla y cada figura— sigue siendo verificable para los cuatro modelos, porque las salidas crudas pregunta a pregunta de los cuatro están publicadas y `code/analysis/` recomputa las cifras a partir de ellas.
+
+Los parámetros operativos se repiten además en el bloque `header` de cada report crudo aquí publicado (`retrieved_top_k`, `context_max_tokens`, `num_ctx`, `temperature`…). Conviene precisar que `embedding_model` (`BAAI/bge-m3`) consta en la cabecera de **los 24 reports del estudio P2 únicamente**; los 8 reports del estudio P1 no llevan ese campo, y para ellos el modelo de *embeddings* está documentado en el artículo, en este README y en `code/inference/evaluate_rag.py`, no en el propio fichero.
 
 ### 3. En los reports de P2, los fragmentos recuperados se sustituyeron por hashes SHA-256
 
@@ -310,7 +425,7 @@ Los 24 reports crudos de P2 llevaban originalmente, para cada pregunta del brazo
 
 Esto preserva la función científica del campo y elimina únicamente el texto protegido. Quien disponga de una copia lícita del corpus puede reconstruir los *chunks* con los parámetros publicados, hashearlos y **verificar exactamente qué fragmento se recuperó para cada pregunta**, sin que aquí se redistribuya una sola línea de material protegido. Documento y página solo son resolubles para el banco `original` (vía `aggregates/chunk_provenance.json`); para los bancos TRAP y OOD no existe mapa de procedencia, y esos fragmentos llevan `"documento": null, "pagina": null, "provenance": "no_disponible"`. El esquema completo se documenta en `results_hallucination_p2_sanitized/DATA_DICTIONARY.md`.
 
-Los reports de P1 nunca contuvieron los fragmentos recuperados, de modo que no necesitaron este tratamiento.
+El mismo tratamiento se aplica a los cuatro reports de `results_retrieval_exploratory_sanitized/` (1 472 fragmentos, **todos** con documento y página, por pertenecer al banco `original`). Los reports de P1 nunca contuvieron los fragmentos recuperados, de modo que no necesitaron este tratamiento, y el contexto que consumieron no se ha perdido: **reutilizaron** los fragmentos de esos cuatro reports exploratorios, cuyos 1 472 hashes coinciden, posición a posición, con los publicados para P2.
 
 ### 4. Las citas literales largas del corpus se redactaron, en todos los campos de texto libre
 
@@ -320,11 +435,25 @@ A los modelos se les pidió fundamentar su respuesta en la evidencia recuperada 
 [CITA REDACTADA: N palabras del corpus fuente, retiradas por derechos de autor]
 ```
 
-donde *N* es el número de palabras retiradas. Solo se sustituye el tramo solapado; el texto circundante (el razonamiento propio del modelo, o el resto del campo) queda intacto. Afecta a **29 tramos repartidos en 8 ficheros**, el más largo de 101 palabras: **18** en `respuesta_ia` (`results_ablation_p1/` y `results_hallucination_p2_sanitized/`, todos en el brazo con RAG), **7** en `cita_soporte` (`aggregates/taxonomia_errores.json`) y **4** en `traza_cita` (`datasets/dataset_gold_standard.json`).
+donde *N* es el número de palabras retiradas. Solo se sustituye el tramo solapado; el texto circundante (el razonamiento propio del modelo, o el resto del campo) queda intacto.
+
+Afecta a **43 tramos repartidos en 13 ficheros, 2 468 palabras retiradas en total**, el tramo más largo de 101 palabras y el más corto de 50. Por carpeta:
+
+| Carpeta | Tramos | Ficheros | Palabras retiradas |
+|---|---|---|---|
+| `results_ablation_p1/` | 9 | 2 | 550 |
+| `results_hallucination_p2_sanitized/` | 9 | 4 | 490 |
+| `results_retrieval_exploratory_sanitized/` | 6 | 3 | 350 |
+| `datasets/` | 4 | 1 | 231 |
+| `aggregates/` | 15 | 3 | 847 |
+| `code/` | **0** | 0 | 0 |
+| **Total** | **43** | **13** | **2 468** |
+
+Por campo: **24** en `respuesta_ia` (1 390 palabras — las tres carpetas de reports, todos en el brazo con RAG), **14** en `cita_soporte` (796 palabras — 7 en `aggregates/taxonomia_errores.json` y 7 en `aggregates/errores_prelabel.json`, que arrastra las mismas citas del juez), **4** en `traza_cita` (231 palabras — `datasets/dataset_gold_standard.json`) y **1** en `cola` (51 palabras — `aggregates/resolucion_no_parseadas.json`). **Ningún script de `code/` contiene tramos redactados**: ningún script publicado reproduce 50 o más palabras consecutivas del corpus.
 
 En los dos campos de evidencia se conserva la procedencia para que el campo siga cumpliendo su función: `dataset_gold_standard.json` mantiene sus campos hermanos `documento_fuente` y `traza_pagina`, y en `taxonomia_errores.json` el marcador va seguido de una referencia explícita `Ref.: <documento>, p. <página>`. `dataset_trap_validado.json` se auditó y no necesitó redacción (solapamiento máximo: 49 palabras).
 
-**Las citas más cortas se conservan** al amparo del derecho de cita académico: quedan 1 219 tramos de 12 a 49 palabras, equivalentes al 1,30 % de los 12-gramas distintos del corpus. La redacción es cosmética y estrictamente posterior a los experimentos: `es_correcta`, `opcion_detectada`, `abstiene`, `alucina` y todos los demás campos derivados se calcularon sobre las respuestas originales sin redactar y siguen siendo válidos; no se eliminó ningún registro ni varió ningún conteo. La salvedad (d) de `VERIFICATION.md` documenta el método de auditoría y el desglose completo por fichero.
+**Las citas más cortas se conservan** al amparo del derecho de cita académico: quedan tramos de 12 a 49 palabras consecutivas en los campos de texto libre, dispersos y no contiguos, que no permiten reconstruir ningún documento fuente. Un censo de esas citas cortas solo puede producirse contra el corpus fuente, que aquí no se publica, de modo que esta publicación no afirma ninguna cifra sobre ellas. La redacción es cosmética y estrictamente posterior a los experimentos: `es_correcta`, `opcion_detectada`, `abstiene`, `alucina`, `retrieval_recall_hit` y todos los demás campos derivados se calcularon sobre las respuestas originales sin redactar y siguen siendo válidos; no se eliminó ningún registro ni varió ningún conteo. La salvedad (d) de `VERIFICATION.md` documenta el método de auditoría y el desglose completo por fichero.
 
 **Los datos crudos completos y sin redactar obran en poder de los autores y están disponibles bajo petición razonada con fines de verificación** —por ejemplo, para una persona revisora o editora que necesite auditar las salidas íntegras de los modelos—, sujeto a las restricciones de derechos del corpus docente subyacente.
 
@@ -356,13 +485,22 @@ El artículo dice exactamente lo mismo. Preferimos publicar honestamente una afi
 ```
 clinical-rag-neurophysio-data/
 ├── README.md                  este fichero
-├── LICENSE                    texto legal completo de la CC BY 4.0
-├── NOTICE.md                  alcance de la licencia: qué es nuestro y qué es de terceros (EN/ES)
+├── LICENSE                    texto legal completo de la CC BY 4.0 (los DATOS)
+├── NOTICE.md                  alcance de las licencias: qué es nuestro y qué de terceros (EN/ES)
 ├── CITATION.cff               metadatos de cita legibles por máquina
 ├── datapackage.json           descriptor Frictionless Data
 ├── MANIFEST.sha256            digest SHA-256 de cada fichero publicado
 ├── VERIFICATION.md            auditoría de publicación: qué se rederivó, qué cuadró y qué no
 ├── derived_metrics.json       cifras recomputadas desde los crudos para esta publicación
+├── code/                      el código fuente del estudio — licencia MIT (NO CC BY 4.0)
+│   ├── README.md              qué se ejecuta sin el corpus, qué no, y por qué
+│   ├── EXCLUDED.md            todos los scripts que NO se publican, y el motivo de cada uno
+│   ├── LICENSE-CODE           MIT
+│   ├── requirements.txt       capa de análisis — todo lo que necesita `reproduce.py`
+│   ├── requirements-inference.txt   capa de inferencia — documentada, no basta para reejecutar
+│   ├── reproduce.py           UN SOLO COMANDO: regenera los agregados y los coteja
+│   ├── analysis/              13 ficheros, ejecutables solo con los datos publicados
+│   └── inference/             9 scripts, publicados para inspección (exigen corpus y/o Ollama)
 ├── datasets/
 │   ├── dataset_gold_standard.json      53 preguntas respondibles (a/b/c)
 │   ├── dataset_trap_validado.json      24 preguntas de premisa falsa (a/b/c/d)
@@ -374,15 +512,27 @@ clinical-rag-neurophysio-data/
 ├── results_hallucination_p2_sanitized/ Estudio P2 — 24 reports = 760 inferencias
 │   ├── report_{tag}_P2abstain_{original,trap,ood}_{con,sin}_{timestamp}_SANITIZED.json
 │   └── DATA_DICTIONARY.md
-├── aggregates/
+├── results_retrieval_exploratory_sanitized/  Campaña exploratoria de recuperación — 4 reports × 53
+│   │                                         = 212 inferencias. Origen del recall@k = 88,7 %
+│   │                                         (47/53) y de los fragmentos que reutilizó P1.
+│   ├── report_{modelo}_GPU_Local_Win11_9doc_{tag}_bge-m3_{timestamp}_SANITIZED.json
+│   └── DATA_DICTIONARY.md
+├── aggregates/                            16 ficheros
 │   ├── rag_benefit_summary.json                     precisión, delta, IC y McNemar por modelo (P1)
 │   ├── hallucination_summary.json                   tasas por modelo y agregadas (P2)
 │   ├── hallucination_summary_resuelto.json          análisis de sensibilidad de P2 (respuestas no interpretables resueltas)
+│   ├── resolucion_no_parseadas.json                 las 20 respuestas no parseables, resueltas por regla;
+│   │                                                entrada del análisis de sensibilidad anterior
 │   ├── taxonomia_{resumen,errores,frontera}.json    taxonomía sobre los 131 errores de P1
+│   ├── errores_prelabel.json                        pre-etiquetado del juez 1 (qwen2.5:7b) de los 131
+│   │                                                errores — la ENTRADA de analyze_taxonomia.py
+│   ├── errores_prelabel_juez2.json                  pre-etiquetado del juez 2 (llama3.1:8b), submuestra de
+│   │                                                40 casos — la otra mitad del kappa entre jueces
 │   ├── detectability_{resumen,frontera_resumen,frontera,qwen,llama}.json   panel ciego de detectabilidad
 │   ├── chunk_provenance.json                        documento y página de los 368 fragmentos recuperados para
 │   │                                                las 53 preguntas del banco `original` (no hay TRAP/OOD)
 │   ├── distractor_efecto.json                       efecto de los chunks distractores sobre la tasa de error
+│   │                                                (SIN script productor — véase VERIFICATION.md)
 │   └── DATA_DICTIONARY.md
 ├── annotation/                            NO es un panel humano independiente — véase el punto 6
 │   ├── detectabilidad_humano.csv          las 80 valoraciones del juez de frontera, respaldadas sin cambios
@@ -399,7 +549,16 @@ clinical-rag-neurophysio-data/
 
 ## Cómo verificar los datos
 
-Tres artefactos permiten comprobar esta publicación sin tener que fiarse de nosotros.
+Cuatro artefactos permiten comprobar esta publicación sin tener que fiarse de nosotros.
+
+**0. Reejecutar el análisis — `code/reproduce.py`.** La comprobación más fuerte, y la que no necesita nada más que este repositorio y Python:
+
+```bash
+pip install -r code/requirements.txt
+python code/reproduce.py          # exit 0 = todo cuadra
+```
+
+Regenera cada agregado regenerable desde los registros crudos publicados y lo coteja, campo a campo, con el fichero publicado. Declara además lo que *no* puede regenerar, y por qué. Reporta dos divergencias controladas, explicadas en `VERIFICATION.md`; ninguna altera una cifra del artículo.
 
 **1. Integridad de los ficheros — `MANIFEST.sha256`.** Contiene el digest SHA-256 de cada fichero publicado:
 
@@ -417,15 +576,23 @@ El repositorio incluye un `.gitattributes` con `* -text`, que desactiva la norma
 
 ## Licencia
 
-Los datos de este repositorio se publican bajo la **licencia Creative Commons Atribución 4.0 Internacional (CC BY 4.0)**. El texto legal íntegro está en [`LICENSE`](LICENSE), y el **alcance de la licencia se detalla en [`NOTICE.md`](NOTICE.md)** (bilingüe EN/ES), que es la declaración autorizada de qué es nuestro y qué pertenece a terceros. En resumen: puede compartir y adaptar el material con cualquier finalidad, incluso comercial, siempre que dé el crédito adecuado.
+Este repositorio lleva **dos licencias**, una para los datos y otra para el código:
 
-**Nota de alcance — la licencia cubre solo el material de creación propia.** La CC BY 4.0 se aplica a todo lo que hemos creado nosotros: los bancos de preguntas, los registros de inferencia, las anotaciones, los análisis agregados y la documentación. El resumen que sigue reproduce lo esencial de [`NOTICE.md`](NOTICE.md); si ambos textos divergieran, prevalece `NOTICE.md`.
+| Qué | Licencia | Texto |
+|---|---|---|
+| **Los datos** — bancos de preguntas, registros de inferencia, anotaciones, agregados, documentación | **CC BY 4.0** | [`LICENSE`](LICENSE) |
+| **El código** — todo lo que hay bajo `code/` | **MIT** | [`code/LICENSE-CODE`](code/LICENSE-CODE) |
+
+El código va bajo MIT y no bajo CC BY a propósito: MIT es la licencia habitual del software y permite reutilizar, modificar e incrustar los scripts sin arrastrar la maquinaria de atribución propia de una licencia de datos. El **alcance de ambas se detalla en [`NOTICE.md`](NOTICE.md)** (bilingüe EN/ES), que es la declaración autorizada de qué es nuestro y qué pertenece a terceros. En resumen: puede compartir y adaptar el material con cualquier finalidad, incluso comercial, siempre que dé el crédito adecuado.
+
+**Nota de alcance — las licencias cubren solo el material de creación propia.** La CC BY 4.0 se aplica a todo lo que hemos creado nosotros y es dato: los bancos de preguntas, los registros de inferencia, las anotaciones, los análisis agregados y la documentación. La MIT se aplica al código. El resumen que sigue reproduce lo esencial de [`NOTICE.md`](NOTICE.md); si ambos textos divergieran, prevalece `NOTICE.md`.
 
 **No** se aplica —ni puede aplicarse— a las citas literales cortas del corpus docente de terceros que aún conservan unos pocos campos, porque no son nuestras para licenciarlas. Se retienen al amparo del **derecho de cita académico**: son breves, son estrictamente necesarias para que el registro sea auditable (son la evidencia en la que se apoya una etiqueta o una validación) y van siempre atribuidas a su documento y página de origen. Son:
 
 - `traza_cita` en `datasets/dataset_trap_validado.json` (los 24 ítems) — la frase del corpus que la premisa falsa del ítem contradice, atribuida mediante `documento_fuente` y `traza_pagina`;
 - `traza_cita` en `datasets/dataset_gold_standard.json` (los 30 ítems que llevan metadatos de fuente, de los cuales 4 están redactados) — la frase que respalda la respuesta correcta, igualmente atribuida;
-- `cita_soporte` en `aggregates/taxonomia_errores.json` (131 registros, de los cuales 7 están redactados) — el fragmento en el que se apoya la categoría de error adjudicada;
+- `cita_soporte` en `aggregates/taxonomia_errores.json` (131 registros, de los cuales 7 están redactados) y en `aggregates/errores_prelabel.json` (las mismas 131 citas del juez, igualmente 7 redactadas) — el fragmento en el que se apoya la categoría de error adjudicada;
+- `cola` en `aggregates/resolucion_no_parseadas.json` (20 registros, de los cuales 1 está redactado) — la cola de la respuesta no parseable, conservada para poder comprobar la regla de resolución;
 - las citas cortas que los modelos hicieron de la evidencia recuperada dentro de `respuesta_ia`, que se conservan.
 
 En todos los casos anteriores solo permanecen las citas de **menos de 50 palabras consecutivas**; todo tramo de 50 palabras o más se redactó (véase el [punto 4](#4-las-citas-literales-largas-del-corpus-se-redactaron-en-todos-los-campos-de-texto-libre)).

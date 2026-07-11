@@ -1,26 +1,26 @@
 __pycache__/
+*.pyc
 INFORME_AUDITORIA.md
 .DS_Store
 Thumbs.db
 
 # --- Preventive guards -------------------------------------------------------
-# This is a DATA-ONLY repository. The system source code, the teaching corpus and
-# the retrieval cache are deliberately NOT published (see README.md, "What is NOT
-# included and why"). The rules below exist so that none of them can be committed
-# by accident. Verified at the time of writing: no tracked file matches any of
-# these patterns, so nothing currently published is affected.
-
-# Source code (withheld by the authors' decision)
-*.py
+# The system source code IS published, under code/ (MIT licence). The teaching
+# corpus and the retrieval cache are deliberately NOT published (see README.md,
+# "What is NOT included and why"). The rules below exist so that none of the
+# withheld artefacts can be committed by accident.
 
 # Retrieval cache: embeds verbatim passages of the copyrighted teaching corpus
 retrieval_cache_*.json
 
-# The teaching corpus itself, and any extracted text
+# The teaching corpus itself, and any extracted plain text
 *.pdf
 *.txt
+!code/requirements.txt
+!code/requirements-inference.txt
 
-# Model weights and adapters (large, and not part of the data release)
+# Model weights and adapters: the QLoRA adapter is fine-tuned on data derived
+# from the copyrighted corpus, and is not part of this release
 *.gguf
 *.safetensors
 *.bin

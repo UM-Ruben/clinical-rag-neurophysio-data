@@ -59,37 +59,9 @@
           ]
         }
       },
-      "regresion_confusores": {
-        "intercepto": {
-          "coef": 0.4693,
-          "se": 2.1462,
-          "odds_ratio": 1.599,
-          "p": 0.8269
-        },
-        "con_rag": {
-          "coef": 0.201,
-          "se": 1.1581,
-          "odds_ratio": 1.223,
-          "p": 0.8622
-        },
-        "longitud_kchars": {
-          "coef": 1.5405,
-          "se": 1.4776,
-          "odds_ratio": 4.667,
-          "p": 0.2972
-        },
-        "densidad_tecnica": {
-          "coef": -0.1601,
-          "se": 0.1019,
-          "odds_ratio": 0.852,
-          "p": 0.1161
-        },
-        "cita_el_contexto": {
-          "coef": 10.8297,
-          "se": 433.766,
-          "odds_ratio": 50498.647,
-          "p": 0.9801
-        }
+      "regresion_omitida": {
+        "clase_minoritaria": 4,
+        "covariables": 4
       }
     }
   }

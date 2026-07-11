@@ -99,18 +99,23 @@ The models were instructed to ground their answers in the retrieved evidence, an
 [CITA REDACTADA: N palabras del corpus fuente, retiradas por derechos de autor]
 ```
 
-where *N* is the number of words removed. In this folder this affects **8 spans across 6 answers in 2 files** — all in the `con` arm, where the model had the evidence in front of it:
+where *N* is the number of words removed. In this folder this affects **9 spans across 7 answers in 2 files, 550 words in total** — all in the `con` arm, where the model had the evidence in front of it:
 
 | File | `id` | Spans | Words removed |
 |---|---|---|---|
 | `report_med42_..._sysrole_con_RERUN.json` | 1 | 2 | 101, 60 |
+| `report_qwen7b_..._sysrole_con_RERUN.json` | 1 | 1 | 56 |
 | `report_qwen7b_..._sysrole_con_RERUN.json` | 7 | 1 | 63 |
 | `report_qwen7b_..._sysrole_con_RERUN.json` | 12 | 1 | 55 |
 | `report_qwen7b_..._sysrole_con_RERUN.json` | 31 | 2 | 50, 50 |
 | `report_qwen7b_..._sysrole_con_RERUN.json` | 38 | 1 | 51 |
 | `report_qwen7b_..._sysrole_con_RERUN.json` | 40 | 1 | 64 |
 
+By file: `report_med42_..._sysrole_con_RERUN.json` carries 2 spans (161 words) in 1 answer; `report_qwen7b_..._sysrole_con_RERUN.json` carries 7 spans (389 words) across 6 answers. The two `sin`-arm reports and the `llama8b` and `qlora` reports carry no redaction at all.
+
 Only the overlapping span is replaced; the model's own reasoning around it is preserved untouched. Shorter quotations are retained under the academic right of quotation.
+
+Two of these answers (`qwen7b`/`con`, ids 1 and 38) are also the two records where `aggregates/detectability_frontera.json` does not regenerate bit-for-bit: the covariates `len_chars` and `densidad_tecnica` were measured on the **original** text, which was longer. See caveat (g) of `VERIFICATION.md`.
 
 **The redaction is cosmetic and strictly posterior to the experiments.** `es_correcta`, `opcion_detectada`, `latency_seconds` and every other field were computed on the original, unredacted answers and remain valid; no record was removed and no count changed (8 files × 53 records = 424). The complete unredacted data is held by the authors and is available on reasonable request for verification purposes.
 

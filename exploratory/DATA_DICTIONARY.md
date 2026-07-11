@@ -89,11 +89,13 @@ These columns describe the **whole run**, not the row. Aggregating them naively 
 | `summary_recall_at_k` | float | Retrieval recall@k over the run, in per cent. **`82.35` (= 14/17) in all 306 surviving rows.** |
 | `summary_accuracy` | float | Accuracy of the run, in per cent. |
 
-> ### The only retrieval-recall figures in this repository are these — and they belong to the deprecated phase
+> ### These recall figures are NOT the article's 88.7 % — do not confuse the two
 >
-> `retrieval_recall_hit` and `summary_recall_at_k` are the **sole** recall fields published anywhere in this repository. They describe **this deprecated campaign only**: a 17-question preliminary bank, `retrieved_top_k = 8`, four embedding models, CPU cluster. Over the 306 surviving rows the recall@k is **252/306 = 82.35 %**.
+> `retrieval_recall_hit` and `summary_recall_at_k` here describe **this deprecated campaign only**: a 17-question preliminary bank, `retrieved_top_k = 8`, four embedding models, CPU cluster. Over the 306 surviving rows the recall@k is **252/306 = 82.35 %**.
 >
-> **They are not the recall of the definitive ablation study.** The 8 Study-P1 reports carry **no retrieval-recall field at all**, and none can be reconstructed from them: judging whether a retrieved chunk is the relevant one requires per-chunk relevance labels, which this repository does not publish. `aggregates/chunk_provenance.json` supports only a coarser, **document-level** check — for the 30 gold-standard questions whose source document is known, the retriever returned that document in **30 of 30 cases** — which is a different quantity from recall@k. See caveat (e) of `VERIFICATION.md`.
+> **The article's `recall@k = 88.7 %` is a different measurement and lives elsewhere**, in `results_retrieval_exploratory_sanitized/`: 47 of 53 gold-standard questions, `retrieved_top_k = 7`, `BAAI/bge-m3`, the definitive 9-document index, local GPU. The two numbers share a field name and a heuristic — the same token-overlap rule, defined in full in that folder's dictionary — and nothing else. Neither is a human relevance judgement.
+>
+> The 8 Study-P1 reports carry **no retrieval-recall field at all**; the recall of the context they used is the 88.7 % measured in `results_retrieval_exploratory_sanitized/`, whose fragments they replayed. `aggregates/chunk_provenance.json` supports only a coarser, **document-level** check — for the 30 gold-standard questions whose source document is known, the retriever returned that document in **30 of 30 cases** — which is again a different quantity. See caveat (e) of `VERIFICATION.md`.
 
 ---
 

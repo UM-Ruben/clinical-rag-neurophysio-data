@@ -1,0 +1,34 @@
+# Capa de INFERENCIA. NO hace falta para verificar el estudio.
+#
+# Se declara para documentar con exactitud la pila con la que se produjeron los datos, y para que
+# los scripts de `inference/` sean legibles con su contexto de dependencias delante. Instalarla NO
+# permite reejecutar el estudio: los scripts de inferencia necesitan ademas
+#
+#   - el CORPUS de 9 PDF (material docente con copyright, no distribuible), y
+#   - un servidor Ollama local con los modelos cargados.
+#
+# Tres de los cuatro modelos son publicos y se descargan de Ollama:
+#
+#   ollama pull llama3.1:8b
+#   ollama pull qwen2.5:7b
+#   ollama pull thewindmom/llama3-med42-8b
+#
+# El cuarto, `neurofisio-qlora`, es un adaptador QLoRA afinado sobre datos derivados del corpus con
+# copyright. Ni los pesos ni el pipeline de entrenamiento se publican, de modo que ese brazo NO es
+# reproducible por terceros. Los otros tres si.
+
+langchain>=0.3
+langchain-community>=0.3
+langchain-core>=0.3
+langchain-huggingface>=0.1
+langchain-ollama>=0.2
+langchain-text-splitters>=0.3
+
+faiss-cpu>=1.8
+rank_bm25>=0.2.2
+sentence-transformers==3.3.1
+torch==2.6.0
+pypdf>=4.0
+
+# Solo para la auditoria de derechos de autor sobre los PDF del corpus.
+# PyMuPDF>=1.24

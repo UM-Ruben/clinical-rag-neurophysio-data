@@ -141,14 +141,19 @@ The models were instructed to ground their answers in the retrieved evidence, an
 [CITA REDACTADA: N palabras del corpus fuente, retiradas por derechos de autor]
 ```
 
-where *N* is the number of words removed. In this folder this affects **4 spans in 4 answers across 3 files**, all in the `con` arm:
+where *N* is the number of words removed. In this folder this affects **9 spans in 7 answers across 4 files, 490 words in total**, all in the `con` arm:
 
-| File | `id` | Words removed |
-|---|---|---|
-| `report_med42_P2abstain_original_con_...` | 33 | 51 |
-| `report_med42_P2abstain_trap_con_...` | 1010 | 61 |
-| `report_qwen7b_P2abstain_original_con_...` | 7 | 63 |
-| `report_qwen7b_P2abstain_original_con_...` | 12 | 55 |
+| File | `id` | Spans | Words removed |
+|---|---|---|---|
+| `report_llama8b_P2abstain_trap_con_...` | 1012 | 1 | 51 |
+| `report_med42_P2abstain_original_con_...` | 33 | 1 | 51 |
+| `report_med42_P2abstain_trap_con_...` | 1010 | 1 | 61 |
+| `report_qwen7b_P2abstain_original_con_...` | 1 | 1 | 56 |
+| `report_qwen7b_P2abstain_original_con_...` | 7 | 1 | 63 |
+| `report_qwen7b_P2abstain_original_con_...` | 12 | 1 | 55 |
+| `report_qwen7b_P2abstain_original_con_...` | 14 | 3 | 51, 51, 51 |
+
+By file: `report_qwen7b_P2abstain_original_con_...` carries 6 spans (327 words) across 4 answers; the other three files carry one span each (51, 51 and 61 words). The 20 remaining reports of this folder carry no redaction.
 
 Only the overlapping span is replaced; the model's own reasoning around it is preserved untouched. Shorter quotations are retained under the academic right of quotation.
 
