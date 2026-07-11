@@ -1,0 +1,393 @@
+{
+  "header": {
+    "protocolo": "sysrole_abstain",
+    "banco": "ood",
+    "model": "thewindmom/llama3-med42-8b",
+    "arm": "sin",
+    "no_rag": true,
+    "questions_count": 18,
+    "opcion_abstencion": "d",
+    "texto_opcion_d": "No puede responderse con la documentacion disponible",
+    "retrieved_top_k": 7,
+    "context_max_tokens": 5000,
+    "num_ctx": 8192,
+    "temperature": 0,
+    "embedding_model": "BAAI/bge-m3",
+    "timestamp": "2026-07-09T18:36:07.788714",
+    "completed": true
+  },
+  "summary": {
+    "total": 18,
+    "correct": 4,
+    "accuracy": 22.22222222222222,
+    "abstenciones": 4,
+    "tasa_abstencion": 22.22222222222222,
+    "alucinaciones": 12,
+    "n_items_abstencion_correcta": 18,
+    "parse_desconocida": 2,
+    "latency_mean": 17.3088288837009,
+    "latency_median": 18.446
+  },
+  "questions": [
+    {
+      "id": 2001,
+      "tipo": "ood",
+      "pregunta": "En un adulto con pie equino espástico tras un ictus, ¿cuántas unidades de onabotulinumtoxinA recomienda infiltrar la documentación en el vientre del gastrocnemio medial por sesión?",
+      "opciones": {
+        "a": "50 unidades por músculo",
+        "b": "75 unidades por músculo",
+        "c": "100 unidades por músculo",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "La pregunta plantea la dosis recomendable de onabotulinumtoxinA para tratar un pie equino espástico en un adulto con ictus. La evidencia clínica disponible sugiere que las dosis variadas entre 50 y 100 unidades por músculo gastrocnemio medial pueden ser efectivas.\n\nPaso 1: Verificar cada opción palabra por palabra no es aplicable aquí, ya que la pregunta se refiere a una dosis total de onabotulinumtoxinA para un músculo en particular (gastrocnemio medial) y no a comparaciones entre prefijos, nombres similares, lateralidad o fases temporales.\n\nPaso 2: La premisa del enunciado es cierta según la evidencia clínica. El pie equino espástico es un síntoma común después de un ictus y el tratamiento con onabotulinumtoxinA es una opción efectiva para tratarlo.\n\nPaso 3: No hay opciones que cambien una sola palabra respecto a la evidencia, por lo que no se pueden descartar.\n\nPaso 4: Entre las opciones a, b y c, todas son posibles según la evidencia clínica. Sin embargo, como apoyo a la decisión clínica, es importante tener en cuenta que una dosis más alta (100 unidades) puede ser necesaria para músculos más grandes o con mayor espasticidad.\n\nRESPUESTA: c) 100 unidades por músculo",
+      "opcion_detectada": "c",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 24.759,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2002,
+      "tipo": "ood",
+      "pregunta": "¿Qué relación de conversión de dosis entre abobotulinumtoxinA (Dysport) y onabotulinumtoxinA (Botox) establece la documentación para tratar la espasticidad de la extremidad superior post-ictus?",
+      "opciones": {
+        "a": "2,5:1 (Dysport:Botox)",
+        "b": "3:1 (Dysport:Botox)",
+        "c": "4:1 (Dysport:Botox)",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "La relación de conversión de dosis entre abobotulinumtoxinA (Dysport) y onabotulinumtoxinA (Botox) para tratar la espasticidad de la extremidad superior post-ictus es de 2,5:1 (Dysport:Botox).\n\nPaso 1: Verificar cada opción palabra por palabra. En este caso, todas las opciones son números y no presentan errores en su escritura.\n\nPaso 2: Comprobar la premisa del enunciado. La premisa es que se está preguntando sobre la relación de dosis entre los dos medicamentos mencionados para tratar espasticidad post-ictus en la extremidad superior, lo cual es cierto según el conocimiento clínico.\n\nPaso 3: Descartar opciones con errores. En este caso, no hay opción que contenga un error.\n\nPaso 4: Decidir. La relación de conversión de dosis entre abobotulinumtoxinA (Dysport) y onabotulinumtoxinA (Botox) para tratar la espasticidad de la extremidad superior post-ictus es de 2,5:1 (Dysport:Botox), por lo que la respuesta correcta es a).",
+      "opcion_detectada": "a",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 21.233,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2003,
+      "tipo": "ood",
+      "pregunta": "Según la documentación, ¿cuál es la dosis total máxima de onabotulinumtoxinA por sesión de infiltración en el tratamiento de la espasticidad multifocal del adulto?",
+      "opciones": {
+        "a": "360 unidades",
+        "b": "400 unidades",
+        "c": "600 unidades",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "La pregunta plantea determinar la dosis total máxima de onabotulinumtoxinA que se puede administrar en una sesión de infiltración para el tratamiento de la espasticidad multifocal del adulto. \n\nPaso 1: Verificar cada opción palabra por palabra.\n- La opción a) 360 unidades no presenta errores ni ambigüedades.\n- La opción b) 400 unidades tampoco presenta errores ni ambigüedades.\n- La opción c) 600 unidades tampoco presenta errores ni ambigüedades.\n\nPaso 2: Comprobar la premisa del enunciado.\nLa premisa es que se busca determinar la dosis máxima permitida por sesión de infiltración. No hay afirmaciones falsas en el enunciado.\n\nPaso 3: Descartar opciones con errores.\nNo se descartan ninguna opción, ya que todas son correctas en cuanto a su escritura y no presentan ambigüedades.\n\nPaso 4: Decidir.\nEntre las opciones a), b) y c), la más completa y correcta es la que cumpla con los estándares de seguridad y eficacia. Según el conocimiento clínico experto, la dosis máxima permitida por sesión de infiltración para el tratamiento de la espasticidad multifocal del adulto con onabotulinumtoxinA es de 400 unidades.\n\nRESPUESTA: b)",
+      "opcion_detectada": "b",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 22.94,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2004,
+      "tipo": "ood",
+      "pregunta": "De acuerdo con la documentación, ¿con qué volumen de diluyente debe realizarse la reconstitución de un vial de 100 unidades de toxina botulínica tipo A antes de infiltrar la musculatura espástica?",
+      "opciones": {
+        "a": "1 mL",
+        "b": "2 mL",
+        "c": "4 mL",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "La reconstitución del vial de toxina botulínica tipo A se realiza diluyendo el contenido en una solución salina. La dosis recomendada para la inyección intramuscular es de 100 unidades por kilogramo de peso corporal, y se administra en un volumen de diluyente que varía según la región anatómica a tratar.\n\nEn este caso, estamos hablando de musculatura espástica. La dosis recomendada para esta situación es de 100 U de toxina botulínica tipo A por kilogramo de peso corporal, y se administra en un volumen de diluyente de 4 mL por cada 100 U.\n\nPor lo tanto, la respuesta correcta es:\n\nc) 4 mL",
+      "opcion_detectada": "c",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 13.804,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2005,
+      "tipo": "ood",
+      "pregunta": "Para el tratamiento farmacológico de la espasticidad, ¿cuántos miligramos de THC y de CBD aporta cada pulverización oromucosa de nabiximols (Sativex) según la documentación?",
+      "opciones": {
+        "a": "2,7 mg de THC y 2,5 mg de CBD por pulverización",
+        "b": "5 mg de THC y 5 mg de CBD por pulverización",
+        "c": "10 mg de THC y 10 mg de CBD por pulverización",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "La pregunta plantea la dosis en miligramos de THC y CBD que contiene cada pulverización oromucosa de nabiximols (Sativex) para el tratamiento farmacológico de la espasticidad. \n\nPaso 1: Verificar cada opción palabra por palabra.\n- La opción a) indica 2,7 mg de THC y 2,5 mg de CBD por pulverización.\n- La opción b) indica 5 mg de THC y 5 mg de CBD por pulverización.\n- La opción c) indica 10 mg de THC y 10 mg de CBD por pulverización.\n\nPaso 2: Comprobar la premisa del enunciado. En este caso, no se plantea ninguna afirmación que debamos verificar.\n\nPaso 3: Descartar opciones con errores. Todas las opciones presentadas son numéricamente correctas y no contienen palabras contradictorias entre sí o con la evidencia.\n\nPaso 4: Decidir. Entre las opciones a, b y c, solo una es la dosis exacta de THC y CBD en cada pulverización oromucosa de nabiximols (Sativex).\n\nRESPUESTA: a) 2,7 mg de THC y 2,5 mg de CBD por pulverización",
+      "opcion_detectada": "a",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 20.898,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2006,
+      "tipo": "ood",
+      "pregunta": "Antes de implantar una bomba de baclofeno intratecal en un paciente con espasticidad grave post-ictus, ¿qué dosis de baclofeno en microgramos indica la documentación para el bolo de prueba de cribado?",
+      "opciones": {
+        "a": "25 microgramos",
+        "b": "50 microgramos",
+        "c": "100 microgramos",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - Verificar cada opción palabra por palabra:\n\na) 25 microgramos\nb) 50 microgramos\nc) 100 microgramos\nd) No puede responderse con la documentación disponible\n\nNo se observan errores en las opciones a, b y c.\n\nPASO 2 - Comprobar la premisa del enunciado:\nEl enunciado pregunta sobre la dosis de baclofeno en microgramos para el bolo de prueba de cribado antes de implantar una bomba intratecal en un paciente con espasticidad grave post-ictus. Esta información es relevante y no contradice evidencia conocida.\n\nPASO 3 - Descartar opciones con errores:\nNo se descarta ninguna opción debido a errores en la información proporcionada.\n\nPASO 4 - Decidir:\nEntre las opciones a, b y c, que no tienen errores, debemos elegir la más adecuada. La dosis de baclofeno para el bolo de prueba de cribado varía según la fuente consultada. Según algunas guías clínicas, una dosis de 50 microgramos es comúnmente utilizada como bolo de prueba de cribado antes de implantar una bomba intratecal en pacientes con espasticidad grave post-ictus.\n\nRESPUESTA: b) 50 microgramos",
+      "opcion_detectada": "b",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 22.119,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2007,
+      "tipo": "ood",
+      "pregunta": "¿Cuál es la prevalencia estimada de esclerosis múltiple en España, expresada en casos por cada 100.000 habitantes, según la documentación?",
+      "opciones": {
+        "a": "Alrededor de 40 casos por 100.000 habitantes",
+        "b": "Alrededor de 80 casos por 100.000 habitantes",
+        "c": "Alrededor de 120 casos por 100.000 habitantes",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "La pregunta planteada solicita la prevalencia estimada de esclerosis múltiple en España, expresada en casos por cada 100.000 habitantes. Para responder esta pregunta, debemos recurrir al conocimiento clínico experto y no disponemos de documentación de apoyo.\n\nPaso 1: Verificar cada opción palabra por palabra.\n- Ninguna opción presenta errores en la denominación o descripción de conceptos relacionados con la esclerosis múltiple ni su prevalencia.\n\nPaso 2: Comprobar la premisa del enunciado.\n- La premisa es que se solicita la prevalencia estimada de esclerosis múltiple en España, expresada en casos por cada 100.000 habitantes. Esta información no está disponible en la documentación.\n\nPaso 3: Descartar opciones con errores.\n- No hay opciones con errores en esta pregunta.\n\nPaso 4: Decidir.\n- Como no disponemos de documentación de apoyo, no podemos determinar una prevalencia específica para España.\n\nRESPUESTA: d. No puede responderse con la documentación disponible.",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 18.446,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2008,
+      "tipo": "ood",
+      "pregunta": "Según la documentación, ¿cuántas personas están diagnosticadas de enfermedad de Parkinson en España?",
+      "opciones": {
+        "a": "Aproximadamente 120.000 personas",
+        "b": "Aproximadamente 160.000 personas",
+        "c": "Aproximadamente 300.000 personas",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "No puedo responder con la documentación disponible.",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": false,
+      "latency_seconds": 3.413,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2009,
+      "tipo": "ood",
+      "pregunta": "En el ensayo clínico EXCITE, que evaluó la terapia de restricción inducida del movimiento tras un ictus, ¿cuántos pacientes fueron aleatorizados?",
+      "opciones": {
+        "a": "116 pacientes",
+        "b": "222 pacientes",
+        "c": "304 pacientes",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - Verificar cada opción palabra por palabra. En este caso, todas las opciones son números y no presentan palabras que debamos comparar con la evidencia.\n\nPASO 2 - Comprobar la premisa del enunciado. El enunciado nos dice que estamos evaluando el ensayo clínico EXCITE, que investigó la terapia de restricción inducida del movimiento tras un ictus y nos pregunta cuántos pacientes fueron aleatorizados.\n\nPASO 3 - Descartar opciones con errores. No hay opción que contenga información incorrecta o cambie una sola palabra respecto a la evidencia, por lo que no podemos descartar ninguna opción.\n\nPASO 4 - Decidir. Entre las opciones a, b y c, todas son números enteros diferentes entre sí. Como fisioterapeuta experto, no tengo conocimiento de los resultados del ensayo clínico EXCITE sin documentación de apoyo. Por lo tanto, no puedo determinar la respuesta de forma fiable.\n\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 17.814,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2010,
+      "tipo": "ood",
+      "pregunta": "El ensayo LEAPS (Locomotor Experience Applied Post-Stroke) comparó el entrenamiento locomotor en tapiz rodante con soporte parcial del peso corporal frente a un programa de ejercicio domiciliario. ¿Cuántos participantes se incluyeron?",
+      "opciones": {
+        "a": "408 participantes",
+        "b": "606 participantes",
+        "c": "780 participantes",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "La pregunta plantea comparar el ensayo LEAPS con un programa de ejercicio domiciliario y se pide determinar cuántos participantes se incluyeron en este estudio. \n\nPaso 1: Verificar cada opción palabra por palabra no es aplicable aquí, ya que la información solicitada es numérica.\n\nPaso 2: La premisa del enunciado es cierta, ya que el ensayo LEAPS comparó dos tipos de programas de tratamiento y se pidió determinar el número de participantes.\n\nPaso 3: No hay opciones con errores en esta pregunta.\n\nPaso 4: Entre las opciones a, b y c, ninguna tiene errores. La información solicitada es numérica, por lo que no podemos elegir entre ellas sin más contexto o documentación.\n\nRESPUESTA: d (No puede responderse con la documentación disponible)",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 14.776,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2011,
+      "tipo": "ood",
+      "pregunta": "¿Cuál es la incidencia anual de lesión medular traumática en España, expresada por millón de habitantes, según la documentación?",
+      "opciones": {
+        "a": "Alrededor de 12 casos por millón de habitantes",
+        "b": "Alrededor de 24 casos por millón de habitantes",
+        "c": "Alrededor de 40 casos por millón de habitantes",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "No puedo responder con la documentación disponible.",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": false,
+      "latency_seconds": 3.392,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2012,
+      "tipo": "ood",
+      "pregunta": "Según la documentación, ¿cuál es la prevalencia de parálisis cerebral por cada 1.000 recién nacidos vivos?",
+      "opciones": {
+        "a": "Alrededor de 1,5 por 1.000 recién nacidos vivos",
+        "b": "Alrededor de 2 por 1.000 recién nacidos vivos",
+        "c": "Alrededor de 2,5 por 1.000 recién nacidos vivos",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "La prevalencia de parálisis cerebral es aproximadamente 2 por cada 1.000 recién nacidos vivos. Esta cifra se basa en el conocimiento clínico experto y no en documentación específica.\n\nPaso 1: Verificar cada opción palabra por palabra.\n- La opción a) \"Alrededor de 1,5 por 1.000 recién nacidos vivos\" es inferior a la cifra conocida.\n- La opción b) \"Alrededor de 2 por 1.000 recién nacidos vivos\" coincide con el conocimiento clínico experto.\n- La opción c) \"Alrededor de 2,5 por 1.000 recién nacidos vivos\" es superior a la cifra conocida.\n\nPaso 2: Comprobar la premisa del enunciado.\nEl enunciado da por supuesto que se busca la prevalencia de parálisis cerebral y ofrece tres opciones con cifras específicas. La evidencia coincide con una de las opciones, lo cual es cierto según el conocimiento clínico experto.\n\nPaso 3: Descartar opciones con errores.\n- La opción a) está incorrecta por ser inferior a la cifra conocida.\n- La opción c) está incorrecta por ser superior a la cifra conocida.\n\nPaso 4: Decidir.\nLa opción b) \"Alrededor de 2 por 1.000 recién nacidos vivos\" es la más correcta y completa según el conocimiento clínico experto.\n\nRESPUESTA: b",
+      "opcion_detectada": "b",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 25.374,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2013,
+      "tipo": "ood",
+      "pregunta": "Segun la documentacion disponible, ¿cual es la puntuacion motora maxima de la subescala de miembro superior de la escala de Fugl-Meyer y cual es su diferencia minima clinicamente importante (MCID) establecida para el ictus cronico?",
+      "opciones": {
+        "a": "66 puntos de maximo motor, con una MCID de entre 4,25 y 7,25 puntos",
+        "b": "60 puntos de maximo motor, con una MCID de 5,25 puntos",
+        "c": "50 puntos de maximo motor, con una MCID de 9 puntos",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "La escala de Fugl-Meyer es una herramienta utilizada para evaluar el estado funcional y la capacidad motora en pacientes con lesiones cerebrales. La subescala del miembro superior tiene un rango total de 66 puntos, que se distribuyen entre los movimientos activos, pasivos y resistencia a la fuerza.\n\nLa diferencia minima clinicamente importante (MCID) es el cambio en la puntuación que permite distinguir entre mejoras reales y mejoras por variabilidad natural o placebo. En este caso, la MCID para la subescala del miembro superior de la escala de Fugl-Meyer se encuentra entre 4,25 y 7,25 puntos.\n\nPor lo tanto, la respuesta correcta es:\n\na) 66 puntos de maximo motor, con una MCID de entre 4,25 y 7,25 puntos",
+      "opcion_detectada": "a",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 15.421,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2014,
+      "tipo": "ood",
+      "pregunta": "De acuerdo con la documentacion disponible, en la escala de Tinetti (POMA), ¿por debajo de que puntuacion total se considera que el paciente presenta un riesgo alto de caidas?",
+      "opciones": {
+        "a": "Por debajo de 19 sobre 28 puntos",
+        "b": "Por debajo de 24 sobre 28 puntos",
+        "c": "Por debajo de 15 sobre 24 puntos",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "La escala de Tinetti (POMA) es una herramienta utilizada para evaluar el riesgo de caídas en pacientes geriátricos. La puntuación total máxima es de 28 puntos.\n\nSegún la evidencia clínica, un paciente con una puntuación total por debajo de 19 sobre 28 puntos se considera que presenta un riesgo alto de caídas.\n\nPor lo tanto, la respuesta correcta es:\n\na) Por debajo de 19 sobre 28 puntos",
+      "opcion_detectada": "a",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 9.921,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2015,
+      "tipo": "ood",
+      "pregunta": "Segun la documentacion disponible, ¿cual es la puntuacion total maxima de la Trunk Impairment Scale (escala de deterioro del tronco de Verheyden) utilizada en la valoracion del control de tronco tras un ictus?",
+      "opciones": {
+        "a": "23 puntos",
+        "b": "20 puntos",
+        "c": "16 puntos",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "La Trunk Impairment Scale (TIS) es una escala utilizada para valorar el control del tronco en pacientes con lesiones cerebrales. Según mi conocimiento clínico, la puntuación máxima de esta escala es de 16 puntos.\n\nNo hay opción que coincida exactamente con esta información, por lo que elegiré la respuesta más cercana y correcta. La opción c) 16 puntos es la más adecuada en este caso.\n\nRESPUESTA: c",
+      "opcion_detectada": "c",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 10.024,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2016,
+      "tipo": "ood",
+      "pregunta": "De acuerdo con la documentacion disponible, ¿cual es el minimo cambio detectable (MDC) del Box and Block Test en pacientes con ictus?",
+      "opciones": {
+        "a": "5,5 bloques por minuto",
+        "b": "2 bloques por minuto",
+        "c": "12 bloques por minuto",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa opción a) 5,5 bloques por minuto no se encuentra en la evidencia disponible sobre el Box and Block Test (BBT). El BBT es un test de función manual que mide la habilidad del paciente para manipular y transportar objetos. La escala de puntaje del BBT va desde 0 a 35, donde 35 indica una función manual normal.\n\nLa opción b) 2 bloques por minuto es el valor mínimo detectable (MDC) en pacientes con ictus según la evidencia disponible. El MDC es un valor que indica cuál es el cambio en la puntuación del test que puede ser considerado significativo y no debido a la variabilidad normal entre repetición de pruebas.\n\nLa opción c) 12 bloques por minuto es superior al rango normal de puntaje del BBT, lo cual hace dudar de su corrección como MDC en pacientes con ictus.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nEl enunciado pregunta sobre el MDC del Box and Block Test en pacientes con ictus. La evidencia disponible confirma que el valor es de 2 bloques por minuto.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nDescartamos las opciones a) y c) debido a que no se ajustan al rango normal del puntaje del BBT ni al MDC en pacientes con ictus.\n\nPASO 4 - DECIDIR:\nLa opción b) 2 bloques por minuto es la más correcta según la evidencia disponible.\n\nRESPUESTA: b",
+      "opcion_detectada": "b",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 28.013,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2017,
+      "tipo": "ood",
+      "pregunta": "Segun la documentacion disponible, ¿de cuantos items consta el Rivermead Mobility Index y cual es su puntuacion maxima?",
+      "opciones": {
+        "a": "15 items, con una puntuacion maxima de 15",
+        "b": "10 items, con una puntuacion maxima de 20",
+        "c": "18 items, con una puntuacion maxima de 36",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "La pregunta plantea la descripción del Rivermead Mobility Index y su puntuación máxima. Para responderla, es necesario tener en cuenta el conocimiento clínico experto sobre este instrumento de evaluación.\n\nEl Rivermead Mobility Index (RMI) es un cuestionario utilizado para evaluar la autonomía en el desplazamiento de los pacientes con lesiones cerebrales. Está compuesto por 18 preguntas que abordan diferentes aspectos del movimiento, como la marcha, subir escaleras, sentarse y levantarse de una silla, entre otros.\n\nLa puntuación máxima del RMI es de 36 puntos, lo que indica una completa autonomía en el desplazamiento. \n\nTeniendo en cuenta estos datos, podemos descartar las opciones a) y b), ya que no coinciden con la información clínica experta sobre el RMI.\n\nLa opción c) coincide con los datos conocidos: 18 items y puntuación máxima de 36 puntos.\n\nPor lo tanto, la respuesta correcta es:\n\nRESPUESTA: c)",
+      "opcion_detectada": "c",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 18.257,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2018,
+      "tipo": "ood",
+      "pregunta": "De acuerdo con la documentacion disponible, ¿en cuantos estadios de recuperacion motora se divide la escala de Brunnstrom y que caracteriza al estadio 3?",
+      "opciones": {
+        "a": "6 estadios; el estadio 3 se caracteriza por la maxima espasticidad y por la ejecucion voluntaria de las sinergias",
+        "b": "5 estadios; el estadio 3 corresponde a la ausencia completa de tono muscular",
+        "c": "7 estadios; el estadio 3 marca la recuperacion total del movimiento aislado",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "La escala de Brunnstrom es una herramienta utilizada en fisioterapia y rehabilitación neurológica para evaluar la recuperación motora en pacientes con lesiones cerebrales. Esta escala divide el proceso de recuperación en 6 estadios, que van desde la ausencia total de movimiento hasta la recuperación completa del movimiento.\n\nEl estadio 3 de la escala de Brunnstrom se caracteriza por la presencia de un tono muscular moderado y la capacidad para ejecutar movimientos voluntarios con sinergia limitada. No se encuentra en este estadio una máxima espasticidad, sino más bien un equilibrio entre el tono muscular y la función motora.\n\nPor lo tanto, la opción a) es incorrecta ya que no describe adecuadamente el estadio 3 de la escala de Brunnstrom. La opción b) también es incorrecta porque en este estadio se encuentra un tono muscular moderado, no una ausencia completa de tono muscular. La opción c) es incorrecta porque la escala de Brunnstrom consta de 6 estadios, no 7.\n\nLa respuesta correcta es d), ya que no puede responderse con la documentación disponible en función de las opciones a, b y c.",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 20.955,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    }
+  ]
+}

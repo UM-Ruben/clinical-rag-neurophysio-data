@@ -1,0 +1,886 @@
+{
+  "protocolo": "P2_sysrole_abstain",
+  "modelos": [
+    {
+      "model": "llama3.1:8b",
+      "label": "Llama-3.1-8B",
+      "arms": {
+        "con": {
+          "alucinacion": {
+            "k": 7,
+            "n": 29,
+            "pct": 24.14,
+            "ci95_wilson": [
+              12.22,
+              42.11
+            ]
+          },
+          "alucinacion_ood": {
+            "k": 1,
+            "n": 18,
+            "pct": 5.56,
+            "ci95_wilson": [
+              0.99,
+              25.76
+            ]
+          },
+          "alucinacion_trap_d": {
+            "k": 6,
+            "n": 11,
+            "pct": 54.55,
+            "ci95_wilson": [
+              28.01,
+              78.73
+            ]
+          },
+          "complacencia_trap_c": {
+            "k": 2,
+            "n": 13,
+            "pct": 15.38,
+            "ci95_wilson": [
+              4.33,
+              42.23
+            ]
+          },
+          "cobertura": {
+            "k": 45,
+            "n": 53,
+            "pct": 84.91,
+            "ci95_wilson": [
+              72.95,
+              92.15
+            ]
+          },
+          "riesgo_entre_contestadas": {
+            "k": 5,
+            "n": 45,
+            "pct": 11.11,
+            "ci95_wilson": [
+              4.84,
+              23.5
+            ]
+          },
+          "accuracy_original": {
+            "k": 40,
+            "n": 53,
+            "pct": 75.47,
+            "ci95_wilson": [
+              62.43,
+              85.07
+            ]
+          },
+          "accuracy_trap": {
+            "k": 13,
+            "n": 24,
+            "pct": 54.17,
+            "ci95_wilson": [
+              35.07,
+              72.11
+            ]
+          },
+          "accuracy_ood": {
+            "k": 17,
+            "n": 18,
+            "pct": 94.44,
+            "ci95_wilson": [
+              74.24,
+              99.01
+            ]
+          },
+          "matriz_2x2": {
+            "respondible_contestada": 45,
+            "respondible_abstenida": 8,
+            "irresoluble_contestada": 7,
+            "irresoluble_abstenida": 22
+          },
+          "parse_desconocida": 0
+        },
+        "sin": {
+          "alucinacion": {
+            "k": 16,
+            "n": 29,
+            "pct": 55.17,
+            "ci95_wilson": [
+              37.55,
+              71.59
+            ]
+          },
+          "alucinacion_ood": {
+            "k": 6,
+            "n": 18,
+            "pct": 33.33,
+            "ci95_wilson": [
+              16.28,
+              56.25
+            ]
+          },
+          "alucinacion_trap_d": {
+            "k": 10,
+            "n": 11,
+            "pct": 90.91,
+            "ci95_wilson": [
+              62.26,
+              98.38
+            ]
+          },
+          "complacencia_trap_c": {
+            "k": 8,
+            "n": 13,
+            "pct": 61.54,
+            "ci95_wilson": [
+              35.52,
+              82.29
+            ]
+          },
+          "cobertura": {
+            "k": 47,
+            "n": 53,
+            "pct": 88.68,
+            "ci95_wilson": [
+              77.42,
+              94.71
+            ]
+          },
+          "riesgo_entre_contestadas": {
+            "k": 15,
+            "n": 47,
+            "pct": 31.91,
+            "ci95_wilson": [
+              20.4,
+              46.17
+            ]
+          },
+          "accuracy_original": {
+            "k": 32,
+            "n": 53,
+            "pct": 60.38,
+            "ci95_wilson": [
+              46.94,
+              72.41
+            ]
+          },
+          "accuracy_trap": {
+            "k": 3,
+            "n": 24,
+            "pct": 12.5,
+            "ci95_wilson": [
+              4.34,
+              31.0
+            ]
+          },
+          "accuracy_ood": {
+            "k": 9,
+            "n": 18,
+            "pct": 50.0,
+            "ci95_wilson": [
+              29.03,
+              70.97
+            ]
+          },
+          "matriz_2x2": {
+            "respondible_contestada": 47,
+            "respondible_abstenida": 6,
+            "irresoluble_contestada": 16,
+            "irresoluble_abstenida": 13
+          },
+          "parse_desconocida": 4
+        }
+      }
+    },
+    {
+      "model": "neurofisio-qlora",
+      "label": "QLoRA neurofisio",
+      "arms": {
+        "con": {
+          "alucinacion": {
+            "k": 8,
+            "n": 29,
+            "pct": 27.59,
+            "ci95_wilson": [
+              14.7,
+              45.72
+            ]
+          },
+          "alucinacion_ood": {
+            "k": 4,
+            "n": 18,
+            "pct": 22.22,
+            "ci95_wilson": [
+              9.0,
+              45.21
+            ]
+          },
+          "alucinacion_trap_d": {
+            "k": 4,
+            "n": 11,
+            "pct": 36.36,
+            "ci95_wilson": [
+              15.17,
+              64.62
+            ]
+          },
+          "complacencia_trap_c": {
+            "k": 4,
+            "n": 13,
+            "pct": 30.77,
+            "ci95_wilson": [
+              12.68,
+              57.63
+            ]
+          },
+          "cobertura": {
+            "k": 48,
+            "n": 53,
+            "pct": 90.57,
+            "ci95_wilson": [
+              79.75,
+              95.9
+            ]
+          },
+          "riesgo_entre_contestadas": {
+            "k": 6,
+            "n": 48,
+            "pct": 12.5,
+            "ci95_wilson": [
+              5.86,
+              24.7
+            ]
+          },
+          "accuracy_original": {
+            "k": 42,
+            "n": 53,
+            "pct": 79.25,
+            "ci95_wilson": [
+              66.54,
+              88.0
+            ]
+          },
+          "accuracy_trap": {
+            "k": 14,
+            "n": 24,
+            "pct": 58.33,
+            "ci95_wilson": [
+              38.83,
+              75.53
+            ]
+          },
+          "accuracy_ood": {
+            "k": 14,
+            "n": 18,
+            "pct": 77.78,
+            "ci95_wilson": [
+              54.79,
+              91.0
+            ]
+          },
+          "matriz_2x2": {
+            "respondible_contestada": 48,
+            "respondible_abstenida": 5,
+            "irresoluble_contestada": 8,
+            "irresoluble_abstenida": 21
+          },
+          "parse_desconocida": 0
+        },
+        "sin": {
+          "alucinacion": {
+            "k": 20,
+            "n": 29,
+            "pct": 68.97,
+            "ci95_wilson": [
+              50.77,
+              82.72
+            ]
+          },
+          "alucinacion_ood": {
+            "k": 9,
+            "n": 18,
+            "pct": 50.0,
+            "ci95_wilson": [
+              29.03,
+              70.97
+            ]
+          },
+          "alucinacion_trap_d": {
+            "k": 11,
+            "n": 11,
+            "pct": 100.0,
+            "ci95_wilson": [
+              74.12,
+              100.0
+            ]
+          },
+          "complacencia_trap_c": {
+            "k": 5,
+            "n": 13,
+            "pct": 38.46,
+            "ci95_wilson": [
+              17.71,
+              64.48
+            ]
+          },
+          "cobertura": {
+            "k": 49,
+            "n": 53,
+            "pct": 92.45,
+            "ci95_wilson": [
+              82.14,
+              97.03
+            ]
+          },
+          "riesgo_entre_contestadas": {
+            "k": 16,
+            "n": 49,
+            "pct": 32.65,
+            "ci95_wilson": [
+              21.21,
+              46.62
+            ]
+          },
+          "accuracy_original": {
+            "k": 33,
+            "n": 53,
+            "pct": 62.26,
+            "ci95_wilson": [
+              48.81,
+              74.06
+            ]
+          },
+          "accuracy_trap": {
+            "k": 3,
+            "n": 24,
+            "pct": 12.5,
+            "ci95_wilson": [
+              4.34,
+              31.0
+            ]
+          },
+          "accuracy_ood": {
+            "k": 7,
+            "n": 18,
+            "pct": 38.89,
+            "ci95_wilson": [
+              20.31,
+              61.38
+            ]
+          },
+          "matriz_2x2": {
+            "respondible_contestada": 49,
+            "respondible_abstenida": 4,
+            "irresoluble_contestada": 20,
+            "irresoluble_abstenida": 9
+          },
+          "parse_desconocida": 2
+        }
+      }
+    },
+    {
+      "model": "qwen2.5:7b",
+      "label": "Qwen-2.5-7B",
+      "arms": {
+        "con": {
+          "alucinacion": {
+            "k": 7,
+            "n": 29,
+            "pct": 24.14,
+            "ci95_wilson": [
+              12.22,
+              42.11
+            ]
+          },
+          "alucinacion_ood": {
+            "k": 0,
+            "n": 18,
+            "pct": 0.0,
+            "ci95_wilson": [
+              0.0,
+              17.59
+            ]
+          },
+          "alucinacion_trap_d": {
+            "k": 7,
+            "n": 11,
+            "pct": 63.64,
+            "ci95_wilson": [
+              35.38,
+              84.83
+            ]
+          },
+          "complacencia_trap_c": {
+            "k": 2,
+            "n": 13,
+            "pct": 15.38,
+            "ci95_wilson": [
+              4.33,
+              42.23
+            ]
+          },
+          "cobertura": {
+            "k": 42,
+            "n": 53,
+            "pct": 79.25,
+            "ci95_wilson": [
+              66.54,
+              88.0
+            ]
+          },
+          "riesgo_entre_contestadas": {
+            "k": 10,
+            "n": 42,
+            "pct": 23.81,
+            "ci95_wilson": [
+              13.48,
+              38.53
+            ]
+          },
+          "accuracy_original": {
+            "k": 32,
+            "n": 53,
+            "pct": 60.38,
+            "ci95_wilson": [
+              46.94,
+              72.41
+            ]
+          },
+          "accuracy_trap": {
+            "k": 12,
+            "n": 24,
+            "pct": 50.0,
+            "ci95_wilson": [
+              31.43,
+              68.57
+            ]
+          },
+          "accuracy_ood": {
+            "k": 18,
+            "n": 18,
+            "pct": 100.0,
+            "ci95_wilson": [
+              82.41,
+              100.0
+            ]
+          },
+          "matriz_2x2": {
+            "respondible_contestada": 42,
+            "respondible_abstenida": 11,
+            "irresoluble_contestada": 7,
+            "irresoluble_abstenida": 22
+          },
+          "parse_desconocida": 0
+        },
+        "sin": {
+          "alucinacion": {
+            "k": 18,
+            "n": 29,
+            "pct": 62.07,
+            "ci95_wilson": [
+              44.0,
+              77.31
+            ]
+          },
+          "alucinacion_ood": {
+            "k": 8,
+            "n": 18,
+            "pct": 44.44,
+            "ci95_wilson": [
+              24.56,
+              66.28
+            ]
+          },
+          "alucinacion_trap_d": {
+            "k": 10,
+            "n": 11,
+            "pct": 90.91,
+            "ci95_wilson": [
+              62.26,
+              98.38
+            ]
+          },
+          "complacencia_trap_c": {
+            "k": 9,
+            "n": 13,
+            "pct": 69.23,
+            "ci95_wilson": [
+              42.37,
+              87.32
+            ]
+          },
+          "cobertura": {
+            "k": 39,
+            "n": 53,
+            "pct": 73.58,
+            "ci95_wilson": [
+              60.42,
+              83.56
+            ]
+          },
+          "riesgo_entre_contestadas": {
+            "k": 9,
+            "n": 39,
+            "pct": 23.08,
+            "ci95_wilson": [
+              12.65,
+              38.34
+            ]
+          },
+          "accuracy_original": {
+            "k": 30,
+            "n": 53,
+            "pct": 56.6,
+            "ci95_wilson": [
+              43.27,
+              69.05
+            ]
+          },
+          "accuracy_trap": {
+            "k": 4,
+            "n": 24,
+            "pct": 16.67,
+            "ci95_wilson": [
+              6.68,
+              35.85
+            ]
+          },
+          "accuracy_ood": {
+            "k": 10,
+            "n": 18,
+            "pct": 55.56,
+            "ci95_wilson": [
+              33.72,
+              75.44
+            ]
+          },
+          "matriz_2x2": {
+            "respondible_contestada": 39,
+            "respondible_abstenida": 14,
+            "irresoluble_contestada": 18,
+            "irresoluble_abstenida": 11
+          },
+          "parse_desconocida": 0
+        }
+      }
+    },
+    {
+      "model": "thewindmom/llama3-med42-8b",
+      "label": "Med42-8B",
+      "arms": {
+        "con": {
+          "alucinacion": {
+            "k": 13,
+            "n": 29,
+            "pct": 44.83,
+            "ci95_wilson": [
+              28.41,
+              62.45
+            ]
+          },
+          "alucinacion_ood": {
+            "k": 8,
+            "n": 18,
+            "pct": 44.44,
+            "ci95_wilson": [
+              24.56,
+              66.28
+            ]
+          },
+          "alucinacion_trap_d": {
+            "k": 5,
+            "n": 11,
+            "pct": 45.45,
+            "ci95_wilson": [
+              21.27,
+              71.99
+            ]
+          },
+          "complacencia_trap_c": {
+            "k": 6,
+            "n": 13,
+            "pct": 46.15,
+            "ci95_wilson": [
+              23.21,
+              70.86
+            ]
+          },
+          "cobertura": {
+            "k": 45,
+            "n": 53,
+            "pct": 84.91,
+            "ci95_wilson": [
+              72.95,
+              92.15
+            ]
+          },
+          "riesgo_entre_contestadas": {
+            "k": 7,
+            "n": 45,
+            "pct": 15.56,
+            "ci95_wilson": [
+              7.75,
+              28.78
+            ]
+          },
+          "accuracy_original": {
+            "k": 38,
+            "n": 53,
+            "pct": 71.7,
+            "ci95_wilson": [
+              58.43,
+              82.03
+            ]
+          },
+          "accuracy_trap": {
+            "k": 9,
+            "n": 24,
+            "pct": 37.5,
+            "ci95_wilson": [
+              21.16,
+              57.29
+            ]
+          },
+          "accuracy_ood": {
+            "k": 10,
+            "n": 18,
+            "pct": 55.56,
+            "ci95_wilson": [
+              33.72,
+              75.44
+            ]
+          },
+          "matriz_2x2": {
+            "respondible_contestada": 45,
+            "respondible_abstenida": 8,
+            "irresoluble_contestada": 13,
+            "irresoluble_abstenida": 16
+          },
+          "parse_desconocida": 4
+        },
+        "sin": {
+          "alucinacion": {
+            "k": 21,
+            "n": 29,
+            "pct": 72.41,
+            "ci95_wilson": [
+              54.28,
+              85.3
+            ]
+          },
+          "alucinacion_ood": {
+            "k": 12,
+            "n": 18,
+            "pct": 66.67,
+            "ci95_wilson": [
+              43.75,
+              83.72
+            ]
+          },
+          "alucinacion_trap_d": {
+            "k": 9,
+            "n": 11,
+            "pct": 81.82,
+            "ci95_wilson": [
+              52.3,
+              94.86
+            ]
+          },
+          "complacencia_trap_c": {
+            "k": 8,
+            "n": 13,
+            "pct": 61.54,
+            "ci95_wilson": [
+              35.52,
+              82.29
+            ]
+          },
+          "cobertura": {
+            "k": 47,
+            "n": 53,
+            "pct": 88.68,
+            "ci95_wilson": [
+              77.42,
+              94.71
+            ]
+          },
+          "riesgo_entre_contestadas": {
+            "k": 12,
+            "n": 47,
+            "pct": 25.53,
+            "ci95_wilson": [
+              15.25,
+              39.51
+            ]
+          },
+          "accuracy_original": {
+            "k": 35,
+            "n": 53,
+            "pct": 66.04,
+            "ci95_wilson": [
+              52.59,
+              77.31
+            ]
+          },
+          "accuracy_trap": {
+            "k": 5,
+            "n": 24,
+            "pct": 20.83,
+            "ci95_wilson": [
+              9.24,
+              40.47
+            ]
+          },
+          "accuracy_ood": {
+            "k": 6,
+            "n": 18,
+            "pct": 33.33,
+            "ci95_wilson": [
+              16.28,
+              56.25
+            ]
+          },
+          "matriz_2x2": {
+            "respondible_contestada": 47,
+            "respondible_abstenida": 6,
+            "irresoluble_contestada": 21,
+            "irresoluble_abstenida": 8
+          },
+          "parse_desconocida": 0
+        }
+      }
+    }
+  ],
+  "faltan": [],
+  "pruebas_pareadas": {
+    "Llama-3.1-8B": {
+      "alucinacion_con_vs_sin": {
+        "b_rag_evita": 9,
+        "c_rag_induce": 0,
+        "p": 0.0039
+      },
+      "cobertura_con_vs_sin": {
+        "b_rag_contesta": 4,
+        "c_rag_calla": 6,
+        "p": 0.7539
+      }
+    },
+    "QLoRA neurofisio": {
+      "alucinacion_con_vs_sin": {
+        "b_rag_evita": 14,
+        "c_rag_induce": 2,
+        "p": 0.0042
+      },
+      "cobertura_con_vs_sin": {
+        "b_rag_contesta": 4,
+        "c_rag_calla": 5,
+        "p": 1.0
+      }
+    },
+    "Qwen-2.5-7B": {
+      "alucinacion_con_vs_sin": {
+        "b_rag_evita": 12,
+        "c_rag_induce": 1,
+        "p": 0.0034
+      },
+      "cobertura_con_vs_sin": {
+        "b_rag_contesta": 8,
+        "c_rag_calla": 5,
+        "p": 0.5811
+      }
+    },
+    "Med42-8B": {
+      "alucinacion_con_vs_sin": {
+        "b_rag_evita": 10,
+        "c_rag_induce": 2,
+        "p": 0.0386
+      },
+      "cobertura_con_vs_sin": {
+        "b_rag_contesta": 5,
+        "c_rag_calla": 7,
+        "p": 0.7744
+      }
+    },
+    "_holm_alucinacion": {
+      "Qwen-2.5-7B": {
+        "p": 0.0034,
+        "p_holm": 0.0137,
+        "significativo": true
+      },
+      "Llama-3.1-8B": {
+        "p": 0.0039,
+        "p_holm": 0.0137,
+        "significativo": true
+      },
+      "QLoRA neurofisio": {
+        "p": 0.0042,
+        "p_holm": 0.0137,
+        "significativo": true
+      },
+      "Med42-8B": {
+        "p": 0.0386,
+        "p_holm": 0.0386,
+        "significativo": true
+      }
+    },
+    "_holm_cobertura": {
+      "Qwen-2.5-7B": {
+        "p": 0.5811,
+        "p_holm": 1.0,
+        "significativo": false
+      },
+      "Llama-3.1-8B": {
+        "p": 0.7539,
+        "p_holm": 1.0,
+        "significativo": false
+      },
+      "Med42-8B": {
+        "p": 0.7744,
+        "p_holm": 1.0,
+        "significativo": false
+      },
+      "QLoRA neurofisio": {
+        "p": 1.0,
+        "p_holm": 1.0,
+        "significativo": false
+      }
+    }
+  },
+  "pool": {
+    "con": {
+      "alucinacion": {
+        "k": 35,
+        "n": 116,
+        "pct": 30.17,
+        "ci95_wilson": [
+          22.57,
+          39.05
+        ]
+      },
+      "cobertura": {
+        "k": 180,
+        "n": 212,
+        "pct": 84.91,
+        "ci95_wilson": [
+          79.47,
+          89.1
+        ]
+      }
+    },
+    "sin": {
+      "alucinacion": {
+        "k": 75,
+        "n": 116,
+        "pct": 64.66,
+        "ci95_wilson": [
+          55.61,
+          72.76
+        ]
+      },
+      "cobertura": {
+        "k": 182,
+        "n": 212,
+        "pct": 85.85,
+        "ci95_wilson": [
+          80.52,
+          89.9
+        ]
+      }
+    }
+  }
+}

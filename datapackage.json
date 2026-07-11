@@ -1,0 +1,290 @@
+{
+  "profile": "data-package",
+  "name": "clinical-rag-neurophysio-data",
+  "title": "Clinical RAG in neurophysiotherapy (Spanish): research data",
+  "description": "Research data accompanying the article 'Las Bondades del RAG' (The Benefits of RAG), under review at the Journal of Artificial Intelligence Research. Contains the three question banks, the raw inference records of the two definitive experiments (Study P1, ablation with/without RAG, 424 inferences; Study P2, hallucination with abstention permitted, 760 inferences), the pre-computed aggregates behind every figure of the article, the review material of the error taxonomy and the detectability panel, and the partially preserved raw data of the deprecated preliminary campaign. IMPORTANT: there is no independent human annotator in this dataset. The blind detectability panel is composed of three language models (two weak local, one frontier); the files under annotation/ hold the frontier judge's own labels, which the author reviewed and endorsed without modification (taxonomy: 131/131 categories unchanged; detectability: all 240 values identical). No human-machine agreement is published, because none can be computed. The teaching corpus and the system source code are NOT published; in Study P2 the retrieved passages are given as SHA-256 digests. Accuracies of protocols P1 and P2 are not comparable with each other. Every field is documented in the DATA_DICTIONARY.md of its folder.",
+  "version": "1.0.0",
+  "created": "2026-07-11",
+  "homepage": "https://github.com/UM-Ruben/clinical-rag-neurophysio-data",
+  "keywords": [
+    "RAG",
+    "retrieval-augmented generation",
+    "hallucination",
+    "clinical NLP",
+    "Spanish",
+    "neurorehabilitation",
+    "LLM evaluation"
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0 International"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Rubén Fernández García",
+      "email": "ruben.fernandezg@um.es",
+      "organization": "Universidad de Murcia",
+      "role": "author"
+    },
+    {
+      "title": "José Manuel García Carrasco",
+      "email": "jmgarcia@um.es",
+      "organization": "Universidad de Murcia",
+      "role": "author"
+    }
+  ],
+  "resources": [
+    {
+      "name": "dataset_gold_standard",
+      "path": "datasets/dataset_gold_standard.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Gold Standard question bank (53 answerable items, options a/b/c)"
+    },
+    {
+      "name": "dataset_trap_validado",
+      "path": "datasets/dataset_trap_validado.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "TRAP question bank (24 items with a false premise in the stem, options a/b/c/d)"
+    },
+    {
+      "name": "dataset_ood_validado",
+      "path": "datasets/dataset_ood_validado.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "OOD question bank (18 items unanswerable from the corpus; gold answer is always d)"
+    },
+    {
+      "name": "results_ablation_p1",
+      "path": [
+        "results_ablation_p1/report_llama8b_GPU_Local_Win11_9doc_sysrole_con_RERUN.json",
+        "results_ablation_p1/report_llama8b_GPU_Local_Win11_9doc_sysrole_sin_RERUN.json",
+        "results_ablation_p1/report_med42_GPU_Local_Win11_9doc_sysrole_con_RERUN.json",
+        "results_ablation_p1/report_med42_GPU_Local_Win11_9doc_sysrole_sin_RERUN.json",
+        "results_ablation_p1/report_qlora_GPU_Local_Win11_9doc_sysrole_con_RERUN.json",
+        "results_ablation_p1/report_qlora_GPU_Local_Win11_9doc_sysrole_sin_RERUN.json",
+        "results_ablation_p1/report_qwen7b_GPU_Local_Win11_9doc_sysrole_con_RERUN.json",
+        "results_ablation_p1/report_qwen7b_GPU_Local_Win11_9doc_sysrole_sin_RERUN.json"
+      ],
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Study P1 (ablation): 8 raw reports, 4 models x 2 arms x 53 questions = 424 inferences",
+      "description": "Multipart resource: the 8 report files of Study P1. Each file holds a header block, a summary block and 53 per-question records. The headers of these 8 files do not carry the embedding_model field; the embedding model (BAAI/bge-m3) is documented in README.md and in the article. Fields are documented in results_ablation_p1/DATA_DICTIONARY.md.",
+      "profile": "data-resource"
+    },
+    {
+      "name": "results_hallucination_p2_sanitized",
+      "path": [
+        "results_hallucination_p2_sanitized/report_llama8b_P2abstain_ood_con_20260709_153454_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_llama8b_P2abstain_ood_sin_20260709_153809_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_llama8b_P2abstain_original_con_20260709_145729_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_llama8b_P2abstain_original_sin_20260709_151124_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_llama8b_P2abstain_trap_con_20260709_152341_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_llama8b_P2abstain_trap_sin_20260709_152945_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_med42_P2abstain_ood_con_20260709_182443_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_med42_P2abstain_ood_sin_20260709_183056_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_med42_P2abstain_original_con_20260709_170944_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_med42_P2abstain_original_sin_20260709_173533_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_med42_P2abstain_trap_con_20260709_180141_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_med42_P2abstain_trap_sin_20260709_181320_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_qlora_P2abstain_ood_con_20260709_162225_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_qlora_P2abstain_ood_sin_20260709_162611_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_qlora_P2abstain_original_con_20260709_154053_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_qlora_P2abstain_original_sin_20260709_155545_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_qlora_P2abstain_trap_con_20260709_160956_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_qlora_P2abstain_trap_sin_20260709_161632_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_qwen7b_P2abstain_ood_con_20260709_170347_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_qwen7b_P2abstain_ood_sin_20260709_170656_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_qwen7b_P2abstain_original_con_20260709_162928_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_qwen7b_P2abstain_original_sin_20260709_164233_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_qwen7b_P2abstain_trap_con_20260709_165320_SANITIZED.json",
+        "results_hallucination_p2_sanitized/report_qwen7b_P2abstain_trap_sin_20260709_165908_SANITIZED.json"
+      ],
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Study P2 (hallucination, abstention permitted): 24 raw reports = 760 inferences; retrieved passages replaced by SHA-256 digests",
+      "description": "Multipart resource: the 24 report files of Study P2 (4 models x 2 arms x 3 banks). The retrieved context (fragmentos) is published as SHA-256 digests, not verbatim text. Fields are documented in results_hallucination_p2_sanitized/DATA_DICTIONARY.md.",
+      "profile": "data-resource"
+    },
+    {
+      "name": "rag_benefit_summary",
+      "path": "aggregates/rag_benefit_summary.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Study P1 per-model accuracy, delta, paired 95% CI and McNemar test"
+    },
+    {
+      "name": "hallucination_summary",
+      "path": "aggregates/hallucination_summary.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Study P2 per-model and pooled hallucination, coverage and accuracy rates"
+    },
+    {
+      "name": "hallucination_summary_resuelto",
+      "path": "aggregates/hallucination_summary_resuelto.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Study P2 sensitivity analysis with the unparseable answers manually resolved"
+    },
+    {
+      "name": "taxonomia_resumen",
+      "path": "aggregates/taxonomia_resumen.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Error taxonomy: category composition per arm and per model, inter-rater agreement"
+    },
+    {
+      "name": "taxonomia_errores",
+      "path": "aggregates/taxonomia_errores.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Error taxonomy: the 131 adjudicated erroneous responses of Study P1, one record each"
+    },
+    {
+      "name": "taxonomia_frontera",
+      "path": "aggregates/taxonomia_frontera.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Error taxonomy: the frontier judge's verified category label for the same 131 errors",
+      "description": "The frontier judge's label after adversarial verification (not a raw first pass). It equals categoria_final in taxonomia_errores.json on all 131 records, because the author's review endorsed it without modification."
+    },
+    {
+      "name": "detectability_resumen",
+      "path": "aggregates/detectability_resumen.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Detectability panel: AUROC, sensitivity and confounder regression for the three LLM judges"
+    },
+    {
+      "name": "detectability_frontera_resumen",
+      "path": "aggregates/detectability_frontera_resumen.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Detectability panel: the same summary restricted to the frontier judge"
+    },
+    {
+      "name": "detectability_qwen",
+      "path": "aggregates/detectability_qwen.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Detectability panel: 424 per-answer judgements by the qwen2.5:7b judge"
+    },
+    {
+      "name": "detectability_llama",
+      "path": "aggregates/detectability_llama.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Detectability panel: 190 per-answer judgements by the llama3.1:8b judge"
+    },
+    {
+      "name": "detectability_frontera",
+      "path": "aggregates/detectability_frontera.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Detectability panel: 80 per-answer judgements by the frontier judge (40 with RAG / 40 without)"
+    },
+    {
+      "name": "chunk_provenance",
+      "path": "aggregates/chunk_provenance.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Retrieval provenance: source document and page of each of the 368 chunks retrieved for the 53 gold-standard questions"
+    },
+    {
+      "name": "distractor_efecto",
+      "path": "aggregates/distractor_efecto.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Effect of the presence of a distractor chunk on the error rate of the with-RAG arm"
+    },
+    {
+      "name": "detectabilidad_humano",
+      "path": "annotation/detectabilidad_humano.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "Detectability panel: the frontier judge's 80 blind ratings, reviewed and endorsed by the author",
+      "description": "NOT an independent human panel. Despite the file name, its 240 values (80 cases x 3 fields) are identical to the frontier LLM judge's ratings in aggregates/detectability_frontera.json. The author reviewed that output and endorsed it without changing a value. Do not use this file as a second annotator and do not compute inter-annotator agreement from it: no human-machine agreement exists or can be derived. See annotation/DATA_DICTIONARY.md and point 6 of README.md.",
+      "dialect": {
+        "delimiter": ";",
+        "header": true
+      },
+      "encoding": "utf-8"
+    },
+    {
+      "name": "detectabilidad_humano_clave",
+      "path": "annotation/detectabilidad_humano_CLAVE.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Detectability panel: the ground-truth key that de-blinds the 80 rated cases",
+      "description": "A de-blinding key, not a set of ratings: it maps each blind case number back to the record it was drawn from and to the gold answer. It contains no rater's opinion."
+    },
+    {
+      "name": "taxonomia_para_anotar",
+      "path": "annotation/taxonomia_para_anotar.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "Error taxonomy: the annotation template carrying the 131 endorsed category labels",
+      "description": "NOT an independent re-annotation. Its 131 categories match the frontier judge's labels in aggregates/taxonomia_frontera.json on 131 of 131 cases: the author reviewed them and changed none. No judge-human kappa exists or can be computed; the only inter-rater agreement published is between the two automatic judges (aggregates/taxonomia_resumen.json, field 'acuerdo').",
+      "dialect": {
+        "delimiter": ";",
+        "header": true
+      },
+      "encoding": "utf-8"
+    },
+    {
+      "name": "datos_detallados_preguntas",
+      "path": "exploratory/datos_detallados_preguntas.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "DEPRECATED preliminary campaign: 306 of the 493 per-question evaluation records (partial coverage; the rest was lost in the Fedora-to-Windows migration)",
+      "dialect": {
+        "delimiter": ",",
+        "header": true
+      },
+      "encoding": "utf-8"
+    },
+    {
+      "name": "modelos_ranking",
+      "path": "exploratory/modelos_ranking.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "DEPRECATED preliminary campaign: accuracy ranking of the 7 models, computed over the complete 493 evaluations",
+      "dialect": {
+        "delimiter": ",",
+        "header": true
+      },
+      "encoding": "utf-8"
+    },
+    {
+      "name": "embeddings_ranking",
+      "path": "exploratory/embeddings_ranking.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "DEPRECATED preliminary campaign: accuracy ranking of the 4 embedding models, computed over the complete 493 evaluations",
+      "dialect": {
+        "delimiter": ",",
+        "header": true
+      },
+      "encoding": "utf-8"
+    },
+    {
+      "name": "resumen_ejecutivo",
+      "path": "exploratory/resumen_ejecutivo.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "DEPRECATED preliminary campaign: executive summary over the complete 493 evaluations"
+    },
+    {
+      "name": "derived_metrics",
+      "path": "derived_metrics.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Figures reported in the article with no pre-computed source file, recomputed from the raw records with their exact formula and source files"
+    }
+  ]
+}

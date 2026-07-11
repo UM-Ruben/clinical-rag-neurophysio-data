@@ -1,0 +1,378 @@
+[
+ {
+  "tipo": "ood",
+  "tematica": "posologia_farmacologia",
+  "pregunta": "En un adulto con pie equino espástico tras un ictus, ¿cuántas unidades de onabotulinumtoxinA recomienda infiltrar la documentación en el vientre del gastrocnemio medial por sesión?",
+  "opciones": {
+   "a": "50 unidades por músculo",
+   "b": "75 unidades por músculo",
+   "c": "100 unidades por músculo",
+   "d": "No puede responderse con la documentacion disponible"
+  },
+  "respuesta_correcta": "d",
+  "terminos_clave_ausentes": [
+   "onabotulinumtoxinA",
+   "gastrocnemio medial",
+   "unidades por músculo"
+  ],
+  "justificacion": "Los documentos 07-09 mencionan la toxina botulínica tipo A únicamente como opción terapéutica de la espasticidad ('la principal opción'), pero no aportan ninguna dosis en unidades por músculo ni pautas de infiltración. El término 'gastrocnemio' y la denominación 'onabotulinumtoxinA' no aparecen en ninguno de los 9 ficheros; el corpus solo emplea 'unidades' en el sentido de 'unidades motoras' o 'unidades de ictus'. Por tanto la cifra exacta de unidades por músculo no es recuperable.",
+  "dificultad": "media",
+  "id": 2001,
+  "banco": "ood"
+ },
+ {
+  "tipo": "ood",
+  "tematica": "posologia_farmacologia",
+  "pregunta": "¿Qué relación de conversión de dosis entre abobotulinumtoxinA (Dysport) y onabotulinumtoxinA (Botox) establece la documentación para tratar la espasticidad de la extremidad superior post-ictus?",
+  "opciones": {
+   "a": "2,5:1 (Dysport:Botox)",
+   "b": "3:1 (Dysport:Botox)",
+   "c": "4:1 (Dysport:Botox)",
+   "d": "No puede responderse con la documentacion disponible"
+  },
+  "respuesta_correcta": "d",
+  "terminos_clave_ausentes": [
+   "abobotulinumtoxinA",
+   "Dysport",
+   "Botox",
+   "relación de conversión"
+  ],
+  "justificacion": "El corpus no contiene ningún nombre comercial ni denominación de preparado de toxina botulínica ('Dysport', 'Botox', 'abobotulinumtoxinA' están ausentes en los 9 .txt), ni menciona ratios de conversión de potencia entre formulaciones. La respuesta que un LLM daría (típicamente 2,5:1 o 3:1) procede de su conocimiento paramétrico, no de la documentación.",
+  "dificultad": "alta",
+  "id": 2002,
+  "banco": "ood"
+ },
+ {
+  "tipo": "ood",
+  "tematica": "posologia_farmacologia",
+  "pregunta": "Según la documentación, ¿cuál es la dosis total máxima de onabotulinumtoxinA por sesión de infiltración en el tratamiento de la espasticidad multifocal del adulto?",
+  "opciones": {
+   "a": "360 unidades",
+   "b": "400 unidades",
+   "c": "600 unidades",
+   "d": "No puede responderse con la documentacion disponible"
+  },
+  "respuesta_correcta": "d",
+  "terminos_clave_ausentes": [
+   "onabotulinumtoxinA",
+   "dosis total máxima por sesión",
+   "600 unidades"
+  ],
+  "justificacion": "Aunque las guías de ictus reconocen la toxina botulínica como tratamiento de la espasticidad, en ninguno de los 9 documentos se especifica un tope de dosis acumulada por sesión ni cifras totales de unidades. El concepto de 'dosis total máxima por sesión' de onabotulinumtoxinA no está presente en el corpus.",
+  "dificultad": "media",
+  "id": 2003,
+  "banco": "ood"
+ },
+ {
+  "tipo": "ood",
+  "tematica": "posologia_farmacologia",
+  "pregunta": "De acuerdo con la documentación, ¿con qué volumen de diluyente debe realizarse la reconstitución de un vial de 100 unidades de toxina botulínica tipo A antes de infiltrar la musculatura espástica?",
+  "opciones": {
+   "a": "1 mL",
+   "b": "2 mL",
+   "c": "4 mL",
+   "d": "No puede responderse con la documentacion disponible"
+  },
+  "respuesta_correcta": "d",
+  "terminos_clave_ausentes": [
+   "reconstitución",
+   "diluyente",
+   "volumen de reconstitución"
+  ],
+  "justificacion": "Los términos 'reconstitución', 'diluyente' y cualquier instrucción sobre el volumen de disolución de la toxina botulínica no aparecen en ninguno de los 9 ficheros. El corpus describe la toxina como opción terapéutica pero no ofrece detalles de preparación farmacéutica, por lo que el volumen de reconstitución no es recuperable.",
+  "dificultad": "alta",
+  "id": 2004,
+  "banco": "ood"
+ },
+ {
+  "tipo": "ood",
+  "tematica": "posologia_farmacologia",
+  "pregunta": "Para el tratamiento farmacológico de la espasticidad, ¿cuántos miligramos de THC y de CBD aporta cada pulverización oromucosa de nabiximols (Sativex) según la documentación?",
+  "opciones": {
+   "a": "2,7 mg de THC y 2,5 mg de CBD por pulverización",
+   "b": "5 mg de THC y 5 mg de CBD por pulverización",
+   "c": "10 mg de THC y 10 mg de CBD por pulverización",
+   "d": "No puede responderse con la documentacion disponible"
+  },
+  "respuesta_correcta": "d",
+  "terminos_clave_ausentes": [
+   "nabiximols",
+   "Sativex",
+   "THC",
+   "CBD"
+  ],
+  "justificacion": "El corpus no menciona en absoluto los cannabinoides ni el spray oromucoso: 'nabiximols', 'Sativex', 'THC' y 'CBD' están ausentes en los 9 .txt. Este fármaco (indicado sobre todo en espasticidad por esclerosis múltiple) no forma parte de las guías de ictus ni de los textos de fisioterapia, de modo que la posología por pulverización no puede obtenerse de la documentación.",
+  "dificultad": "alta",
+  "id": 2005,
+  "banco": "ood"
+ },
+ {
+  "tipo": "ood",
+  "tematica": "posologia_farmacologia",
+  "pregunta": "Antes de implantar una bomba de baclofeno intratecal en un paciente con espasticidad grave post-ictus, ¿qué dosis de baclofeno en microgramos indica la documentación para el bolo de prueba de cribado?",
+  "opciones": {
+   "a": "25 microgramos",
+   "b": "50 microgramos",
+   "c": "100 microgramos",
+   "d": "No puede responderse con la documentacion disponible"
+  },
+  "respuesta_correcta": "d",
+  "terminos_clave_ausentes": [
+   "bolo de prueba",
+   "50 microgramos",
+   "microgramos"
+  ],
+  "justificacion": "El documento 07 cita 'baclofeno intratecal' como una de las otras terapias con cierta eficacia, pero no aporta ninguna dosis: ni el bolo de prueba de cribado, ni la dosis de mantenimiento de la bomba. Los términos 'bolo de prueba' y 'microgramos' no aparecen en ninguno de los 9 ficheros. La cifra exacta del bolo de cribado no es recuperable del corpus.",
+  "dificultad": "alta",
+  "id": 2006,
+  "banco": "ood"
+ },
+ {
+  "tipo": "ood",
+  "tematica": "epidemiologia_cifras_ensayos",
+  "pregunta": "¿Cuál es la prevalencia estimada de esclerosis múltiple en España, expresada en casos por cada 100.000 habitantes, según la documentación?",
+  "opciones": {
+   "a": "Alrededor de 40 casos por 100.000 habitantes",
+   "b": "Alrededor de 80 casos por 100.000 habitantes",
+   "c": "Alrededor de 120 casos por 100.000 habitantes",
+   "d": "No puede responderse con la documentacion disponible"
+  },
+  "respuesta_correcta": "d",
+  "terminos_clave_ausentes": [
+   "prevalencia de esclerosis múltiple",
+   "esclerosis múltiple en España",
+   "120 casos por 100.000 habitantes"
+  ],
+  "justificacion": "El corpus solo menciona la esclerosis múltiple de forma cualitativa, como ejemplo de patología con hipertonía (doc 01) o como candidata a ciertas técnicas (tapiz con suspensión, FES, realidad virtual en doc 05). No aporta ninguna cifra de prevalencia ni incidencia de esta enfermedad; las únicas tasas epidemiológicas por 100.000 habitantes que figuran en el corpus corresponden al ictus (docs 07, 08 y 09).",
+  "dificultad": "media",
+  "id": 2007,
+  "banco": "ood"
+ },
+ {
+  "tipo": "ood",
+  "tematica": "epidemiologia_cifras_ensayos",
+  "pregunta": "Según la documentación, ¿cuántas personas están diagnosticadas de enfermedad de Parkinson en España?",
+  "opciones": {
+   "a": "Aproximadamente 120.000 personas",
+   "b": "Aproximadamente 160.000 personas",
+   "c": "Aproximadamente 300.000 personas",
+   "d": "No puede responderse con la documentacion disponible"
+  },
+  "respuesta_correcta": "d",
+  "terminos_clave_ausentes": [
+   "prevalencia de la enfermedad de Parkinson",
+   "160.000 personas",
+   "Parkinson en España"
+  ],
+  "justificacion": "El Parkinson aparece en el corpus únicamente en descripciones clínicas cualitativas (marcha parkinsoniana en doc 05, rigidez frente a hipertonía en doc 01, dificultades de inicio del movimiento en doc 06). No se ofrece ningún dato de prevalencia ni número de personas diagnosticadas en España; ese dato epidemiológico no está en ninguno de los nueve documentos.",
+  "dificultad": "media",
+  "id": 2008,
+  "banco": "ood"
+ },
+ {
+  "tipo": "ood",
+  "tematica": "epidemiologia_cifras_ensayos",
+  "pregunta": "En el ensayo clínico EXCITE, que evaluó la terapia de restricción inducida del movimiento tras un ictus, ¿cuántos pacientes fueron aleatorizados?",
+  "opciones": {
+   "a": "116 pacientes",
+   "b": "222 pacientes",
+   "c": "304 pacientes",
+   "d": "No puede responderse con la documentacion disponible"
+  },
+  "respuesta_correcta": "d",
+  "terminos_clave_ausentes": [
+   "EXCITE",
+   "222 pacientes"
+  ],
+  "justificacion": "El corpus describe la terapia de restricción inducida del movimiento (CIMT) de forma conceptual en el documento 05, atribuyéndola a Edward Taub, pero no cita el ensayo EXCITE ni ningún tamaño muestral de ensayos controlados sobre esta técnica. La cifra de pacientes aleatorizados no puede extraerse de la documentación.",
+  "dificultad": "alta",
+  "id": 2009,
+  "banco": "ood"
+ },
+ {
+  "tipo": "ood",
+  "tematica": "epidemiologia_cifras_ensayos",
+  "pregunta": "El ensayo LEAPS (Locomotor Experience Applied Post-Stroke) comparó el entrenamiento locomotor en tapiz rodante con soporte parcial del peso corporal frente a un programa de ejercicio domiciliario. ¿Cuántos participantes se incluyeron?",
+  "opciones": {
+   "a": "408 participantes",
+   "b": "606 participantes",
+   "c": "780 participantes",
+   "d": "No puede responderse con la documentacion disponible"
+  },
+  "respuesta_correcta": "d",
+  "terminos_clave_ausentes": [
+   "LEAPS",
+   "Locomotor Experience Applied Post-Stroke",
+   "408 participantes"
+  ],
+  "justificacion": "El corpus menciona el tapiz rodante con suspensión parcial del peso corporal como técnica aplicada en ictus, esclerosis múltiple y Parkinson (doc 05), pero no nombra el ensayo LEAPS ni ofrece el número de participantes de ningún ensayo controlado sobre esta intervención. El dato numérico solicitado no aparece en ninguno de los nueve ficheros.",
+  "dificultad": "alta",
+  "id": 2010,
+  "banco": "ood"
+ },
+ {
+  "tipo": "ood",
+  "tematica": "epidemiologia_cifras_ensayos",
+  "pregunta": "¿Cuál es la incidencia anual de lesión medular traumática en España, expresada por millón de habitantes, según la documentación?",
+  "opciones": {
+   "a": "Alrededor de 12 casos por millón de habitantes",
+   "b": "Alrededor de 24 casos por millón de habitantes",
+   "c": "Alrededor de 40 casos por millón de habitantes",
+   "d": "No puede responderse con la documentacion disponible"
+  },
+  "respuesta_correcta": "d",
+  "terminos_clave_ausentes": [
+   "incidencia de lesión medular",
+   "por millón de habitantes",
+   "24 casos por millón"
+  ],
+  "justificacion": "La lesión medular se menciona en el corpus como indicación de varias técnicas (FES, exoesqueletos, Lokomat en doc 05) y se cita la pérdida de hasta un 45% de masa muscular en las primeras semanas, pero no se aporta ningún dato de incidencia poblacional. No existe ninguna cifra por millón de habitantes referida a la lesión medular en los nueve documentos.",
+  "dificultad": "alta",
+  "id": 2011,
+  "banco": "ood"
+ },
+ {
+  "tipo": "ood",
+  "tematica": "epidemiologia_cifras_ensayos",
+  "pregunta": "Según la documentación, ¿cuál es la prevalencia de parálisis cerebral por cada 1.000 recién nacidos vivos?",
+  "opciones": {
+   "a": "Alrededor de 1,5 por 1.000 recién nacidos vivos",
+   "b": "Alrededor de 2 por 1.000 recién nacidos vivos",
+   "c": "Alrededor de 2,5 por 1.000 recién nacidos vivos",
+   "d": "No puede responderse con la documentacion disponible"
+  },
+  "respuesta_correcta": "d",
+  "terminos_clave_ausentes": [
+   "prevalencia de parálisis cerebral",
+   "nacidos vivos",
+   "recién nacidos"
+  ],
+  "justificacion": "La parálisis cerebral se cita en el corpus como indicación de técnicas (Pediatric Lokomat, FES, terapia asistida por robot en doc 05), pero no incluye ninguna cifra de prevalencia. No aparecen expresiones como 'recién nacidos vivos' en ningún documento, por lo que la tasa por 1.000 nacidos no puede obtenerse de la documentación.",
+  "dificultad": "media",
+  "id": 2012,
+  "banco": "ood"
+ },
+ {
+  "tipo": "ood",
+  "tematica": "escalas_puntos_de_corte",
+  "pregunta": "Segun la documentacion disponible, ¿cual es la puntuacion motora maxima de la subescala de miembro superior de la escala de Fugl-Meyer y cual es su diferencia minima clinicamente importante (MCID) establecida para el ictus cronico?",
+  "opciones": {
+   "a": "66 puntos de maximo motor, con una MCID de entre 4,25 y 7,25 puntos",
+   "b": "60 puntos de maximo motor, con una MCID de 5,25 puntos",
+   "c": "50 puntos de maximo motor, con una MCID de 9 puntos",
+   "d": "No puede responderse con la documentacion disponible"
+  },
+  "respuesta_correcta": "d",
+  "terminos_clave_ausentes": [
+   "Fugl-Meyer",
+   "MCID",
+   "diferencia minima clinicamente importante"
+  ],
+  "justificacion": "Ninguno de los nueve documentos menciona la escala de Fugl-Meyer ni el concepto de diferencia mínima clínicamente importante (MCID). Las guías de ictus emplean otros instrumentos, como las escalas de Rankin, Barthel, Ashworth o el Frenchay Activity Index, pero no recogen la subescala motora de miembro superior de Fugl-Meyer ni ninguna cifra de MCID, de modo que la puntuación propuesta solo puede proceder del conocimiento paramétrico del modelo.",
+  "dificultad": "alta",
+  "id": 2013,
+  "banco": "ood"
+ },
+ {
+  "tipo": "ood",
+  "tematica": "escalas_puntos_de_corte",
+  "pregunta": "De acuerdo con la documentacion disponible, en la escala de Tinetti (POMA), ¿por debajo de que puntuacion total se considera que el paciente presenta un riesgo alto de caidas?",
+  "opciones": {
+   "a": "Por debajo de 19 sobre 28 puntos",
+   "b": "Por debajo de 24 sobre 28 puntos",
+   "c": "Por debajo de 15 sobre 24 puntos",
+   "d": "No puede responderse con la documentacion disponible"
+  },
+  "respuesta_correcta": "d",
+  "terminos_clave_ausentes": [
+   "Tinetti",
+   "POMA",
+   "riesgo alto de caidas"
+  ],
+  "justificacion": "La escala de Tinetti (Performance-Oriented Mobility Assessment, POMA) y su punto de corte para riesgo de caídas no aparecen en ninguno de los nueve ficheros. Las guías de ictus abordan la valoración funcional con las escalas de Rankin y Barthel, pero no incluyen la escala de Tinetti ni ningún umbral numérico de riesgo de caídas.",
+  "dificultad": "media",
+  "id": 2014,
+  "banco": "ood"
+ },
+ {
+  "tipo": "ood",
+  "tematica": "escalas_puntos_de_corte",
+  "pregunta": "Segun la documentacion disponible, ¿cual es la puntuacion total maxima de la Trunk Impairment Scale (escala de deterioro del tronco de Verheyden) utilizada en la valoracion del control de tronco tras un ictus?",
+  "opciones": {
+   "a": "23 puntos",
+   "b": "20 puntos",
+   "c": "16 puntos",
+   "d": "No puede responderse con la documentacion disponible"
+  },
+  "respuesta_correcta": "d",
+  "terminos_clave_ausentes": [
+   "Trunk Impairment Scale",
+   "Verheyden"
+  ],
+  "justificacion": "La Trunk Impairment Scale de Verheyden y su puntuacion maxima de 23 puntos no se mencionan en ninguno de los nueve documentos. El corpus trata el control de tronco desde marcos conceptuales (Bobath, FNP) pero no aporta ninguna escala psicometrica de tronco con un rango numerico, por lo que el punto de corte no puede extraerse de la documentacion.",
+  "dificultad": "media",
+  "id": 2015,
+  "banco": "ood"
+ },
+ {
+  "tipo": "ood",
+  "tematica": "escalas_puntos_de_corte",
+  "pregunta": "De acuerdo con la documentacion disponible, ¿cual es el minimo cambio detectable (MDC) del Box and Block Test en pacientes con ictus?",
+  "opciones": {
+   "a": "5,5 bloques por minuto",
+   "b": "2 bloques por minuto",
+   "c": "12 bloques por minuto",
+   "d": "No puede responderse con la documentacion disponible"
+  },
+  "respuesta_correcta": "d",
+  "terminos_clave_ausentes": [
+   "Box and Block",
+   "minimo cambio detectable",
+   "MDC"
+  ],
+  "justificacion": "El Box and Block Test y su mínimo cambio detectable (MDC) no figuran en ninguno de los nueve ficheros. El corpus no contiene ninguna propiedad psicométrica de tipo MDC para pruebas de miembro superior, por lo que la cifra propuesta es necesariamente una invención del modelo.",
+  "dificultad": "alta",
+  "id": 2016,
+  "banco": "ood"
+ },
+ {
+  "tipo": "ood",
+  "tematica": "escalas_puntos_de_corte",
+  "pregunta": "Segun la documentacion disponible, ¿de cuantos items consta el Rivermead Mobility Index y cual es su puntuacion maxima?",
+  "opciones": {
+   "a": "15 items, con una puntuacion maxima de 15",
+   "b": "10 items, con una puntuacion maxima de 20",
+   "c": "18 items, con una puntuacion maxima de 36",
+   "d": "No puede responderse con la documentacion disponible"
+  },
+  "respuesta_correcta": "d",
+  "terminos_clave_ausentes": [
+   "Rivermead",
+   "Rivermead Mobility Index"
+  ],
+  "justificacion": "El Rivermead Mobility Index no aparece en ninguno de los nueve documentos. Aunque las guias de ictus valoran la movilidad y la marcha, no describen esta escala de movilidad ni su numero de items ni su rango de puntuacion, por lo que la respuesta no esta contenida en el corpus.",
+  "dificultad": "media",
+  "id": 2017,
+  "banco": "ood"
+ },
+ {
+  "tipo": "ood",
+  "tematica": "escalas_puntos_de_corte",
+  "pregunta": "De acuerdo con la documentacion disponible, ¿en cuantos estadios de recuperacion motora se divide la escala de Brunnstrom y que caracteriza al estadio 3?",
+  "opciones": {
+   "a": "6 estadios; el estadio 3 se caracteriza por la maxima espasticidad y por la ejecucion voluntaria de las sinergias",
+   "b": "5 estadios; el estadio 3 corresponde a la ausencia completa de tono muscular",
+   "c": "7 estadios; el estadio 3 marca la recuperacion total del movimiento aislado",
+   "d": "No puede responderse con la documentacion disponible"
+  },
+  "respuesta_correcta": "d",
+  "terminos_clave_ausentes": [
+   "Brunnstrom",
+   "estadios de Brunnstrom"
+  ],
+  "justificacion": "La escala de Brunnstrom y sus estadios de recuperacion motora no se mencionan en ninguno de los nueve ficheros. El corpus describe la recuperacion motora desde los marcos de Bobath, Perfetti y FNP y desde las guias de ictus, pero no incluye la estadificacion de Brunnstrom ni la caracterizacion de sus estadios, por lo que la respuesta procede del conocimiento parametrico del modelo.",
+  "dificultad": "alta",
+  "id": 2018,
+  "banco": "ood"
+ }
+]

@@ -1,0 +1,123 @@
+{
+  "_about": {
+    "description_en": "Metrics reported in the article that have NO precomputed source file in the project. They are recomputed here from the raw records shipped in this repository, with the exact formula, the source files and the sample size, so that any reader can reproduce them.",
+    "description_es": "Metricas que aparecen en el articulo y que NO tienen fichero precalculado en el proyecto. Se recomputan aqui a partir de los crudos publicados en este repositorio, con la formula exacta, los ficheros fuente y el tamano muestral, para que cualquier lector pueda reproducirlas.",
+    "computed_on": "2026-07-11",
+    "computed_with": "Python 3 standard library only (no scipy/numpy)",
+    "integrity_rule": "No figure was silently corrected. Every recomputed value matched the article; any discrepancy is reported in VERIFICATION.md."
+  },
+
+  "p1_pooled_212_pairs": {
+    "label_en": "Pooled RAG benefit over the 212 paired items of Protocol 1",
+    "label_es": "Beneficio agregado del RAG sobre los 212 pares del Protocolo 1",
+    "n": 212,
+    "n_definition": "4 models x 53 gold-standard questions = 212 paired observations (each question answered by the same model with RAG and without RAG).",
+    "accuracy_con_rag": {
+      "correct": 160,
+      "n": 212,
+      "pct": 75.47169811320755,
+      "pct_rounded": 75.47
+    },
+    "accuracy_sin_rag": {
+      "correct": 133,
+      "n": 212,
+      "pct": 62.735849056603776,
+      "pct_rounded": 62.74
+    },
+    "delta_pp": 12.735849056603776,
+    "delta_pp_rounded": 12.74,
+    "mcnemar": {
+      "b_con_ok_sin_ko": 46,
+      "c_sin_ok_con_ko": 19,
+      "n_discordant": 65,
+      "p_chi2_continuity_corrected": 0.001260153137610341,
+      "p_binomial_exact_two_sided": 0.0010900838044475788,
+      "article_reports": "p ~ 0.001"
+    },
+    "paired_ci95": {
+      "method": "normal approximation on the per-pair difference, SAMPLE variance (ddof = 1) - same estimator used across the project (see field ci95_estimador in rag_benefit_summary.json)",
+      "mean_diff": 0.12735849056603774,
+      "sample_variance_ddof1": 0.2917598140033978,
+      "standard_error": 0.03709751390257677,
+      "lo_pp": 5.464736331698727,
+      "hi_pp": 20.00696178150882,
+      "rounded": "[+5.5, +20.0]",
+      "cross_check_bootstrap": {
+        "method": "10000 resamples with replacement over the 212 per-pair differences, percentile 2.5/97.5, seed 20260711",
+        "lo_pp": 5.660377358490566,
+        "hi_pp": 19.81132075471698
+      }
+    },
+    "formula_en": "For each of the 4 models and each of the 53 questions, take es_correcta in the 'con' report and in the 'sin' report -> 212 pairs. accuracy_arm = 100 * sum(es_correcta) / 212. delta = accuracy_con - accuracy_sin. McNemar: b = #(con correct AND sin wrong), c = #(sin correct AND con wrong); chi2 = (|b-c|-1)^2 / (b+c) with 1 df, plus the exact two-sided binomial on (b, b+c, 0.5). Paired 95% CI: d_i = 1[con_i correct] - 1[sin_i correct] in {-1,0,1}; mean(d) +/- 1.96 * sqrt(var_sample(d, ddof=1) / 212), expressed in percentage points.",
+    "formula_es": "Para cada uno de los 4 modelos y cada una de las 53 preguntas se toma es_correcta en el report 'con' y en el 'sin' -> 212 pares. accuracy_brazo = 100 * suma(es_correcta) / 212. delta = accuracy_con - accuracy_sin. McNemar: b = #(con acierta Y sin falla), c = #(sin acierta Y con falla); chi2 = (|b-c|-1)^2 / (b+c) con 1 gl, mas la binomial exacta bilateral sobre (b, b+c, 0.5). IC95 pareado: d_i = 1[con_i correcto] - 1[sin_i correcto] en {-1,0,1}; media(d) +/- 1.96 * raiz(var_muestral(d, ddof=1) / 212), en puntos porcentuales.",
+    "source_files": [
+      "results_ablation_p1/report_llama8b_GPU_Local_Win11_9doc_sysrole_con_RERUN.json",
+      "results_ablation_p1/report_llama8b_GPU_Local_Win11_9doc_sysrole_sin_RERUN.json",
+      "results_ablation_p1/report_qlora_GPU_Local_Win11_9doc_sysrole_con_RERUN.json",
+      "results_ablation_p1/report_qlora_GPU_Local_Win11_9doc_sysrole_sin_RERUN.json",
+      "results_ablation_p1/report_qwen7b_GPU_Local_Win11_9doc_sysrole_con_RERUN.json",
+      "results_ablation_p1/report_qwen7b_GPU_Local_Win11_9doc_sysrole_sin_RERUN.json",
+      "results_ablation_p1/report_med42_GPU_Local_Win11_9doc_sysrole_con_RERUN.json",
+      "results_ablation_p1/report_med42_GPU_Local_Win11_9doc_sysrole_sin_RERUN.json"
+    ],
+    "field_used": "questions[].es_correcta (boolean), joined across arms by questions[].id",
+    "cross_check": "The per-model accuracies and the per-model b/c counts recomputed from these same 8 files reproduce aggregates/rag_benefit_summary.json exactly (8/8 accuracies, 4/4 b/c pairs)."
+  },
+
+  "qwen_judge_mean_confidence_on_errors": {
+    "label_en": "Mean self-reported confidence (prob_correcta) of the qwen2.5:7b LLM-judge, restricted to ERRORS judged by a different model",
+    "label_es": "Media de la confianza declarada (prob_correcta) del juez LLM qwen2.5:7b, restringida a los ERRORES juzgados por un modelo distinto",
+    "IMPORTANT_subset_warning_en": "These means are computed on the SUBSET of errors without self-judgement, NOT on the full file. The filter is: es_correcta == false AND autojuicio == false. Computing the mean over the full 424 raw records gives 0.6755, and over the 318 non-self-judged records gives 0.6923 - neither of those is the figure reported in the article. Only the error subset (n = 36 con / n = 62 sin) yields 0.457 / 0.624.",
+    "IMPORTANT_subset_warning_es": "Estas medias se calculan sobre el SUBCONJUNTO de errores sin autojuicios, NO sobre el fichero completo. El filtro es: es_correcta == false AND autojuicio == false. La media sobre los 424 registros brutos da 0.6755, y sobre los 318 registros sin autojuicio da 0.6923: ninguna de las dos es la cifra del articulo. Solo el subconjunto de errores (n = 36 con / n = 62 sin) produce 0.457 / 0.624.",
+    "filter": "autojuicio == false AND es_correcta == false, grouped by arm",
+    "why_autojuicio_false": "autojuicio == true marks the 106 records where the judge (qwen2.5:7b) is scoring its own answers; they are excluded to avoid self-evaluation bias. 424 raw - 106 self-judged = 318 usable records, matching n_utiles in aggregates/detectability_resumen.json.",
+    "con_rag": {
+      "mean_prob_correcta": 0.45694444444444443,
+      "mean_rounded": 0.457,
+      "n": 36
+    },
+    "sin_rag": {
+      "mean_prob_correcta": 0.624193548387097,
+      "mean_rounded": 0.624,
+      "n": 62
+    },
+    "contrast_values_do_not_use": {
+      "mean_over_all_424_raw_records": 0.6755,
+      "mean_over_318_non_self_judged_records": 0.6923,
+      "note": "Reported only to document why the subset filter is essential."
+    },
+    "formula_en": "records = aggregates/detectability_qwen.json (list of 424 objects). usable = [r for r in records if r['autojuicio'] is False]  -> 318. For arm in {con, sin}: errors = [r for r in usable if r['arm'] == arm and r['es_correcta'] is False]; mean = sum(r['prob_correcta'] for r in errors) / len(errors).",
+    "formula_es": "registros = aggregates/detectability_qwen.json (lista de 424 objetos). utiles = [r for r in registros if r['autojuicio'] is False] -> 318. Para brazo in {con, sin}: errores = [r for r in utiles if r['arm'] == brazo and r['es_correcta'] is False]; media = suma(r['prob_correcta'] de errores) / len(errores).",
+    "source_files": ["aggregates/detectability_qwen.json"],
+    "interpretation_en": "The judge is markedly LESS confident when the error was produced with RAG (0.457) than without RAG (0.624): errors made without retrieval are stated with more confidence and are therefore harder to flag.",
+    "interpretation_es": "El juez esta claramente MENOS seguro cuando el error se produjo con RAG (0.457) que sin RAG (0.624): los errores sin recuperacion se afirman con mas aplomo y por tanto son mas dificiles de marcar."
+  },
+
+  "qwen_judge_auroc_cross_check": {
+    "label_en": "AUROC of the qwen2.5:7b judge per arm - recomputed as a cross-check of the precomputed value",
+    "label_es": "AUROC del juez qwen2.5:7b por brazo - recomputado como verificacion cruzada del valor precalculado",
+    "purpose": "This value IS precomputed in aggregates/detectability_resumen.json. It is recomputed here independently to validate that file.",
+    "con_rag": {
+      "auroc_recomputed": 0.7125112917795845,
+      "auroc_precomputed": 0.7125,
+      "match": true,
+      "n": 159,
+      "n_positive_es_correcta_true": 123,
+      "n_negative_es_correcta_false": 36
+    },
+    "sin_rag": {
+      "auroc_recomputed": 0.5771533089457932,
+      "auroc_precomputed": 0.5772,
+      "match": true,
+      "n": 159,
+      "n_positive_es_correcta_true": 97,
+      "n_negative_es_correcta_false": 62
+    },
+    "formula_en": "On the same 318 non-self-judged records, per arm: score = prob_correcta, label = es_correcta. AUROC = Mann-Whitney U / (n_pos * n_neg), i.e. AUROC = ( #{(p,n): p > n} + 0.5 * #{(p,n): p == n} ) / (n_pos * n_neg), over all pairs p in positives, n in negatives. Implemented in pure Python (no scipy).",
+    "formula_es": "Sobre los mismos 318 registros sin autojuicio, por brazo: score = prob_correcta, etiqueta = es_correcta. AUROC = U de Mann-Whitney / (n_pos * n_neg), es decir AUROC = ( #{(p,n): p > n} + 0.5 * #{(p,n): p == n} ) / (n_pos * n_neg), sobre todos los pares p en positivos y n en negativos. Implementado en Python puro (sin scipy).",
+    "source_files": [
+      "aggregates/detectability_qwen.json",
+      "aggregates/detectability_resumen.json"
+    ]
+  }
+}

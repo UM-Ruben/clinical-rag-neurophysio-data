@@ -1,0 +1,5 @@
+embedding,accuracy,total_questions,correct_answers,reports,models
+sentence-transformers/all-MiniLM-L6-v2,35.29,34,12,2,qwen2.5:7b
+BAAI/bge-m3,34.53,391,135,23,"deepseek-llm:7b, llama3.1:8b, llama3.3:70b, meditron:7b, medllama2:7b, qwen2.5:72b, qwen2.5:7b"
+intfloat/multilingual-e5-large,23.53,34,8,2,qwen2.5:7b
+sentence-transformers/paraphrase-multilingual-mpnet-base-v2,17.65,34,6,2,qwen2.5:7b

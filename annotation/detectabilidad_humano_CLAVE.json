@@ -1,0 +1,722 @@
+[
+ {
+  "caso": 1,
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 25,
+  "es_correcta": true,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 2,
+  "tag": "qlora",
+  "arm": "con",
+  "id": 49,
+  "es_correcta": true,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 3,
+  "tag": "med42",
+  "arm": "sin",
+  "id": 28,
+  "es_correcta": false,
+  "opcion_detectada": "c",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 4,
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 52,
+  "es_correcta": true,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 5,
+  "tag": "med42",
+  "arm": "con",
+  "id": 2,
+  "es_correcta": false,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "c"
+ },
+ {
+  "caso": 6,
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 23,
+  "es_correcta": true,
+  "opcion_detectada": "c",
+  "respuesta_correcta": "c"
+ },
+ {
+  "caso": 7,
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 47,
+  "es_correcta": true,
+  "opcion_detectada": "c",
+  "respuesta_correcta": "c"
+ },
+ {
+  "caso": 8,
+  "tag": "llama8b",
+  "arm": "con",
+  "id": 7,
+  "es_correcta": true,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 9,
+  "tag": "qlora",
+  "arm": "con",
+  "id": 36,
+  "es_correcta": true,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 10,
+  "tag": "med42",
+  "arm": "sin",
+  "id": 32,
+  "es_correcta": false,
+  "opcion_detectada": "desconocida",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 11,
+  "tag": "med42",
+  "arm": "con",
+  "id": 12,
+  "es_correcta": true,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 12,
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 27,
+  "es_correcta": false,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 13,
+  "tag": "med42",
+  "arm": "sin",
+  "id": 2,
+  "es_correcta": false,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "c"
+ },
+ {
+  "caso": 14,
+  "tag": "qlora",
+  "arm": "con",
+  "id": 4,
+  "es_correcta": false,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 15,
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 39,
+  "es_correcta": true,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 16,
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 5,
+  "es_correcta": true,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 17,
+  "tag": "qlora",
+  "arm": "con",
+  "id": 2,
+  "es_correcta": false,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "c"
+ },
+ {
+  "caso": 18,
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 29,
+  "es_correcta": true,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 19,
+  "tag": "qlora",
+  "arm": "con",
+  "id": 21,
+  "es_correcta": true,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 20,
+  "tag": "llama8b",
+  "arm": "con",
+  "id": 14,
+  "es_correcta": false,
+  "opcion_detectada": "c",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 21,
+  "tag": "llama8b",
+  "arm": "con",
+  "id": 51,
+  "es_correcta": false,
+  "opcion_detectada": "c",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 22,
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 1,
+  "es_correcta": false,
+  "opcion_detectada": "c",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 23,
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 13,
+  "es_correcta": true,
+  "opcion_detectada": "c",
+  "respuesta_correcta": "c"
+ },
+ {
+  "caso": 24,
+  "tag": "qlora",
+  "arm": "con",
+  "id": 26,
+  "es_correcta": true,
+  "opcion_detectada": "c",
+  "respuesta_correcta": "c"
+ },
+ {
+  "caso": 25,
+  "tag": "llama8b",
+  "arm": "con",
+  "id": 21,
+  "es_correcta": true,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 26,
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 17,
+  "es_correcta": true,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 27,
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 17,
+  "es_correcta": true,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 28,
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 7,
+  "es_correcta": true,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 29,
+  "tag": "qlora",
+  "arm": "con",
+  "id": 19,
+  "es_correcta": false,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "c"
+ },
+ {
+  "caso": 30,
+  "tag": "med42",
+  "arm": "sin",
+  "id": 23,
+  "es_correcta": true,
+  "opcion_detectada": "c",
+  "respuesta_correcta": "c"
+ },
+ {
+  "caso": 31,
+  "tag": "med42",
+  "arm": "sin",
+  "id": 8,
+  "es_correcta": false,
+  "opcion_detectada": "c",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 32,
+  "tag": "qlora",
+  "arm": "con",
+  "id": 34,
+  "es_correcta": false,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 33,
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 48,
+  "es_correcta": false,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 34,
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 4,
+  "es_correcta": false,
+  "opcion_detectada": "c",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 35,
+  "tag": "qlora",
+  "arm": "con",
+  "id": 5,
+  "es_correcta": true,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 36,
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 40,
+  "es_correcta": false,
+  "opcion_detectada": "c",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 37,
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 27,
+  "es_correcta": true,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 38,
+  "tag": "llama8b",
+  "arm": "con",
+  "id": 30,
+  "es_correcta": true,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 39,
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 44,
+  "es_correcta": false,
+  "opcion_detectada": "c",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 40,
+  "tag": "med42",
+  "arm": "sin",
+  "id": 46,
+  "es_correcta": true,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 41,
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 37,
+  "es_correcta": true,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 42,
+  "tag": "llama8b",
+  "arm": "con",
+  "id": 49,
+  "es_correcta": true,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 43,
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 35,
+  "es_correcta": false,
+  "opcion_detectada": "desconocida",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 44,
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 19,
+  "es_correcta": false,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "c"
+ },
+ {
+  "caso": 45,
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 26,
+  "es_correcta": true,
+  "opcion_detectada": "c",
+  "respuesta_correcta": "c"
+ },
+ {
+  "caso": 46,
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 4,
+  "es_correcta": false,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 47,
+  "tag": "med42",
+  "arm": "con",
+  "id": 22,
+  "es_correcta": true,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 48,
+  "tag": "qlora",
+  "arm": "con",
+  "id": 13,
+  "es_correcta": false,
+  "opcion_detectada": "desconocida",
+  "respuesta_correcta": "c"
+ },
+ {
+  "caso": 49,
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 41,
+  "es_correcta": false,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "c"
+ },
+ {
+  "caso": 50,
+  "tag": "med42",
+  "arm": "con",
+  "id": 20,
+  "es_correcta": false,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "c"
+ },
+ {
+  "caso": 51,
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 10,
+  "es_correcta": false,
+  "opcion_detectada": "c",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 52,
+  "tag": "med42",
+  "arm": "con",
+  "id": 10,
+  "es_correcta": false,
+  "opcion_detectada": "c",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 53,
+  "tag": "med42",
+  "arm": "sin",
+  "id": 44,
+  "es_correcta": true,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 54,
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 16,
+  "es_correcta": true,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 55,
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 53,
+  "es_correcta": false,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 56,
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 20,
+  "es_correcta": false,
+  "opcion_detectada": "desconocida",
+  "respuesta_correcta": "c"
+ },
+ {
+  "caso": 57,
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 38,
+  "es_correcta": true,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 58,
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 51,
+  "es_correcta": false,
+  "opcion_detectada": "c",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 59,
+  "tag": "med42",
+  "arm": "con",
+  "id": 38,
+  "es_correcta": true,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 60,
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 43,
+  "es_correcta": false,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 61,
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 6,
+  "es_correcta": false,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "c"
+ },
+ {
+  "caso": 62,
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 2,
+  "es_correcta": false,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "c"
+ },
+ {
+  "caso": 63,
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 1,
+  "es_correcta": false,
+  "opcion_detectada": "c",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 64,
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 43,
+  "es_correcta": true,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 65,
+  "tag": "llama8b",
+  "arm": "con",
+  "id": 39,
+  "es_correcta": true,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 66,
+  "tag": "llama8b",
+  "arm": "con",
+  "id": 46,
+  "es_correcta": true,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 67,
+  "tag": "med42",
+  "arm": "con",
+  "id": 49,
+  "es_correcta": true,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 68,
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 6,
+  "es_correcta": false,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "c"
+ },
+ {
+  "caso": 69,
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 45,
+  "es_correcta": false,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 70,
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 46,
+  "es_correcta": true,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 71,
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 14,
+  "es_correcta": false,
+  "opcion_detectada": "c",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 72,
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 38,
+  "es_correcta": true,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 73,
+  "tag": "qlora",
+  "arm": "con",
+  "id": 43,
+  "es_correcta": true,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 74,
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 42,
+  "es_correcta": false,
+  "opcion_detectada": "c",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 75,
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 30,
+  "es_correcta": true,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 76,
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 21,
+  "es_correcta": false,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 77,
+  "tag": "llama8b",
+  "arm": "con",
+  "id": 32,
+  "es_correcta": true,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "a"
+ },
+ {
+  "caso": 78,
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 53,
+  "es_correcta": false,
+  "opcion_detectada": "a",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 79,
+  "tag": "llama8b",
+  "arm": "con",
+  "id": 15,
+  "es_correcta": false,
+  "opcion_detectada": "c",
+  "respuesta_correcta": "b"
+ },
+ {
+  "caso": 80,
+  "tag": "med42",
+  "arm": "sin",
+  "id": 48,
+  "es_correcta": false,
+  "opcion_detectada": "b",
+  "respuesta_correcta": "a"
+ }
+]

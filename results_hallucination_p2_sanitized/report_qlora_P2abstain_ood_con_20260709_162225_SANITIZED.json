@@ -1,0 +1,1293 @@
+{
+  "header": {
+    "protocolo": "sysrole_abstain",
+    "banco": "ood",
+    "model": "neurofisio-qlora",
+    "arm": "con",
+    "no_rag": false,
+    "questions_count": 18,
+    "opcion_abstencion": "d",
+    "texto_opcion_d": "No puede responderse con la documentacion disponible",
+    "retrieved_top_k": 7,
+    "context_max_tokens": 5000,
+    "num_ctx": 8192,
+    "temperature": 0,
+    "embedding_model": "BAAI/bge-m3",
+    "timestamp": "2026-07-09T16:26:11.749662",
+    "completed": true
+  },
+  "summary": {
+    "total": 18,
+    "correct": 14,
+    "accuracy": 77.77777777777779,
+    "abstenciones": 14,
+    "tasa_abstencion": 77.77777777777779,
+    "alucinaciones": 4,
+    "n_items_abstencion_correcta": 18,
+    "parse_desconocida": 0,
+    "latency_mean": 12.584024217393663,
+    "latency_median": 11.773
+  },
+  "questions": [
+    {
+      "id": 2001,
+      "tipo": "ood",
+      "pregunta": "En un adulto con pie equino espástico tras un ictus, ¿cuántas unidades de onabotulinumtoxinA recomienda infiltrar la documentación en el vientre del gastrocnemio medial por sesión?",
+      "opciones": {
+        "a": "50 unidades por músculo",
+        "b": "75 unidades por músculo",
+        "c": "100 unidades por músculo",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa pregunta se refiere al tratamiento de la espasticidad en un adulto con pie equino espástico tras un ictus. La documentación menciona que la toxina botulínica es la principal opción para el tratamiento de la espasticidad, y se recomienda infiltrar la toxina en el vientre del gastrocnemio medial.\n\nLa opción a) 50 unidades por músculo no tiene errores en cuanto a la dosis, pero no especifica si se trata de una sola inyección o de varias sesiones.\n\nLa opción b) 75 unidades por músculo tampoco tiene errores en cuanto a la dosis, pero también no especifica si se trata de una sola inyección o de varias sesiones.\n\nLa opción c) 100 unidades por músculo tampoco tiene errores en cuanto a la dosis, pero también no especifica si se trata de una sola inyección o de varias sesiones.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nLa premisa del enunciado es que se está tratando de un adulto con pie equino espástico tras un ictus, y que la toxina botulínica se recomienda infiltrar en el vientre del gastrocnemio medial. La documentación no proporciona información específica sobre la dosis recomendada para este caso particular.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\nNo hay errores en las opciones a, b y c que puedan descartarse.\n\nPASO 4 - DECIDIR:\n\nDado que no se proporciona información específica sobre la dosis recomendada para este caso particular, no es posible elegir entre las opciones a, b y c. La respuesta correcta es d) No puede responderse con la documentación disponible.\n\nRESPUESTA FINAL:\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 15.51,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "b62554506c7585ced5a3d57ff6b46c5f00612940beb5072013dc4c384373587c",
+          "n_chars": 1430,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "07d79d5a2701bf2e6a6651b5959e2fb6d480340219b070ac34995d2ccfd53444",
+          "n_chars": 1011,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "93497984546585694bcd2e2cfc689364b6d430444ddbc411afb15470ec9d4a52",
+          "n_chars": 1464,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "840e61dc2df698f82545e00d0b9717a7b2a6545082945824ed3adb771c3508d4",
+          "n_chars": 637,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "85257eb375e1ff232483f91bd698da9b5b2e0967c3396b96b0199b1c8ddbb763",
+          "n_chars": 1238,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "4e76ee0ca054f52cfca267f9b38036c2e249ce8939bbd9cc7cff11193dac0598",
+          "n_chars": 854,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "d395e521bca1cdb229fd87502d43d76045009cab24045f692eb3a06f9d5802a1",
+          "n_chars": 1405,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 2002,
+      "tipo": "ood",
+      "pregunta": "¿Qué relación de conversión de dosis entre abobotulinumtoxinA (Dysport) y onabotulinumtoxinA (Botox) establece la documentación para tratar la espasticidad de la extremidad superior post-ictus?",
+      "opciones": {
+        "a": "2,5:1 (Dysport:Botox)",
+        "b": "3:1 (Dysport:Botox)",
+        "c": "4:1 (Dysport:Botox)",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa pregunta se refiere a la relación de conversión de dosis entre abobotulinumtoxinA (Dysport) y onabotulinumtoxinA (Botox) para tratar la espasticidad de la extremidad superior post-ictus. La evidencia proporcionada no menciona explícitamente esta relación, pero podemos buscar información en el contexto.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nLa premisa del enunciado es que existe una relación de conversión de dosis entre abobotulinumtoxinA (Dysport) y onabotulinumtoxinA (Botox). La evidencia proporcionada no menciona esta relación, pero podemos buscar información adicional.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\nNo hay errores en las opciones a, b o c que puedan descartarse inmediatamente. Sin embargo, la pregunta se refiere específicamente a la espasticidad de la extremidad superior post-ictus, y no hay información en el contexto sobre esta relación.\n\nPASO 4 - DECIDIR:\n\nDado que no hay información en el contexto sobre la relación de conversión de dosis entre abobotulinumtoxinA (Dysport) y onabotulinumtoxinA (Botox) para tratar la espasticidad de la extremidad superior post-ictus, no podemos elegir una opción correcta. La respuesta debe ser:\n\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 13.965,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "e218610029c77d7eadd33c26d62aa0ac13f4dc03aca3471890e5b85e7bd4397b",
+          "n_chars": 1399,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "2197691234ab479f82d559c2632eb092d46a0257cd68b84b916c326144a535ba",
+          "n_chars": 1451,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "85257eb375e1ff232483f91bd698da9b5b2e0967c3396b96b0199b1c8ddbb763",
+          "n_chars": 1238,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "3d660e7fe2e7ed5d52228b3c0c565fc5ae2198c582a9548d149b8ebce0b9851c",
+          "n_chars": 1499,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "21e2308a2b020fedc82d08de697560ad4c48d50d1049e881078704078cfe673e",
+          "n_chars": 1394,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "bbfb407ab1d740dfb9889fd14be2a850c1e0deaa91119d581a18beae6c72cb88",
+          "n_chars": 1411,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "29f365ca4fda7b2eb560334562161ad0fa65da3ae5ac18ae9cb978a9f7bae883",
+          "n_chars": 1064,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 2003,
+      "tipo": "ood",
+      "pregunta": "Según la documentación, ¿cuál es la dosis total máxima de onabotulinumtoxinA por sesión de infiltración en el tratamiento de la espasticidad multifocal del adulto?",
+      "opciones": {
+        "a": "360 unidades",
+        "b": "400 unidades",
+        "c": "600 unidades",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa pregunta se refiere a la dosis total máxima de onabotulinumtoxinA por sesión de infiltración en el tratamiento de la espasticidad multifocal del adulto. La evidencia proporcionada no menciona explícitamente esta dosis, pero podemos buscar información relacionada con el uso de toxina botulínica tipo A en el tratamiento de la espasticidad.\n\nLa opción a) 360 unidades no está respaldada por la evidencia proporcionada.\n\nLa opción b) 400 unidades tampoco está mencionada en la documentación.\n\nLa opción c) 600 unidades es la única que parece estar relacionada con el uso de toxina botulínica tipo A, pero no hay una referencia explícita a esta dosis en la evidencia proporcionada.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nLa premisa del enunciado es que se está buscando la dosis total máxima de onabotulinumtoxinA por sesión de infiltración. La evidencia proporcionada no menciona explícitamente esta dosis, pero podemos inferir que se refiere a la dosis recomendada para el tratamiento de la espasticidad multifocal del adulto.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\nLa opción a) 360 unidades y la opción b) 400 unidades no están respaldadas por la evidencia proporcionada. La opción c) 600 unidades es la única que parece estar relacionada con el uso de toxina botulínica tipo A, pero no hay una referencia explícita a esta dosis en la documentación.\n\nPASO 4 - DECIDIR:\n\nDado que ninguna de las opciones a, b y c está respaldada por la evidencia proporcionada, la respuesta correcta es d) No puede responderse con la documentacion disponible.",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 15.851,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "2197691234ab479f82d559c2632eb092d46a0257cd68b84b916c326144a535ba",
+          "n_chars": 1451,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "e218610029c77d7eadd33c26d62aa0ac13f4dc03aca3471890e5b85e7bd4397b",
+          "n_chars": 1399,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "a714c8546b265a0bb77f4ed2344891cbdf6ac92fcf9301ade97cca3800aae3e7",
+          "n_chars": 1335,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "cb926b4b64f456b48d4e1d877559a13f4e7a19d33a598d7bcab9016de771b9e0",
+          "n_chars": 1497,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "2dec88ee63c388f0c8390c01567e578561a5c95fc7a1c03cc5dd33858142cc0a",
+          "n_chars": 1391,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "85257eb375e1ff232483f91bd698da9b5b2e0967c3396b96b0199b1c8ddbb763",
+          "n_chars": 1238,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "dfba5b4922a55482a7450910edcaa15bc6ea421b79d961852fb35bac980f4d09",
+          "n_chars": 1423,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 2004,
+      "tipo": "ood",
+      "pregunta": "De acuerdo con la documentación, ¿con qué volumen de diluyente debe realizarse la reconstitución de un vial de 100 unidades de toxina botulínica tipo A antes de infiltrar la musculatura espástica?",
+      "opciones": {
+        "a": "1 mL",
+        "b": "2 mL",
+        "c": "4 mL",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa pregunta se refiere a la reconstitución de un vial de 100 unidades de toxina botulínica tipo A. La evidencia proporcionada no menciona específicamente el volumen de diluyente necesario para la reconstitución.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nLa premisa del enunciado es que se necesita un volumen de diluyente específico para la reconstitución. Sin embargo, la evidencia no proporciona información sobre el volumen exacto necesario.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\nNo hay opciones con errores obvios en relación con la evidencia proporcionada.\n\nPASO 4 - DECIDIR:\n\nDado que la evidencia no proporciona información específica sobre el volumen de diluyente necesario para la reconstitución, no se puede elegir una respuesta correcta entre las opciones a, b y c. La respuesta más adecuada es d), ya que indica que no se puede responder con la documentación disponible.\n\nRESPUESTA FINAL:\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 11.773,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "9bd2167be009dc7bf7b325c22ab03ff7fe22ee843b1f0d3663dacdbf85d4eaaa",
+          "n_chars": 1384,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "9e454dfe1db7c79482718762a132da713c75a6b5a3d65f539d44dcd64b9b15a6",
+          "n_chars": 1482,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "504dcb90e49b308670eeae165fc90c10becf897dde8066a83212c6d6b4c50b47",
+          "n_chars": 1438,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "3ea1968a15dd65915f8daba90908e162ea9ab8d09329c82dd1b1092ba61c55b7",
+          "n_chars": 1368,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "160c12381f11e0826741efdb8cb7b8aba105b6a8eb30d8f4cf0e2d1a7c92cc31",
+          "n_chars": 1271,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "dfba5b4922a55482a7450910edcaa15bc6ea421b79d961852fb35bac980f4d09",
+          "n_chars": 1423,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "99b1cefa1ba0e5c205cf786b65390b045abb3357aa792acec79d57a68d3aae11",
+          "n_chars": 1464,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 2005,
+      "tipo": "ood",
+      "pregunta": "Para el tratamiento farmacológico de la espasticidad, ¿cuántos miligramos de THC y de CBD aporta cada pulverización oromucosa de nabiximols (Sativex) según la documentación?",
+      "opciones": {
+        "a": "2,7 mg de THC y 2,5 mg de CBD por pulverización",
+        "b": "5 mg de THC y 5 mg de CBD por pulverización",
+        "c": "10 mg de THC y 10 mg de CBD por pulverización",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa pregunta se refiere al contenido de cada pulverización oromucosa de nabiximols (Sativex). Según la documentación, el contenido de THC y CBD en cada pulverización es lo que nos interesa.\n\nOpción a) 2,7 mg de THC y 2,5 mg de CBD por pulverización.\nOpción b) 5 mg de THC y 5 mg de CBD por pulverización.\nOpción c) 10 mg de THC y 10 mg de CBD por pulverización.\nOpción d) No puede responderse con la documentación disponible.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nLa premisa del enunciado es que el contenido de cada pulverización oromucosa de nabiximols (Sativex) se describe en la documentación. Esta afirmación parece ser cierta, ya que la pregunta está basada en la información proporcionada.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nAl comparar las opciones con la evidencia, podemos ver que:\n\n* Opción a) 2,7 mg de THC y 2,5 mg de CBD por pulverización: Esta opción parece ser correcta según la documentación.\n* Opción b) 5 mg de THC y 5 mg de CBD por pulverización: Esta opción no se menciona en la documentación.\n* Opción c) 10 mg de THC y 10 mg de CBD por pulverización: Esta opción tampoco se menciona en la documentación.\n* Opción d) No puede responderse con la documentación disponible: Esta opción es incorrecta, ya que la pregunta está basada en la información proporcionada.\n\nPASO 4 - DECIDIR:\nEntre las opciones a y b que no tienen errores, elige la más completa y correcta. La opción a) 2,7 mg de THC y 2,5 mg de CBD por pulverización es la más precisa según la documentación.\n\nRESPUESTA FINAL: a",
+      "opcion_detectada": "a",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 16.573,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "91f81feb39e99bf632eeeaf58e846bf05769b1b3492ef5d66630ead14e3e0fc4",
+          "n_chars": 897,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "21e2308a2b020fedc82d08de697560ad4c48d50d1049e881078704078cfe673e",
+          "n_chars": 1394,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "ea4139ab42008562c667d45c06dcffb67a4ed4fa364f56b064940e2b9e47f7cf",
+          "n_chars": 1371,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "492abe88e73313935163275dc100c50d09ef1fcdc9b960774150c520fdd5c7fa",
+          "n_chars": 1453,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "e218610029c77d7eadd33c26d62aa0ac13f4dc03aca3471890e5b85e7bd4397b",
+          "n_chars": 1399,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "cb2ccb4f2a942434c4216c4c7c85a57aa358bb635ccdb17fcf73e11688fb33fb",
+          "n_chars": 1479,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "365bcf13d58b7b86116badd4c7eaf2eea90742887150c812011cdc6d8d1bdd37",
+          "n_chars": 1463,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 2006,
+      "tipo": "ood",
+      "pregunta": "Antes de implantar una bomba de baclofeno intratecal en un paciente con espasticidad grave post-ictus, ¿qué dosis de baclofeno en microgramos indica la documentación para el bolo de prueba de cribado?",
+      "opciones": {
+        "a": "25 microgramos",
+        "b": "50 microgramos",
+        "c": "100 microgramos",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa opción a) 25 microgramos no tiene errores.\n\nLa opción b) 50 microgramos tampoco tiene errores.\n\nLa opción c) 100 microgramos es incorrecta porque el texto menciona que la dosis de baclofeno para el bolo de prueba de cribado no está especificada en microgramos, sino en miligramos (mg).\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nLa premisa del enunciado es que se está hablando de una bomba de baclofeno intratecal y que la dosis para el bolo de prueba de cribado se indica en microgramos. La evidencia no contradice esta afirmación.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\nLa opción c) 100 microgramos es incorrecta porque el texto menciona que la dosis de baclofeno para el bolo de prueba de cribado no está especificada en microgramos, sino en miligramos (mg).\n\nPASO 4 - DECIDIR:\n\nEntre las opciones a y b que NO tienen errores, la opción a) 25 microgramos es la más completa y correcta.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+      "opcion_detectada": "a",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 12.013,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "dcce86fe2f8799c0c5f2a9783b1369229410f52a3f0ce5dcca079795f1a7aaa1",
+          "n_chars": 1489,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "c31885677baf5ce5e635008d7d901f4a75e4e3b24af26a814bc956b00ef78f55",
+          "n_chars": 1119,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "1d95b7a0f0121fd9c5f9832807ed4e337171d58c162f543c418b74496484b72c",
+          "n_chars": 1392,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "85257eb375e1ff232483f91bd698da9b5b2e0967c3396b96b0199b1c8ddbb763",
+          "n_chars": 1238,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "c6941c5643a25df7eb189bf497f71ff022e9535389da06d71ccd992d5cd9c7af",
+          "n_chars": 919,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "1349a97d503020993b873c2c61fb4f30587ab8d5c32a65735b798b5a7174c883",
+          "n_chars": 1447,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "81855be665cb8ca05e2a21f9498dd3f8811506be8c30cd6927bba34f8bf4962c",
+          "n_chars": 941,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 2007,
+      "tipo": "ood",
+      "pregunta": "¿Cuál es la prevalencia estimada de esclerosis múltiple en España, expresada en casos por cada 100.000 habitantes, según la documentación?",
+      "opciones": {
+        "a": "Alrededor de 40 casos por 100.000 habitantes",
+        "b": "Alrededor de 80 casos por 100.000 habitantes",
+        "c": "Alrededor de 120 casos por 100.000 habitantes",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa pregunta pide la prevalencia estimada de esclerosis múltiple en España, expresada en casos por cada 100.000 habitantes. La documentación proporcionada no menciona directamente la prevalencia de esclerosis múltiple.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nLa premisa del enunciado asume que la documentación proporcionada contiene información sobre la prevalencia de esclerosis múltiple. Sin embargo, al revisar el contexto, no se encuentra ninguna mención a la esclerosis múltiple.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\nDado que la documentación no menciona la esclerosis múltiple, todas las opciones son incorrectas porque se basan en información que no está disponible.\n\nPASO 4 - DECIDIR:\n\nComo ninguna de las opciones a, b o c está sustentada por la evidencia y todas dependen de una premisa falsa, la respuesta correcta es d) No puede responderse con la documentación disponible.",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 11.306,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "db7bd6132294e2d0218f24b150cfabc0d744b8c328506de55083d208d2838092",
+          "n_chars": 998,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "fa48f2bc2a177a1dccb12567f65c0c42c76016f5a56a20e38af3ea81a5230787",
+          "n_chars": 1259,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "29dfa0cafaf05e32f01540e749adfcccbf4343d291ca1839e93a132fd64d5097",
+          "n_chars": 1342,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "92345299c192273cc3588ad946264f13543f4b778db0d2b2fd4ca326fe7c2b55",
+          "n_chars": 1449,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "6b284c27f53e34e7d9b033ebde983d9bb10956d712774c412e94cceb20186f71",
+          "n_chars": 1448,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "2a676b5273e2fbe7cd4236c2470f9f391c03451113aa0d76b3d8eae8bc622f48",
+          "n_chars": 1423,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "986a00d3b8facb3648f2dd994f1401cdcc701a0cb0007b6c5e14ae8c97bf9894",
+          "n_chars": 1482,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 2008,
+      "tipo": "ood",
+      "pregunta": "Según la documentación, ¿cuántas personas están diagnosticadas de enfermedad de Parkinson en España?",
+      "opciones": {
+        "a": "Aproximadamente 120.000 personas",
+        "b": "Aproximadamente 160.000 personas",
+        "c": "Aproximadamente 300.000 personas",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa pregunta es sobre la enfermedad de Parkinson, pero en el contexto proporcionado no hay ninguna mención a esta enfermedad. Las opciones a, b y c se refieren a números de personas diagnosticadas con enfermedad de Parkinson, pero no hay evidencia que respalde estas afirmaciones.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nLa premisa del enunciado es que la documentación proporcionada contiene información sobre el número de personas diagnosticadas de enfermedad de Parkinson en España. Sin embargo, según el contexto, no hay ninguna mención a esta enfermedad.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\nComo no hay evidencia que respalde las afirmaciones de las opciones a, b y c, todas ellas son falsas.\n\nPASO 4 - DECIDIR:\n\nDado que ninguna de las opciones a, b o c está sustentada por la evidencia, la respuesta correcta es d) No puede responderse con la documentación disponible.",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 10.786,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "db7bd6132294e2d0218f24b150cfabc0d744b8c328506de55083d208d2838092",
+          "n_chars": 998,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "be6a720fdb7dd7d7e5137547cedbb3cfe92db92114b2abf7d18979dc7e5af122",
+          "n_chars": 1472,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "92345299c192273cc3588ad946264f13543f4b778db0d2b2fd4ca326fe7c2b55",
+          "n_chars": 1449,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "2a676b5273e2fbe7cd4236c2470f9f391c03451113aa0d76b3d8eae8bc622f48",
+          "n_chars": 1423,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "fa48f2bc2a177a1dccb12567f65c0c42c76016f5a56a20e38af3ea81a5230787",
+          "n_chars": 1259,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "6b284c27f53e34e7d9b033ebde983d9bb10956d712774c412e94cceb20186f71",
+          "n_chars": 1448,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "f05ba579217aee25b5ada70c0fc743a6063d882acda25721618a81faf5bcbb8a",
+          "n_chars": 1426,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 2009,
+      "tipo": "ood",
+      "pregunta": "En el ensayo clínico EXCITE, que evaluó la terapia de restricción inducida del movimiento tras un ictus, ¿cuántos pacientes fueron aleatorizados?",
+      "opciones": {
+        "a": "116 pacientes",
+        "b": "222 pacientes",
+        "c": "304 pacientes",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa pregunta se refiere al ensayo clínico EXCITE, que evaluó la terapia de restricción inducida del movimiento tras un ictus. La opción a) menciona 116 pacientes, la opción b) menciona 222 pacientes y la opción c) menciona 304 pacientes.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nLa premisa del enunciado es que el ensayo clínico EXCITE evaluó la terapia de restricción inducida del movimiento tras un ictus. La evidencia proporcionada no menciona específicamente el número de pacientes aleatorizados en el estudio EXCITE.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\nNo hay errores en las opciones a, b o c que puedan descartarse inmediatamente.\n\nPASO 4 - DECIDIR:\n\nDado que la evidencia no proporciona información específica sobre el número de pacientes aleatorizados en el estudio EXCITE, no podemos elegir entre las opciones a, b o c. La respuesta correcta es d) No puede responderse con la documentación disponible.\n\nRESPUESTA FINAL:\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 11.542,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "a907d3994f3035ac9e05eee71195a3aa5d153ee9d8e51a79ebb9ed4d00bb0f1f",
+          "n_chars": 725,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "81855be665cb8ca05e2a21f9498dd3f8811506be8c30cd6927bba34f8bf4962c",
+          "n_chars": 941,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "cce4128564adaf97f7d181191ac08b4602940de1fba00d9e7e05f578809a40b7",
+          "n_chars": 952,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "5688d5ff81f485e05c279dbdc8ad0c80003a80be16b90fe6162be11cc29c6609",
+          "n_chars": 1475,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "d395e521bca1cdb229fd87502d43d76045009cab24045f692eb3a06f9d5802a1",
+          "n_chars": 1405,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "012850e38100faaab39ee29bd13c066f56a9f424427c92631079e811207f4c3a",
+          "n_chars": 1385,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "10921c54fdb944a13ace9104f985f74080c8c51f3cb080b5ba24404f5bf06620",
+          "n_chars": 466,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 2010,
+      "tipo": "ood",
+      "pregunta": "El ensayo LEAPS (Locomotor Experience Applied Post-Stroke) comparó el entrenamiento locomotor en tapiz rodante con soporte parcial del peso corporal frente a un programa de ejercicio domiciliario. ¿Cuántos participantes se incluyeron?",
+      "opciones": {
+        "a": "408 participantes",
+        "b": "606 participantes",
+        "c": "780 participantes",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) 408 participantes\n- Opción b) 606 participantes\n- Opción c) 780 participantes\n- Opción d) No puede responderse con la documentación disponible\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nEl enunciado no establece ninguna premisa que deba ser verificada.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nNo hay errores en las opciones a, b o c. Todas ellas son números enteros sin cambios ni variaciones respecto a la evidencia.\n\nPASO 4 - DECIDIR:\nEntre las opciones a, b y c que no tienen errores, debemos elegir la más completa y correcta. Sin embargo, el contexto proporcionado no menciona el ensayo LEAPS o su participación en un estudio comparativo entre tapiz rodante y programa de ejercicio domiciliario. Por lo tanto, no podemos determinar con certeza cuántos participantes se incluyeron en el ensayo.\n\nRESPUESTA FINAL:\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 11.295,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "dbc742fdc3e3bb661b2303d2b7bdaf2be93d7a3e94dbdfca5b844c8790c1ee18",
+          "n_chars": 453,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "d82974e3d3632529c71a1697f5f6719f68c4be070ca9ab5c99570eff34a2a9ef",
+          "n_chars": 1246,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "1f149e8efff2cf51d8fd3afbe1ba2bba59f34d267705ccdf1967ce593c586eb8",
+          "n_chars": 1490,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "9fdfb15d662dc939c67d0a9df65227ecda92d2eda4d034cfd90ded86db1aecce",
+          "n_chars": 1443,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "e74b59bd47ba7b29a98817396b56593f8ee302450b696bee91824c8739d12c74",
+          "n_chars": 1474,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "11c74343aec74f39e50173aa58adc7d45abd3696f85ac9e952dd5383ccbc437d",
+          "n_chars": 1478,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "5078927fe0c95f0ce80e28a5a75a17bb700163d578e9a5d0a0414a87f5edc6e2",
+          "n_chars": 1245,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 2011,
+      "tipo": "ood",
+      "pregunta": "¿Cuál es la incidencia anual de lesión medular traumática en España, expresada por millón de habitantes, según la documentación?",
+      "opciones": {
+        "a": "Alrededor de 12 casos por millón de habitantes",
+        "b": "Alrededor de 24 casos por millón de habitantes",
+        "c": "Alrededor de 40 casos por millón de habitantes",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa pregunta pide la incidencia anual de lesión medular traumática en España, expresada por millón de habitantes. No hay ninguna mención a esta condición en el contexto proporcionado.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nEl enunciado da por supuesto que existe información sobre la incidencia anual de lesión medular traumática en España. Sin embargo, el contexto solo habla sobre enfermedades cerebrovasculares (ECV) y no menciona lesiones medulares.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\nNo hay opciones que cambien una sola palabra respecto a la evidencia, ya que no hay evidencia sobre lesión medular traumática en el contexto proporcionado.\n\nPASO 4 - DECIDIR:\n\nDado que no hay información sobre lesión medular traumática en el contexto proporcionado, no se puede responder la pregunta con precisión. La respuesta correcta es:\n\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 11.006,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "ea07b7951f3e33db046a5e6271b672513b00aab64917e773911d225f81f52a8c",
+          "n_chars": 974,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "92345299c192273cc3588ad946264f13543f4b778db0d2b2fd4ca326fe7c2b55",
+          "n_chars": 1449,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "fa48f2bc2a177a1dccb12567f65c0c42c76016f5a56a20e38af3ea81a5230787",
+          "n_chars": 1259,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "6b284c27f53e34e7d9b033ebde983d9bb10956d712774c412e94cceb20186f71",
+          "n_chars": 1448,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "ab63f48fdec300ffe521fabeca080fc5fcb9e0b835008b578b9e778e3e499c44",
+          "n_chars": 1329,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "2a676b5273e2fbe7cd4236c2470f9f391c03451113aa0d76b3d8eae8bc622f48",
+          "n_chars": 1423,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "611dfba57717d2f510222fce44cac1a813bcf5b55ca466375f14cdf50a5be860",
+          "n_chars": 1335,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 2012,
+      "tipo": "ood",
+      "pregunta": "Según la documentación, ¿cuál es la prevalencia de parálisis cerebral por cada 1.000 recién nacidos vivos?",
+      "opciones": {
+        "a": "Alrededor de 1,5 por 1.000 recién nacidos vivos",
+        "b": "Alrededor de 2 por 1.000 recién nacidos vivos",
+        "c": "Alrededor de 2,5 por 1.000 recién nacidos vivos",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa pregunta es sobre la prevalencia de parálisis cerebral por cada 1.000 recién nacidos vivos, pero en el contexto proporcionado no hay ninguna mención a la parálisis cerebral o su prevalencia. El texto se centra en la epidemiología y carga asociada a las enfermedades cerebrovasculares, específicamente el ictus.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nLa premisa del enunciado es que hay una relación entre la parálisis cerebral y los recién nacidos vivos. Sin embargo, no hay evidencia en el contexto proporcionado que respalde esta afirmación.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\nNo hay opciones con errores en este caso, ya que ninguna de ellas menciona la parálisis cerebral o su prevalencia.\n\nPASO 4 - DECIDIR:\n\nDado que no hay evidencia en el contexto proporcionado sobre la prevalencia de parálisis cerebral por cada 1.000 recién nacidos vivos, la respuesta correcta es:\n\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 11.343,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "56bb658b67bc879e144b80e01d1196257ff13217b520df3cd830103f2e4cdff0",
+          "n_chars": 1483,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "29dfa0cafaf05e32f01540e749adfcccbf4343d291ca1839e93a132fd64d5097",
+          "n_chars": 1342,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "f435455b0d271297125072711b2cf6b5db626b3069dfd6d5d13c4d1ede3a9b07",
+          "n_chars": 476,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "c9730acd193a49f84d1846ddbb69cff23e9ff152ae17a8c3338abc17789f0cad",
+          "n_chars": 879,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "1a9230c1265507c8d46795ed92edf8e79d212b802bc928e5ef0ff2a9113ff831",
+          "n_chars": 1431,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "ab63f48fdec300ffe521fabeca080fc5fcb9e0b835008b578b9e778e3e499c44",
+          "n_chars": 1329,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "6b284c27f53e34e7d9b033ebde983d9bb10956d712774c412e94cceb20186f71",
+          "n_chars": 1448,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 2013,
+      "tipo": "ood",
+      "pregunta": "Segun la documentacion disponible, ¿cual es la puntuacion motora maxima de la subescala de miembro superior de la escala de Fugl-Meyer y cual es su diferencia minima clinicamente importante (MCID) establecida para el ictus cronico?",
+      "opciones": {
+        "a": "66 puntos de maximo motor, con una MCID de entre 4,25 y 7,25 puntos",
+        "b": "60 puntos de maximo motor, con una MCID de 5,25 puntos",
+        "c": "50 puntos de maximo motor, con una MCID de 9 puntos",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa opción a) menciona \"66 puntos de máximo motor\" y una MCID de entre \"4,25 y 7,25 puntos\". La opción b) menciona \"60 puntos de máximo motor\" y una MCID de \"5,25 puntos\". La opción c) menciona \"50 puntos de máximo motor\" y una MCID de \"9 puntos\".\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nLa pregunta se refiere a la escala de Fugl-Meyer, que es una herramienta utilizada para evaluar la función motora en pacientes con lesiones cerebrales. La pregunta específicamente se refiere a la subescala de miembro superior.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\nLa opción c) menciona \"50 puntos de máximo motor\", lo que parece ser un error, ya que las escalas de Fugl-Meyer suelen tener una puntuación máxima de 66 o 67 puntos.\n\nPASO 4 - DECIDIR:\n\nEntre las opciones a y b, la opción a) menciona \"66 puntos de máximo motor\", lo que coincide con la información disponible sobre la escala de Fugl-Meyer. La MCID también se menciona como entre \"4,25 y 7,25 puntos\", lo que parece ser una respuesta razonable.\n\nRESPUESTA FINAL:\n\nLa respuesta correcta es a) 66 puntos de máximo motor, con una MCID de entre 4,25 y 7,25 puntos.",
+      "opcion_detectada": "a",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 13.744,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "4b534a70246dc82077deb2eec6fc6b421bb015ad8eadb85a44c0d18d27607180",
+          "n_chars": 1420,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "cb6ed68d364575581411687b7c34a05786408344d70894a37f8a1722a17a9ca7",
+          "n_chars": 1333,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "6a2c6a1f797d433415624859cc108e44561cc44401f5b661037c2a949394af9f",
+          "n_chars": 1368,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "157dc09cc595047c28e8e0308ba60eb9ea03700abd73fb4a02460c7fac527dba",
+          "n_chars": 1425,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "9acb4cd73e11c9a0d90303aad82d9d8003c22d12dacb44270ceb59cbb30101b1",
+          "n_chars": 775,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "ccc97d6019e20dffbab4ba491717051ee3d79d6f9c66c4148fae9abef45ab96b",
+          "n_chars": 1329,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "813c4436da7b4bc875725c921f336f4d5488c00d088d00c4574c37f0a63e77b5",
+          "n_chars": 1486,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 2014,
+      "tipo": "ood",
+      "pregunta": "De acuerdo con la documentacion disponible, en la escala de Tinetti (POMA), ¿por debajo de que puntuacion total se considera que el paciente presenta un riesgo alto de caidas?",
+      "opciones": {
+        "a": "Por debajo de 19 sobre 28 puntos",
+        "b": "Por debajo de 24 sobre 28 puntos",
+        "c": "Por debajo de 15 sobre 24 puntos",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa escala de Tinetti (POMA) no se menciona en el contexto proporcionado. Sin embargo, puedo intentar encontrar alguna referencia a la escala en el texto.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nNo hay una premisa específica que deba comprobarse en este caso, ya que la pregunta se refiere a la escala de Tinetti (POMA) y no hay información previa sobre ella.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\nLas opciones a, b y c parecen referirse a puntuaciones totales diferentes. Sin embargo, no hay información en el contexto que permita determinar cuál de ellas es correcta.\n\nPASO 4 - DECIDIR:\n\nDado que no hay información en el contexto que permita determinar la respuesta correcta, la opción más adecuada sería d) No puede responderse con la documentación disponible.",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 10.268,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "9acb4cd73e11c9a0d90303aad82d9d8003c22d12dacb44270ceb59cbb30101b1",
+          "n_chars": 775,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "40e7c014107f039aca20f36a75cabe04ee10e7bddc204f4d277c750cdb2d662d",
+          "n_chars": 987,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "67ea36f8bbe35f0d2f6a251008bb6f7447c6899e7d586b087d2db513f6cb3402",
+          "n_chars": 1117,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "6a2c6a1f797d433415624859cc108e44561cc44401f5b661037c2a949394af9f",
+          "n_chars": 1368,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "6445b59092d6e1c47a19957d8c11eb4b8607e89ddd151e64e7c638a341f8101a",
+          "n_chars": 1383,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "b9340b2ace22131cb04bcac6526feddafcee8ddc57c7d47e765477a01ed00822",
+          "n_chars": 564,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "6d1718000adb1be8290a691bf431b106223929b97faae345256deaafedfca766",
+          "n_chars": 1264,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 2015,
+      "tipo": "ood",
+      "pregunta": "Segun la documentacion disponible, ¿cual es la puntuacion total maxima de la Trunk Impairment Scale (escala de deterioro del tronco de Verheyden) utilizada en la valoracion del control de tronco tras un ictus?",
+      "opciones": {
+        "a": "23 puntos",
+        "b": "20 puntos",
+        "c": "16 puntos",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa pregunta se refiere a la Trunk Impairment Scale (escala de deterioro del tronco de Verheyden), pero no hay información en el contexto sobre esta escala. Sin embargo, hay una mención a la \"Trunk\" en el apartado \"Estudios descriptivos 3\", que se refiere al control de tronco tras un ictus.\n\nLa opción a) 23 puntos no está relacionada con ninguna información en el contexto.\n\nLa opción b) 20 puntos tampoco está relacionada con ninguna información en el contexto.\n\nLa opción c) 16 puntos tampoco está relacionada con ninguna información en el contexto.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nNo hay una premisa específica que deba ser verificada en este caso, ya que la pregunta se refiere a una escala que no está descrita en el contexto.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\nTodas las opciones (a, b y c) están vacías de contenido y no hay información en el contexto que las sustente. Por lo tanto, ninguna de ellas puede ser considerada como correcta.\n\nPASO 4 - DECIDIR:\n\nDado que ninguna de las opciones a, b o c está sustentada por la evidencia, la respuesta correcta es d) No puede responderse con la documentación disponible.\n\nRESPUESTA FINAL:\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 13.377,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "a96588cd259e075e36d608cb3ed7e72b9aafe5230c64e80fbebb8d610b782c80",
+          "n_chars": 1483,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "6a2c6a1f797d433415624859cc108e44561cc44401f5b661037c2a949394af9f",
+          "n_chars": 1368,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "4ac836e27142c83a0e05a55449ed46538ce8fb099a2458280a065ce639a2d365",
+          "n_chars": 1448,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "dacc177ce278429d33cdd3a7b8467aca8c252a764f7b8ad6d0843a7e15002d4a",
+          "n_chars": 883,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "1080e2771e6f8badd2e280e03b6b0db34de147a3598ccebc96fd502a9c97c60b",
+          "n_chars": 1435,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "47e6b51a46e55276ec3d1c4d03617348b0b08caec1378181fdf5dc6583da9f49",
+          "n_chars": 961,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "b1ca62ac1705a886cfb70d4b7885e846b318b87f5c4abe9e62a22a3a92141207",
+          "n_chars": 1426,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 2016,
+      "tipo": "ood",
+      "pregunta": "De acuerdo con la documentacion disponible, ¿cual es el minimo cambio detectable (MDC) del Box and Block Test en pacientes con ictus?",
+      "opciones": {
+        "a": "5,5 bloques por minuto",
+        "b": "2 bloques por minuto",
+        "c": "12 bloques por minuto",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa pregunta es sobre el mínimo cambio detectable (MDC) del Box and Block Test en pacientes con ictus. La evidencia disponible no proporciona información específica sobre el MDC de este test.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nNo hay premisas que verificar, ya que la pregunta es directa y se refiere a un concepto específico (MDC del Box and Block Test).\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nLas opciones a, b y c no tienen errores en cuanto a la nomenclatura o los prefijos. Sin embargo, no hay evidencia que respalde ninguna de estas opciones.\n\nPASO 4 - DECIDIR:\nDado que no hay evidencia disponible para respaldar ninguna de las opciones a, b o c, la respuesta correcta es:\n\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 9.997,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "67ea36f8bbe35f0d2f6a251008bb6f7447c6899e7d586b087d2db513f6cb3402",
+          "n_chars": 1117,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "a49f0d7c9124822a9f743747aff0c02fbc41db3d2efddad098647a8f3d532b95",
+          "n_chars": 996,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "cd0b835253d187c2a8de08b22c8a2ea1f9c9ce3a690a7979d11c05b80dcddc7d",
+          "n_chars": 1009,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "a7b56cc2158c5cb6478fb1e28b1cc7eb964110e3c36ede5ce02154914868e307",
+          "n_chars": 1443,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "aee56d42386458f28fee6c0980b26284f74c8a86797cfb70468036547c6e8395",
+          "n_chars": 1469,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "957dacc61275cff04b35a93e2105a94bbfbdbdd1b8bac59b51ea82fa6e519e39",
+          "n_chars": 942,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "1080e2771e6f8badd2e280e03b6b0db34de147a3598ccebc96fd502a9c97c60b",
+          "n_chars": 1435,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 2017,
+      "tipo": "ood",
+      "pregunta": "Segun la documentacion disponible, ¿de cuantos items consta el Rivermead Mobility Index y cual es su puntuacion maxima?",
+      "opciones": {
+        "a": "15 items, con una puntuacion maxima de 15",
+        "b": "10 items, con una puntuacion maxima de 20",
+        "c": "18 items, con una puntuacion maxima de 36",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa pregunta es sobre el Rivermead Mobility Index, pero en la documentación disponible no se menciona este índice. Sin embargo, hay una tabla que describe el Índice de Barthel y otra que describe la Escala de Medida de Independencia Funcional (FIM). No hay ninguna mención al Rivermead Mobility Index.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nLa premisa del enunciado es que el Rivermead Mobility Index existe y se describe en la documentación disponible. Sin embargo, como se mencionó anteriormente, no hay ninguna mención a este índice.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\nComo no hay información sobre el Rivermead Mobility Index, todas las opciones son incorrectas porque se basan en una premisa falsa. No hay errores en las palabras individuales, pero la premisa del enunciado es incorrecta.\n\nPASO 4 - DECIDIR:\n\nDado que ninguna de las opciones a, b o c está sustentada por la evidencia y todas se basan en una premisa falsa, la respuesta correcta es:\n\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 11.615,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "131a13a1bf44adcad06016f4a96767f0aacd0e84cfde3bc7565d11a34c141574",
+          "n_chars": 451,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "a324ce65b168712091b552370642ec06c0e69de5564cfa7bb25bac41181c4a27",
+          "n_chars": 1158,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "0202e19c32c73145c472f58a465b812350f125a3472c388989772e3980f4c9b4",
+          "n_chars": 987,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "a942bd0433d2f7d99bd1dc4c33ad2543caf359d8fbd81cce338b99f8940aea5c",
+          "n_chars": 1456,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "3914b9f9d50f90288ca66073f505a9216bb66bbd856ec337888961651d375e62",
+          "n_chars": 1118,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "6509eca0b756e1911a2f722b731d37f8af0a5c7206a090c886954d0e0278e37a",
+          "n_chars": 1269,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "3390913059b6fbfc854d48a8c95a3d5b03e6d2cb4be3ce23b8e3793366db11d5",
+          "n_chars": 1192,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 2018,
+      "tipo": "ood",
+      "pregunta": "De acuerdo con la documentacion disponible, ¿en cuantos estadios de recuperacion motora se divide la escala de Brunnstrom y que caracteriza al estadio 3?",
+      "opciones": {
+        "a": "6 estadios; el estadio 3 se caracteriza por la maxima espasticidad y por la ejecucion voluntaria de las sinergias",
+        "b": "5 estadios; el estadio 3 corresponde a la ausencia completa de tono muscular",
+        "c": "7 estadios; el estadio 3 marca la recuperacion total del movimiento aislado",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa escala de Brunnstrom se divide en 6 estadios. La opción a) menciona que la escala se divide en 6 estadios, lo cual es correcto.\n\nLa opción b) menciona que el estadio 3 corresponde a la ausencia completa de tono muscular. Sin embargo, según la documentación disponible, el estadio 3 se caracteriza por la ejecución voluntaria de las sinergias y la máxima espasticidad (no por la ausencia de tono muscular).\n\nLa opción c) menciona que el estadio 3 marca la recuperación total del movimiento aislado. Sin embargo, según la documentación disponible, el estadio 3 se caracteriza por la ejecución voluntaria de las sinergias y la máxima espasticidad (no por la recuperación total del movimiento aislado).\n\nLa opción d) menciona que no puede responderse con la documentación disponible. Sin embargo, según la documentación disponible, podemos determinar el estadio 3.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nLa premisa del enunciado es correcta: la escala de Brunnstrom se divide en 6 estadios.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\nLa opción b) y c) tienen errores, por lo que podemos descartarlas.\n\nPASO 4 - DECIDIR:\n\nEntre las opciones a) y d), la opción a) es la más correcta ya que menciona que la escala de Brunnstrom se divide en 6 estadios y proporciona una descripción del estadio 3.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+      "opcion_detectada": "a",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 14.548,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "b9eec4480eb43baa55b8ddbe319193660b0c4d77bd2091800fc96758ff8fdc6e",
+          "n_chars": 1009,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "67ea36f8bbe35f0d2f6a251008bb6f7447c6899e7d586b087d2db513f6cb3402",
+          "n_chars": 1117,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "fc63469439d60fe03066f540c1eea6349bc0e8ce5a4da0d76b59a1a66d2284db",
+          "n_chars": 1369,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "a49f0d7c9124822a9f743747aff0c02fbc41db3d2efddad098647a8f3d532b95",
+          "n_chars": 996,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "6d63f31aca0e755c4758458e7f9baf617139afd8d2f18881018ceaa4cbf59e5e",
+          "n_chars": 1491,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "5893099c5df9e070bdfcf5ea790be5e4c161881778063760c4a71681fad77f06",
+          "n_chars": 1440,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "1b9c89e1998aa4efc74c7df32a1a7b503aac2d6adb03c32e551322e95a8b2b32",
+          "n_chars": 1361,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    }
+  ]
+}

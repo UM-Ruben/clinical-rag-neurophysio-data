@@ -1,0 +1,16 @@
+{
+  "metadata": {
+    "total_reports": 29,
+    "total_questions_evaluated": 493,
+    "total_correct": 161,
+    "overall_accuracy": 32.66,
+    "models_tested": 7,
+    "embeddings_tested": 4
+  },
+  "top_performers": {
+    "best_model": "llama3.3:70b",
+    "best_model_accuracy": 58.82,
+    "best_embedding": "sentence-transformers/all-MiniLM-L6-v2",
+    "best_embedding_accuracy": 35.29
+  }
+}

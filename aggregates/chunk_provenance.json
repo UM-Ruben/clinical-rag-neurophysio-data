@@ -1,0 +1,2561 @@
+{
+ "n_chunks_corpus": 1584,
+ "retrieval_identico_entre_modelos": true,
+ "divergencias": [],
+ "preguntas": {
+  "1": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 14,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 14,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 9,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 15,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 10,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 28,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 24,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf",
+    "02_bobath_principios_tratamiento.pdf",
+    "03_sistemas_motores_descendentes.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "2": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 25,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 24,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 25,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 4,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 22,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 30,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 16,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf",
+    "03_sistemas_motores_descendentes.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "3": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 18,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 13,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 32,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 42,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 26,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 31,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 18,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf",
+    "03_sistemas_motores_descendentes.pdf",
+    "05_bloques_3_4_tecnicas.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "4": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "07_dist_gpc_ictus_ap_2009.pdf",
+     "pagina": 61,
+     "ambiguo": false
+    },
+    {
+     "documento": "07_dist_gpc_ictus_ap_2009.pdf",
+     "pagina": 17,
+     "ambiguo": false
+    },
+    {
+     "documento": [
+      "08_dist_gpc_ictus_ap_2025.pdf",
+      "09_dist_gpc_ictus_euskadi.pdf"
+     ],
+     "pagina": 104,
+     "ambiguo": true
+    },
+    {
+     "documento": "08_dist_gpc_ictus_ap_2025.pdf",
+     "pagina": 63,
+     "ambiguo": false
+    },
+    {
+     "documento": "08_dist_gpc_ictus_ap_2025.pdf",
+     "pagina": 5,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 7,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 8,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "02_bobath_principios_tratamiento.pdf",
+    "07_dist_gpc_ictus_ap_2009.pdf",
+    "08_dist_gpc_ictus_ap_2025.pdf",
+    "09_dist_gpc_ictus_euskadi.pdf"
+   ],
+   "n_chunks_distractores": 6,
+   "contaminado_por_distractor": true,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "5": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 28,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 28,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 27,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 1,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 20,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 6,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 6,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf",
+    "02_bobath_principios_tratamiento.pdf",
+    "06_fnp_facilitacion_neuromuscular.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "6": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 9,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 6,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 21,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 9,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 19,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 5,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 20,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "06_fnp_facilitacion_neuromuscular.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "7": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 24,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 24,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 28,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 26,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 26,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 24,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 28,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf",
+    "03_sistemas_motores_descendentes.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "8": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 1,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 2,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 3,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 2,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 30,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 23,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 2,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf",
+    "02_bobath_principios_tratamiento.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "9": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "07_dist_gpc_ictus_ap_2009.pdf",
+     "pagina": 86,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 24,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 0,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 27,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 27,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 28,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 26,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "02_bobath_principios_tratamiento.pdf",
+    "03_sistemas_motores_descendentes.pdf",
+    "07_dist_gpc_ictus_ap_2009.pdf"
+   ],
+   "n_chunks_distractores": 1,
+   "contaminado_por_distractor": true,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "10": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 32,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 13,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 14,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 32,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 7,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 22,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 28,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf",
+    "03_sistemas_motores_descendentes.pdf",
+    "05_bloques_3_4_tecnicas.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "11": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 21,
+     "ambiguo": false
+    },
+    {
+     "documento": "09_dist_gpc_ictus_euskadi.pdf",
+     "pagina": 144,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 18,
+     "ambiguo": false
+    },
+    {
+     "documento": "07_dist_gpc_ictus_ap_2009.pdf",
+     "pagina": 172,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 33,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 25,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 30,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf",
+    "03_sistemas_motores_descendentes.pdf",
+    "05_bloques_3_4_tecnicas.pdf",
+    "07_dist_gpc_ictus_ap_2009.pdf",
+    "09_dist_gpc_ictus_euskadi.pdf"
+   ],
+   "n_chunks_distractores": 2,
+   "contaminado_por_distractor": true,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "12": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 20,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 16,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 11,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 10,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 11,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 10,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 28,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf",
+    "03_sistemas_motores_descendentes.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "13": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "07_dist_gpc_ictus_ap_2009.pdf",
+     "pagina": 61,
+     "ambiguo": false
+    },
+    {
+     "documento": "07_dist_gpc_ictus_ap_2009.pdf",
+     "pagina": 17,
+     "ambiguo": false
+    },
+    {
+     "documento": "08_dist_gpc_ictus_ap_2025.pdf",
+     "pagina": 5,
+     "ambiguo": false
+    },
+    {
+     "documento": [
+      "08_dist_gpc_ictus_ap_2025.pdf",
+      "09_dist_gpc_ictus_euskadi.pdf"
+     ],
+     "pagina": 104,
+     "ambiguo": true
+    },
+    {
+     "documento": "07_dist_gpc_ictus_ap_2009.pdf",
+     "pagina": 85,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 10,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 43,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "04_perfetti_etc.pdf",
+    "05_bloques_3_4_tecnicas.pdf",
+    "07_dist_gpc_ictus_ap_2009.pdf",
+    "08_dist_gpc_ictus_ap_2025.pdf",
+    "09_dist_gpc_ictus_euskadi.pdf"
+   ],
+   "n_chunks_distractores": 6,
+   "contaminado_por_distractor": true,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "14": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 29,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 26,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 24,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 23,
+     "ambiguo": false
+    },
+    {
+     "documento": "08_dist_gpc_ictus_ap_2025.pdf",
+     "pagina": 21,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 26,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 27,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf",
+    "02_bobath_principios_tratamiento.pdf",
+    "08_dist_gpc_ictus_ap_2025.pdf"
+   ],
+   "n_chunks_distractores": 1,
+   "contaminado_por_distractor": true,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "15": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 5,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 7,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 26,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 19,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 26,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 27,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 20,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf",
+    "02_bobath_principios_tratamiento.pdf",
+    "03_sistemas_motores_descendentes.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "16": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 12,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 18,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 17,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 15,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 48,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 16,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 27,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "03_sistemas_motores_descendentes.pdf",
+    "05_bloques_3_4_tecnicas.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "17": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 14,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 19,
+     "ambiguo": false
+    },
+    {
+     "documento": "09_dist_gpc_ictus_euskadi.pdf",
+     "pagina": 84,
+     "ambiguo": false
+    },
+    {
+     "documento": "09_dist_gpc_ictus_euskadi.pdf",
+     "pagina": 82,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 15,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 15,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 20,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "04_perfetti_etc.pdf",
+    "09_dist_gpc_ictus_euskadi.pdf"
+   ],
+   "n_chunks_distractores": 2,
+   "contaminado_por_distractor": true,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "18": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 49,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 48,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 47,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 47,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 48,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 20,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 3,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "04_perfetti_etc.pdf",
+    "05_bloques_3_4_tecnicas.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "19": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 26,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 1,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 29,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 28,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 24,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 25,
+     "ambiguo": false
+    },
+    {
+     "documento": "07_dist_gpc_ictus_ap_2009.pdf",
+     "pagina": 182,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf",
+    "02_bobath_principios_tratamiento.pdf",
+    "05_bloques_3_4_tecnicas.pdf",
+    "07_dist_gpc_ictus_ap_2009.pdf"
+   ],
+   "n_chunks_distractores": 1,
+   "contaminado_por_distractor": true,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "20": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 10,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 5,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 14,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 6,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 4,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 0,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 24,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "02_bobath_principios_tratamiento.pdf",
+    "03_sistemas_motores_descendentes.pdf",
+    "04_perfetti_etc.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "21": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 10,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 6,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 10,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 9,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 8,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 11,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 10,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf",
+    "06_fnp_facilitacion_neuromuscular.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "22": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 18,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 17,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 15,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 21,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 20,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 22,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 23,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "03_sistemas_motores_descendentes.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "23": {
+   "n_fragmentos": 5,
+   "procedencias": [
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 28,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 27,
+     "ambiguo": false
+    },
+    {
+     "documento": "09_dist_gpc_ictus_euskadi.pdf",
+     "pagina": 29,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 32,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 29,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "05_bloques_3_4_tecnicas.pdf",
+    "09_dist_gpc_ictus_euskadi.pdf"
+   ],
+   "n_chunks_distractores": 1,
+   "contaminado_por_distractor": true,
+   "documento_fuente_esperado": null,
+   "documento_fuente_recuperado": null
+  },
+  "24": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 1,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 8,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 4,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 3,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 26,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 3,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 3,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf",
+    "04_perfetti_etc.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "01_bobath_concepto",
+   "documento_fuente_recuperado": true
+  },
+  "25": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 1,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 6,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 4,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 9,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 8,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 4,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 17,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "01_bobath_concepto",
+   "documento_fuente_recuperado": true
+  },
+  "26": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 8,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 5,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 1,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 8,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 14,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 7,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 8,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "01_bobath_concepto",
+   "documento_fuente_recuperado": true
+  },
+  "27": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 18,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 9,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 9,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 19,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 27,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 26,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 8,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf",
+    "02_bobath_principios_tratamiento.pdf",
+    "03_sistemas_motores_descendentes.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "01_bobath_concepto",
+   "documento_fuente_recuperado": true
+  },
+  "28": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 21,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 1,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 7,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 27,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 24,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 21,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 20,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "01_bobath_concepto",
+   "documento_fuente_recuperado": true
+  },
+  "29": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 8,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 7,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 28,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 15,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 2,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 21,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 21,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf",
+    "02_bobath_principios_tratamiento.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "02_bobath_principios_tratamiento",
+   "documento_fuente_recuperado": true
+  },
+  "30": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 18,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 19,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 19,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 20,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 8,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 25,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 25,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf",
+    "02_bobath_principios_tratamiento.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "02_bobath_principios_tratamiento",
+   "documento_fuente_recuperado": true
+  },
+  "31": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 23,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 23,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 16,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 21,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 44,
+     "ambiguo": false
+    },
+    {
+     "documento": "08_dist_gpc_ictus_ap_2025.pdf",
+     "pagina": 93,
+     "ambiguo": false
+    },
+    {
+     "documento": "07_dist_gpc_ictus_ap_2009.pdf",
+     "pagina": 176,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "02_bobath_principios_tratamiento.pdf",
+    "05_bloques_3_4_tecnicas.pdf",
+    "07_dist_gpc_ictus_ap_2009.pdf",
+    "08_dist_gpc_ictus_ap_2025.pdf"
+   ],
+   "n_chunks_distractores": 2,
+   "contaminado_por_distractor": true,
+   "documento_fuente_esperado": "02_bobath_principios_tratamiento",
+   "documento_fuente_recuperado": true
+  },
+  "32": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 5,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 6,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 4,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 3,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 10,
+     "ambiguo": false
+    },
+    {
+     "documento": "08_dist_gpc_ictus_ap_2025.pdf",
+     "pagina": 142,
+     "ambiguo": false
+    },
+    {
+     "documento": "07_dist_gpc_ictus_ap_2009.pdf",
+     "pagina": 171,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "02_bobath_principios_tratamiento.pdf",
+    "07_dist_gpc_ictus_ap_2009.pdf",
+    "08_dist_gpc_ictus_ap_2025.pdf"
+   ],
+   "n_chunks_distractores": 2,
+   "contaminado_por_distractor": true,
+   "documento_fuente_esperado": "02_bobath_principios_tratamiento",
+   "documento_fuente_recuperado": true
+  },
+  "33": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 1,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 23,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 7,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 6,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 29,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 30,
+     "ambiguo": false
+    },
+    {
+     "documento": "02_bobath_principios_tratamiento.pdf",
+     "pagina": 29,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf",
+    "02_bobath_principios_tratamiento.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "02_bobath_principios_tratamiento",
+   "documento_fuente_recuperado": true
+  },
+  "34": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 14,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 4,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 4,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 0,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 1,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 15,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 15,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "03_sistemas_motores_descendentes.pdf",
+    "04_perfetti_etc.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "03_sistemas_motores_descendentes",
+   "documento_fuente_recuperado": true
+  },
+  "35": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 18,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 25,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 33,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 25,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 18,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 15,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 20,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "03_sistemas_motores_descendentes.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "03_sistemas_motores_descendentes",
+   "documento_fuente_recuperado": true
+  },
+  "36": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 14,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 15,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 13,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 11,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 0,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 12,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 4,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "03_sistemas_motores_descendentes.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "03_sistemas_motores_descendentes",
+   "documento_fuente_recuperado": true
+  },
+  "37": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 25,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 25,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 5,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 15,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 15,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 33,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 25,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "03_sistemas_motores_descendentes.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "03_sistemas_motores_descendentes",
+   "documento_fuente_recuperado": true
+  },
+  "38": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 19,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 2,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 3,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 18,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 2,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 12,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 1,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "03_sistemas_motores_descendentes.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "03_sistemas_motores_descendentes",
+   "documento_fuente_recuperado": true
+  },
+  "39": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 0,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 19,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 22,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 20,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 0,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 21,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 21,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "04_perfetti_etc.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "04_perfetti_etc",
+   "documento_fuente_recuperado": true
+  },
+  "40": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 6,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 6,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 34,
+     "ambiguo": false
+    },
+    {
+     "documento": "07_dist_gpc_ictus_ap_2009.pdf",
+     "pagina": 44,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 5,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 9,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 9,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "04_perfetti_etc.pdf",
+    "05_bloques_3_4_tecnicas.pdf",
+    "07_dist_gpc_ictus_ap_2009.pdf"
+   ],
+   "n_chunks_distractores": 1,
+   "contaminado_por_distractor": true,
+   "documento_fuente_esperado": "04_perfetti_etc",
+   "documento_fuente_recuperado": true
+  },
+  "41": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 8,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 8,
+     "ambiguo": false
+    },
+    {
+     "documento": "07_dist_gpc_ictus_ap_2009.pdf",
+     "pagina": 44,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 6,
+     "ambiguo": false
+    },
+    {
+     "documento": "07_dist_gpc_ictus_ap_2009.pdf",
+     "pagina": 91,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 19,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 6,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "04_perfetti_etc.pdf",
+    "07_dist_gpc_ictus_ap_2009.pdf"
+   ],
+   "n_chunks_distractores": 2,
+   "contaminado_por_distractor": true,
+   "documento_fuente_esperado": "04_perfetti_etc",
+   "documento_fuente_recuperado": true
+  },
+  "42": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 10,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 1,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 10,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 5,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 34,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 16,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 7,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf",
+    "04_perfetti_etc.pdf",
+    "05_bloques_3_4_tecnicas.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "04_perfetti_etc",
+   "documento_fuente_recuperado": true
+  },
+  "43": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 14,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 14,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 19,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 23,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 15,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 16,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 19,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "04_perfetti_etc.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "04_perfetti_etc",
+   "documento_fuente_recuperado": true
+  },
+  "44": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 2,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 1,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 2,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 4,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 6,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 2,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 3,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "05_bloques_3_4_tecnicas.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "05_bloques_3_4_tecnicas",
+   "documento_fuente_recuperado": true
+  },
+  "45": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 4,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 1,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 2,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 48,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 5,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 2,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 32,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "03_sistemas_motores_descendentes.pdf",
+    "05_bloques_3_4_tecnicas.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "05_bloques_3_4_tecnicas",
+   "documento_fuente_recuperado": true
+  },
+  "46": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 27,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 7,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 20,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 19,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 14,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 20,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 3,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "04_perfetti_etc.pdf",
+    "05_bloques_3_4_tecnicas.pdf",
+    "06_fnp_facilitacion_neuromuscular.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "05_bloques_3_4_tecnicas",
+   "documento_fuente_recuperado": true
+  },
+  "47": {
+   "n_fragmentos": 6,
+   "procedencias": [
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 25,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 19,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 19,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 10,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 11,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 23,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf",
+    "04_perfetti_etc.pdf",
+    "05_bloques_3_4_tecnicas.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "05_bloques_3_4_tecnicas",
+   "documento_fuente_recuperado": true
+  },
+  "48": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 48,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 48,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 12,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 0,
+     "ambiguo": false
+    },
+    {
+     "documento": "05_bloques_3_4_tecnicas.pdf",
+     "pagina": 47,
+     "ambiguo": false
+    },
+    {
+     "documento": "01_bobath_concepto.pdf",
+     "pagina": 28,
+     "ambiguo": false
+    },
+    {
+     "documento": "03_sistemas_motores_descendentes.pdf",
+     "pagina": 27,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "01_bobath_concepto.pdf",
+    "03_sistemas_motores_descendentes.pdf",
+    "05_bloques_3_4_tecnicas.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "05_bloques_3_4_tecnicas",
+   "documento_fuente_recuperado": true
+  },
+  "49": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 11,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 20,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 21,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 22,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 21,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 19,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 21,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "06_fnp_facilitacion_neuromuscular.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "06_fnp_facilitacion_neuromuscular",
+   "documento_fuente_recuperado": true
+  },
+  "50": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 23,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 2,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 3,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 7,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 12,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 1,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 21,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "06_fnp_facilitacion_neuromuscular.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "06_fnp_facilitacion_neuromuscular",
+   "documento_fuente_recuperado": true
+  },
+  "51": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 4,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 15,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 3,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 6,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 15,
+     "ambiguo": false
+    },
+    {
+     "documento": "04_perfetti_etc.pdf",
+     "pagina": 9,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 2,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "04_perfetti_etc.pdf",
+    "06_fnp_facilitacion_neuromuscular.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "06_fnp_facilitacion_neuromuscular",
+   "documento_fuente_recuperado": true
+  },
+  "52": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 23,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 16,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 13,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 1,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 22,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 13,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 13,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "06_fnp_facilitacion_neuromuscular.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "06_fnp_facilitacion_neuromuscular",
+   "documento_fuente_recuperado": true
+  },
+  "53": {
+   "n_fragmentos": 7,
+   "procedencias": [
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 15,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 11,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 15,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 18,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 19,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 6,
+     "ambiguo": false
+    },
+    {
+     "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+     "pagina": 6,
+     "ambiguo": false
+    }
+   ],
+   "documentos": [
+    "06_fnp_facilitacion_neuromuscular.pdf"
+   ],
+   "n_chunks_distractores": 0,
+   "contaminado_por_distractor": false,
+   "documento_fuente_esperado": "06_fnp_facilitacion_neuromuscular",
+   "documento_fuente_recuperado": true
+  }
+ },
+ "resumen": {
+  "fragmentos_totales": 368,
+  "fragmentos_sin_emparejar": 0,
+  "preguntas_con_chunk_distractor": 12,
+  "preguntas_totales": 53,
+  "preguntas_con_metadato_fuente": 30,
+  "preguntas_sin_recuperar_su_documento_fuente": 0
+ }
+}

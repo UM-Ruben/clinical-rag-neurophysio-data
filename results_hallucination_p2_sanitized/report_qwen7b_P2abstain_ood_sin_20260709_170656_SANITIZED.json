@@ -1,0 +1,393 @@
+{
+  "header": {
+    "protocolo": "sysrole_abstain",
+    "banco": "ood",
+    "model": "qwen2.5:7b",
+    "arm": "sin",
+    "no_rag": true,
+    "questions_count": 18,
+    "opcion_abstencion": "d",
+    "texto_opcion_d": "No puede responderse con la documentacion disponible",
+    "retrieved_top_k": 7,
+    "context_max_tokens": 5000,
+    "num_ctx": 8192,
+    "temperature": 0,
+    "embedding_model": "BAAI/bge-m3",
+    "timestamp": "2026-07-09T17:09:44.211347",
+    "completed": true
+  },
+  "summary": {
+    "total": 18,
+    "correct": 10,
+    "accuracy": 55.55555555555556,
+    "abstenciones": 10,
+    "tasa_abstencion": 55.55555555555556,
+    "alucinaciones": 8,
+    "n_items_abstencion_correcta": 18,
+    "parse_desconocida": 0,
+    "latency_mean": 9.294019142786661,
+    "latency_median": 9.187
+  },
+  "questions": [
+    {
+      "id": 2001,
+      "tipo": "ood",
+      "pregunta": "En un adulto con pie equino espástico tras un ictus, ¿cuántas unidades de onabotulinumtoxinA recomienda infiltrar la documentación en el vientre del gastrocnemio medial por sesión?",
+      "opciones": {
+        "a": "50 unidades por músculo",
+        "b": "75 unidades por músculo",
+        "c": "100 unidades por músculo",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "Vamos a analizar cada opción siguiendo el razonamiento indicado:\n\nPASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\na) 50 unidades por músculo: No hay evidencia clínica específica sobre esta cantidad para este caso.\n\nb) 75 unidades por músculo: Similar a la opción anterior, no hay evidencia clínica específica.\n\nc) 100 unidades por músculo: Como en las anteriores, no existe evidencia clínica específica que respalde esta cantidad.\n\nd) No puede responderse con la documentación disponible: Esta opción sugiere que no tenemos suficiente información para determinar una respuesta precisa.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nEl enunciado menciona un adulto con pie equino espástico tras un ictus. No hay evidencia clínica específica sobre la dosis exacta de onabotulinumtoxinA para este caso particular.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nNinguna opción contiene errores gramaticales o conceptuales que hagan falsas las afirmaciones.\n\nPASO 4 - DECIDIR:\nEntre las opciones a, b y c, ninguna está respaldada por evidencia clínica. La opción d es la más adecuada ya que no hay información suficiente para determinar una dosis específica.\n\nRESPUESTA FINAL:\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 9.263,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2002,
+      "tipo": "ood",
+      "pregunta": "¿Qué relación de conversión de dosis entre abobotulinumtoxinA (Dysport) y onabotulinumtoxinA (Botox) establece la documentación para tratar la espasticidad de la extremidad superior post-ictus?",
+      "opciones": {
+        "a": "2,5:1 (Dysport:Botox)",
+        "b": "3:1 (Dysport:Botox)",
+        "c": "4:1 (Dysport:Botox)",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "Paso 1 - Verificar cada opción palabra por palabra:\n\na) 2,5:1 (Dysport:Botox)\nb) 3:1 (Dysport:Botox)\nc) 4:1 (Dysport:Botox)\n\nTodas las opciones contienen los nombres de los fármacos correctamente y la relación numérica es consistente. No hay palabras que cambien el significado.\n\nPaso 2 - Comprobar la premisa del enunciado:\n\nEl enunciado no proporciona ninguna premisa específica que debamos verificar, ya que simplemente nos pide que resolvamos una pregunta de opción múltiple basándonos en nuestra experiencia clínica. No hay afirmaciones que contradigan.\n\nPaso 3 - Descartar opciones con errores:\n\nNinguna de las opciones a, b y c tiene un error gramatical o conceptual que haga que sea falsa.\n\nPaso 4 - Decidir:\n\nBasándonos en mi conocimiento clínico experto, la relación de conversión de dosis entre abobotulinumtoxinA (Dysport) y onabotulinumtoxinA (Botox) para tratar la espasticidad de la extremidad superior post-ictus es generalmente 3:1. Esta proporción se basa en estudios clínicos y experiencias profesionales.\n\nRESPUESTA: b",
+      "opcion_detectada": "b",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 8.82,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2003,
+      "tipo": "ood",
+      "pregunta": "Según la documentación, ¿cuál es la dosis total máxima de onabotulinumtoxinA por sesión de infiltración en el tratamiento de la espasticidad multifocal del adulto?",
+      "opciones": {
+        "a": "360 unidades",
+        "b": "400 unidades",
+        "c": "600 unidades",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "Paso 1 - Verificar cada opción palabra por palabra:\n\na) 360 unidades\nb) 400 unidades\nc) 600 unidades\n\nPaso 2 - Comprobar la premisa del enunciado:\n\nLa pregunta no presenta ninguna premisa que necesite verificación, ya que se trata de una pregunta sobre dosis máxima conocida.\n\nPaso 3 - Descartar opciones con errores:\n\n- Opción a: 360 unidades\n- Opción b: 400 unidades\n- Opción c: 600 unidades\n\nTodas estas opciones son cantidades numéricas y no contienen errores gramaticales o conceptuales que las hagan falsas.\n\nPaso 4 - Decidir:\n\nDebemos elegir la opción más completa y correcta. Según mi conocimiento clínico experto, la dosis máxima de onabotulinumtoxinA por sesión en el tratamiento de la espasticidad multifocal del adulto es generalmente considerada como 600 unidades.\n\nRESPUESTA: c",
+      "opcion_detectada": "c",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 7.222,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2004,
+      "tipo": "ood",
+      "pregunta": "De acuerdo con la documentación, ¿con qué volumen de diluyente debe realizarse la reconstitución de un vial de 100 unidades de toxina botulínica tipo A antes de infiltrar la musculatura espástica?",
+      "opciones": {
+        "a": "1 mL",
+        "b": "2 mL",
+        "c": "4 mL",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) 1 mL: No hay evidencia específica en la documentación sobre el volumen de diluyente para reconstituir 100 unidades de toxina botulínica tipo A.\n- Opción b) 2 mL: Similar a la opción anterior, no hay evidencia específica.\n- Opción c) 4 mL: Igualmente, no hay evidencia específica en la documentación sobre este volumen.\n- Opción d) No puede responderse con la documentación disponible: Esta opción sugiere que no hay información suficiente para determinar el volumen correcto.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nEl enunciado no proporciona ninguna premisa específica sobre el volumen de diluyente, por lo que no podemos descartar opciones basándonos en una afirmación falsa.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n- Opción a) 1 mL: No hay errores.\n- Opción b) 2 mL: No hay errores.\n- Opción c) 4 mL: No hay errores.\n- Opción d) No puede responderse con la documentación disponible: Esta opción no contiene errores gramaticales o conceptuales.\n\nPASO 4 - DECIDIR:\nEntre las opciones a, b y c que NO tienen errores, ninguna de ellas está sustentada por la evidencia proporcionada en el enunciado. Por lo tanto, la respuesta correcta es:\n\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 9.556,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2005,
+      "tipo": "ood",
+      "pregunta": "Para el tratamiento farmacológico de la espasticidad, ¿cuántos miligramos de THC y de CBD aporta cada pulverización oromucosa de nabiximols (Sativex) según la documentación?",
+      "opciones": {
+        "a": "2,7 mg de THC y 2,5 mg de CBD por pulverización",
+        "b": "5 mg de THC y 5 mg de CBD por pulverización",
+        "c": "10 mg de THC y 10 mg de CBD por pulverización",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción A: 2,7 mg de THC y 2,5 mg de CBD por pulverización.\n- Opción B: 5 mg de THC y 5 mg de CBD por pulverización.\n- Opción C: 10 mg de THC y 10 mg de CBD por pulverización.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nLa premisa del enunciado es que se trata de la dosificación de THC y CBD en cada pulverización oromucosa de nabiximols (Sativex). Necesitamos verificar si esta información está disponible en nuestra base de conocimientos.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\n- Opción A: 2,7 mg de THC y 2,5 mg de CBD. No hay evidencia que respalde estos valores.\n- Opción B: 5 mg de THC y 5 mg de CBD. No hay evidencia que respalde estos valores.\n- Opción C: 10 mg de THC y 10 mg de CBD. No hay evidencia que respalde estos valores.\n\nPASO 4 - DECIDIR:\n\nNinguna de las opciones A, B o C tiene evidencia para respaldarla. Por lo tanto, no podemos determinar la respuesta con certeza basándonos en nuestro conocimiento clínico actual.\n\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 9.187,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2006,
+      "tipo": "ood",
+      "pregunta": "Antes de implantar una bomba de baclofeno intratecal en un paciente con espasticidad grave post-ictus, ¿qué dosis de baclofeno en microgramos indica la documentación para el bolo de prueba de cribado?",
+      "opciones": {
+        "a": "25 microgramos",
+        "b": "50 microgramos",
+        "c": "100 microgramos",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "Paso 1 - Verificar cada opción palabra por palabra:\n\na) 25 microgramos\nb) 50 microgramos\nc) 100 microgramos\n\nTodas estas opciones contienen solo números y unidades de medida, sin errores gramaticales o conceptuales evidentes.\n\nPaso 2 - Comprobar la premisa del enunciado:\n\nEl enunciado no contiene afirmaciones que necesiten ser verificadas con la evidencia. La pregunta se centra en las dosis de baclofeno para el bolo de prueba, lo cual es una información clínica relevante.\n\nPaso 3 - Descartar opciones con errores:\n\nNinguna opción tiene un error claro que la haga falsa.\n\nPaso 4 - Decidir:\n\nDebemos buscar la dosis más comúnmente utilizada para este procedimiento. En la práctica clínica, la dosis de baclofeno en el bolo de prueba para la bomba intratecal suele ser de 50 microgramos.\n\nPor lo tanto, la respuesta correcta es:\n\nRESPUESTA: b",
+      "opcion_detectada": "b",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 7.483,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2007,
+      "tipo": "ood",
+      "pregunta": "¿Cuál es la prevalencia estimada de esclerosis múltiple en España, expresada en casos por cada 100.000 habitantes, según la documentación?",
+      "opciones": {
+        "a": "Alrededor de 40 casos por 100.000 habitantes",
+        "b": "Alrededor de 80 casos por 100.000 habitantes",
+        "c": "Alrededor de 120 casos por 100.000 habitantes",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "Paso 1 - Verificar cada opción palabra por palabra:\n\na) Alrededor de 40 casos por 100.000 habitantes\nb) Alrededor de 80 casos por 100.000 habitantes\nc) Alrededor de 120 casos por 100.000 habitantes\nd) No puede responderse con la documentación disponible\n\nPaso 2 - Comprobar la premisa del enunciado:\nEl enunciado no proporciona ninguna premisa que debamos verificar, ya que simplemente nos pide elegir entre las opciones dadas.\n\nPaso 3 - Descartar opciones con errores:\n- Opción a: No contiene errores aparentes.\n- Opción b: No contiene errores aparentes.\n- Opción c: No contiene errores aparentes.\n\nPaso 4 - Decidir:\nTodas las opciones a, b y c son consistentes con la premisa del enunciado. Sin embargo, necesitamos elegir la más completa y correcta basándonos en el conocimiento clínico general sobre la prevalencia de la esclerosis múltiple.\n\nSegún mi conocimiento clínico experto, la prevalencia estimada de esclerosis múltiple en España se sitúa alrededor de 80 casos por cada 100.000 habitantes. Esta cifra está más cerca de la opción b que de las otras dos opciones.\n\nRESPUESTA: b",
+      "opcion_detectada": "b",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 9.069,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2008,
+      "tipo": "ood",
+      "pregunta": "Según la documentación, ¿cuántas personas están diagnosticadas de enfermedad de Parkinson en España?",
+      "opciones": {
+        "a": "Aproximadamente 120.000 personas",
+        "b": "Aproximadamente 160.000 personas",
+        "c": "Aproximadamente 300.000 personas",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "Paso 1 - Verificar cada opción palabra por palabra:\n\na) Aproximadamente 120.000 personas\nb) Aproximadamente 160.000 personas\nc) Aproximadamente 300.000 personas\n\nNo se observan errores gramaticales o conceptuales en ninguna de las opciones.\n\nPaso 2 - Comprobar la premisa del enunciado:\nEl enunciado no proporciona una premisa específica que debamos verificar, solo nos pide responder sobre el número aproximado de personas diagnosticadas con enfermedad de Parkinson en España. No hay afirmaciones que necesitemos comprobar.\n\nPaso 3 - Descartar opciones con errores:\nNinguna opción contiene un error gramatical o conceptual que la haga falsa.\n\nPaso 4 - Decidir:\nEntre las opciones a, b y c, ninguna tiene evidencia clara de ser correcta. No tengo conocimiento experto sobre el número exacto de personas diagnosticadas con enfermedad de Parkinson en España para poder elegir entre estas opciones.\n\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 7.288,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2009,
+      "tipo": "ood",
+      "pregunta": "En el ensayo clínico EXCITE, que evaluó la terapia de restricción inducida del movimiento tras un ictus, ¿cuántos pacientes fueron aleatorizados?",
+      "opciones": {
+        "a": "116 pacientes",
+        "b": "222 pacientes",
+        "c": "304 pacientes",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "Paso 1 - Verificar cada opción palabra por palabra:\n\n- Opción a) 116 pacientes: No coinciden con la evidencia.\n- Opción b) 222 pacientes: No coinciden con la evidencia.\n- Opción c) 304 pacientes: No coinciden con la evidencia.\n\nPaso 2 - Comprobar la premisa del enunciado:\n\nEl enunciado menciona el ensayo clínico EXCITE, que evaluó la terapia de restricción inducida del movimiento tras un ictus. Esta afirmación parece correcta según mi conocimiento clínico.\n\nPaso 3 - Descartar opciones con errores:\n\n- Opción a) 116 pacientes: No coincide con la evidencia.\n- Opción b) 222 pacientes: No coincide con la evidencia.\n- Opción c) 304 pacientes: No coincide con la evidencia.\n\nPaso 4 - Decidir:\n\nNinguna de las opciones a, b y c que no tienen errores está sustentada por la evidencia. Por lo tanto, no puedo determinar la respuesta de forma fiable.\n\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 7.702,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2010,
+      "tipo": "ood",
+      "pregunta": "El ensayo LEAPS (Locomotor Experience Applied Post-Stroke) comparó el entrenamiento locomotor en tapiz rodante con soporte parcial del peso corporal frente a un programa de ejercicio domiciliario. ¿Cuántos participantes se incluyeron?",
+      "opciones": {
+        "a": "408 participantes",
+        "b": "606 participantes",
+        "c": "780 participantes",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "Paso 1 - Verificar cada opción palabra por palabra:\n\n- Opción a) 408 participantes: No se parece en nada al número real de participantes del ensayo LEAPS.\n- Opción b) 606 participantes: No se parece en nada al número real de participantes del ensayo LEAPS.\n- Opción c) 780 participantes: No se parece en nada al número real de participantes del ensayo LEAPS.\n\nPaso 2 - Comprobar la premisa del enunciado:\n\nEl enunciado afirma que el ensayo LEAPS comparó entrenamiento locomotor en tapiz rodante con soporte parcial del peso corporal frente a un programa de ejercicio domiciliario. Esta afirmación es correcta y no contradice ninguna evidencia conocida.\n\nPaso 3 - Descartar opciones con errores:\n\n- Opción a) 408 participantes: Tiene un error en la cantidad.\n- Opción b) 606 participantes: Tiene un error en la cantidad.\n- Opción c) 780 participantes: Tiene un error en la cantidad.\n\nPaso 4 - Decidir:\n\nNinguna de las opciones a, b y c que no tienen errores se ajusta al número real de participantes del ensayo LEAPS. Por lo tanto, no podemos determinar la respuesta con certeza basándonos únicamente en el conocimiento experto.\n\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 8.869,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2011,
+      "tipo": "ood",
+      "pregunta": "¿Cuál es la incidencia anual de lesión medular traumática en España, expresada por millón de habitantes, según la documentación?",
+      "opciones": {
+        "a": "Alrededor de 12 casos por millón de habitantes",
+        "b": "Alrededor de 24 casos por millón de habitantes",
+        "c": "Alrededor de 40 casos por millón de habitantes",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "Paso 1 - Verificar cada opción palabra por palabra:\n\na) Alrededor de 12 casos por millón de habitantes\nb) Alrededor de 24 casos por millón de habitantes\nc) Alrededor de 40 casos por millón de habitantes\nd) No puede responderse con la documentación disponible\n\nPaso 2 - Comprobar la premisa del enunciado:\nEl enunciado no proporciona ninguna premisa que debamos verificar, ya que simplemente nos pide elegir entre las opciones dadas.\n\nPaso 3 - Descartar opciones con errores:\n\n- Opción a: No hay errores evidentes.\n- Opción b: No hay errores evidentes.\n- Opción c: No hay errores evidentes.\n\nPaso 4 - Decidir:\nEntre las opciones a, b y c que no tienen errores, debemos elegir la más completa y correcta. Sin embargo, en este caso, no tengo información específica sobre la incidencia anual de lesión medular traumática en España para poder determinar cuál es el valor exacto.\n\nPor lo tanto, la respuesta correcta es:\n\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 7.69,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2012,
+      "tipo": "ood",
+      "pregunta": "Según la documentación, ¿cuál es la prevalencia de parálisis cerebral por cada 1.000 recién nacidos vivos?",
+      "opciones": {
+        "a": "Alrededor de 1,5 por 1.000 recién nacidos vivos",
+        "b": "Alrededor de 2 por 1.000 recién nacidos vivos",
+        "c": "Alrededor de 2,5 por 1.000 recién nacidos vivos",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción A: \"Alrededor de 1,5 por 1.000 recién nacidos vivos\"\n- Opción B: \"Alrededor de 2 por 1.000 recién nacidos vivos\"\n- Opción C: \"Alrededor de 2,5 por 1.000 recién nacidos vivos\"\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nLa premisa del enunciado es que se trata de la prevalencia de parálisis cerebral por cada 1.000 recién nacidos vivos. Esta afirmación no contradice ninguna evidencia conocida, así que las opciones no son descartadas por esta etapa.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\n- Opción A: \"Alrededor de 1,5 por 1.000 recién nacidos vivos\"\n   - No hay errores en la opción.\n- Opción B: \"Alrededor de 2 por 1.000 recién nacidos vivos\"\n   - No hay errores en la opción.\n- Opción C: \"Alrededor de 2,5 por 1.000 recién nacidos vivos\"\n   - No hay errores en la opción.\n\nPASO 4 - DECIDIR:\n\nEntre las opciones A (1,5), B (2) y C (2,5), ninguna es respaldada con evidencia clara en mi conocimiento experto. La prevalencia exacta puede variar según diferentes estudios y regiones, pero no puedo afirmar con certeza que una sea más correcta que las otras basándome únicamente en el conocimiento experto.\n\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 10.935,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2013,
+      "tipo": "ood",
+      "pregunta": "Segun la documentacion disponible, ¿cual es la puntuacion motora maxima de la subescala de miembro superior de la escala de Fugl-Meyer y cual es su diferencia minima clinicamente importante (MCID) establecida para el ictus cronico?",
+      "opciones": {
+        "a": "66 puntos de maximo motor, con una MCID de entre 4,25 y 7,25 puntos",
+        "b": "60 puntos de maximo motor, con una MCID de 5,25 puntos",
+        "c": "50 puntos de maximo motor, con una MCID de 9 puntos",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "Vamos a analizar cada opción siguiendo el razonamiento detallado:\n\nPASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\na) 66 puntos de maximo motor, con una MCID de entre 4,25 y 7,25 puntos\n- Puntuación máxima: 66 (correcto)\n- MCID: Entre 4,25 y 7,25 (correcto)\n\nb) 60 puntos de maximo motor, con una MCID de 5,25 puntos\n- Puntuación máxima: 60 (correcto)\n- MCID: 5,25 (correcto)\n\nc) 50 puntos de maximo motor, con una MCID de 9 puntos\n- Puntuación máxima: 50 (incorrecto, la puntuación máxima es 66 o 60 según las opciones correctas)\n\nd) No puede responderse con la documentacion disponible\n- Esta opción no se puede confirmar ni descartar con el análisis anterior\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nLa premisa del enunciado es que hay una puntuación motora máxima y una MCID establecida. Esto parece correcto según la evidencia.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n- Opción c) tiene un error en la puntuación máxima, por lo que se descarta.\n- Opciones a) y b) no tienen errores aparentes.\n\nPASO 4 - DECIDIR:\nEntre las opciones a) y b), ambas son correctas según el análisis. Sin embargo, la opción a) proporciona más información (puntuación máxima de 66 puntos).\n\nRESPUESTA: a",
+      "opcion_detectada": "a",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 10.536,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2014,
+      "tipo": "ood",
+      "pregunta": "De acuerdo con la documentacion disponible, en la escala de Tinetti (POMA), ¿por debajo de que puntuacion total se considera que el paciente presenta un riesgo alto de caidas?",
+      "opciones": {
+        "a": "Por debajo de 19 sobre 28 puntos",
+        "b": "Por debajo de 24 sobre 28 puntos",
+        "c": "Por debajo de 15 sobre 24 puntos",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- **Opción A:** \"Por debajo de 19 sobre 28 puntos\"\n  - La puntuación es correcta (19/28).\n  \n- **Opción B:** \"Por debajo de 24 sobre 28 puntos\"\n  - La puntuación es correcta (24/28).\n  \n- **Opción C:** \"Por debajo de 15 sobre 24 puntos\"\n  - La puntuación es incorrecta (15/24) y la escala no es la adecuada.\n  \n- **Opción D:** \"No puede responderse con la documentación disponible\"\n  - Esta opción sugiere que no hay suficiente información, pero en este caso, tenemos información clara.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n- La premisa del enunciado es que estamos hablando de la escala de Tinetti (POMA) y se está buscando el umbral para considerar un riesgo alto de caídas.\n- Esta premisa parece correcta, ya que la escala de Tinetti evalúa la funcionalidad postural y gait en pacientes mayores.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n- **Opción C** es descartada porque la puntuación no coincide con el umbral para un riesgo alto.\n- **Opciones A y B** tienen la misma puntuación, pero necesitamos decidir entre ellas.\n\nPASO 4 - DECIDIR:\n- Ambas opciones A (19/28) y B (24/28) son correctas en términos de puntuación. Sin embargo, la opción B es más amplia y generalmente se considera que un valor por debajo de 24/28 indica un riesgo alto.\n\nRESPUESTA FINAL:\nRESPUESTA: b",
+      "opcion_detectada": "b",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 11.357,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2015,
+      "tipo": "ood",
+      "pregunta": "Segun la documentacion disponible, ¿cual es la puntuacion total maxima de la Trunk Impairment Scale (escala de deterioro del tronco de Verheyden) utilizada en la valoracion del control de tronco tras un ictus?",
+      "opciones": {
+        "a": "23 puntos",
+        "b": "20 puntos",
+        "c": "16 puntos",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción A: 23 puntos\n- Opción B: 20 puntos\n- Opción C: 16 puntos\n\nLa Trunk Impairment Scale (TIS) de Verheyden es una escala utilizada para evaluar la función del tronco en pacientes con lesiones cervicales. La puntuación máxima de esta escala es de 23 puntos, que se alcanza cuando el paciente tiene un control completo y normal del tronco.\n\n- Opción A: \"23 puntos\" - Esta opción parece correcta según la información generalmente conocida sobre la TIS.\n- Opciones B y C: \"20 puntos\" y \"16 puntos\" - Estas opciones no coinciden con el valor máximo de 23 puntos que se ha establecido para esta escala.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nEl enunciado no contiene ninguna premisa que necesite verificación adicional, ya que la información sobre el valor máximo de la TIS es generalmente aceptada y ampliamente conocida en la literatura clínica.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\n- Opción A: \"23 puntos\" - No contiene errores.\n- Opciones B y C: \"20 puntos\" y \"16 puntos\" - Contienen errores ya que no son el valor máximo de la escala.\n\nPASO 4 - DECIDIR:\n\nEntre las opciones a, b y c que NO tienen errores, la opción A (23 puntos) es la más completa y correcta.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+      "opcion_detectada": "a",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 10.099,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2016,
+      "tipo": "ood",
+      "pregunta": "De acuerdo con la documentacion disponible, ¿cual es el minimo cambio detectable (MDC) del Box and Block Test en pacientes con ictus?",
+      "opciones": {
+        "a": "5,5 bloques por minuto",
+        "b": "2 bloques por minuto",
+        "c": "12 bloques por minuto",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "Paso 1 - Verificar cada opción palabra por palabra:\n\na) 5,5 bloques por minuto\nb) 2 bloques por minuto\nc) 12 bloques por minuto\n\nPaso 2 - Comprobar la premisa del enunciado:\nLa pregunta no presenta ninguna premisa que necesite verificación.\n\nPaso 3 - Descartar opciones con errores:\n- Opción a: \"5,5\" podría ser un error tipográfico de \"5.5\", pero el resto parece correcto.\n- Opción b: \"2\" bloques por minuto no parece estar respaldado por evidencia clínica conocida.\n- Opción c: \"12\" bloques por minuto tampoco parece estar respaldado por evidencia clínica conocida.\n\nPaso 4 - Decidir:\nNinguna de las opciones a, b y c parece estar respaldada por la evidencia clínica conocida. El MDC del Box and Block Test en pacientes con ictus no es un valor estándar ampliamente aceptado o documentado.\n\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 7.499,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2017,
+      "tipo": "ood",
+      "pregunta": "Segun la documentacion disponible, ¿de cuantos items consta el Rivermead Mobility Index y cual es su puntuacion maxima?",
+      "opciones": {
+        "a": "15 items, con una puntuacion maxima de 15",
+        "b": "10 items, con una puntuacion maxima de 20",
+        "c": "18 items, con una puntuacion maxima de 36",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- **Opción A**: \"15 items, con una puntuación máxima de 15\"\n  - Items: Correcto (el Rivermead Mobility Index consta efectivamente de 15 items).\n  - Puntuación máxima: Incorrecto (la puntuación máxima es 36, no 15).\n\n- **Opción B**: \"10 items, con una puntuación máxima de 20\"\n  - Items: Incorrecto (el Rivermead Mobility Index consta de 15 items).\n  - Puntuación máxima: Incorrecto.\n\n- **Opción C**: \"18 items, con una puntuación máxima de 36\"\n  - Items: Incorrecto (el Rivermead Mobility Index consta de 15 items).\n  - Puntuación máxima: Correcto (la puntuación máxima es efectivamente 36).\n\n- **Opción D**: \"No puede responderse con la documentación disponible\"\n  - Esta opción no se aplica ya que hemos encontrado una opción correcta.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nEl enunciado pide información sobre el número de items y la puntuación máxima del Rivermead Mobility Index. Según nuestra verificación, solo la opción C contiene la información correcta.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n- Opción A: Incorrecta por error en la puntuación máxima.\n- Opción B: Incorrecta por error en el número de items.\n- Opción D: No se aplica ya que hemos encontrado una opción correcta.\n\nPASO 4 - DECIDIR:\nEntre las opciones a, b y c que no tienen errores, la opción C es la más completa y correcta.\n\nRESPUESTA FINAL:\nRESPUESTA: C",
+      "opcion_detectada": "c",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 10.802,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    },
+    {
+      "id": 2018,
+      "tipo": "ood",
+      "pregunta": "De acuerdo con la documentacion disponible, ¿en cuantos estadios de recuperacion motora se divide la escala de Brunnstrom y que caracteriza al estadio 3?",
+      "opciones": {
+        "a": "6 estadios; el estadio 3 se caracteriza por la maxima espasticidad y por la ejecucion voluntaria de las sinergias",
+        "b": "5 estadios; el estadio 3 corresponde a la ausencia completa de tono muscular",
+        "c": "7 estadios; el estadio 3 marca la recuperacion total del movimiento aislado",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n**Opción A:** \"6 estadios; el estadio 3 se caracteriza por la maxima espasticidad y por la ejecucion voluntaria de las sinergias\"\n- La escala Brunnstrom divide en 6 estadios, lo cual es correcto.\n- El estadio 3 no se caracteriza por la máxima espasticidad; en realidad, el estadio 4 es cuando se observa la máxima espasticidad. Además, el estadio 3 se asocia con la recuperación de movimientos aislados y la aparición de sinergias.\n- La opción contiene un error importante: la caracterización del estadio 3.\n\n**Opción B:** \"5 estadios; el estadio 3 corresponde a la ausencia completa de tono muscular\"\n- La escala Brunnstrom divide en 6 estadios, no 5. Por lo tanto, esta opción es incorrecta.\n\n**Opción C:** \"7 estadios; el estadio 3 marca la recuperacion total del movimiento aislado\"\n- La escala Brunnstrom divide en 6 estadios, no 7. Además, el estadio 3 no marca la recuperación total del movimiento aislado; se asocia con la aparición de sinergias y movimientos involuntarios.\n\n**Opción D:** \"No puede responderse con la documentacion disponible\"\n- La escala Brunnstrom divide en 6 estadios, lo cual es correcto. Además, el estadio 3 se caracteriza por la recuperación de movimientos aislados y la aparición de sinergias.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n- La premisa del enunciado afirma que la escala Brunnstrom divide en 6 estadios, lo cual es correcto. No hay afirmaciones falsas que contradigan la evidencia.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n- Opción A: Contiene un error importante.\n- Opción B: Contiene un error de número de estadios.\n- Opción C: Contiene un error de número de estadios y una caracterización incorrecta.\n\nPASO 4 - DECIDIR:\n- Entre las opciones que no tienen errores, la opción D es la más correcta ya que refleja la información precisa sobre el número de estadios y la caracterización del estadio 3.\n\nRESPUESTA FINAL:\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 13.914,
+      "num_fragmentos": 0,
+      "fragmentos": []
+    }
+  ]
+}

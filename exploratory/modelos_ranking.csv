@@ -1,0 +1,8 @@
+model,accuracy,total_questions,correct_answers,reports,embeddings
+llama3.3:70b,58.82,51,30,3,BAAI/bge-m3
+qwen2.5:72b,52.94,51,27,3,BAAI/bge-m3
+llama3.1:8b,41.18,51,21,3,BAAI/bge-m3
+qwen2.5:7b,33.94,221,75,13,"BAAI/bge-m3, intfloat/multilingual-e5-large, sentence-transformers/all-MiniLM-L6-v2, sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+deepseek-llm:7b,29.41,17,5,1,BAAI/bge-m3
+medllama2:7b,5.88,51,3,3,BAAI/bge-m3
+meditron:7b,0.0,51,0,3,BAAI/bge-m3

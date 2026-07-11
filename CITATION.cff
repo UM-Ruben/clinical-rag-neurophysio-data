@@ -1,0 +1,65 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite both the dataset and the article it accompanies (see preferred-citation)."
+title: "clinical-rag-neurophysio-data: research data for the empirical quantification of the benefit of Retrieval-Augmented Generation in a lightweight on-premise clinical assistant for neurophysiotherapy in Spanish"
+type: dataset
+version: "1.0.0"
+date-released: '2026-07-11'
+license: CC-BY-4.0
+repository-code: "https://github.com/UM-Ruben/clinical-rag-neurophysio-data"
+authors:
+  - family-names: "Fernández García"
+    given-names: "Rubén"
+    affiliation: "Universidad de Murcia"
+    email: ruben.fernandezg@um.es
+  - family-names: "García Carrasco"
+    given-names: "José Manuel"
+    affiliation: "Universidad de Murcia"
+    email: jmgarcia@um.es
+abstract: >-
+  Research data accompanying the article "Las Bondades del RAG" (The Benefits of RAG),
+  an empirical quantification of the benefit of context retrieval in a lightweight,
+  private, on-premise clinical assistant for neurophysiotherapy in Spanish. The
+  repository publishes the raw inference records of two experiments over four locally
+  deployable 7B-8B language models. Study P1 (ablation) contrasts each model with and
+  without RAG on a 53-item gold-standard question bank, three options per item and
+  abstention forbidden by design, for a total of 424 inferences. Study P2
+  (hallucination) permits abstention through a fourth option and evaluates the same
+  four models, with and without RAG, over three banks (the 53 answerable items, 24
+  TRAP items carrying a false premise in the stem, and 18 out-of-distribution items
+  that the corpus cannot answer), for a total of 760 inferences. Also published are
+  the three question banks, an adjudicated taxonomy of the 131 erroneous responses of
+  Study P1 across five mutually exclusive categories, a blind error-detectability
+  panel with three LLM judges (two weak local models and one frontier model), the
+  retrieval provenance of the 368 chunks retrieved for the 53 answerable questions,
+  and the pre-computed aggregates behind every figure reported in the article. There
+  is no independent human annotator: the frontier judge produced the taxonomy and
+  detectability labels, and the author reviewed and endorsed them without
+  modification (131 of 131 categories unchanged), so no human-machine agreement is
+  published or computable. Accuracies of the two protocols are not comparable with
+  each other, as the number of options and the abstention policy differ. The teaching
+  corpus and the system source code are not published; the retrieved passages of
+  Study P2 are released as SHA-256 digests so that a holder of a licensed copy of the
+  corpus can verify the retrieval without the corpus being redistributed.
+keywords:
+  - RAG
+  - retrieval-augmented generation
+  - hallucination
+  - clinical NLP
+  - Spanish
+  - neurorehabilitation
+  - LLM evaluation
+preferred-citation:
+  type: article
+  title: "Las Bondades del RAG"
+  authors:
+    - family-names: "Fernández García"
+      given-names: "Rubén"
+      affiliation: "Universidad de Murcia"
+      email: ruben.fernandezg@um.es
+    - family-names: "García Carrasco"
+      given-names: "José Manuel"
+      affiliation: "Universidad de Murcia"
+      email: jmgarcia@um.es
+  journal: "Journal of Artificial Intelligence Research"
+  year: 2026
+  notes: "under review"

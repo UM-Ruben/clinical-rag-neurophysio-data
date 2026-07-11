@@ -1,0 +1,96 @@
+{
+  "jueces": {
+    "claude-frontera": {
+      "n_utiles": 80,
+      "n_bruto": 80,
+      "auroc": {
+        "auroc_con": 0.9337,
+        "auroc_sin": 0.98,
+        "diff": -0.0463,
+        "ci95_diff": [
+          -0.1758,
+          0.0433
+        ],
+        "p_bootstrap": 0.4384,
+        "n_boot_validos": 10000
+      },
+      "H2_veredicto": {
+        "direccion": "los errores CON RAG son mas dificiles de detectar",
+        "significativo": false
+      },
+      "sensibilidad": {
+        "sin": {
+          "errores": 20,
+          "marcados_no_fiables": 18,
+          "pct": 90.0,
+          "ci95_wilson": [
+            69.9,
+            97.2
+          ]
+        },
+        "con": {
+          "errores": 20,
+          "marcados_no_fiables": 18,
+          "pct": 90.0,
+          "ci95_wilson": [
+            69.9,
+            97.2
+          ]
+        },
+        "fisher_p": 1.0
+      },
+      "desacuerdo_en_errores": {
+        "sin": {
+          "k": 18,
+          "n": 20,
+          "pct": 90.0,
+          "ci95_wilson": [
+            69.9,
+            97.2
+          ]
+        },
+        "con": {
+          "k": 15,
+          "n": 20,
+          "pct": 75.0,
+          "ci95_wilson": [
+            53.1,
+            88.8
+          ]
+        }
+      },
+      "regresion_confusores": {
+        "intercepto": {
+          "coef": 0.4693,
+          "se": 2.1462,
+          "odds_ratio": 1.599,
+          "p": 0.8269
+        },
+        "con_rag": {
+          "coef": 0.201,
+          "se": 1.1581,
+          "odds_ratio": 1.223,
+          "p": 0.8622
+        },
+        "longitud_kchars": {
+          "coef": 1.5405,
+          "se": 1.4776,
+          "odds_ratio": 4.667,
+          "p": 0.2972
+        },
+        "densidad_tecnica": {
+          "coef": -0.1601,
+          "se": 0.1019,
+          "odds_ratio": 0.852,
+          "p": 0.1161
+        },
+        "cita_el_contexto": {
+          "coef": 10.8297,
+          "se": 433.766,
+          "odds_ratio": 50498.647,
+          "p": 0.9801
+        }
+      }
+    }
+  }
+}

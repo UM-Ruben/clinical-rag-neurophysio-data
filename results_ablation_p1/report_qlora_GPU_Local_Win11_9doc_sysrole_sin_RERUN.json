@@ -1,0 +1,819 @@
+{
+ "header": {
+  "model": "neurofisio-qlora",
+  "arm": "sin",
+  "system_role": true,
+  "no_rag": true,
+  "questions_count": 53,
+  "context_max_tokens": 5000,
+  "retrieved_top_k": 7,
+  "num_ctx": 8192,
+  "temperature": 0,
+  "completed": true,
+  "rerun": "sysrole_anti_refusal"
+ },
+ "summary": {
+  "total": 53,
+  "correct": 34,
+  "accuracy": 64.15094339622641,
+  "latency_mean": 15.248077082184126,
+  "latency_median": 14.637931823730469
+ },
+ "questions": [
+  {
+   "id": 1,
+   "pregunta": "Sobre la anatomía de la cápsula y tractos, es correcto que: ",
+   "opciones": {
+    "a": "Lesión en la rodilla de la cápsula provoca caída de la mitad de la cara contralateral ",
+    "b": "El tracto cortico bulbar está solo en el área 6 ",
+    "c": "La mitad superior de la cara es inervada de manera contralateral "
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\na) Lesión en la rodilla de la cápsula provoca caída de la mitad de la cara contralateral: \n- La cápsula articular de la rodilla está relacionada con el movimiento de la articulación, no directamente con la inervación de la cara.\n- El término \"cápsula\" se refiere a la estructura que rodea la articulación, no al sistema nervioso.\n\nb) El tracto cortico bulbar está solo en el área 6: \n- El área 6 es parte del hemisferio cerebral y está relacionada con la motricidad voluntaria.\n- El término \"cortico bulbar\" se refiere a una conexión entre el cerebro (corteza) y el bulbo raquídeo, que no está limitado al área 6.\n\nc) La mitad superior de la cara es inervada de manera contralateral: \n- Esto es correcto. El nervio facial (VII) controla los movimientos de la cara y tiene una organización cruzada, lo que significa que el lado izquierdo del cerebro controla el lado derecho de la cara y viceversa.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n- Opción a: Cambia varias palabras respecto a la evidencia. Descártala.\n- Opción b: El término \"cortico bulbar\" no está limitado al área 6, por lo que esta opción también es incorrecta.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n- No hay una opción combinada de este tipo en la pregunta.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n- La única opción que no tiene errores es c) La mitad superior de la cara es inervada de manera contralateral.\n\nRESPUESTA FINAL:\nRESPUESTA: c",
+   "opcion_detectada": "c",
+   "es_correcta": false,
+   "latency_seconds": 14.786674737930298,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 2,
+   "pregunta": "Es cierto que los arcos del pie los proporcionan la siguiente musculatura: ",
+   "opciones": {
+    "a": "Los peroneos laterales corto y largo, y el aductor del 5º dedo del pie configuran el arco externo ",
+    "b": "El tibial posterior, el aductor del dedo gordo y el flexor largo de los dedos configuran el arco interno ",
+    "c": "Los peroneos laterales corto y largo y el abductor del 5º dedo configuran el arco externo "
+   },
+   "respuesta_correcta": "c",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Los peroneos laterales corto y largo, y el aductor del 5º dedo del pie configuran el arco externo: \n  - \"Peroneos laterales\" es correcto, ya que los músculos peroneos laterales están involucrados en la formación del arco externo.\n  - \"Corto y largo\" también es correcto, ya que ambos músculos participan en la estabilización del pie.\n  - Sin embargo, el término \"aductor del 5º dedo\" no es preciso. El músculo responsable de la aducción (movimiento hacia dentro) del dedo gordo es el flexor digitorum brevis.\n\n- Opción b) El tibial posterior, el aductor del dedo gordo y el flexor largo de los dedos configuran el arco interno: \n  - \"Tibial posterior\" es correcto, ya que está involucrado en la formación del arco interno.\n  - Sin embargo, el término \"aductor del dedo gordo\" no es preciso. El músculo responsable de la aducción (movimiento hacia dentro) del dedo gordo es el flexor digitorum brevis.\n\n- Opción c) Los peroneos laterales corto y largo y el abductor del 5º dedo configuran el arco externo: \n  - \"Peroneos laterales\" es correcto, ya que los músculos peroneos laterales están involucrados en la formación del arco externo.\n  - \"Corto y largo\" también es correcto, ya que ambos músculos participan en la estabilización del pie.\n  - Sin embargo, el término \"abductor del 5º dedo\" no es preciso. El músculo responsable de la abducción (movimiento hacia fuera) del dedo gordo es el peroneo largo.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n- Opción a) Tiene un error en el término \"aductor del 5º dedo\".\n- Opción b) Tiene un error en el término \"aductor del dedo gordo\".\n- Opción c) Tiene un error en el término \"abductor del 5º dedo\".\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\nNo hay una opción combinada que verifique la veracidad de ambas opciones.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\nEntre las opciones que no tienen errores, ninguna es completamente correcta debido a los errores en los términos \"aductor del 5º dedo\" y \"abductor del 5º dedo\". Sin embargo, la opción c) está más cerca de la verdad al mencionar correctamente el papel de los peroneos laterales corto y largo en el arco externo.\n\nRESPUESTA: C",
+   "opcion_detectada": "c",
+   "es_correcta": true,
+   "latency_seconds": 21.085233688354492,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 3,
+   "pregunta": "Al elevar el miembro superior para coger un objeto que está en un estante alto, se producen los siguientes movimientos de forma estratégica: ",
+   "opciones": {
+    "a": "Fijación de la cabeza humeral en la cavidad glenoidea por el supraespinoso, iniciación de la abducción del brazo por el deltoides y supraespinoso, y extensión del codo ",
+    "b": "Estabilización de la articulación glenohumeral por el supraespinoso, deslizamiento de la cabeza humeral sobre la cavidad glenoidea por el manguito rotador (supraespinoso e infraespinoso), y rotación externa de húmero ",
+    "c": "Estabilización de la articulación glenohumeral por el supraespinoso, deslizamiento de la cabeza humeral sobre la cavidad glenoidea por el manquito rotador, rotación externa de húmero por el infraespinoso y el redondo menor y báscula externa de escápula por trapecios superior e inferior y por el serrato anterior y extensión de codo por el tríceps braquial "
+   },
+   "respuesta_correcta": "c",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Fijación de la cabeza humeral en la cavidad glenoidea por el supraespinoso, iniciación de la abducción del brazo por el deltoides y supraespinoso, y extensión del codo: \n  - La fijación de la cabeza humeral se logra mediante múltiples músculos, no solo el supraespinoso. El manguito rotador (supraespinoso e infraespinoso) también desempeña un papel importante en esta fase.\n  - La abducción del brazo es iniciada por el deltoides y el supraespinoso, pero la descripción no menciona a los músculos que participan en la estabilización de la articulación glenohumeral durante este movimiento.\n\n- Opción b) Estabilización de la articulación glenohumeral por el supraespinoso, deslizamiento de la cabeza humeral sobre la cavidad glenoidea por el manguito rotador (supraespinoso e infraespinoso), y rotación externa de húmero: \n  - La estabilización de la articulación glenohumeral se logra mediante múltiples músculos, incluyendo al supraespinoso. Sin embargo, el manguito rotador (supraespinoso e infraespinoso) es responsable del deslizamiento de la cabeza humeral sobre la cavidad glenoidea.\n  - La rotación externa del húmero se describe como una acción separada, pero en realidad está relacionada con el movimiento de abducción y estabilización.\n\n- Opción c) Estabilización de la articulación glenohumeral por el supraespinoso, deslizamiento de la cabeza humeral sobre la cavidad glenoidea por el manguito rotador, rotación externa de húmero por el infraespinoso y el redondo menor y báscula externa de escápula por trapecios superior e inferior y por el serrato anterior y extensión de codo por el tríceps braquial: \n  - Esta opción describe con precisión la participación del supraespinoso en la estabilización de la articulación glenohumeral.\n  - El manguito rotador (supraespinoso e infraespinoso) es responsable del deslizamiento de la cabeza humeral sobre la cavidad glenoidea.\n  - La rotación externa del húmero se describe como una acción conjunta del infraespinoso y el redondo menor, lo cual es correcto.\n  - La báscula externa de escápula por parte de los trapecios superior e inferior y el serrato anterior también está descrita con precisión.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n- Opción a) Contiene errores en la descripción de la fijación de la cabeza humeral y la iniciación de la abducción del brazo.\n- Opción b) Describe la estabilización de la articulación glenohumeral de manera incompleta.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n- No existe una opción que combine ambas opciones como correctas.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n- La opción c) describe con precisión la participación de múltiples músculos en el movimiento de elevación del brazo, incluyendo la estabilización de la articulación glenohumeral, el deslizamiento de la cabeza humeral sobre la cavidad glenoidea y la rotación externa del húmero.\n\nRESPUESTA FINAL:\nRESPUESTA: c",
+   "opcion_detectada": "c",
+   "es_correcta": true,
+   "latency_seconds": 25.990296125411987,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 4,
+   "pregunta": "¿Qué tipo de modificación plástica representa el dibujo de la pregunta 10? ",
+   "opciones": {
+    "a": "Brote colateral ",
+    "b": "Potenciación sináptica ",
+    "c": "Reclutamiento de sinapsis silentes "
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- La opción 'a) Brote colateral' no tiene errores evidentes en relación con el concepto de modificación plástica.\n- La opción 'b) Potenciación sináptica' tampoco presenta errores aparentes.\n- La opción 'c) Reclutamiento de sinapsis silentes' también parece correcta.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\nNo hay cambios en una sola palabra que hagan falsas a las opciones 'a', 'b' o 'c'.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\nNo existe una opción tipo 'a y b son ciertas/correctas'. Por lo tanto, no es necesario verificar la veracidad de ambas.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\nDado que todas las opciones ('a', 'b' y 'c') parecen correctas en relación con el concepto de modificación plástica, debemos elegir la más específica y relevante para el contexto de la pregunta.\n\nLa respuesta final es: c)",
+   "opcion_detectada": "c",
+   "es_correcta": false,
+   "latency_seconds": 10.02557897567749,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 5,
+   "pregunta": "Según el principio de Henneman, la postura precede al movimiento porque: ",
+   "opciones": {
+    "a": "La musculatura fásica se recluta antes que la musculatura tónica ",
+    "b": "La musculatura que se recluta primero es activada por neuronas con un soma más pequeño ",
+    "c": "a y b son ciertas "
+   },
+   "respuesta_correcta": "b",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) La musculatura fásica se recluta antes que la musculatura tónica: Esta afirmación es correcta según el principio de Henneman. La musculatura fásica se recluta primero para preparar el movimiento, mientras que la musculatura tónica se activa después para ejecutarlo.\n\n- Opción b) La musculatura que se recluta primero es activada por neuronas con un soma más pequeño: Esta afirmación también es correcta. Según el principio de Henneman, las neuronas con un soma más pequeño tienen una mayor velocidad de conducción y se reclutan primero.\n\n- Opción c) a y b son ciertas: Dado que ambas opciones a y b son verdaderas, esta opción combinada es la correcta.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\nNo hay errores en ninguna de las opciones. Todas describen correctamente el principio de Henneman.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\nAmbas opciones a y b son verdaderas, por lo que la opción c) es la correcta.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\nLa opción c) es la más completa y correcta porque describe con precisión el principio de Henneman en su totalidad.\n\nRESPUESTA FINAL:\nRESPUESTA: c",
+   "opcion_detectada": "c",
+   "es_correcta": false,
+   "latency_seconds": 11.899929523468018,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 6,
+   "pregunta": "Señale la respuesta correcta sobre patrones de FNP: ",
+   "opciones": {
+    "a": "Patrones FLEX D1- FLEX D2 MS para inversión lenta ",
+    "b": "D1 FLEX BILATERAL: D2- EXT D1-FLEX ",
+    "c": "Opción correcta de FNP "
+   },
+   "respuesta_correcta": "c",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Patrones FLEX D1- FLEX D2 MS para inversión lenta: \n  - \"FLEX\" es correcto, ya que se refiere a la flexión de un segmento del cuerpo.\n  - \"D1\" y \"D2\" son fases temporales correctas en el patrón de movimiento.\n  - Sin embargo, \"MS\" no está claro. En el contexto de los patrones de FNP (Fisioterapia Neuromuscular Prolongada), la abreviatura \"MS\" podría referirse a músculo sinérgico o a una fase específica del movimiento, pero en este caso, parece fuera de lugar.\n\n- Opción b) D1 FLEX BILATERAL: D2- EXT D1-FLEX:\n  - \"D1\" y \"D2\" son fases temporales correctas.\n  - \"FLEX BILATERAL\" es incorrecto porque la flexión bilateral no es un patrón específico en los movimientos de FNP. La flexión se refiere a la acción de doblar o inclinar hacia adelante, y el término \"bilateral\" sugiere una acción que involucra ambos lados del cuerpo de manera igualitaria, lo cual no es característico de los patrones de movimiento en FNP.\n\n- Opción c) No está disponible para análisis.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\nLa opción b) tiene un error en la descripción del patrón de movimiento. La flexión bilateral no es una fase específica ni un término adecuado en el contexto de los patrones de FNP.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\nNo hay una opción que combine a y b como correctas, por lo que no se aplica este paso.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\nLa opción a) es la más completa y correcta en términos de descripción de un patrón de movimiento en FNP. Aunque tiene una posible ambigüedad con \"MS\", el resto de la descripción es precisa.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+   "opcion_detectada": "a",
+   "es_correcta": false,
+   "latency_seconds": 16.73659586906433,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 7,
+   "pregunta": "Para que un paciente pueda mover el MS derecho estando de pie y mantener el equilibrio, es necesario que se realicen ajustes posturales en: ",
+   "opciones": {
+    "a": "La musculatura del miembro inferior del mismo lado ",
+    "b": "La musculatura del miembro inferior del lado contrario ",
+    "c": "a y b son falsas "
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa pregunta se refiere a la movilidad y equilibrio del paciente al estar de pie. Para mantener el equilibrio, es necesario que los músculos estén en una posición adecuada para generar fuerza y control.\n\nOpción a) La musculatura del miembro inferior del mismo lado: Esto implica que se necesitan ajustes posturales en la misma pierna que está de pie. Algunos músculos clave en esta pierna son los glúteos, el cuádriceps y el gastrocnemio.\n\nOpción b) La musculatura del miembro inferior del lado contrario: Esto implica que se necesitan ajustes posturales en la otra pierna. Algunos músculos clave en esta pierna son también los glúteos, el cuádriceps y el gastrocnemio.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\nNo hay errores evidentes en ninguna de las opciones a y b. Ambas parecen razonables para mantener el equilibrio al estar de pie.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\nLa opción c) \"a y b son falsas\" no es aplicable aquí, ya que ambas opciones a y b tienen sentido. Por lo tanto, esta opción se descarta.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\nAmbas opciones a y b son válidas para mantener el equilibrio al estar de pie. Sin embargo, la pregunta solicita una respuesta única. En este caso, la respuesta más completa sería considerar que ambos lados del cuerpo están involucrados en el mantenimiento del equilibrio.\n\nRESPUESTA FINAL:\nRESPUESTA: b",
+   "opcion_detectada": "b",
+   "es_correcta": false,
+   "latency_seconds": 13.983796834945679,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 8,
+   "pregunta": "Según el concepto Bobath, las reacciones asociadas se caracterizan por: ",
+   "opciones": {
+    "a": "Relacionarse con el miembro más afecto (movimiento asociado) ",
+    "b": "Producirse en el miembro más espástico durante una actividad, como abducir el hombro al coger un cono ",
+    "c": "a y b son correctas "
+   },
+   "respuesta_correcta": "b",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Relacionarse con el miembro más afecto (movimiento asociado): Esta opción parece correcta, ya que en el concepto Bobath se describe que las reacciones asociadas son movimientos involuntarios que ocurren en el lado opuesto al de la lesión o enfermedad.\n- Opción b) Producirse en el miembro más espástico durante una actividad, como abducir el hombro al coger un cono: Esta opción también parece correcta, ya que se describe que las reacciones asociadas pueden ocurrir en el lado afecto (espástico) durante actividades motoras.\n- Opción c) a y b son correctas: Dado que ambas opciones a y b parecen correctas, esta opción combinada es la más completa.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\nNo hay errores en ninguna de las opciones. Todas describen conceptos relacionados con el concepto Bobath.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\nDado que ambas opciones a y b son verdaderas, la opción combinada es la correcta.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\nLa opción c) \"a y b son correctas\" es la más completa y correcta, ya que describe ambos conceptos relacionados con las reacciones asociadas en el contexto del concepto Bobath.\n\nRESPUESTA FINAL:\nRESPUESTA: C",
+   "opcion_detectada": "c",
+   "es_correcta": false,
+   "latency_seconds": 12.571983098983765,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 9,
+   "pregunta": "La estabilidad del tronco se consigue mediante extensibilidad y fuerza adecuadas en: ",
+   "opciones": {
+    "a": "Isquiotibiales, cuádriceps, multifidos, abdominales y pectoral mayor ",
+    "b": "Pectoral mayor, serrato anterior, multífidos, isquiotibiales, abdominales y cuádricpes ",
+    "c": "Isquiotibiales, cuádriceps, multifidos, abdominales, pectoral mayor, serrato anterior y suelo pélvico "
+   },
+   "respuesta_correcta": "c",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Isquiotibiales, cuádriceps, multifidos, abdominales y pectoral mayor: \n  + Isquiotibiales: correcto (músculos extensores de la cadera)\n  + Cuádriceps: correcto (músculo extensor de la rodilla)\n  + Multifidos: correcto (músculos estabilizadores del tronco)\n  + Abdominales: correcto (músculos estabilizadores del tronco)\n  + Pectoral mayor: incorrecto (no está directamente relacionado con la estabilidad del tronco)\n\n- Opción b) Pectoral mayor, serrato anterior, multífidos, isquiotibiales, abdominales y cuádricpes:\n  + Pectoral mayor: incorrecto (no está directamente relacionado con la estabilidad del tronco)\n  + Serrato anterior: correcto (músculo que ayuda a la estabilización del tronco)\n  + Multifidos: correcto (músculos estabilizadores del tronco)\n  + Isquiotibiales: correcto (músculos extensores de la cadera)\n  + Abdominales: correcto (músculos estabilizadores del tronco)\n  + Cuádricpes: incorrecto (cuádriceps, no cuádricpes)\n\n- Opción c) Isquiotibiales, cuádriceps, multifidos, abdominales, pectoral mayor, serrato anterior y suelo pélvico:\n  + Isquiotibiales: correcto (músculos extensores de la cadera)\n  + Cuádriceps: correcto (músculo extensor de la rodilla)\n  + Multifidos: correcto (músculos estabilizadores del tronco)\n  + Abdominales: correcto (músculos estabilizadores del tronco)\n  + Pectoral mayor: incorrecto (no está directamente relacionado con la estabilidad del tronco)\n  + Serrato anterior: correcto (músculo que ayuda a la estabilización del tronco)\n  + Suelo pélvico: correcto (estructura que proporciona estabilidad al tronco)\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n- Opción a) tiene un error en el pectoral mayor.\n- Opción b) tiene errores en el cuádriceps y el pectoral mayor.\n- Opción c) no tiene errores.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\nNo hay una opción combinada que sea correcta según los pasos anteriores.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\nLa opción más completa y correcta es la c) Isquiotibiales, cuádriceps, multifidos, abdominales, pectoral mayor, serrato anterior y suelo pélvico, ya que incluye músculos y estructuras que contribuyen a la estabilidad del tronco.\n\nRESPUESTA FINAL:\nRESPUESTA: c",
+   "opcion_detectada": "c",
+   "es_correcta": true,
+   "latency_seconds": 22.619781970977783,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 10,
+   "pregunta": "Un paciente con un miembro superior derecho muy espástico provoca: ",
+   "opciones": {
+    "a": "La mayor carga de peso en la extremidad inferior derecha ",
+    "b": "Una falta de extensión selectiva de tronco y pelvis ",
+    "c": "a y b son ciertas "
+   },
+   "respuesta_correcta": "b",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) La mayor carga de peso en la extremidad inferior derecha: Esta afirmación es correcta. Un miembro superior espástico puede provocar una alteración en la postura y la movilidad, lo que lleva a una redistribución de la carga en las extremidades inferiores.\n\n- Opción b) Una falta de extensión selectiva de tronco y pelvis: Esta afirmación también es correcta. La espasticidad puede afectar la coordinación y el control de los movimientos, lo que puede provocar una falta de extensión selectiva en el tronco y la pelvis.\n\n- Opción c) a y b son ciertas: Dado que ambas opciones a y b son verdaderas, esta opción es correcta.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\nNo hay errores en ninguna de las opciones.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\nAmbas opciones (a y b) son verdaderas.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\nLa opción que combina ambas afirmaciones correctas es la más completa y correcta.\n\nRESPUESTA FINAL:\nRESPUESTA: c",
+   "opcion_detectada": "c",
+   "es_correcta": false,
+   "latency_seconds": 10.831330299377441,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 11,
+   "pregunta": "Tras un ICTUS, los tractos responsables de equilibrio y enderezamiento son: ",
+   "opciones": {
+    "a": "Tracto vestíbulo-espinal lateral y retículo espinal medial o pontino ",
+    "b": "Tracto corticoespinal lateral y fascículo grácil exclusivamente ",
+    "c": "Tracto espinotalámico lateral y tracto tectoespinal como única vía "
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Tracto vestíbulo-espinal lateral y retículo espinal medial o pontino: El tracto vestíbulo-espinal es responsable del equilibrio y la postura, y se encuentra en el lado lateral de la médula espinal. El retículo espinal es una estructura que participa en la regulación del tono muscular y también se encuentra en el lado medial o pontino de la médula espinal. Esta opción parece correcta.\n- Opción b) Tracto corticoespinal lateral y fascículo grácil exclusivamente: El tracto corticoespinal es responsable de la motricidad voluntaria, pero no del equilibrio. El fascículo grácil también participa en la transmisión de señales sensoriales, pero no es la vía principal para el equilibrio. Esta opción tiene errores.\n- Opción c) Tracto espinotalámico lateral y tracto tectoespinal como única vía: El tracto espinotalámico es responsable de la regulación del tono muscular, pero no del equilibrio. El tracto tectoespinal también participa en la transmisión de señales sensoriales, pero no es la vía principal para el equilibrio. Esta opción tiene errores.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\nLa opción b) y c) tienen errores, por lo que se descartan.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\nNo hay una opción combinada de este tipo en la pregunta.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\nLa opción a) es la única que no tiene errores y describe las vías responsables del equilibrio y enderezamiento tras un ICTUS.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+   "opcion_detectada": "a",
+   "es_correcta": true,
+   "latency_seconds": 14.277674913406372,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 12,
+   "pregunta": "¿Qué receptores actúan para disminuir la espasticidad del biceps braquial? ",
+   "opciones": {
+    "a": "Órgano tendinoso de Golgi, cuerpos de Ruffini y bolsa de cadena nucleica ",
+    "b": "Células de Merkel y Ruffini ",
+    "c": "otras que no son "
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa pregunta se refiere a los receptores que actúan para disminuir la espasticidad del biceps braquial. Los receptores involucrados en la regulación de la espasticidad son los órganos tendinosos de Golgi y los cuerpos de Ruffini.\n\n- Opción a: \"Órgano tendinoso de Golgi, cuerpos de Ruffini y bolsa de cadena nucleica\". La evidencia muestra que el órgano tendinoso de Golgi y los cuerpos de Ruffini son receptores importantes para la regulación de la espasticidad. Sin embargo, no hay evidencia clara sobre la participación de la \"bolsa de cadena nucleica\" en este proceso.\n\n- Opción b: \"Células de Merkel y Ruffini\". Las células de Merkel están relacionadas con la sensibilidad táctil y no tienen un papel directo en la regulación de la espasticidad. Los cuerpos de Ruffini, por otro lado, sí participan en la regulación de la espasticidad.\n\n- Opción c: \"otras que no son\". Esta opción es demasiado vaga y no proporciona información específica sobre los receptores involucrados en la disminución de la espasticidad del biceps braquial.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\nLa opción a cambia una sola palabra (\"bolsa de cadena nucleica\") respecto a la evidencia, lo que la hace falsa. La opción c es demasiado vaga y no proporciona información específica.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\nNo hay una opción tipo \"a y b son ciertas/correctas\" en este caso.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\nEntre las opciones que no tienen errores, la opción a es más completa porque menciona específicamente los órganos tendinosos de Golgi y los cuerpos de Ruffini, que son conocidos receptores involucrados en la regulación de la espasticidad.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+   "opcion_detectada": "a",
+   "es_correcta": true,
+   "latency_seconds": 15.872128963470459,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 13,
+   "pregunta": "¿Qué tipo de modificación plástica representa el dibujo de la pregunta 11? ",
+   "opciones": {
+    "a": "Brote regenerativo ",
+    "b": "Potenciación sináptica ",
+    "c": "Hipersensibilidad de denervación "
+   },
+   "respuesta_correcta": "c",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa pregunta describe un dibujo que representa una modificación plástica en el cerebro. Analicemos cada opción palabra por palabra:\n\na) Brote regenerativo: Este término se refiere a la capacidad del cerebro para generar nuevas neuronas y conexiones sinápticas después de lesión o enfermedad.\n\nb) Potenciación sináptica: Esta es una forma de modificación plástica que implica el fortalecimiento de las conexiones entre neuronas, lo que puede mejorar la transmisión de señales.\n\nc) Hipersensibilidad de denervación: Este término se refiere a la sensibilidad excesiva en áreas del cuerpo que han perdido su innervación (denervación).\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\nAl comparar las opciones con la evidencia, no encuentro errores en ninguna de ellas. Todas las palabras están correctas y se refieren a conceptos válidos en el contexto de la neuroplasticidad.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\nNo hay una opción que combine ambas opciones como \"a y b son ciertas/correctas\". Por lo tanto, no podemos aplicar este paso.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\nEntre las opciones que no tienen errores, debemos elegir la más completa y correcta. La pregunta describe un dibujo que representa una modificación plástica en el cerebro. Considerando los conceptos descritos en cada opción, la potenciación sináptica (b) es una forma de modificación plástica que implica el fortalecimiento de las conexiones entre neuronas, lo que puede mejorar la transmisión de señales.\n\nRESPUESTA FINAL:\nRESPUESTA: b",
+   "opcion_detectada": "b",
+   "es_correcta": false,
+   "latency_seconds": 13.9276442527771,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 14,
+   "pregunta": "Para facilitar que un paciente se pueda poner de puntillas, es necesario que tenga fuerza suficiente en: ",
+   "opciones": {
+    "a": "Sóleo y gemelos ",
+    "b": "Sóleo, gemelos, cuádriceps y tibial posterior ",
+    "c": "Tibial anterior, cuádriceps, sóleo y gemelos "
+   },
+   "respuesta_correcta": "b",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Sóleo y gemelos: El sóleo es un músculo que ayuda a la flexión del pie, mientras que los gemelos son responsables de la extensión. Ambos son necesarios para mantener el equilibrio y la estabilidad en posiciones como las puntillas.\n- Opción b) Sóleo, gemelos, cuádriceps y tibial posterior: El cuádriceps es un músculo que se encuentra en la parte anterior de la pierna y está involucrado en la extensión del muslo. El tibial posterior es otro músculo que ayuda a la flexión del pie. Ambos son necesarios para mantener el equilibrio y la estabilidad.\n- Opción c) Tibial anterior, cuádriceps, sóleo y gemelos: El tibial anterior es un músculo que se encuentra en la parte anterior de la pierna y está involucrado en la flexión del muslo. Esto no es necesario para mantener el equilibrio y la estabilidad en posiciones como las puntillas.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\nLa opción c) tiene un error, ya que el tibial anterior está involucrado en la flexión del muslo, no en la extensión. Descártala.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\nNo hay una opción tipo 'a y b son ciertas/correctas'.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\nEntre las opciones que no tienen errores, la más completa y correcta es la opción a) Sóleo y gemelos. Ambos músculos son necesarios para mantener el equilibrio y la estabilidad en posiciones como las puntillas.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+   "opcion_detectada": "a",
+   "es_correcta": false,
+   "latency_seconds": 14.357675313949585,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 15,
+   "pregunta": "Respecto al PCC (Control Postural Central), para una sedestación correcta: ",
+   "opciones": {
+    "a": "Predomina el tono flexor mantenido en pectorales y dorsales ",
+    "b": "Se ejercen fuerzas anti-gravitatorias de la musculatura axial extensora para contrarrestar la fuerza contraria ",
+    "c": "a y b son falsas "
+   },
+   "respuesta_correcta": "b",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Predomina el tono flexor mantenido en pectorales y dorsales: Esta afirmación es correcta. El control postural central (PCC) implica la coordinación de músculos para mantener la postura adecuada, y los músculos flexores (pectorales y dorsales) juegan un papel importante en esta función.\n- Opción b) Se ejercen fuerzas anti-gravitatorias de la musculatura axial extensora para contrarrestar la fuerza contraria: Esta afirmación también es correcta. La musculatura axial extensora (como los músculos erector espalda) ayuda a mantener la postura erguida y contrarrestar la fuerza de gravedad.\n- Opción c) a y b son falsas: Dado que ambas opciones a y b son correctas, esta opción es falsa.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\nNo hay errores en ninguna de las opciones. Por lo tanto, no se descartan ninguna.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\nComo ambas opciones a y b son verdaderas, la opción combinada es correcta.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\nDado que ambas opciones a y b son correctas y no hay una más completa que las otras, elegimos la opción que refleja esta verdad.\n\nRESPUESTA FINAL:\nRESPUESTA: b",
+   "opcion_detectada": "b",
+   "es_correcta": true,
+   "latency_seconds": 12.211036205291748,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 16,
+   "pregunta": "En la marcha en tapiz rodante, ¿qué sucede con una suspensión de peso mayor al 30%? ",
+   "opciones": {
+    "a": "El paciente caminará de puntillas ",
+    "b": "Aumenta automáticamente la fase de apoyo sin cambios en la zancada ",
+    "c": "Se elimina la necesidad de control postural del tronco "
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) El paciente caminará de puntillas: Esta afirmación no está relacionada con la suspensión de peso en marcha en tapiz rodante. La marcha de puntillas se refiere a una técnica de caminata que implica levantar los pies del suelo, lo cual no es directamente afectado por la suspensión de peso.\n\n- Opción b) Aumenta automáticamente la fase de apoyo sin cambios en la zancada: La fase de apoyo se refiere al tiempo durante el cual un pie está en contacto con el suelo mientras camina. Una mayor suspensión de peso podría requerir ajustes en la cadencia o la longitud de paso para mantener la estabilidad, pero no necesariamente aumenta automáticamente la fase de apoyo sin cambios en la zancada.\n\n- Opción c) Se elimina la necesidad de control postural del tronco: La marcha en tapiz rodante requiere una buena coordinación entre las extremidades para mantener el equilibrio y la estabilidad. Una mayor suspensión de peso podría afectar la percepción del paciente sobre su propio equilibrio, pero no elimina completamente la necesidad de control postural del tronco.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- Opción a) Presenta un error en cuanto a la relación entre la suspensión de peso y la técnica de caminata. Descartada.\n\n- Opción b) Describe una posible consecuencia de la mayor suspensión de peso, pero no es una descripción precisa o completa del efecto sobre la marcha. No descartada por error en esta fase.\n\n- Opción c) Presenta un concepto relacionado con el equilibrio y la estabilidad durante la marcha, aunque podría ser demasiado vago en cuanto a los efectos específicos de una mayor suspensión de peso.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\n- No hay opciones que cumplan con esta condición.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\nEntre las opciones que no han sido descartadas, la opción b) Aumenta automáticamente la fase de apoyo sin cambios en la zancada, si bien es una descripción incompleta y no precisa del efecto de la suspensión de peso, es la única que no presenta errores directos. Sin embargo, esta opción también es insuficiente para describir completamente los efectos de una mayor suspensión de peso sobre la marcha en tapiz rodante.\n\nRESPUESTA FINAL:\nRESPUESTA: b",
+   "opcion_detectada": "b",
+   "es_correcta": false,
+   "latency_seconds": 18.83871555328369,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 17,
+   "pregunta": "Según los ejercicios de Germán, señale la respuesta correcta: ",
+   "opciones": {
+    "a": "Los ejercicios de segundo grado sirven para controlar las irradiaciones anormales al estiramiento ",
+    "b": "Los ejercicios de segundo grado eliminan de forma inmediata toda espasticidad ",
+    "c": "Los ejercicios de segundo grado están indicados solo en lesión periférica aguda "
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) \"Los ejercicios de segundo grado sirven para controlar las irradiaciones anormales al estiramiento\". La evidencia sobre los ejercicios de Germán indica que el objetivo principal de los ejercicios de segundo grado es reducir la espasticidad y mejorar la flexibilidad muscular, pero no específicamente \"controlar las irradiaciones anormales al estiramiento\".\n- Opción b) \"Los ejercicios de segundo grado eliminan de forma inmediata toda espasticidad\". Esto es incorrecto porque los ejercicios de segundo grado no eliminan la espasticidad de manera instantánea. Su objetivo es reducir la tono muscular excesivo a través de la repetición y el estiramiento.\n- Opción c) \"Los ejercicios de segundo grado están indicados solo en lesión periférica aguda\". Esta afirmación es incorrecta porque los ejercicios de Germán se aplican en una variedad de condiciones, no solo en lesiones periféricas agudas.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n- Opción b) cambia la palabra \"reducir\" por \"eliminar\", lo que hace que sea falsa.\n- Opción c) es incorrecta porque los ejercicios de segundo grado no están limitados a lesiones periféricas agudas.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\nNo hay una opción combinada que evalúe la veracidad de ambas opciones simultáneamente.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\nEntre las opciones que no tienen errores, la opción a) es la más precisa en cuanto a los objetivos de los ejercicios de segundo grado, aunque podría ser aún más específica al describir sus beneficios.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+   "opcion_detectada": "a",
+   "es_correcta": true,
+   "latency_seconds": 14.31756591796875,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 18,
+   "pregunta": "Respecto a la robótica, ¿qué permite el HapticWalker? ",
+   "opciones": {
+    "a": "Simular movimientos de subida y bajada de escaleras y deslizamientos ",
+    "b": "Aplicar únicamente entrenamiento isométrico de miembro superior ",
+    "c": "Sustituir por completo la valoración clínica funcional "
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Simular movimientos de subida y bajada de escaleras y deslizamientos: El HapticWalker es un dispositivo robótico que simula entornos reales para la rehabilitación. La subida y bajada de escaleras y los deslizamientos son movimientos comunes en entornos cotidianos, por lo que esta opción parece correcta.\n- Opción b) Aplicar únicamente entrenamiento isométrico de miembro superior: El HapticWalker se enfoca en la rehabilitación de la marcha y el equilibrio, no solo en el entrenamiento isométrico de miembros superiores. Esta opción parece incorrecta.\n- Opción c) Sustituir por completo la valoración clínica funcional: El HapticWalker es una herramienta adicional para la rehabilitación, no un reemplazo para las evaluaciones clínicas. Esta opción parece incorrecta.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- Opción b) y c) tienen errores en su descripción del HapticWalker.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\n- No hay una opción combinada que verifique ambas opciones como verdaderas.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\n- Entre las opciones que no tienen errores, la opción a) es la más completa y correcta.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+   "opcion_detectada": "a",
+   "es_correcta": true,
+   "latency_seconds": 12.06626009941101,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 19,
+   "pregunta": "Para que un paciente pueda levantar el pie derecho para dar un paso en la fase de oscilación, es necesario que se realicen ajustes posturales en: ",
+   "opciones": {
+    "a": "Aductores y abductores de cadera izquierda ",
+    "b": "Inversores y eversores del tobillo derecho ",
+    "c": "Inversores y eversores del tobillo derecho, en abductores y aductores de la cadera izquierda "
+   },
+   "respuesta_correcta": "c",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Aductores y abductores de cadera izquierda: Los aductores de la cadera son músculos que se encargan de acercar el muslo al cuerpo, mientras que los abductores lo hacen alejar. En este caso, si el paciente necesita levantar el pie derecho para dar un paso en la fase de oscilación, es probable que deba realizar ajustes posturales en los músculos que controlan la cadera opuesta (izquierda), ya que se requiere una movilidad y estabilidad en la cadera derecha. Sin embargo, no está claro si los abductores o aductores de la cadera izquierda son los responsables de esta acción.\n\n- Opción b) Inversores y eversores del tobillo derecho: Los inversores del tobillo se encargan de girar el pie hacia dentro (inversión), mientras que los eversores lo hacen hacia fuera (eversión). Si el paciente necesita levantar el pie derecho, es probable que deba realizar ajustes posturales en los músculos que controlan la movilidad del tobillo derecho.\n\n- Opción c) Inversores y eversores del tobillo derecho, en abductores y aductores de la cadera izquierda: Esta opción combina las mismas consideraciones que la opción b) con respecto a los músculos del tobillo derecho, pero también incluye ajustes posturales en los músculos de la cadera izquierda.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- Opción a) Aductores y abductores de cadera izquierda: Esta opción parece incorrecta porque se refiere a la cadera opuesta (izquierda), cuando en realidad el paciente necesita levantar el pie derecho.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\n- No hay una opción tipo 'a y b son ciertas/correctas' que combine ambas opciones.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\n- Entre las opciones que no tienen errores, la más completa y correcta es la opción c) Inversores y eversores del tobillo derecho, en abductores y aductores de la cadera izquierda. Esta opción considera tanto la movilidad del tobillo derecho como la estabilidad de la cadera opuesta (izquierda), lo que parece necesario para levantar el pie derecho en la fase de oscilación.\n\nRESPUESTA FINAL:\nRESPUESTA: c",
+   "opcion_detectada": "c",
+   "es_correcta": true,
+   "latency_seconds": 18.210188150405884,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 20,
+   "pregunta": "Una lesión en la cápsula interna derecha provocará: ",
+   "opciones": {
+    "a": "Hemiplejia contralateral izquierda por afectación del tracto cortico-espinal lateral ",
+    "b": "Debilidad ipsilateral derecha y también izquierda por afectación del tracto cortico-espinal anterior ",
+    "c": "A y B son verdaderas debido a la decusación parcial "
+   },
+   "respuesta_correcta": "c",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Hemiplejia contralateral izquierda por afectación del tracto cortico-espinal lateral: La lesión en la cápsula interna derecha afectaría el tracto cortico-espinal lateral, que controla los movimientos voluntarios. Sin embargo, la hemiplejia es un síndrome caracterizado por debilidad y paraplejia de un lado del cuerpo, lo que no se ajusta a la descripción de una lesión en la cápsula interna.\n\n- Opción b) Debilidad ipsilateral derecha y también izquierda por afectación del tracto cortico-espinal anterior: La lesión en la cápsula interna derecha afectaría el tracto cortico-espinal lateral, no el tracto cortico-espinal anterior. El tracto cortico-espinal anterior controla los movimientos de extensión y flexión.\n\n- Opción c) A y B son verdaderas debido a la decusación parcial: La decusación es un fenómeno en el que las fibras del lado opuesto cruzan al lado afectado. Sin embargo, esta opción no describe con precisión los efectos de una lesión en la cápsula interna.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- Opción a) Cambia la palabra \"lateral\" por \"anterior\", lo que hace que sea falsa.\n- Opción b) Cambia el tracto afectado, lo que también la hace falsa.\n- Opción c) No describe con precisión los efectos de una lesión en la cápsula interna.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\n- Como ambas opciones a y b son falsas, no hay necesidad de verificar esta opción.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\n- Dado que todas las opciones tienen errores, la respuesta correcta es la que describe con precisión los efectos de una lesión en la cápsula interna. Sin embargo, ninguna de las opciones a o b describe correctamente el resultado de tal lesión.\n\nRESPUESTA FINAL:\nLa respuesta final es: Ninguna de las anteriores (no hay opción correcta entre las ofrecidas).",
+   "opcion_detectada": "desconocida",
+   "es_correcta": false,
+   "latency_seconds": 16.694129943847656,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 21,
+   "pregunta": "¿Qué receptores son los que se encargan de disminuir el tono flexor y llevar a una mano suelta? ",
+   "opciones": {
+    "a": "Órgano tendinoso de Golgi y Células de Merkel ",
+    "b": "Husos neuromusculares en su terminación primaria y corpúsculos de Pacini ",
+    "c": "Receptores nociceptivos cutáneos y terminaciones libres exclusivamente "
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Órgano tendinoso de Golgi y Células de Merkel: El órgano tendinoso de Golgi es un receptor que se encuentra en los músculos y está involucrado en la regulación del tono muscular. Las células de Merkel son receptores cutáneos que participan en la percepción del tacto. Esta opción parece correcta.\n- Opción b) Husos neuromusculares en su terminación primaria y corpúsculos de Pacini: Los husos neuromusculares están involucrados en la regulación del tono muscular, pero no son los principales receptores responsables de disminuir el tono flexor. Los corpúsculos de Pacini son receptores que se encuentran en la piel y participan en la percepción de vibraciones. Esta opción parece incorrecta.\n- Opción c) Receptores nociceptivos cutáneos y terminaciones libres exclusivamente: Los receptores nociceptivos cutáneos están involucrados en la detección de estímulos dolorosos, pero no son los responsables de disminuir el tono flexor. Las terminaciones libres también no están directamente relacionadas con esta función.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- La opción b) tiene errores en la descripción de los husos neuromusculares y los corpúsculos de Pacini, por lo que se descarta.\n- La opción c) también tiene errores en la descripción de los receptores nociceptivos cutáneos y las terminaciones libres, por lo que se descarta.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\n- No hay una opción combinada que diga \"a y b son ciertas/correctas\", por lo que no es necesario verificar esta condición.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\n- La opción a) Órgano tendinoso de Golgi y Células de Merkel es la única que no tiene errores y describe correctamente los receptores involucrados en disminuir el tono flexor.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+   "opcion_detectada": "a",
+   "es_correcta": true,
+   "latency_seconds": 16.485893726348877,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 22,
+   "pregunta": "La formación reticular se encuentra localizada en: ",
+   "opciones": {
+    "a": "Diencéfalo, bulbo raquídeo y protuberancia ",
+    "b": "Corteza prefrontal y lóbulo occipital exclusivamente ",
+    "c": "Cerebelo y ganglios basales sin participación troncoencefálica "
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa formación reticular se encuentra localizada en el tronco del encéfalo, que incluye el diencéfalo, el bulbo raquídeo y la protuberancia. Por lo tanto, la opción a) Diencéfalo, bulbo raquídeo y protuberancia es correcta.\n\nLa opción b) Corteza prefrontal y lóbulo occipital exclusivamente no está relacionada con la formación reticular, ya que esta se encuentra en el tronco del encéfalo, no en la corteza cerebral.\n\nLa opción c) Cerebelo y ganglios basales sin participación troncoencefálica es incorrecta porque la formación reticular sí tiene participación troncoencefálica.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\nNo hay errores en la opción a), por lo que no se descarta. La opción b) tiene un error al mencionar la corteza prefrontal y el lóbulo occipital, que no están relacionados con la formación reticular. La opción c) también tiene un error al excluir la participación troncoencefálica.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\nNo hay una opción tipo \"a y b son ciertas/correctas\", por lo que no se aplica este paso.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\nLa opción a) es la más completa y correcta, ya que describe con precisión la localización de la formación reticular en el tronco del encéfalo.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+   "opcion_detectada": "a",
+   "es_correcta": true,
+   "latency_seconds": 13.408517360687256,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 23,
+   "pregunta": "¿Cuál es el FES no implantado más utilizado? ",
+   "opciones": {
+    "a": "Handmaster NESSH100 (incorrecto, es H200) ",
+    "b": "ActiGait (es implantado) ",
+    "c": "Opción por descarte (no implantado) "
+   },
+   "respuesta_correcta": "c",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- La opción 'a) Handmaster NESSH100' tiene un error en el prefijo. El correcto es H200, no NESSH100.\n- La opción 'b) ActiGait' menciona que es implantado, lo cual es incorrecto. ActiGait es un sistema de FES no implantado.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- La opción 'a) Handmaster NESSH100' tiene errores en el prefijo y la denominación, por lo que se descarta.\n- La opción 'b) ActiGait' también se descarta porque es incorrecto al afirmar que es implantado.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\n- No hay una opción tipo 'a y b son ciertas/correctas', por lo que no se aplica este paso.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\n- La única opción que no tiene errores es la 'c) Opción por descarte (no implantado)', aunque técnicamente no es una respuesta específica al FES más utilizado, sino una instrucción para eliminar opciones incorrectas. Sin embargo, dado que las otras opciones están erradas y esta es la única que no lo está en términos de ser un FES no implantado, se considera como la opción correcta.\n\nRESPUESTA: c",
+   "opcion_detectada": "c",
+   "es_correcta": true,
+   "latency_seconds": 11.522583484649658,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 24,
+   "pregunta": "Según el concepto Bobath, al analizar la marcha como movimiento, ¿qué tipo de movimiento corresponde a cada una de sus fases?",
+   "opciones": {
+    "a": "El inicio y el final son voluntarios (conscientes), mientras que el desarrollo durante la marcha es automático",
+    "b": "El inicio es automático, el desarrollo es voluntario y el final es automatizado",
+    "c": "Las tres fases (inicio, desarrollo y final) son movimientos automatizados que tuvieron que aprenderse y repetirse"
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) El inicio y el final son voluntarios (conscientes), mientras que el desarrollo durante la marcha es automático\n  + Inicio: ¿Voluntario o automático? Según Bobath, el inicio de la marcha es automático.\n  + Desarrollo: ¿Automático o voluntario? Según Bobath, el desarrollo de la marcha es voluntario.\n  + Final: ¿Voluntario o automático? Según Bobath, el final de la marcha es automatizado.\n\n- Opción b) El inicio es automático, el desarrollo es voluntario y el final es automatizado\n  + Inicio: ¿Automático o no? Según Bobath, sí.\n  + Desarrollo: ¿Voluntario o no? Según Bobath, sí.\n  + Final: ¿Automatizado o no? Según Bobath, sí.\n\n- Opción c) Las tres fases (inicio, desarrollo y final) son movimientos automatizados que tuvieron que aprenderse y repetirse\n  + Inicio, desarrollo y final: ¿Son automatizados o voluntarios? Según Bobath, el inicio es automático, el desarrollo es voluntario y el final es automatizado.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\nNo hay errores en ninguna de las opciones que cambien una sola palabra respecto a la evidencia.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\nAmbas opciones (a y b) describen con precisión las fases de la marcha según el concepto Bobath. No hay contradicciones entre ellas.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\nEntre las opciones que no tienen errores, la opción b describe con mayor precisión las fases de la marcha según el concepto Bobath: el inicio es automático, el desarrollo es voluntario y el final es automatizado.\n\nRESPUESTA FINAL:\nRESPUESTA: b",
+   "opcion_detectada": "b",
+   "es_correcta": false,
+   "latency_seconds": 14.797415018081665,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 25,
+   "pregunta": "En el concepto Bobath, respecto a los mecanismos de control del movimiento, ¿qué afirmacion describe correctamente el feed-forward (FF)?",
+   "opciones": {
+    "a": "Es la adaptacion del movimiento que ocurre mientras este se esta realizando, permitiendo correcciones en tiempo real",
+    "b": "Prepara el organismo para el movimiento, coincide con su inicio y participa en el procesamiento y almacenamiento de la informacion (memoria cinetica)",
+    "c": "Es exclusivamente un feedback externo de tipo auditivo o visual que aporta el fisioterapeuta cuando fallan las adaptaciones"
+   },
+   "respuesta_correcta": "b",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) \"Es la adaptacion del movimiento que ocurre mientras este se esta realizando, permitiendo correcciones en tiempo real\": Esta opción describe el feedback (FB), no el feed-forward (FF). El FB es una respuesta al estímulo, mientras que el FF es una preparación anticipada.\n\n- Opción b) \"Prepara el organismo para el movimiento, coincide con su inicio y participa en el procesamiento y almacenamiento de la informacion (memoria cinetica)\": Esta opción describe correctamente el feed-forward (FF). El FF es un mecanismo que prepara al cuerpo para realizar una acción, anticipando los movimientos necesarios.\n\n- Opción c) \"Es exclusivamente un feedback externo de tipo auditivo o visual que aporta el fisioterapeuta cuando fallan las adaptaciones\": Esta opción describe incorrectamente el feed-forward (FF). El FF no es un feedback externo ni tiene relación con la intervención del fisioterapeuta.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- Opción a) Descartada por describir el feedback en lugar del feed-forward.\n\n- Opción c) Descartada por describir incorrectamente el feed-forward como un feedback externo.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\n- No hay una opción que combine dos afirmaciones correctas.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\n- Entre las opciones restantes, la b) describe correctamente el feed-forward (FF).\n\nRESPUESTA FINAL:\nRESPUESTA: b",
+   "opcion_detectada": "b",
+   "es_correcta": true,
+   "latency_seconds": 12.577654838562012,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 26,
+   "pregunta": "Según la cita de Berta Bobath sobre el tono postural normal, ¿cual es la caracteristica que debe cumplir?",
+   "opciones": {
+    "a": "Debe mantenerse siempre constante e igual independientemente de la tarea, ya que es identico al tono muscular de cada musculo",
+    "b": "Debe ser maximo en los movimientos selectivos finos como escribir, y minimo en las tareas de estabilizacion del tronco",
+    "c": "Debe ser lo suficientemente alto para actuar contra la gravedad, y suficientemente bajo para permitir el movimiento"
+   },
+   "respuesta_correcta": "c",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) \"Debe mantenerse siempre constante e igual independientemente de la tarea, ya que es identico al tono muscular de cada musculo\": Esta opción no se ajusta a la cita de Berta Bobath. El tono postural normal no debe ser constante e igual en todas las tareas, y tampoco es idéntico al tono muscular de cada músculo.\n\n- Opción b) \"Debe ser maximo en los movimientos selectivos finos como escribir, y minimo en las tareas de estabilizacion del tronco\": Esta opción también no se ajusta a la cita de Berta Bobath. El tono postural normal no debe ser máximo en los movimientos selectivos finos ni mínimo en las tareas de estabilización.\n\n- Opción c) \"Debe ser lo suficientemente alto para actuar contra la gravedad, y suficientemente bajo para permitir el movimiento\": Esta opción se ajusta a la cita de Berta Bobath. El tono postural normal debe ser lo suficientemente alto como para contrarrestar la acción de la gravedad y mantener la postura adecuada, pero también debe ser lo suficientemente bajo como para permitir el movimiento sin obstaculizarlo.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- Opción a) Tiene errores en su descripción del tono postural normal.\n- Opción b) También tiene errores en su descripción del tono postural normal.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\n- No hay una opción combinada que verifique ambas opciones como verdaderas.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\n- La única opción que no tiene errores es la c), por lo tanto, esta es la respuesta correcta.\n\nRESPUESTA FINAL:\nRESPUESTA: c",
+   "opcion_detectada": "c",
+   "es_correcta": true,
+   "latency_seconds": 14.5227210521698,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 27,
+   "pregunta": "Respecto a la velocidad de ejecucion como factor que influye en el tono postural, al pasar de sedestacion a bipedestacion (sentado a de pie), ¿como se distribuyen las fases?",
+   "opciones": {
+    "a": "La primera fase es rapida (aumenta el tono) y la segunda fase es lenta conforme el cuerpo se endereza",
+    "b": "La primera fase es lenta (mantiene o disminuye el tono) y la segunda fase es rapida en la maxima incidencia gravitacional",
+    "c": "Ambas fases se realizan a velocidad constante y baja para no aumentar la espasticidad"
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) La primera fase es rápida (aumenta el tono) y la segunda fase es lenta conforme el cuerpo se endereza: Esta opción describe una respuesta muscular típica al pasar de sedestación a bipedestación. En la primera fase, los músculos posturales aumentan su tono para preparar el cuerpo para la nueva posición (aumento del tono). Luego, en la segunda fase, cuando el cuerpo se endereza, el tono muscular disminuye para evitar una respuesta excesiva y mantener la estabilidad (fase lenta).\n\n- Opción b) La primera fase es lenta (mantiene o disminuye el tono) y la segunda fase es rápida en la máxima incidencia gravitacional: Esta opción describe una respuesta inversa a lo esperado. En realidad, al pasar de sedestación a bipedestación, se espera que la primera fase sea rápida (para preparar el cuerpo para la nueva posición) y no lenta.\n\n- Opción c) Ambas fases se realizan a velocidad constante y baja para no aumentar la espasticidad: Esta opción describe una respuesta muscular incorrecta. Al pasar de sedestación a bipedestación, se espera que haya una fase rápida inicial seguida de una fase lenta, no una respuesta constante y baja.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- Opción b) tiene errores en la descripción de las fases (fase lenta en lugar de rápida).\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\n- No hay una opción combinada que evalúe ambas opciones como correctas.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\n- Entre las opciones que no tienen errores, la opción a) describe con precisión el patrón de respuesta muscular al pasar de sedestación a bipedestación.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+   "opcion_detectada": "a",
+   "es_correcta": true,
+   "latency_seconds": 17.311574935913086,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 28,
+   "pregunta": "En el concepto Bobath, las reacciones de equilibrio se definen como los pequenos cambios de tono continuos para mantener el equilibrio ante minimos desplazamientos de peso. ¿Cual de las siguientes es una de las causas de esos constantes desplazamientos minimos de peso?",
+   "opciones": {
+    "a": "El movimiento del torax con la inspiracion y la espiracion (respiracion)",
+    "b": "La activacion voluntaria del cuadriceps al iniciar la marcha hacia un objetivo",
+    "c": "La reaccion de apoyo de la mano contraria al coger una botella alejada"
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) El movimiento del torax con la inspiración y la espiración (respiración): Esta opción describe el movimiento natural de la caja torácica durante la respiración. La inspiración expande el tórax, mientras que la espiración lo comprime. Esto puede causar pequeños desplazamientos de peso.\n\n- Opción b) La activación voluntaria del cuadriceps al iniciar la marcha hacia un objetivo: Esta opción describe una acción intencional y consciente del paciente para moverse hacia un objetivo. No está claro cómo esto podría causar \"minimos desplazamientos de peso\" en el contexto de las reacciones de equilibrio.\n\n- Opción c) La reacción de apoyo de la mano contraria al coger una botella alejada: Esta opción describe una acción específica y consciente del paciente para sostener un objeto. No está claro cómo esto podría ser considerado como un \"minimo desplazamiento de peso\" en el contexto de las reacciones de equilibrio.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- Ninguna de las opciones parece tener errores obvios en relación con la evidencia.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\n- No hay una opción que combine dos opciones como \"a y b son ciertas/correctas\".\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\n- La opción a) describe un movimiento natural y continuo del cuerpo, lo cual es más plausible para causar pequeños desplazamientos de peso en el contexto de las reacciones de equilibrio.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+   "opcion_detectada": "a",
+   "es_correcta": true,
+   "latency_seconds": 13.368619441986084,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 29,
+   "pregunta": "Segun el concepto Bobath, al colocar a un paciente encamado en estado agudo en decubito supino con tratamiento postural correcto, las cinturas escapulares y la cintura pelviana deben quedar, respectivamente:",
+   "opciones": {
+    "a": "Las cinturas escapulares ligeramente por delante del PCC y la pelvis ligeramente por detras o por debajo del PCC, para lo cual se colocan dos almohadas en aspa",
+    "b": "Tanto las cinturas escapulares como la pelvis ligeramente por detras del PCC, colocando una unica almohada bajo los hombros",
+    "c": "Las cinturas escapulares ligeramente por detras del PCC y la pelvis ligeramente por delante del PCC, sin necesidad de almohadas"
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Las cinturas escapulares ligeramente por delante del PCC y la pelvis ligeramente por detrás o por debajo del PCC, para lo cual se colocan dos almohadas en aspa.\n  - La posición de las cinturas escapulares es correcta según el concepto Bobath (ligeramente por delante del PCC).\n  - La posición de la pelvis también es correcta (ligeramente por detrás o por debajo del PCC).\n\n- Opción b) Tanto las cinturas escapulares como la pelvis ligeramente por detrás del PCC, colocando una única almohada bajo los hombros.\n  - La posición de las cinturas escapulares es incorrecta (deben estar ligeramente por delante del PCC).\n\n- Opción c) Las cinturas escapulares ligeramente por detrás del PCC y la pelvis ligeramente por delante del PCC, sin necesidad de almohadas.\n  - La posición de las cinturas escapulares es incorrecta (deben estar ligeramente por delante del PCC).\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\nLa opción b) tiene un error en la posición de las cinturas escapulares. Descártala.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\nNo hay una opción tipo 'a y b son ciertas/correctas'.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\nEntre las opciones que no tienen errores, la opción a) es la más completa y correcta.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+   "opcion_detectada": "a",
+   "es_correcta": true,
+   "latency_seconds": 13.329732894897461,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 30,
+   "pregunta": "En relacion con la eleccion de la base de sustentacion y el area de apoyo y su efecto sobre el tono postural, senale la afirmacion correcta para preparar el paso de sedestacion a bipedestacion:",
+   "opciones": {
+    "a": "Conviene un asiento blando y hondo con la nalga y todo el muslo apoyados, porque a mayor area de apoyo mayor tono postural",
+    "b": "Conviene que solo las nalgas y un tercio del muslo esten en contacto con el asiento, porque a menor area de apoyo mayor es el tono que permite luchar contra la gravedad",
+    "c": "El grado de apoyo es indiferente, ya que el tono postural depende exclusivamente de la posicion de la cabeza y no de la base de sustentacion"
+   },
+   "respuesta_correcta": "b",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Conviene un asiento blando y hondo con la nalga y todo el muslo apoyados, porque a mayor area de apoyo mayor tono postural: Esta opción parece correcta en cuanto a la relación entre área de apoyo y tono postural. Sin embargo, no especifica qué tipo de tono postural se refiere (tono muscular o tono reflexo).\n\n- Opción b) Conviene que solo las nalgas y un tercio del muslo estén en contacto con el asiento, porque a menor área de apoyo mayor es el tono que permite luchar contra la gravedad: Esta opción también parece correcta en cuanto a la relación entre área de apoyo y tono postural. Sin embargo, no especifica qué tipo de tono se refiere.\n\n- Opción c) El grado de apoyo es indiferente, ya que el tono postural depende exclusivamente de la posición de la cabeza y no de la base de sustentación: Esta opción parece incorrecta porque subestima la importancia de la base de sustentación en la regulación del tono postural.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\nNo hay errores en las opciones a) o b), pero la opción c) es claramente falsa al afirmar que el grado de apoyo no influye en el tono postural. Por lo tanto, descartamos la opción c).\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\nNo hay una opción tipo \"a y b son ciertas/correctas\", por lo que pasamos a la siguiente instrucción.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\nEntre las opciones a) y b), ambas parecen correctas en cuanto a la relación entre área de apoyo y tono postural. Sin embargo, la opción b) especifica que el tono se refiere al \"tono que permite luchar contra la gravedad\", lo que sugiere un aumento del tono muscular para mantener la posición erguida. Esto es más específico y preciso que la opción a), que solo menciona \"mayor tono postural\" sin especificar qué tipo de tono se refiere.\n\nRESPUESTA FINAL:\nRESPUESTA: b",
+   "opcion_detectada": "b",
+   "es_correcta": true,
+   "latency_seconds": 16.953587532043457,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 31,
+   "pregunta": "Respecto al decubito prono como posicion de partida en el tratamiento del paciente neurologico, segun el documento es cierto que:",
+   "opciones": {
+    "a": "Esta recomendado de entrada porque alinea correctamente la cintura pelviana, que queda por delante del PCC favoreciendo la extension de cadera",
+    "b": "Esta desaconsejado de entrada porque predomina el tono de los flexores, aparecen problemas respiratorios sobre todo en mayores y disminuyen la vigilancia y la percepcion",
+    "c": "Es la posicion mas utilizada como punto de partida de la terapia porque aumenta el tono extensor del tronco"
+   },
+   "respuesta_correcta": "b",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) \"Esta recomendado de entrada porque alinea correctamente la cintura pelviana, que queda por delante del PCC favoreciendo la extension de cadera\": Esta opción parece correcta en cuanto a la alineación de la cintura pelviana y su relación con la extensión de cadera. Sin embargo, no hay una explicación clara sobre por qué esta posición es recomendada como punto de partida.\n\n- Opción b) \"Esta desaconsejado de entrada porque predomina el tono de los flexores, aparecen problemas respiratorios sobre todo en mayores y disminuyen la vigilancia y la percepcion\": Esta opción menciona que el decúbito prono puede provocar problemas respiratorios, especialmente en personas mayores, lo cual es una consideración importante. Sin embargo, no hay una explicación clara sobre por qué esto ocurre.\n\n- Opción c) \"Es la posicion mas utilizada como punto de partida de la terapia porque aumenta el tono extensor del tronco\": Esta opción parece incorrecta en cuanto a que el decúbito prono no es conocido por aumentar el tono extensor del tronco.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- Opción c) puede ser descartada porque cambia la palabra \"posicion\" por \"posición\", pero más importante, su descripción de los efectos del decúbito prono en el tono muscular es incorrecta.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\n- No hay una opción que combine a y b como ciertas/correctas.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\n- Entre las opciones que no tienen errores, la opción b) es más completa porque menciona específicamente los problemas respiratorios en personas mayores y su relación con el decúbito prono. Esta consideración es importante para tomar decisiones clínicas informadas.\n\nRESPUESTA FINAL:\nRESPUESTA: B",
+   "opcion_detectada": "b",
+   "es_correcta": true,
+   "latency_seconds": 17.870895385742188,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 32,
+   "pregunta": "Sobre el tipo de reorganizacion de los mecanismos neuronales denominado recuperacion de la eficacia sinaptica, senale la opcion correcta:",
+   "opciones": {
+    "a": "Tiene lugar en un ictus transitorio, durante las primeras 24/48 horas, en el que el edema impide por compresion estructural la transmision de impulsos y produce una excitacion disminuida que luego se recupera",
+    "b": "Se produce cuando el cuerpo de la neurona presinaptica muere de forma irreversible y una fibra proxima genera un brote colateral",
+    "c": "Consiste en el aumento del tamano de los terminales presinapticos cuando la neurona postsinaptica solo es inervada por una neurona"
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) \"Tiene lugar en un ictus transitorio, durante las primeras 24/48 horas, en el que el edema impide por compresion estructural la transmision de impulsos y produce una excitacion disminuida que luego se recupera\". Esta opción describe una situación temporal específica (ictus transitorio) y menciona la compresión estructural como causa de la disminución de la excitación. Parece correcta en términos generales.\n\n- Opción b) \"Se produce cuando el cuerpo de la neurona presinaptica muere de forma irreversible y una fibra proxima genera un brote colateral\". Esta opción describe una situación en la que la muerte de la neurona presináptica lleva a la formación de un brote colateral por parte de una fibra proxima. Parece correcta.\n\n- Opción c) \"Consiste en el aumento del tamano de los terminales presinapticos cuando la neurona postsinaptica solo es inervada por una neurona\". Esta opción describe un cambio en el tamaño de los terminales presinápticos, pero no proporciona contexto sobre qué tipo de reorganización neuronal se está describiendo.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- No hay errores obvios en ninguna de las opciones que requieran su descarte inmediato.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\n- No existe una opción tipo \"a y b son ciertas/correctas\" que deba ser verificada.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\n- Entre las opciones que no tienen errores, la opción a) describe un contexto temporal específico (ictus transitorio) y menciona una causa física (compresión estructural) para la disminución de la excitación. La opción b) describe una respuesta neuronal específica (formación de brote colateral) a la muerte de la neurona presináptica.\n\nLa opción a) parece más completa porque proporciona contexto temporal y una explicación sobre qué causa la disminución de la excitación en el escenario descrito. La opción b) describe un mecanismo neuronal específico, pero no proporciona contexto temporal ni explica por qué ocurre.\n\nRESPUESTA: a",
+   "opcion_detectada": "a",
+   "es_correcta": true,
+   "latency_seconds": 17.048771142959595,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 33,
+   "pregunta": "Segun el apartado de comunicacion del concepto Bobath, en relacion con el uso de las manos del fisioterapeuta es correcto afirmar que:",
+   "opciones": {
+    "a": "Las manos deben mover pasivamente a la persona para conducir el movimiento completo en lugar de esperar una reaccion del paciente",
+    "b": "Las manos no han de mover pasivamente a la persona, sino estimular activamente el movimiento, situandose alli donde vaya a producirse la reaccion del paciente",
+    "c": "El uso de las manos solo influye en la sensibilidad cutanea y nunca modifica el tono postural del paciente"
+   },
+   "respuesta_correcta": "b",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) \"Las manos deben mover pasivamente a la persona para conducir el movimiento completo en lugar de esperar una reacción del paciente\". Esta opción cambia la idea original del concepto Bobath, que enfatiza la importancia de la participación activa del paciente en su propio tratamiento. El uso de las manos para \"mover pasivamente\" a la persona no es coherente con el enfoque bobathi.\n\n- Opción b) \"Las manos no han de mover pasivamente a la persona, sino estimular activamente el movimiento, situándose allí donde vaya a producirse la reacción del paciente\". Esta opción se alinea con el concepto Bobath, que enfatiza la importancia de la participación activa del paciente y la estimulación de movimientos naturales.\n\n- Opción c) \"El uso de las manos solo influye en la sensibilidad cutánea y nunca modifica el tono postural del paciente\". Esta afirmación es incorrecta, ya que el concepto Bobath sí considera que el uso de las manos puede influir en el tono postural del paciente.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- Opción a) tiene errores en su descripción del concepto Bobath. Descártala.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\n- No hay una opción que combine ambas afirmaciones como \"a y b son ciertas/correctas\".\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\n- Entre las opciones que no tienen errores, la opción b) es la más completa y correcta, ya que se alinea con el enfoque bobathi de participación activa del paciente y estimulación de movimientos naturales.\n\nRESPUESTA FINAL:\nRESPUESTA: b",
+   "opcion_detectada": "b",
+   "es_correcta": true,
+   "latency_seconds": 14.133284568786621,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 34,
+   "pregunta": "Un paciente sufre una lesión que destruye bilateralmente todas las estructuras del telencefalo y del diencefalo, respetando exclusivamente los tractos rubro-espinal, reticulo-espinal y vestibulo-espinal. ¿Que postura presentara y por que?",
+   "opciones": {
+    "a": "Postura de descerebracion, con las cuatro extremidades en extension, porque la perdida del rubro-espinal impide cualquier flexion",
+    "b": "Postura de decorticacion, con los miembros superiores en flexion y los inferiores en extension, porque el rubro-espinal (intacto) mantiene la flexion del miembro superior mientras reticulo-espinal y vestibulo-espinal mantienen la extension de los inferiores",
+    "c": "Hemiplejia flacida bilateral sin alteracion del tono, porque al respetarse los tres tractos descendentes citados no se produce ningun desequilibrio postural"
+   },
+   "respuesta_correcta": "b",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Postura de descerebración, con las cuatro extremidades en extensión... La postura de descerebración se caracteriza por la pérdida del tono muscular y la falta de reflejos posturales. Sin embargo, no necesariamente todas las extremidades están en extensión.\n- Opción b) Postura de decorticación, con los miembros superiores en flexión y los inferiores en extensión... La postura de decorticación se caracteriza por la presencia de reflejos posturales anormales. Los miembros superiores pueden estar en flexión debido a la acción del rubro-espinal, pero no necesariamente los inferiores están en extensión.\n- Opción c) Hemiplejia flácida bilateral sin alteración del tono... La hemiplejia flácida se caracteriza por la pérdida de reflejos posturales y la falta de tono muscular. Sin embargo, no necesariamente hay una alteración del tono.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- Opción a) Cambia la palabra \"descerebración\" por \"decorticación\", lo que es incorrecto.\n- Opción b) No cambia ninguna palabra, pero describe la postura de decorticación en lugar de descerebración.\n- Opción c) Describe una condición diferente (hemiplejia flácida bilateral).\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\n- No hay opciones combinadas que sean ciertas.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\n- La opción b) describe la postura de decorticación con mayor precisión, aunque no es perfecta. Sin embargo, es la única opción que no tiene errores significativos.\n\nRESPUESTA FINAL:\nRESPUESTA: b",
+   "opcion_detectada": "b",
+   "es_correcta": true,
+   "latency_seconds": 14.424498558044434,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 35,
+   "pregunta": "Respecto a los dos tractos reticuloespinales y su accion sobre la musculatura axial del tronco, senale la afirmacion correcta:",
+   "opciones": {
+    "a": "El tracto reticuloespinal pontino (medial) excita la musculatura axial extensora del tronco, mientras que el bulbar (lateral) la inhibe, permitiendo la flexion del tronco; tienen acciones contrarias y no actuan a la vez",
+    "b": "El tracto reticuloespinal bulbar (lateral) excita la musculatura axial extensora del tronco, mientras que el pontino (medial) la inhibe para permitir la flexion del tronco",
+    "c": "Ambos tractos reticuloespinales excitan simultaneamente la musculatura axial extensora del tronco, reforzandose mutuamente para la sedestacion erguida"
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) El tracto reticuloespinal pontino (medial) excita la musculatura axial extensora del tronco, mientras que el bulbar (lateral) la inhibe, permitiendo la flexion del tronco; tienen acciones contrarias y no actúan a la vez.\n  - El tracto reticuloespinal pontino (medial) es correcto. Excita la musculatura axial extensora del tronco.\n  - El bulbar (lateral) también es correcto. Inhibe la musculatura axial extensora del tronco para permitir la flexión.\n\n- Opción b) El tracto reticuloespinal bulbar (lateral) excita la musculatura axial extensora del tronco, mientras que el pontino (medial) la inhibe para permitir la flexion del tronco.\n  - El bulbar (lateral) es incorrecto. Inhibe la musculatura axial extensora del tronco.\n\n- Opción c) Ambos tractos reticuloespinales excitan simultáneamente la musculatura axial extensora del tronco, reforzándose mutuamente para la sedestación erguida.\n  - Esto es incorrecto. Los dos tractos tienen acciones opuestas.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n- Opción b) tiene un error en el bulbar (lateral), que inhibe la musculatura axial extensora del tronco.\n- Opción c) es incorrecto porque los dos tractos tienen acciones opuestas.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n- No hay una opción tipo 'a y b son ciertas/correctas'.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n- La opción a) es la más correcta. Describe las acciones de los dos tractos reticuloespinales con precisión.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+   "opcion_detectada": "a",
+   "es_correcta": true,
+   "latency_seconds": 15.243397235870361,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 36,
+   "pregunta": "En cuanto al origen y la decusacion del tracto rubro-espinal (TRE), es correcto que:",
+   "opciones": {
+    "a": "Se origina en las neuronas parvocelulares de la formacion reticular pontina y se decusa en la decusacion de las piramides del bulbo",
+    "b": "Se origina en las neuronas magnocelulares del nucleo rojo y se decusa en la decusacion tegmental ventral, descendiendo por el cordon lateral de la medula entremezclado con el TCE lateral",
+    "c": "Se origina en el nucleo de Deiters y desciende ipsilateral sin decusarse hasta la medula lumbar"
+   },
+   "respuesta_correcta": "b",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Se origina en las neuronas parvocelulares de la formación reticular pontina y se decusa en la decusación de las piramides del bulbo: Esta opción menciona que el tracto rubro-espinal (TRE) se origina en las neuronas parvocelulares, lo cual es incorrecto. El TRE se origina en las neuronas magnocelulares del núcleo rojo.\n- Opción b) Se origina en las neuronas magnocelulares del núcleo rojo y se decusa en la decusación tegmental ventral, descendiendo por el cordón lateral de la medula espinal entremezclado con el TCE lateral: Esta opción describe correctamente el origen y la decusación del TRE.\n- Opción c) Se origina en el núcleo de Deiters y desciende ipsilateral sin decusarse hasta la medula lumbar: Esta opción es incorrecta porque el TRE se decusa antes de llegar a la medula lumbar.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\nLa opción c) tiene un error en cuanto al origen del TRE, por lo que la descartamos.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\nNo hay una opción tipo \"a y b son ciertas/correctas\", por lo que pasamos a la siguiente instrucción.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\nEntre las opciones que no tienen errores, la opción b) describe correctamente el origen y la decusación del TRE.\n\nRESPUESTA FINAL:\nRESPUESTA: b",
+   "opcion_detectada": "b",
+   "es_correcta": true,
+   "latency_seconds": 12.832228422164917,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 37,
+   "pregunta": "Sobre los dos tractos vestibuloespinales y su patron de proyeccion y accion, senale la opcion correcta:",
+   "opciones": {
+    "a": "El tracto vestibuloespinal lateral tiene proyeccion ipsilateral, llega a todos los niveles medulares y activa la musculatura extensora y antigravitatoria inhibiendo la flexora",
+    "b": "El tracto vestibuloespinal lateral tiene proyeccion bilateral, no llega a la medula lumbar e inhibe la musculatura axial del tronco",
+    "c": "El tracto vestibuloespinal medial se origina solo en el nucleo lateral (de Deiters), llega a la medula lumbar y activa la musculatura extensora antigravitatoria"
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) El tracto vestibuloespinal lateral tiene proyeccion ipsilateral, llega a todos los niveles medulares y activa la musculatura extensora y antigravitatoria inhibiendo la flexora:\n  + \"Ipsilateral\" es correcto, ya que el tracto vestibuloespinal lateral se refiere a la proyección hacia el mismo lado del estímulo.\n  + \"Llega a todos los niveles medulares\" es incorrecto. El tracto vestibuloespinal lateral solo llega hasta la medula cervical y no alcanza la medula lumbar.\n  + \"Activa la musculatura extensora y antigravitatoria inhibiendo la flexora\" es correcto, ya que el objetivo del tracto vestibuloespinal lateral es mantener la postura y equilibrio.\n\n- Opción b) El tracto vestibuloespinal lateral tiene proyeccion bilateral, no llega a la medula lumbar e inhibe la musculatura axial del tronco:\n  + \"Bilateral\" es incorrecto. El tracto vestibuloespinal lateral se refiere a la proyección hacia el mismo lado del estímulo (ipsilateral), no hacia ambos lados.\n\n- Opción c) El tracto vestibuloespinal medial se origina solo en el nucleo lateral (de Deiters), llega a la medula lumbar y activa la musculatura extensora antigravitatoria:\n  + \"Se origina solo en el núcleo lateral (de Deiters)\" es incorrecto. El tracto vestibuloespinal medial se origina en el núcleo vestibular, no solo en el núcleo lateral.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n- Opción a) tiene un error en la descripción de la extensión del tracto vestibuloespinal lateral.\n- Opción b) tiene un error en la descripción de la lateralidad de la proyección.\n- Opción c) tiene un error en la descripción de la origen del tracto vestibuloespinal medial.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\nNo hay una opción combinada que sea correcta.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\nEntre las opciones que no tienen errores, la opción a) describe con mayor precisión el funcionamiento del tracto vestibuloespinal lateral.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+   "opcion_detectada": "a",
+   "es_correcta": true,
+   "latency_seconds": 17.725654363632202,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 38,
+   "pregunta": "Respecto a la importancia clinica del tracto corticoespinal (TCE) en la decusacion de las piramides, es correcto afirmar que:",
+   "opciones": {
+    "a": "El 100% de los axones del TCE se cruzan en la decusacion de las piramides, por lo que una lesion nunca produce sintomas ipsilaterales",
+    "b": "Aproximadamente un 80% de los axones del TCE se cruzan en la decusacion de las piramides y terminan en las MNI alfa y gamma que controlan los movimientos de las extremidades distales, sobre todo manos y dedos",
+    "c": "El TCE no establece contacto con motoneuronas inferiores alfa, ya que termina exclusivamente en interneuronas del asta posterior"
+   },
+   "respuesta_correcta": "b",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) El 100% de los axones del TCE se cruzan en la decusación de las piramides, por lo que una lesión nunca produce síntomas ipsilaterales: Esta afirmación es incorrecta porque el 80% de los axones del TCE se cruzan en la decusación de las piramides, pero no el 100%. Además, una lesión en esta área puede producir síntomas ipsilaterales debido a la proyección de los axones que no se han cruzado.\n\n- Opción b) Aproximadamente un 80% de los axones del TCE se cruzan en la decusación de las piramides y terminan en las MNI alfa y gamma que controlan los movimientos de las extremidades distales, sobre todo manos y dedos: Esta afirmación es correcta. El tracto corticoespinal (TCE) es un conjunto de fibras nerviosas que se originan en la corteza cerebral y se dirigen hacia la médula espinal. Aproximadamente el 80% de los axones del TCE se cruzan en la decusación de las piramides, lo que significa que se dirigen al lado opuesto de la médula espinal. Estos axones terminan en las motoneuronas inferiores (MNI) alfa y gamma, que controlan los movimientos de las extremidades distales.\n\n- Opción c) El TCE no establece contacto con motoneuronas inferiores alfa, ya que termina exclusivamente en interneuronas del asta posterior: Esta afirmación es incorrecta. El TCE sí establece contacto con motoneuronas inferiores alfa, como se mencionó anteriormente.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- Opción a) y c) son incorrectas según el paso 1.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\n- No hay una opción tipo 'a y b son ciertas/correctas'.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\n- Entre las opciones que no tienen errores, la opción b) es la más completa y correcta.\n\nRESPUESTA FINAL:\nRESPUESTA: b",
+   "opcion_detectada": "b",
+   "es_correcta": true,
+   "latency_seconds": 16.39170551300049,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 39,
+   "pregunta": "Respecto a la evolucion historica del metodo de Carlo Perfetti, cual fue la secuencia correcta de denominaciones que ha recibido a lo largo de su desarrollo?",
+   "opciones": {
+    "a": "Comenzo llamandose Facilitacion Cortical Superior, despues Control Secuencial Progresivo, hasta llamarse por ahora Ejercicio Terapeutico Cognoscitivo",
+    "b": "Comenzo llamandose Control Secuencial Progresivo, despues Ejercicio Terapeutico Cognoscitivo, hasta llamarse por ahora Facilitacion Cortical Superior",
+    "c": "Comenzo llamandose Ejercicio Terapeutico Cognoscitivo, despues Facilitacion Cortical Superior, hasta llamarse por ahora Control Secuencial Progresivo"
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- La opción 'a) Comenzo llamandose Facilitacion Cortical Superior, despues Control Secuencial Progresivo, hasta llamarse por ahora Ejercicio Terapeutico Cognoscitivo' no tiene errores evidentes en cuanto a prefijos, nombres similares, lateralidad o fases temporales.\n- La opción 'b) Comenzo llamandose Control Secuencial Progresivo, despues Ejercicio Terapeutico Cognoscitivo, hasta llamarse por ahora Facilitacion Cortical Superior' cambia la secuencia de denominaciones respecto a la evidencia conocida sobre el método de Carlo Perfetti.\n- La opción 'c) Comenzo llamandose Ejercicio Terapeutico Cognoscitivo, despues Facilitacion Cortical Superior, hasta llamarse por ahora Control Secuencial Progresivo' también cambia la secuencia de denominaciones respecto a la evidencia conocida.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- La opción 'b) Comenzo llamandose Control Secuencial Progresivo, despues Ejercicio Terapeutico Cognoscitivo, hasta llamarse por ahora Facilitacion Cortical Superior' y la opción 'c) Comenzo llamandose Ejercicio Terapeutico Cognoscitivo, despues Facilitacion Cortical Superior, hasta llamarse por ahora Control Secuencial Progresivo' son incorrectas debido a que cambian la secuencia de denominaciones.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\n- No existe una opción tipo 'a y b son ciertas/correctas'.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\n- La opción 'a) Comenzo llamandose Facilitacion Cortical Superior, despues Control Secuencial Progresivo, hasta llamarse por ahora Ejercicio Terapeutico Cognoscitivo' es la única que no tiene errores y describe correctamente la secuencia de denominaciones del método de Carlo Perfetti.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+   "opcion_detectada": "a",
+   "es_correcta": true,
+   "latency_seconds": 15.094554662704468,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 40,
+   "pregunta": "En la descripcion de los componentes del deficit especifico motor del paciente hemiplejico, que afirmacion sobre las sinergias de la extremidad inferior es correcta segun el documento?",
+   "opciones": {
+    "a": "En la sinergia flexora de la extremidad inferior el pie se situa en flexion plantar e inversion, mientras que la autora describe con frecuencia el pie afectado en eversion",
+    "b": "En la sinergia extensora de la extremidad inferior el pie aparece en flexion plantar e inversion, y la autora nunca encontro un paciente con el pie afectado en eversion",
+    "c": "En la sinergia extensora de la extremidad inferior la cadera se presenta en flexion, separacion y rotacion externa, y el pie en flexion dorsal"
+   },
+   "respuesta_correcta": "b",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) En la sinergia flexora de la extremidad inferior el pie se sitúa en flexion plantar e inversion, mientras que la autora describe con frecuencia el pie afectado en eversion: Esta opción cambia la posición del pie respecto a la evidencia (flexión plantar e inversión vs. everson). Descártala.\n- Opción b) En la sinergia extensora de la extremidad inferior el pie aparece en flexion plantar e inversion, y la autora nunca encontró un paciente con el pie afectado en eversion: Esta opción también cambia la posición del pie respecto a la evidencia (flexión plantar e inversión vs. everson). Descártala.\n- Opción c) En la sinergia extensora de la extremidad inferior la cadera se presenta en flexion, separación y rotación externa, y el pie en flexión dorsal: Esta opción coincide con la evidencia.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\nDescartadas las opciones a y b por cambiar una sola palabra respecto a la evidencia.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\nNo hay una opción combinada que verifique ambas opciones como verdaderas.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\nLa opción c es la más completa y correcta, ya que describe con precisión las posiciones de la cadera y el pie en la sinergia extensora de la extremidad inferior.\n\nRESPUESTA FINAL:\nRESPUESTA: C",
+   "opcion_detectada": "c",
+   "es_correcta": false,
+   "latency_seconds": 12.40136456489563,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 41,
+   "pregunta": "Al comparar la irradiacion fisiologica con la patologica del paciente hemiplejico, cual de las siguientes diferencias cualitativas describe correctamente el documento?",
+   "opciones": {
+    "a": "La irradiacion del hemiplejico activa cada vez grupos musculares distintos y con un caracter funcional plenamente adaptado a la tarea motora",
+    "b": "La diferencia cualitativa consiste en un umbral mas bajo para la aparicion de la irradiacion y una mayor intensidad de la misma",
+    "c": "La irradiacion en el paciente hemiplejico activa siempre los mismos grupos musculares, que son los que aparecen en los esquemas sinergicos y que no revisten ningun caracter funcional respecto a la tarea motora"
+   },
+   "respuesta_correcta": "c",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) La irradiacion del hemiplejico activa cada vez grupos musculares distintos y con un caracter funcional plenamente adaptado a la tarea motora:\n  + \"Irradiación\" es correcto, ya que se refiere al fenómeno de activación de músculos no directamente involucrados en la tarea.\n  + \"Grupos musculares distintos\" es correcto, ya que la irradiación implica la activación de músculos adicionales a los necesarios para la tarea.\n  + \"Carácter funcional plenamente adaptado\" es incorrecto, ya que la irradiación no está adaptada a la tarea motora en el sentido de ser útil o eficiente.\n\n- Opción b) La diferencia cualitativa consiste en un umbral mas bajo para la aparicion de la irradiacion y una mayor intensidad de la misma:\n  + \"Umbral más bajo\" es correcto, ya que la irradiación se activa con menor intensidad de estimulación.\n  + \"Mayor intensidad\" es incorrecto, ya que la irradiación se caracteriza por ser débil.\n\n- Opción c) La irradiacion en el paciente hemiplejico activa siempre los mismos grupos musculares, que son los que aparecen en los esquemas sinergicos y que no revisten ningun caracter funcional respecto a la tarea motora:\n  + \"Irradiación\" es correcto.\n  + \"Los mismos grupos musculares\" es incorrecto, ya que la irradiación implica la activación de músculos distintos.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- Opción a) tiene un error en el último apartado.\n- Opción b) tiene un error en el segundo apartado.\n- Opción c) tiene un error en el tercer apartado.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\nNo hay una opción combinada que sea correcta.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\nEntre las opciones que no tienen errores, la opción c) describe correctamente el concepto de irradiación en pacientes hemipléjicos. La irradiación se caracteriza por la activación de los mismos grupos musculares, que son los que aparecen en los esquemas sinergicos y que no revisten ningún carácter funcional respecto a la tarea motora.\n\nRESPUESTA FINAL:\nRESPUESTA: c",
+   "opcion_detectada": "c",
+   "es_correcta": true,
+   "latency_seconds": 17.464001893997192,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 42,
+   "pregunta": "Sobre las alteraciones del reclutamiento motor y la capacidad del sistema nervioso para modular la contraccion, que afirmacion es correcta segun el documento?",
+   "opciones": {
+    "a": "La capacidad de modificacion es exquisita en musculos con un cociente de inervacion bajo, como la mano o el ojo, y menos fina en musculos como el cuadriceps o el triceps sural, con cociente de inervacion mas elevado",
+    "b": "La capacidad de modificacion es mas fina en musculos con cociente de inervacion elevado, como el cuadriceps, y peor en la mano o el ojo",
+    "c": "El sistema nervioso modifica la intensidad de la contraccion unicamente variando el numero de unidades motoras (componente espacial), sin poder alterar la frecuencia de descarga"
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) La capacidad de modificación es exquisita en músculos con un cociente de inervación bajo, como la mano o el ojo, y menos fina en músculos como el cuadriceps o el triceps sural, con cociente de inervación más elevado.\n  - \"Exquisita\" no es una palabra que se asocie comúnmente con la capacidad de modificación muscular. La evidencia sugiere que la capacidad de modificación es fina en músculos con un cociente de inervación elevado, como el cuadriceps.\n\n- Opción b) La capacidad de modificación es más fina en músculos con cociente de inervación elevado, como el cuadriceps, y peor en la mano o el ojo.\n  - Esta opción coincide con la evidencia. Los músculos con un cociente de inervación elevado tienen una mayor capacidad para modular la contracción.\n\n- Opción c) El sistema nervioso modifica la intensidad de la contracción únicamente variando el número de unidades motoras (componente espacial), sin poder alterar la frecuencia de descarga.\n  - Esta opción es incorrecta. La evidencia sugiere que el sistema nervioso puede modular la contracción no solo cambiando el número de unidades motoras, sino también ajustando la frecuencia de descarga.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\nLa opción a) tiene un error en la descripción de la capacidad de modificación muscular. La opción c) es incorrecta porque no refleja con precisión la complejidad del control neuromuscular.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\nNo hay una opción combinada que evalúe ambas afirmaciones como ciertas o incorrectas.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\nLa opción b) es la más completa y correcta, ya que describe con precisión la relación entre el cociente de inervación y la capacidad de modificación muscular.\n\nRESPUESTA FINAL:\nRESPUESTA: B",
+   "opcion_detectada": "b",
+   "es_correcta": false,
+   "latency_seconds": 15.460742473602295,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 43,
+   "pregunta": "Respecto a la ejecucion de los ejercicios de primer grado del ETC, que conducta es correcta segun el documento si durante el ejercicio aparece una contraccion voluntaria de los musculos implicados en la tarea?",
+   "opciones": {
+    "a": "Se solicitan contracciones voluntarias de forma activa-asistida y, si aparecen, se refuerzan para progresar antes hacia el segundo grado",
+    "b": "Durante su ejecucion no se piden contracciones voluntarias de los musculos implicados y, si esto ocurriese, no se debe continuar con la ejecucion del ejercicio",
+    "c": "Se permiten las contracciones voluntarias siempre que el paciente mantenga el control visual de la articulacion movilizada"
+   },
+   "respuesta_correcta": "b",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Se solicitan contracciones voluntarias de forma activa-asistida y, si aparecen, se refuerzan para progresar antes hacia el segundo grado. Esta opción parece correcta en general.\n- Opción b) Durante su ejecución no se piden contracciones voluntarias de los músculos implicados y, si esto ocurriese, no se debe continuar con la ejecución del ejercicio. Esta opción también parece correcta en general.\n- Opción c) Se permiten las contracciones voluntarias siempre que el paciente mantenga el control visual de la articulación movilizada. Esta opción tiene un error: el control visual no es una condición para permitir contracciones voluntarias.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- La opción c) tiene un error, por lo que se descarta.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\n- No hay una opción tipo 'a y b son ciertas/correctas', por lo que no es necesario verificar ambas opciones.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\n- Entre las opciones a) y b), la más completa y correcta es la a) porque describe una estrategia de progresión clara para cuando aparecen contracciones voluntarias durante el ejercicio del primer grado. La opción b) simplemente establece que no se debe continuar con el ejercicio si aparecen contracciones voluntarias, lo cual puede ser demasiado restrictivo.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+   "opcion_detectada": "a",
+   "es_correcta": false,
+   "latency_seconds": 12.165459632873535,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 44,
+   "pregunta": "Un paciente con ICTUS presenta dificultad para la dorsiflexion de tobillo y, a diferencia de la marcha en estepage, realiza un movimiento de circunduccion de cadera con elevacion de la pelvis para salvar el equino durante la oscilacion. Segun el documento, ¿que combinacion de hallazgos determina que adopte esta marcha en guadana o de segador y no la marcha en estepage?",
+   "opciones": {
+    "a": "Espasticidad de soleo y gemelos junto con debilidad de la musculatura pretibial",
+    "b": "Debilidad de los flexores de cadera junto con sinergia extensora",
+    "c": "Contractura del soleo junto con miedo a que la extremidad inferior claudique"
+   },
+   "respuesta_correcta": "b",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Espasticidad de soleo y gemelos junto con debilidad de la musculatura pretibial: La espasticidad en el contexto de un paciente con ICTUS se refiere a una hipertonía muscular, no a una debilidad. Esta opción tiene un error.\n\n- Opción b) Debilidad de los flexores de cadera junto con sinergia extensora: Los flexores de la cadera son responsables de la flexión de la cadera, mientras que la sinergia extensora se refiere a una acción muscular que impide la flexión. Esta opción describe un patrón de movimiento anormal.\n\n- Opción c) Contractura del soleo junto con miedo a que la extremidad inferior claudique: La contractura del soleo es una condición en la que el músculo soleo se vuelve demasiado corto y no permite una movilidad normal. El miedo a que la extremidad inferior claudique (sea incapaz de caminar) puede estar relacionado con la dificultad para realizar movimientos de dorsiflexión.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\nLa opción a) tiene un error en el concepto de espasticidad, por lo que se descarta.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\nNo hay una opción combinada que requiera verificar ambas opciones como verdaderas.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\nEntre las opciones que no tienen errores, la opción c) describe con mayor precisión los hallazgos clínicos del paciente. La contractura del soleo explica la dificultad para realizar movimientos de dorsiflexión y el miedo a que la extremidad inferior claudique se relaciona con la necesidad de adoptar una marcha en guadana o de segador para salvar el equino durante la oscilación.\n\nRESPUESTA FINAL:\nRESPUESTA: c",
+   "opcion_detectada": "c",
+   "es_correcta": false,
+   "latency_seconds": 14.686700820922852,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 45,
+   "pregunta": "Al diferenciar la marcha en estepage de origen central (hemiplejia/ICTUS) de la causada por afectacion del nervio ciatico popliteo externo (CPE), el dato clinico clave segun el documento es:",
+   "opciones": {
+    "a": "Solo el paciente con lesion del CPE presenta apoyo inicial sobre la punta del pie",
+    "b": "El paciente hemiplejico presenta ademas afectacion del miembro superior (flexion de codo, rotacion interna de hombro), mientras que el de lesion aislada del CPE no",
+    "c": "El paciente con lesion del CPE incrementa la flexion de cadera y rodilla, compensacion que no aparece en la hemiplejia"
+   },
+   "respuesta_correcta": "b",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\na) Solo el paciente con lesion del CPE presenta apoyo inicial sobre la punta del pie\n- Esta afirmación es verdadera. La lesión del nervio ciático popliteo externo (CPE) puede causar debilidad en los músculos de la pierna, lo que lleva a una postura anormal al caminar, incluyendo el apoyo inicial sobre la punta del pie.\n\nb) El paciente hemiplejico presenta ademas afectacion del miembro superior (flexion de codo, rotacion interna de hombro), mientras que el de lesion aislada del CPE no\n- Esta afirmación es verdadera. La hemiparesia (parálisis de un lado del cuerpo) puede afectar tanto al miembro inferior como al superior, lo que se manifiesta en movimientos anormales como la flexión del codo y la rotación interna del hombro.\n\nc) El paciente con lesion del CPE incrementa la flexion de cadera y rodilla, compensacion que no aparece en la hemiplejia\n- Esta afirmación es falsa. La lesión del CPE puede causar debilidad en los músculos de la pierna, lo que lleva a una postura anormal al caminar, pero no necesariamente a una mayor flexión de cadera y rodilla como compensación.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\nLa opción c) es falsa debido a la descripción incorrecta de la compensación en pacientes con lesión del CPE.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\nAmbas opciones a y b son verdaderas, por lo que la respuesta correcta sería una opción que combine ambas afirmaciones.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\nLa opción que combina las dos afirmaciones verdaderas es la opción que describe los cambios en la marcha de pacientes con lesión del CPE y hemiparesia, resaltando las diferencias entre ambas condiciones.\n\nRESPUESTA FINAL:\nRESPUESTA: b",
+   "opcion_detectada": "b",
+   "es_correcta": true,
+   "latency_seconds": 15.362664222717285,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 46,
+   "pregunta": "En un lesionado medular, respecto a las contraindicaciones autonomicas de la FES de bipedestacion y marcha, ¿que afirmacion sobre la susceptibilidad a la disreflexia autonomica es correcta segun el documento?",
+   "opciones": {
+    "a": "Las lesiones de nivel T5 y superiores son muy susceptibles, y a partir de D11 e inferiores suele no producirse",
+    "b": "Solo aparece en lesiones por debajo de T10, por interrupcion completa del simpatico sacro",
+    "c": "Es independiente del nivel lesional porque depende unicamente del estado de la piel donde se colocan los electrodos"
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) \"Las lesiones de nivel T5 y superiores son muy susceptibles, y a partir de D11 e inferiores suele no producirse\": Esta afirmación es correcta. La disreflexia autónoma se asocia con lesiones medulares por encima del nivel de la raíz dorsal de los nervios espinales (T6 o T7), y las lesiones por debajo de D11 suelen no producir esta complicación.\n\n- Opción b) \"Solo aparece en lesiones por debajo de T10, por interrupcion completa del simpatico sacro\": Esta afirmación es incorrecta. La disreflexia autónoma puede ocurrir en cualquier nivel de la lesión medular, no solo por debajo de T10.\n\n- Opción c) \"Es independiente del nivel lesional porque depende unicamente del estado de la piel donde se colocan los electrodos\": Esta afirmación es incorrecta. La disreflexia autónoma está relacionada con el nivel y la gravedad de la lesión medular, no con el estado de la piel o la ubicación de los electrodos.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- Opción b) es falsa porque cambia una sola palabra (\"T10\" en lugar de \"T5\") respecto a la evidencia.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\n- No hay opción combinada que verifique ambas afirmaciones como verdaderas.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\n- La opción a) es la más completa y correcta, ya que describe con precisión la relación entre el nivel de lesión medular y la susceptibilidad a la disreflexia autónoma.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+   "opcion_detectada": "a",
+   "es_correcta": true,
+   "latency_seconds": 15.818263292312622,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 47,
+   "pregunta": "Sobre los parametros de la corriente en estimulacion electrica funcional (FES) y el estudio de Kesar et al. en FES antiequino, el documento concluye que:",
+   "opciones": {
+    "a": "Una frecuencia fija de 30 Hz logra mejor correccion del equino que una frecuencia modulada, al mantener constante el reclutamiento",
+    "b": "Debe emplearse una frecuencia inferior a 20 Hz para minimizar la fatiga, ya que por encima de ese valor no se obtiene contraccion util",
+    "c": "La frecuencia modulada (p. ej. variar entre 20 y 40 Hz) disminuye la fatiga muscular, y en el estudio el grupo con frecuencia variable logro mayor dorsiflexion de tobillo y menor flexion de rodilla"
+   },
+   "respuesta_correcta": "c",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) \"Una frecuencia fija de 30 Hz logra mejor corrección del equino que una frecuencia modulada, al mantener constante el reclutamiento\": Esta opción no menciona nada sobre la fatiga muscular, por lo que parece estar enfocada en la corrección del equino. No hay errores obvios.\n\n- Opción b) \"Debe emplearse una frecuencia inferior a 20 Hz para minimizar la fatiga, ya que por encima de ese valor no se obtiene contracción útil\": Esta opción menciona una frecuencia específica (inferior a 20 Hz) como solución para minimizar la fatiga. No hay errores obvios.\n\n- Opción c) \"La frecuencia modulada (p. ej. variar entre 20 y 40 Hz) disminuye la fatiga muscular, y en el estudio el grupo con frecuencia variable logró mayor dorsiflexión de tobillo y menor flexión de rodilla\": Esta opción menciona específicamente que la frecuencia modulada disminuye la fatiga muscular y proporciona resultados positivos en términos de movimiento.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\nNo hay errores obvios en ninguna de las opciones, por lo que no se pueden descartar ninguna.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\nNo existe una opción tipo \"a y b son ciertas/correctas\", por lo que no es necesario verificar ambas opciones.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\nEntre las opciones que no tienen errores, la opción c) parece ser la más completa y correcta. Menciona específicamente los beneficios de la frecuencia modulada en términos de fatiga muscular y proporciona resultados positivos en términos de movimiento.\n\nRESPUESTA FINAL:\nRESPUESTA: C",
+   "opcion_detectada": "c",
+   "es_correcta": true,
+   "latency_seconds": 14.637931823730469,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 48,
+   "pregunta": "Respecto al exoesqueleto Lokomat aplicado a la reeducacion de la marcha, el documento senala que produce una marcha similar a la fisiologica pero con alteraciones notables del patron consistentes en:",
+   "opciones": {
+    "a": "Restriccion de la traslacion lateral normal del centro de gravedad y restriccion de la rotacion de cadera",
+    "b": "Contacto permanente del pie con una plataforma de trayectoria eliptica que dirige el movimiento distal",
+    "c": "Liberacion completa de las rodillas para permitir el acceso del terapeuta y la facilitacion manual"
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Restriccion de la traslacion lateral normal del centro de gravedad y restriccion de la rotacion de cadera: Esta opción describe una alteración en el patrón de marcha, pero no se refiere específicamente al exoesqueleto Lokomat.\n- Opción b) Contacto permanente del pie con una plataforma de trayectoria eliptica que dirige el movimiento distal: Esta opción describe la función principal del exoesqueleto Lokomat, que es guiar el movimiento del pie a través de una trayectoria elíptica.\n- Opción c) Liberacion completa de las rodillas para permitir el acceso del terapeuta y la facilitacion manual: Esta opción no se refiere al funcionamiento del exoesqueleto Lokomat.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\nLa opción a) tiene un error en la descripción de la traslación lateral normal del centro de gravedad, que no está relacionada con el exoesqueleto Lokomat. La opción c) también es incorrecta porque describe una función que no es propia del exoesqueleto Lokomat.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\nLa opción b) es la única que describe correctamente la función del exoesqueleto Lokomat.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\nLa opción b) es la más completa y correcta porque describe con precisión el funcionamiento del exoesqueleto Lokomat.\n\nRESPUESTA FINAL:\nRESPUESTA: B",
+   "opcion_detectada": "b",
+   "es_correcta": false,
+   "latency_seconds": 12.757055521011353,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 49,
+   "pregunta": "En la estabilización rítmica, técnica dirigida al antagonista, ¿qué tipo de actividad muscular se busca y cuál es su característica esencial respecto a la resistencia?",
+   "opciones": {
+    "a": "Se busca una contracción isotónica concéntrica alternante de los agonistas, aplicando la mayor resistencia posible hasta vencer el patrón rotador",
+    "b": "Se emplea la contracción isométrica de patrones antagonistas buscando la co-contracción de antagonistas, sin realizar tanta resistencia como para que aparezca la contracción isotónica",
+    "c": "Se persigue el movimiento activo libre del agonista en todo el recorrido, sin resistencia manual del fisioterapeuta para evitar la fatiga"
+   },
+   "respuesta_correcta": "b",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Se busca una contracción isotónica concéntrica alternante de los agonistas, aplicando la mayor resistencia posible hasta vencer el patrón rotador. La estabilización rítmica se enfoca en la técnica dirigida al antagonista, no en la contracción concéntrica del agonista.\n- Opción b) Se emplea la contracción isométrica de patrones antagonistas buscando la co-contracción de antagonistas, sin realizar tanta resistencia como para que aparezca la contracción isotónica. Esta opción describe una técnica similar a la estabilización rítmica.\n- Opción c) Se persigue el movimiento activo libre del agonista en todo el recorrido, sin resistencia manual del fisioterapeuta para evitar la fatiga. Esto no se ajusta a la definición de estabilización rítmica.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- Opción c) Describe un movimiento activo libre, lo que no es característico de la estabilización rítmica. Descártala.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\n- No hay una opción combinada que verifique ambas opciones como verdaderas.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\n- Entre las opciones a y b, la más completa y correcta es la que describe la técnica dirigida al antagonista con co-contracción isométrica de patrones antagonistas.\n\nRESPUESTA FINAL:\nRESPUESTA: b",
+   "opcion_detectada": "b",
+   "es_correcta": true,
+   "latency_seconds": 12.961317300796509,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 50,
+   "pregunta": "Respecto al componente rotador en los patrones de FNP, ¿cuál es su papel en la elongación y en la ejecución del patrón según el documento?",
+   "opciones": {
+    "a": "El componente rotador es el primero que se considera al estirar el patrón completo y el último que sale en la contracción muscular",
+    "b": "El componente rotador es el que permite la elongación máxima del patrón; se considera en primer y último término al estirar porque elonga las fibras, y es el primero que sale al iniciar una contracción muscular",
+    "c": "El componente rotador es irrelevante para la elongación, ya que ésta depende únicamente del componente principal de flexión o extensión"
+   },
+   "respuesta_correcta": "b",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) El componente rotador es el primero que se considera al estirar el patrón completo y el último que sale en la contracción muscular: Esta opción parece correcta, ya que el componente rotatorio se activa para permitir la elongación del patrón.\n\n- Opción b) El componente rotador es el que permite la elongación máxima del patrón; se considera en primer y último término al estirar porque elonga las fibras, y es el primero que sale al iniciar una contracción muscular: Esta opción también parece correcta, ya que el componente rotatorio está involucrado en la elongación y se activa al principio de la contracción.\n\n- Opción c) El componente rotador es irrelevante para la elongación, ya que ésta depende únicamente del componente principal de flexión o extensión: Esta opción parece incorrecta, ya que el componente rotatorio tiene un papel en la elongación del patrón.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- No hay errores en las opciones a y b. La opción c es incorrecta porque minimiza el papel del componente rotador en la elongación.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\n- Ambas opciones a y b describen correctamente el papel del componente rotatorio en la elongación y la contracción muscular.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\n- Entre las opciones correctas, la opción b describe con mayor detalle el papel del componente rotatorio en la elongación y la contracción.\n\nRESPUESTA FINAL:\nRESPUESTA: B",
+   "opcion_detectada": "b",
+   "es_correcta": true,
+   "latency_seconds": 13.086616039276123,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 51,
+   "pregunta": "Sobre la concordancia entre pivote distal y componentes proximales en miembros inferiores, según la FNP, ¿qué afirmación es correcta?",
+   "opciones": {
+    "a": "La eversión concuerda con la abducción y rotación interna de cadera, y la inversión con la aducción y rotación externa de cadera",
+    "b": "La eversión concuerda con la aducción y rotación externa de cadera, y la inversión con la abducción y rotación interna de cadera",
+    "c": "La dorsiflexión concuerda con la extensión de cadera y la plantiflexión con la flexión de cadera"
+   },
+   "respuesta_correcta": "a",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) La eversión concuerda con la abducción y rotación interna de cadera, y la inversión con la aducción y rotación externa de cadera:\n  + Eversión: movimiento que implica rotación externa del pie (correcto).\n  + Abducción y rotación interna de cadera: correctos.\n  + Inversión: movimiento que implica rotación interna del pie (correcto).\n  + Aducción y rotación externa de cadera: incorrectos, ya que la aducción es un movimiento hacia el cuerpo y la rotación externa se asocia con la eversión.\n\n- Opción b) La eversión concuerda con la aducción y rotación externa de cadera, y la inversión con la abducción y rotación interna de cadera:\n  + Eversión: movimiento que implica rotación externa del pie (correcto).\n  + Aducción y rotación externa de cadera: incorrectos.\n  + Inversión: movimiento que implica rotación interna del pie (correcto).\n  + Abducción y rotación interna de cadera: correctos.\n\n- Opción c) La dorsiflexión concuerda con la extensión de cadera y la plantiflexión con la flexión de cadera:\n  + Dorsiflexión: movimiento que implica elevación del dedo gordo (correcto).\n  + Extensión de cadera: incorrecta, ya que la dorsiflexión se asocia con la flexión de cadera.\n  + Plantiflexión: movimiento que implica descenso del dedo gordo (correcto).\n  + Flexión de cadera: correcta.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n- Opción a) tiene errores en la descripción de la aducción y rotación externa de cadera.\n- Opción b) también tiene errores en la descripción de la aducción y rotación externa de cadera.\n- Opción c) tiene errores en la asociación entre dorsiflexión y extensión de cadera.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\nNo hay una opción combinada que sea correcta según los pasos anteriores.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\nEntre las opciones que no tienen errores, la más completa y correcta es la que describe con precisión la concordancia entre movimientos de miembros inferiores y cadera. Sin embargo, ninguna opción se ajusta exactamente a los patrones de movimiento descritos en la Fisioterapia Neurológica (FNP).\n\nRESPUESTA FINAL:\nNo hay una respuesta correcta según el razonamiento proporcionado.",
+   "opcion_detectada": "desconocida",
+   "es_correcta": false,
+   "latency_seconds": 22.643147230148315,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 52,
+   "pregunta": "En relación con las indicaciones y contraindicaciones del reflejo de estiramiento como procedimiento básico de facilitación, ¿qué afirmación es correcta?",
+   "opciones": {
+    "a": "Está indicado para mantener la estabilidad postural y contraindicado únicamente cuando el paciente colabora bien",
+    "b": "Está indicado para iniciar el movimiento voluntario y aumentar la rapidez de respuesta en musculatura débil, y está contraindicado en pacientes con dolor",
+    "c": "Está indicado para relajar la musculatura espástica mediante movimientos súbitos y contraindicado solo en musculatura sana"
+   },
+   "respuesta_correcta": "b",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) \"Está indicado para mantener la estabilidad postural y contraindicado únicamente cuando el paciente colabora bien\": Esta afirmación no está claramente relacionada con las indicaciones y contraindicaciones del reflejo de estiramiento. El reflejo de estiramiento se utiliza principalmente para facilitar movimientos y mejorar la función muscular, más que para mantener la estabilidad postural.\n\n- Opción b) \"Está indicado para iniciar el movimiento voluntario y aumentar la rapidez de respuesta en musculatura débil, y está contraindicado en pacientes con dolor\": Esta opción parece correcta. El reflejo de estiramiento se utiliza comúnmente para ayudar a los pacientes a iniciar movimientos voluntarios y mejorar su función muscular, especialmente en casos de debilidad. Además, es importante tener en cuenta la presencia de dolor al aplicar este procedimiento.\n\n- Opción c) \"Está indicado para relajar la musculatura espástica mediante movimientos súbitos y contraindicado solo en musculatura sana\": Esta afirmación contiene errores. El reflejo de estiramiento no se utiliza principalmente para relajar la musculatura espástica, ya que los movimientos súbitos pueden ser perjudiciales en estos casos. Además, la contraindicación se aplica a pacientes con lesiones o enfermedades que afecten la función muscular, no solo a la \"musculatura sana\".\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- Opción c) contiene errores y puede ser descartada.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\n- No hay una opción tipo 'a y b son ciertas/correctas' en este caso, por lo que no es necesario verificar ambas opciones.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\n- Entre las opciones que no tienen errores, la opción b) \"Está indicado para iniciar el movimiento voluntario y aumentar la rapidez de respuesta en musculatura débil, y está contraindicado en pacientes con dolor\" es la más completa y correcta.\n\nRESPUESTA FINAL:\nRESPUESTA: b",
+   "opcion_detectada": "b",
+   "es_correcta": true,
+   "latency_seconds": 18.16116738319397,
+   "num_fragmentos": 0
+  },
+  {
+   "id": 53,
+   "pregunta": "Respecto al sincronismo normal y al desarrollo del patrón en la FNP, ¿qué afirmación refleja correctamente el documento?",
+   "opciones": {
+    "a": "El proceso normal de desarrollo es de distal a proximal, mientras que el sincronismo normal es de próximo a distal",
+    "b": "El proceso normal de desarrollo es próximo-distal, mientras que el sincronismo normal es de distal a proximal, iniciándose el movimiento desde la rotación",
+    "c": "Tanto el proceso de desarrollo como el sincronismo normal son de próximo a distal, y el movimiento se inicia siempre desde el componente principal de flexión"
+   },
+   "respuesta_correcta": "b",
+   "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) El proceso normal de desarrollo es de distal a proximal, mientras que el sincronismo normal es de próximo a distal: Esta afirmación parece correcta en cuanto al desarrollo (distal a proximal), pero no se refiere explícitamente al inicio del movimiento en el contexto del sincronismo normal.\n- Opción b) El proceso normal de desarrollo es próximo-distal, mientras que el sincronismo normal es de distal a proximal, iniciándose el movimiento desde la rotación: Esta opción introduce una contradicción entre el desarrollo (proximo-distal) y el sincronismo normal (distal a proximal), lo cual no se alinea con los conceptos básicos de la Fisioterapia del Sistema Nervioso Periférico (FNP).\n- Opción c) Tanto el proceso de desarrollo como el sincronismo normal son de próximo a distal, y el movimiento se inicia siempre desde el componente principal de flexión: Esta opción introduce una contradicción con la evidencia clínica en cuanto al inicio del movimiento en el contexto del sincronismo normal.\n\nPASO 2 - DESCARTAR OPCIONES CON ERRORES:\n\n- Opción b) Presenta una contradicción entre el desarrollo y el sincronismo normal, por lo que se descarta.\n- Opción c) También presenta una contradicción con la evidencia clínica en cuanto al inicio del movimiento, por lo que se descarta.\n\nPASO 3 - OPCIONES 'A Y B SON CIERTAS':\n\nNo hay opciones de este tipo en el conjunto de respuestas proporcionadas.\n\nPASO 4 - ELEGIR LA MÁS COMPLETA:\n\nEntre las opciones que no tienen errores, la opción a) es la más correcta y completa en cuanto al desarrollo y sincronismo normal.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+   "opcion_detectada": "a",
+   "es_correcta": false,
+   "latency_seconds": 14.194142580032349,
+   "num_fragmentos": 0
+  }
+ ]
+}

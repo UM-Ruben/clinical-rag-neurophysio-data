@@ -1,0 +1,788 @@
+[
+ {
+  "tag": "llama8b",
+  "arm": "con",
+  "id": 4,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "con",
+  "id": 8,
+  "categoria": "T2"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "con",
+  "id": 13,
+  "categoria": "T5"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "con",
+  "id": 14,
+  "categoria": "T3"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "con",
+  "id": 15,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "con",
+  "id": 19,
+  "categoria": "T2"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "con",
+  "id": 20,
+  "categoria": "T3"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "con",
+  "id": 34,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "con",
+  "id": 40,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "con",
+  "id": 51,
+  "categoria": "T2"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 1,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 4,
+  "categoria": "T3"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 5,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 8,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 10,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 13,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 14,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 16,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 19,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 20,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 21,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 27,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 32,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 33,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 34,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 40,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 41,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 43,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 44,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 45,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 48,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 49,
+  "categoria": "T1"
+ },
+ {
+  "tag": "llama8b",
+  "arm": "sin",
+  "id": 53,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qlora",
+  "arm": "con",
+  "id": 2,
+  "categoria": "T2"
+ },
+ {
+  "tag": "qlora",
+  "arm": "con",
+  "id": 4,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qlora",
+  "arm": "con",
+  "id": 6,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qlora",
+  "arm": "con",
+  "id": 7,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qlora",
+  "arm": "con",
+  "id": 8,
+  "categoria": "T3"
+ },
+ {
+  "tag": "qlora",
+  "arm": "con",
+  "id": 10,
+  "categoria": "T2"
+ },
+ {
+  "tag": "qlora",
+  "arm": "con",
+  "id": 13,
+  "categoria": "T5"
+ },
+ {
+  "tag": "qlora",
+  "arm": "con",
+  "id": 14,
+  "categoria": "T3"
+ },
+ {
+  "tag": "qlora",
+  "arm": "con",
+  "id": 15,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qlora",
+  "arm": "con",
+  "id": 19,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qlora",
+  "arm": "con",
+  "id": 20,
+  "categoria": "T3"
+ },
+ {
+  "tag": "qlora",
+  "arm": "con",
+  "id": 34,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qlora",
+  "arm": "con",
+  "id": 51,
+  "categoria": "T2"
+ },
+ {
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 1,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 4,
+  "categoria": "T3"
+ },
+ {
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 5,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 6,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 7,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 8,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 10,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 13,
+  "categoria": "T3"
+ },
+ {
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 14,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 16,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 20,
+  "categoria": "T5"
+ },
+ {
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 24,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 40,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 42,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 43,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 44,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 48,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 51,
+  "categoria": "T5"
+ },
+ {
+  "tag": "qlora",
+  "arm": "sin",
+  "id": 53,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 1,
+  "categoria": "T3"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 2,
+  "categoria": "T2"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 4,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 6,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 8,
+  "categoria": "T2"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 10,
+  "categoria": "T2"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 14,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 17,
+  "categoria": "T3"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 19,
+  "categoria": "T2"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 27,
+  "categoria": "T3"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 35,
+  "categoria": "T5"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 37,
+  "categoria": "T2"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 40,
+  "categoria": "T5"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 46,
+  "categoria": "T5"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 51,
+  "categoria": "T2"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "con",
+  "id": 53,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 1,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 4,
+  "categoria": "T3"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 5,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 6,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 7,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 8,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 10,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 13,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 14,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 19,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 40,
+  "categoria": "T5"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 41,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 42,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 44,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 45,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 50,
+  "categoria": "T1"
+ },
+ {
+  "tag": "qwen7b",
+  "arm": "sin",
+  "id": 51,
+  "categoria": "T1"
+ },
+ {
+  "tag": "med42",
+  "arm": "con",
+  "id": 2,
+  "categoria": "T2"
+ },
+ {
+  "tag": "med42",
+  "arm": "con",
+  "id": 3,
+  "categoria": "T3"
+ },
+ {
+  "tag": "med42",
+  "arm": "con",
+  "id": 4,
+  "categoria": "T5"
+ },
+ {
+  "tag": "med42",
+  "arm": "con",
+  "id": 6,
+  "categoria": "T1"
+ },
+ {
+  "tag": "med42",
+  "arm": "con",
+  "id": 10,
+  "categoria": "T2"
+ },
+ {
+  "tag": "med42",
+  "arm": "con",
+  "id": 13,
+  "categoria": "T5"
+ },
+ {
+  "tag": "med42",
+  "arm": "con",
+  "id": 14,
+  "categoria": "T3"
+ },
+ {
+  "tag": "med42",
+  "arm": "con",
+  "id": 20,
+  "categoria": "T3"
+ },
+ {
+  "tag": "med42",
+  "arm": "con",
+  "id": 25,
+  "categoria": "T5"
+ },
+ {
+  "tag": "med42",
+  "arm": "con",
+  "id": 27,
+  "categoria": "T4"
+ },
+ {
+  "tag": "med42",
+  "arm": "con",
+  "id": 31,
+  "categoria": "T5"
+ },
+ {
+  "tag": "med42",
+  "arm": "con",
+  "id": 39,
+  "categoria": "T4"
+ },
+ {
+  "tag": "med42",
+  "arm": "con",
+  "id": 51,
+  "categoria": "T5"
+ },
+ {
+  "tag": "med42",
+  "arm": "sin",
+  "id": 1,
+  "categoria": "T1"
+ },
+ {
+  "tag": "med42",
+  "arm": "sin",
+  "id": 2,
+  "categoria": "T1"
+ },
+ {
+  "tag": "med42",
+  "arm": "sin",
+  "id": 3,
+  "categoria": "T5"
+ },
+ {
+  "tag": "med42",
+  "arm": "sin",
+  "id": 4,
+  "categoria": "T1"
+ },
+ {
+  "tag": "med42",
+  "arm": "sin",
+  "id": 6,
+  "categoria": "T1"
+ },
+ {
+  "tag": "med42",
+  "arm": "sin",
+  "id": 8,
+  "categoria": "T3"
+ },
+ {
+  "tag": "med42",
+  "arm": "sin",
+  "id": 10,
+  "categoria": "T1"
+ },
+ {
+  "tag": "med42",
+  "arm": "sin",
+  "id": 15,
+  "categoria": "T4"
+ },
+ {
+  "tag": "med42",
+  "arm": "sin",
+  "id": 16,
+  "categoria": "T5"
+ },
+ {
+  "tag": "med42",
+  "arm": "sin",
+  "id": 20,
+  "categoria": "T1"
+ },
+ {
+  "tag": "med42",
+  "arm": "sin",
+  "id": 24,
+  "categoria": "T1"
+ },
+ {
+  "tag": "med42",
+  "arm": "sin",
+  "id": 25,
+  "categoria": "T4"
+ },
+ {
+  "tag": "med42",
+  "arm": "sin",
+  "id": 28,
+  "categoria": "T1"
+ },
+ {
+  "tag": "med42",
+  "arm": "sin",
+  "id": 32,
+  "categoria": "T5"
+ },
+ {
+  "tag": "med42",
+  "arm": "sin",
+  "id": 35,
+  "categoria": "T1"
+ },
+ {
+  "tag": "med42",
+  "arm": "sin",
+  "id": 40,
+  "categoria": "T1"
+ },
+ {
+  "tag": "med42",
+  "arm": "sin",
+  "id": 41,
+  "categoria": "T1"
+ },
+ {
+  "tag": "med42",
+  "arm": "sin",
+  "id": 43,
+  "categoria": "T1"
+ },
+ {
+  "tag": "med42",
+  "arm": "sin",
+  "id": 48,
+  "categoria": "T1"
+ },
+ {
+  "tag": "med42",
+  "arm": "sin",
+  "id": 50,
+  "categoria": "T1"
+ }
+]

@@ -1,0 +1,21 @@
+{
+  "n_preguntas_con_distractor": 12,
+  "n_preguntas_sin_distractor": 41,
+  "errores_con_distractor": 18,
+  "obs_con_distractor": 48,
+  "errores_sin_distractor": 34,
+  "obs_sin_distractor": 164,
+  "tasa_con_distractor_pct": 37.5,
+  "ci95_con": [
+    25.2,
+    51.6
+  ],
+  "tasa_sin_distractor_pct": 20.7,
+  "ci95_sin": [
+    15.2,
+    27.6
+  ],
+  "fisher_p_no_clusterizado": 0.0223,
+  "permutacion_p_clusterizada": 0.1278,
+  "diferencia_errores_por_pregunta": 0.671
+}

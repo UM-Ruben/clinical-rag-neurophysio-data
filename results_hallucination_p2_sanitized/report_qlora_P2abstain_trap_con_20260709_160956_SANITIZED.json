@@ -1,0 +1,1713 @@
+{
+  "header": {
+    "protocolo": "sysrole_abstain",
+    "banco": "trap",
+    "model": "neurofisio-qlora",
+    "arm": "con",
+    "no_rag": false,
+    "questions_count": 24,
+    "opcion_abstencion": "d",
+    "texto_opcion_d": "No puede responderse con la documentacion disponible",
+    "retrieved_top_k": 7,
+    "context_max_tokens": 5000,
+    "num_ctx": 8192,
+    "temperature": 0,
+    "embedding_model": "BAAI/bge-m3",
+    "timestamp": "2026-07-09T16:16:32.440874",
+    "completed": true
+  },
+  "summary": {
+    "total": 24,
+    "correct": 14,
+    "accuracy": 58.333333333333336,
+    "abstenciones": 9,
+    "tasa_abstencion": 37.5,
+    "alucinaciones": 4,
+    "n_items_abstencion_correcta": 11,
+    "parse_desconocida": 0,
+    "latency_mean": 16.48284136255582,
+    "latency_median": 15.991
+  },
+  "questions": [
+    {
+      "id": 1001,
+      "tipo": "trap_c",
+      "pregunta": "En el concepto Bobath, el grupo flexor de la extremidad queda definido por la flexión, la abducción y la rotación externa. De acuerdo con esta definición del grupo flexor, ¿qué combinación de componentes lo caracteriza?",
+      "opciones": {
+        "a": "Flexión, aducción y rotación interna.",
+        "b": "Flexión, abducción y rotación externa.",
+        "c": "Extensión, abducción y rotación externa.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Flexión, aducción y rotación interna. Esta opción cambia la palabra \"abducción\" por \"aducción\", que es un movimiento opuesto. Por lo tanto, esta opción es falsa.\n\n- Opción b) Flexión, abducción y rotación externa. Esta opción coincide con la definición del grupo flexor en el concepto Bobath: flexión, abducción y rotación externa.\n\n- Opción c) Extensión, abducción y rotación externa. Esta opción cambia la palabra \"flexión\" por \"extensión\", que es un movimiento opuesto. Por lo tanto, esta opción es falsa.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nEl enunciado da por supuesto que el grupo flexor se define como flexión, abducción y rotación externa. Según la evidencia, esto es cierto.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nLa opción a) es falsa porque cambia la palabra \"abducción\" por \"aducción\". La opción c) es falsa porque cambia la palabra \"flexión\" por \"extensión\".\n\nPASO 4 - DECIDIR:\nEntre las opciones b y d, la más completa y correcta es la opción b) Flexión, abducción y rotación externa.\n\nRESPUESTA FINAL:\n\nRESPUESTA: b",
+      "opcion_detectada": "b",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": false,
+      "latency_seconds": 13.391,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "ee812daf2ef93998855168965bfa3c31a862b5334949ffdc711934e659166b01",
+          "n_chars": 967,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "ec0837d65b4eff5ddccd58bbaa6d5b66825148a5ba415f1f1c5447c7c9ed1b1d",
+          "n_chars": 1255,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "ac0eb8c83a16d373c2b2fce913e444c56c692ba6d7a6f9799e44d84922ca1b72",
+          "n_chars": 1338,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "974eee44972b7dc28f43f859160ac779ecb470493a0a263dda7e5a5f74def2bb",
+          "n_chars": 1363,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "31cebc056eca790e64c33cec6953427a04fd466ccc92fc95ecae0f59f2ca1ace",
+          "n_chars": 1490,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "41919036a6d4c0f47bdcde13f83959d0c252983798a71e938eab9267b11c76f0",
+          "n_chars": 881,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "71df90ef657df346570f9608afe74a5d9e5c1a4858192d8306e032c89517e756",
+          "n_chars": 1409,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1002,
+      "tipo": "trap_c",
+      "pregunta": "Al aplicar una presión dosificada sobre el tendón del bíceps braquial con hipertonía, la estimulación de los órganos tendinosos de Golgi provoca un aumento del tono del bíceps. Respecto al efecto de esta maniobra sobre el músculo y sobre la extensión del codo, ¿cuál es la afirmación correcta?",
+      "opciones": {
+        "a": "La estimulación del órgano tendinoso de Golgi excita la motoneurona alfa del bíceps y aumenta su contracción.",
+        "b": "El aumento de tensión sobre el tendón produce un descenso del tono del bíceps y favorece la extensión del codo.",
+        "c": "El aumento de tensión sobre el tendón incrementa el tono del bíceps y dificulta la extensión del codo.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) La estimulación del órgano tendinoso de Golgi excita la motoneurona alfa del bíceps y aumenta su contracción.\n  + Verificación: Según el texto, cuando se ejerce una presión dosificada sobre el tendón del bíceps braquial con hipertonía, la estimulación de los órganos tendinosos de Golgi provoca un descenso del tono del bíceps. Esto contradice la afirmación de que excita la motoneurona alfa y aumenta su contracción.\n\n- Opción b) El aumento de tensión sobre el tendón produce un descenso del tono del bíceps y favorece la extensión del codo.\n  + Verificación: Según el texto, cuando se ejerce una presión dosificada sobre el tendón del bíceps braquial con hipertonía, la estimulación de los órganos tendinosos de Golgi provoca un descenso del tono del bíceps. Esto coincide con la afirmación.\n\n- Opción c) El aumento de tensión sobre el tendón incrementa el tono del bíceps y dificulta la extensión del codo.\n  + Verificación: Según el texto, cuando se ejerce una presión dosificada sobre el tendón del bíceps braquial con hipertonía, la estimulación de los órganos tendinosos de Golgi provoca un descenso del tono del bíceps. Esto contradice la afirmación.\n\n- Opción d) No puede responderse con la documentacion disponible\n  + Verificación: Según el texto, se proporciona información sobre cómo funciona la estimulación de los órganos tendinosos de Golgi y su efecto en el tono muscular.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nLa premisa del enunciado es que la estimulación de los órganos tendinosos de Golgi provoca un aumento o descenso del tono del bíceps. Según el texto, esta afirmación es correcta.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nLa opción a) está incorrecta porque contradice la información proporcionada en el texto. La opción c) también está incorrecta por la misma razón.\n\nPASO 4 - DECIDIR:\nEntre las opciones b y d, la más correcta es la que coincide con la información proporcionada en el texto.\n\nRESPUESTA FINAL:\nRESPUESTA: b",
+      "opcion_detectada": "b",
+      "es_correcta": true,
+      "abstiene": false,
+      "alucina": false,
+      "latency_seconds": 19.785,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "b8bf057d758f28a44a715c1f9d704ec7b7d611fe868fd5a0e391c5ffd7a13fca",
+          "n_chars": 1409,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "bc1ad683c60e4cf7ed9c760ae86976baf993e35b3abb99c22b60b95ac0e96fd2",
+          "n_chars": 1063,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "31cebc056eca790e64c33cec6953427a04fd466ccc92fc95ecae0f59f2ca1ace",
+          "n_chars": 1490,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "863351fbfbd87aea18b2b5e8732b9f4b5bdbe6a822f2614f71173e71fdac29a1",
+          "n_chars": 1008,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "98d1cd8de190e8ea24a67c1e132e9a742f662b7ee58e2ef9131e8c0d589cd819",
+          "n_chars": 1455,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "330cb8929d064dc5e01e641368da0386a0d712b8aab050f84198046228392428",
+          "n_chars": 865,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "4b21f6ffb6b1844aba6fb4b3fcad025944122fe90fadf2f6814e0f5f057eb5f3",
+          "n_chars": 954,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1003,
+      "tipo": "trap_c",
+      "pregunta": "Según el ritmo escápulo-humeral de Codman, una abducción de 90º del miembro superior se compone de 60º de movimiento escapular y 30º de movimiento glenohumeral. Partiendo de esta proporción, ¿cuántos grados de movimiento glenohumeral corresponderían a una abducción total de 180º?",
+      "opciones": {
+        "a": "90º de glenohumeral.",
+        "b": "60º de glenohumeral.",
+        "c": "120º de glenohumeral.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "c",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- La opción a) dice \"90º de glenohumeral\". Según el ritmo escápulo-humeral de Codman, una abducción de 90º se compone de 30º de movimiento glenohumeral. Por tanto, esta opción es FALSA.\n\n- La opción b) dice \"60º de glenohumeral\". Según el ritmo escápulo-humeral de Codman, una abducción de 90º se compone de 30º de movimiento glenohumeral. Si multiplicamos por 2 (ya que 180º es el doble que 90º), deberíamos obtener 60º de glenohumeral. Por tanto, esta opción parece correcta.\n\n- La opción c) dice \"120º de glenohumeral\". Según el ritmo escápulo-humeral de Codman, una abducción de 90º se compone de 30º de movimiento glenohumeral. Si multiplicamos por 2 (ya que 180º es el doble que 90º), deberíamos obtener 60º de glenohumeral, no 120º.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nLa premisa del enunciado es que el ritmo escápulo-humeral de Codman se aplica a una abducción total de 180º. Según la evidencia, esto parece ser cierto.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\n- La opción a) está FALSA porque dice \"90º de glenohumeral\", que no es correcto según el ritmo escápulo-humeral de Codman.\n\n- La opción c) está FALSA porque dice \"120º de glenohumeral\", que no es correcto según el ritmo escápulo-humeral de Codman.\n\nPASO 4 - DECIDIR:\n\nEntre las opciones a, b y c que NO tienen errores, la opción b) parece ser la más completa y correcta. Según el ritmo escápulo-humeral de Codman, una abducción total de 180º se compone de 60º de movimiento glenohumeral.\n\nRESPUESTA FINAL:\nRESPUESTA: b",
+      "opcion_detectada": "b",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": false,
+      "latency_seconds": 18.215,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "86e2002fa873cc4138897861b26f271373c1e767d635204323475c682a4a7aff",
+          "n_chars": 708,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "b24866c0f464332938b3596da1593e32c9192168a9dc8ab8ccfc603bfc3293c2",
+          "n_chars": 1135,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "656b6767803781c19ebb05952f6aba28a519af0a44c49504e4738307391c81e4",
+          "n_chars": 1390,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "517c991174354bfe7ecb77dfd32059ca51eff7f510f3e0a70346982a36b64194",
+          "n_chars": 423,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "815dc1da0a9ab91eda5e2104815a0a8931a2eda4937e77ea330b36b4bf517b49",
+          "n_chars": 1443,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "36265e4e9635654a5e10b64bf7d270a6ff3c1e110903d51489b3e74c0f8eb6fe",
+          "n_chars": 1106,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "82c2a832393c0406ba9b51a56a8ca453daaeac401e5c9fac87cbf538d3aa47c7",
+          "n_chars": 1348,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1004,
+      "tipo": "trap_d",
+      "pregunta": "En la exploración del pie del paciente neurológico, el arco anterior es el arco encargado del equilibrio. ¿Qué músculos conforman el arco anterior del pie, responsable del equilibrio?",
+      "opciones": {
+        "a": "Tibial anterior, sóleo y gemelos.",
+        "b": "Tibial posterior, flexor largo de los dedos y abductor del dedo gordo.",
+        "c": "Peroneo lateral largo, peroneo lateral corto y abductor del quinto dedo.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Tibial anterior, sóleo y gemelos. La evidencia menciona que el arco anterior está formado por los músculos del miembro inferior apoyado (en la rodilla apenas, sobre todo tobillo y cadera), pero no especifica qué músculos son responsables del equilibrio.\n- Opción b) Tibial posterior, flexor largo de los dedos y abductor del dedo gordo. La evidencia menciona que el arco interno está formado por estos músculos (tibial posterior, flexor largo de los dedos y abductor del dedo gordo), pero no especifica qué arco es responsable del equilibrio.\n- Opción c) Peroneo lateral largo, peroneo lateral corto y abductor del quinto dedo. La evidencia menciona que el arco externo está formado por estos músculos (peroneo lateral largo, peroneo lateral corto y abductor del quinto dedo), pero no especifica qué arco es responsable del equilibrio.\n- Opción d) No puede responderse con la documentación disponible. Esta opción parece ser la más correcta, ya que la evidencia no proporciona información clara sobre los músculos responsables del equilibrio en el arco anterior.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nLa premisa del enunciado afirma que el arco anterior es responsable del equilibrio, pero la evidencia no proporciona información clara sobre esto. Por lo tanto, descartamos las opciones a y b, ya que dependen de esta afirmación falsa.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nNo hay errores en las opciones a, b o c que puedan descartarlas.\n\nPASO 4 - DECIDIR:\nEntre las opciones a, b y c que no tienen errores, la opción d es la más correcta, ya que la evidencia no proporciona información clara sobre los músculos responsables del equilibrio en el arco anterior.\n\nRESPUESTA FINAL:\n\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 16.752,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "3d3c00968f97343099ab46b54987b84e174478b31057391cbd5cb4e325b6307b",
+          "n_chars": 1059,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "02afe176b618a8b00ffb51624ffed063904333436e032767e4b38677c890c89d",
+          "n_chars": 666,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "07db145cb47321b98b114334d2e6826918bcef8a65464fd60ca61502984818c0",
+          "n_chars": 1455,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "9015b2e9ace7ff0b28981a82094c0ced33377cd6d889e83496f2396f094432de",
+          "n_chars": 1296,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "6a8ac16c14653399bfa1c8c12e30b4e8466f36bc1f42c60851ef92c8a29d891a",
+          "n_chars": 520,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "e76225465c7281eda39c223327f5e25bdd6f0de7a83b292aec7f5b778023f45c",
+          "n_chars": 364,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "8b5187738f574528d592ba47b493fa30165a151d830204cddfe60aaa5f6f529f",
+          "n_chars": 856,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1005,
+      "tipo": "trap_c",
+      "pregunta": "En la elección de la base de sustentación y el área de apoyo, y partiendo de que una base de sustentación amplia incrementa el tono postural, ¿qué efecto tiene sobre el tono del paciente adoptar una base de sustentación grande?",
+      "opciones": {
+        "a": "Disminuye el tono postural, ya que una base de sustentación grande reduce el tono.",
+        "b": "Aumenta el tono postural, en coherencia con la mayor amplitud de la base de sustentación.",
+        "c": "Mantiene el tono postural constante, con independencia del tamaño de la base de sustentación.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Disminuye el tono postural, ya que una base de sustentación grande reduce el tono.\n  * La evidencia dice: \"una base de sustentación amplia incrementa el tono postural\" (no disminuye).\n  * Descartada.\n\n- Opción b) Aumenta el tono postural, en coherencia con la mayor amplitud de la base de sustentación.\n  * La evidencia dice: \"una base de sustentación amplia incrementa el tono postural\" (no disminuye).\n  * Descartada.\n\n- Opción c) Mantiene el tono postural constante, con independencia del tamaño de la base de sustentación.\n  * La evidencia dice: \"una base de sustentación amplia incrementa el tono postural\" (no mantiene constante).\n  * Descartada.\n\n- Opción d) No puede responderse con la documentacion disponible\n  * Esta opción no tiene errores y se ajusta a la evidencia proporcionada.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nLa premisa del enunciado es que una base de sustentación amplia incrementa el tono postural, lo cual está respaldado por la evidencia.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nNinguna de las opciones a, b o c tiene errores y se ajustan a la premisa del enunciado. La opción d es correcta porque no hay una respuesta explícita entre las opciones a, b o c.\n\nPASO 4 - DECIDIR:\nLa respuesta correcta es la que indica que no puede responderse con la documentación disponible, ya que ninguna de las opciones a, b o c se ajusta a la evidencia proporcionada.\n\nRESPUESTA FINAL:\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": false,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 15.455,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "e8d147d0f919bf256efdf025c629b602c4588c55e9c539f44b2362f9787b75f8",
+          "n_chars": 994,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "edaf9ecf634e11a18072c1ba0db9a62c1346075d3784cbde8cccc437517ab88a",
+          "n_chars": 1333,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "ab35d43fbef9d94dc6819809abf231228028533a2b9772fbd118e1572195efdd",
+          "n_chars": 513,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "2dbc0051e353897124b91aebc38539224e3af6039bfd4536420d9c0f5c559c98",
+          "n_chars": 470,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "63c025244fd5893b8c32b936ff510a36504f15ebff52e1c1ff9fbc3054e248af",
+          "n_chars": 1204,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "4c258294e1c41ab4f24839bb0cef61163af68546067621ca9846cf1eed9c4124",
+          "n_chars": 804,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "ad1f77e02f479b0c412dae0750155fd9d4cdc481aed3fb6aa96a1e170a4a176f",
+          "n_chars": 1407,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1006,
+      "tipo": "trap_c",
+      "pregunta": "En la alineación de los puntos clave, dado que la cintura escapular debe situarse ligeramente por detrás del PCC para que predomine el cierto tono flexor necesario en el miembro superior, ¿en qué posición respecto al punto clave central ha de colocarse dicha cintura escapular?",
+      "opciones": {
+        "a": "Ligeramente por detrás del PCC, conforme a esa alineación de los puntos clave.",
+        "b": "Ligeramente por delante del PCC.",
+        "c": "Perfectamente centrada y a la misma altura que el PCC.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Ligeramente por detrás del PCC: Esta opción contradice la afirmación de que la cintura escapular debe situarse ligeramente por delante del PCC para que predomine el tono flexor necesario en el miembro superior.\n- Opción b) Ligeramente por delante del PCC: Esta opción coincide con la afirmación de que la cintura escapular debe situarse ligeramente por delante del PCC.\n- Opción c) Perfectamente centrada y a la misma altura que el PCC: Esta opción contradice la afirmación de que la cintura escapular debe situarse ligeramente por delante del PCC.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nLa premisa del enunciado es que la cintura escapular debe situarse ligeramente por delante del PCC para que predomine el tono flexor necesario en el miembro superior. Según la evidencia, esta afirmación es cierta.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\n- Opción a) Ligeramente por detrás del PCC: Descartada porque contradice la afirmación de que la cintura escapular debe situarse ligeramente por delante del PCC.\n- Opción c) Perfectamente centrada y a la misma altura que el PCC: Descartada porque contradice la afirmación de que la cintura escapular debe situarse ligeramente por delante del PCC.\n\nPASO 4 - DECIDIR:\n\nEntre las opciones b) Ligeramente por delante del PCC, que no tiene errores y coincide con la afirmación de la evidencia, es la más completa y correcta.\n\nRESPUESTA FINAL:\nRESPUESTA: b",
+      "opcion_detectada": "b",
+      "es_correcta": true,
+      "abstiene": false,
+      "alucina": false,
+      "latency_seconds": 15.34,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "60fe19a97d7661bc7ea7eb5f6f492075e5c0db4aa5c48d22bd8902e1f65881c8",
+          "n_chars": 872,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "61bf3e58c3e8d9091be9ac4679cb7d81247f90d1cb1258fcea2cdac7338cc923",
+          "n_chars": 1447,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "afa7eb12310cb5033b71bbdffc8e819b4f7637f5a0d8e5840f0aec5233d21695",
+          "n_chars": 1420,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "63c025244fd5893b8c32b936ff510a36504f15ebff52e1c1ff9fbc3054e248af",
+          "n_chars": 1204,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "d4de4c289a44a2e3883a33cad2d86b1bb0a9aa6519ec4abc69035ae7291c91c7",
+          "n_chars": 1348,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "04000860b311208fed00a9ebd0f8c561de9246d6de4d4bda8765802cb5d2406c",
+          "n_chars": 951,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "f944ea153141c80e9e90bea49268a77014ae994b17c39ebe059c6ff5546c82cf",
+          "n_chars": 1374,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1007,
+      "tipo": "trap_d",
+      "pregunta": "Según el Principio de Henneman, la musculatura fásica (fibras de tipo II) se recluta antes que la tónica y es la encargada de construir la postura de base sobre la que aparece el movimiento selectivo. De acuerdo con ello, ¿qué tipo de fibras sostienen la postura antes de que se produzca el movimiento selectivo?",
+      "opciones": {
+        "a": "Las fibras de tipo IIb (blancas), por su activación especialmente rápida.",
+        "b": "Las fibras de tipo II (fásicas), de contracción rápida, según el orden de reclutamiento descrito.",
+        "c": "Las fibras de tipo II, por ser de mayor tamaño y generar más fuerza estabilizadora.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Las fibras de tipo IIb (blancas), por su activación especialmente rápida.\n  + La evidencia menciona que las fibras blancas son de tipo II, pero no especifica que sean del subtipo IIb. Además, la velocidad de activación no es un criterio para distinguir entre las diferentes tipos de fibras musculares.\n\n- Opción b) Las fibras de tipo II (fásicas), de contracción rápida, según el orden de reclutamiento descrito.\n  + La evidencia menciona que las fibras de tipo II son fásicas y tienen una contracción rápida. Sin embargo, según el Principio de Henneman, la musculatura tónica se recluta antes que la fásica.\n\n- Opción c) Las fibras de tipo I, por ser de menor tamaño y generar menos fuerza estabilizadora.\n  + La evidencia menciona que las fibras de tipo I son tónicas y tienen un metabolismo aeróbico. Sin embargo, según el Principio de Henneman, la musculatura tónica se recluta antes que la fásica.\n\n- Opción d) No puede responderse con la documentación disponible.\n  + Esta opción es correcta porque las otras opciones contienen errores o no están sustentadas por la evidencia.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nLa premisa del enunciado afirma que el Principio de Henneman establece que la musculatura fásica se recluta antes que la tónica. Sin embargo, según la evidencia, el Principio de Henneman establece que la musculatura tónica se recluta antes que la fásica.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nLas opciones a, b y c contienen errores o no están sustentadas por la evidencia. Por lo tanto, descártalas.\n\nPASO 4 - DECIDIR:\nLa opción d es la única que no contiene errores y está sustentada por la evidencia.\n\nRESPUESTA FINAL:\n\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 19.079,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "7578910c4716765c7ec5d542d7d5e22930d12e5199f9b470da286106723758d9",
+          "n_chars": 1281,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "5ed8c5339a14a7407b947f9e19368fc78297ff4fb3b66287f79920d6f4b79a15",
+          "n_chars": 1481,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "f69a558d4229ed92af55e454ab9033f964e20a1fcff0195812133d9046b90f34",
+          "n_chars": 670,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "73d1ae00804ad27e115c60ea20e0d70e94f4d84362d684f205f106f9db5812d7",
+          "n_chars": 1389,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "5da8f17968f724e479dfc8359b476797a49f80dce533a45df37b78c4065832e8",
+          "n_chars": 1454,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "f9f58dda0d4b48ac5e1bf525502dc1291ad7d2a24dcbbb99fe053e726aa6944c",
+          "n_chars": 1397,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "c5df732ceffee957960a4a2feedf818222d9d2b88fd19dfd5c0ac247f6d0aa7d",
+          "n_chars": 1313,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1008,
+      "tipo": "trap_d",
+      "pregunta": "El decúbito prono se recomienda como posición de partida en el paciente neurológico porque en él predomina el tono extensor de la cadera y de las cinturas escapulares. Atendiendo a ese predominio extensor, ¿qué ventaja terapéutica justifica emplear el decúbito prono como posición de partida?",
+      "opciones": {
+        "a": "Que el tono extensor mejora la mecánica respiratoria mientras el paciente permanece en prono.",
+        "b": "Que refuerza el patrón extensor de la cadera, útil para preparar la bipedestación.",
+        "c": "Que, al predominar la extensión, facilita el trabajo de la marcha desde el inicio del tratamiento.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Que el tono extensor mejora la mecánica respiratoria mientras el paciente permanece en prono.\n  * La evidencia no menciona nada sobre la relación entre el tono extensor y la mecánica respiratoria.\n\n- Opción b) Que refuerza el patrón extensor de la cadera, útil para preparar la bipedestación.\n  * La evidencia dice que en decúbito prono predomina el patrón flexor, no extensor. Por lo tanto, esta opción es falsa.\n\n- Opción c) Que, al predominar la extensión, facilita el trabajo de la marcha desde el inicio del tratamiento.\n  * La evidencia dice que en decúbito prono predomina el patrón flexor y no extensor. Por lo tanto, esta opción es falsa.\n\n- Opción d) No puede responderse con la documentación disponible\n  * Esta opción es correcta porque las opciones a, b y c están basadas en afirmaciones que contradicen la evidencia proporcionada.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nLa premisa del enunciado dice que el decúbito prono se recomienda como posición de partida porque predomina el tono extensor. Sin embargo, la evidencia dice que en decúbito prono predomina el patrón flexor.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nLas opciones a, b y c están basadas en afirmaciones falsas según la evidencia proporcionada. Por lo tanto, se descartan.\n\nPASO 4 - DECIDIR:\nLa única opción que queda es d) No puede responderse con la documentación disponible.\n\nRESPUESTA FINAL:\n\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 14.989,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "60fe19a97d7661bc7ea7eb5f6f492075e5c0db4aa5c48d22bd8902e1f65881c8",
+          "n_chars": 872,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "4132925262a12673e1a3c2c586c0201ecae30316df8757b882e4a24c9f17e111",
+          "n_chars": 1079,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "840e61dc2df698f82545e00d0b9717a7b2a6545082945824ed3adb771c3508d4",
+          "n_chars": 637,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "fc7333b87684198c8d505663fa80fcd840ef67495ff56ba8ade17af60bf7592f",
+          "n_chars": 1065,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "02afe176b618a8b00ffb51624ffed063904333436e032767e4b38677c890c89d",
+          "n_chars": 666,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "d4de4c289a44a2e3883a33cad2d86b1bb0a9aa6519ec4abc69035ae7291c91c7",
+          "n_chars": 1348,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "04000860b311208fed00a9ebd0f8c561de9246d6de4d4bda8765802cb5d2406c",
+          "n_chars": 951,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1009,
+      "tipo": "trap_c",
+      "pregunta": "Un paciente presenta una lesión que compromete de forma selectiva el sistema rubro-espinal, cuya actividad principal a nivel medular es la excitación de la musculatura extensora de las extremidades. ¿Cuál de las siguientes afirmaciones describe correctamente la acción de este sistema sobre las motoneuronas inferiores?",
+      "opciones": {
+        "a": "Actúa exclusivamente sobre la musculatura axial extensora del tronco, sin ninguna influencia sobre la musculatura de las extremidades.",
+        "b": "A nivel medular excita a las motoneuronas de los músculos flexores e inhibe a las de los extensores, por lo que su actividad principal es la flexión de las extremidades.",
+        "c": "A nivel medular excita a las motoneuronas de los músculos extensores e inhibe a las de los flexores, dominando la extensión de las extremidades.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Actúa exclusivamente sobre la musculatura axial extensora del tronco, sin ninguna influencia sobre la musculatura de las extremidades.\n  + La evidencia dice que el sistema rubro-espinal regula la actividad flexora de las extremidades superiores y tiene menos influencia sobre las inferiores. Esto contradice la afirmación de que actúa exclusivamente sobre la musculatura axial extensora del tronco.\n\n- Opción b) A nivel medular excita a las motoneuronas de los músculos flexores e inhibe a las de los extensores, por lo que su actividad principal es la flexión de las extremidades.\n  + La evidencia dice que el sistema rubro-espinal tiene como actividad principal la excitación de la musculatura extensora de las extremidades. Esto contradice la afirmación de que excita a las motoneuronas de los músculos flexores.\n\n- Opción c) A nivel medular excita a las motoneuronas de los músculos extensores e inhibe a las de los flexores, dominando la extensión de las extremidades.\n  + La evidencia dice que el sistema rubro-espinal tiene como actividad principal la excitación de la musculatura extensora de las extremidades. Esto coincide con la afirmación de esta opción.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nLa premisa del enunciado es que el sistema rubro-espinal tiene como actividad principal la excitación de la musculatura extensora de las extremidades. Según la evidencia, esto es cierto.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nLa opción a) está descartada porque contradice la evidencia. La opción b) también está descartada por lo mismo.\n\nPASO 4 - DECIDIR:\nEntre las opciones c que no tienen errores, elige la más completa y correcta. En este caso, la opción c describe correctamente la acción del sistema rubro-espinal sobre las motoneuronas inferiores.\n\nRESPUESTA FINAL:\n\nRESPUESTA: c",
+      "opcion_detectada": "c",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": false,
+      "latency_seconds": 17.698,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "3b113e8a84ff5cbdbda4e86cc3cbcce9c42d68400d16044c6a43122ef7f7c05b",
+          "n_chars": 1386,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "630ad3b951e5983e102e79e89d02bd9b8f44cff4fffe1405dc952fd152558965",
+          "n_chars": 1436,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "524dd10dc6af6b198fcad7d91b7392226b5852cf319e9027e422d6f7506f3156",
+          "n_chars": 1470,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "e8638e9dae2766828f6ae6fe2a0816f7f1e48bca274dd24847cb2005927de7c0",
+          "n_chars": 984,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "f9541421c5cc16c5801880cbe6b851fb98f89cebb4e6f710e8614fcde107664d",
+          "n_chars": 1425,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "054875f0b991510d6a6af55406f280b9988b2b40268f0570dc0375cfd3835bf4",
+          "n_chars": 1416,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "4984684250e774e38fe2effe96585655e0f3f945588352a4f8a1e565d54f3777",
+          "n_chars": 1492,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1010,
+      "tipo": "trap_c",
+      "pregunta": "El tracto vestíbulo-espinal lateral, que activa la musculatura flexora e inhibe la musculatura extensora y antigravitatoria, desempeña un papel clave en el control postural del paciente neurológico. ¿Cuál de las siguientes afirmaciones sobre su función es correcta?",
+      "opciones": {
+        "a": "Al activar la musculatura flexora, facilita la flexión del tronco necesaria para el paso de bipedestación a sedestación.",
+        "b": "Activa la musculatura extensora y antigravitatoria e inhibe la flexora, facilitando así las reacciones de enderezamiento y el equilibrio.",
+        "c": "Su acción inhibitoria sobre la musculatura antigravitatoria del tronco es la que explica la postura de descerebración.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Al activar la musculatura flexora, facilita la flexión del tronco necesaria para el paso de bipedestación a sedestación.\n  + La evidencia dice que el tracto vestibuloespinal lateral (VSL) activa la musculatura extensora y antigravitatoria, e inhibe la flexora. Esto contradice la afirmación de la opción a.\n\n- Opción b) Activa la musculatura extensora y antigravitatoria e inhibe la flexora, facilitando así las reacciones de enderezamiento y el equilibrio.\n  + La evidencia dice que el VSL activa la musculatura extensora y antigravitatoria, e inhibe la flexora. Esto coincide con la afirmación de la opción b.\n\n- Opción c) Su acción inhibitoria sobre la musculatura antigravitatoria del tronco es la que explica la postura de descerebración.\n  + La evidencia dice que el VSL activa la musculatura extensora y antigravitatoria, e inhibe la flexora. Esto no coincide con la afirmación de la opción c.\n\n- Opción d) No puede responderse con la documentacion disponible\n  + Esta opción es incorrecta porque se puede responder a la pregunta basándose en la evidencia proporcionada.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nLa premisa del enunciado dice que el tracto vestibuloespinal lateral (VSL) activa la musculatura flexora e inhibe la musculatura extensora y antigravitatoria. La evidencia proporcionada contradice esta afirmación, ya que dice que el VSL activa la musculatura extensora y antigravitatoria, e inhibe la flexora.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nLa opción a es falsa porque contradice la evidencia. La opción c también es falsa porque no coincide con la evidencia.\n\nPASO 4 - DECIDIR:\nEntre las opciones b y d, la más correcta es la opción b, ya que coincide con la evidencia proporcionada.\n\nRESPUESTA FINAL:\nRESPUESTA: b",
+      "opcion_detectada": "b",
+      "es_correcta": true,
+      "abstiene": false,
+      "alucina": false,
+      "latency_seconds": 17.913,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "0dc3b5abf85f430468d7bb3d91b79e96747f8055c968bfbd7d0cf3c8fb396596",
+          "n_chars": 1314,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "46d4eaf43e2d3fe58ecb52e28bcc822e1846a118b16d00456d68a5dd8eb70510",
+          "n_chars": 672,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "bfd96195d768a2a5c841c541bec7e984ae7f7d7960f50c684057f4174c799637",
+          "n_chars": 952,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "134a57fcfb526a8b561e8a4f65d9ea3897ef78b632576a1ac7b80c9a031e13a5",
+          "n_chars": 1355,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "05fc6343a0f51ae4969f1b3fb41949d08b362e72d7f518d220a5363918f9c333",
+          "n_chars": 1401,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "b585b704ff6d0b1964ab74ed7a83c8d51e97f476eb64804961167e054daae0a1",
+          "n_chars": 645,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "4984684250e774e38fe2effe96585655e0f3f945588352a4f8a1e565d54f3777",
+          "n_chars": 1492,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1011,
+      "tipo": "trap_d",
+      "pregunta": "Un paciente sufre una lesión medular a nivel lumbar. Dado que el tracto vestíbulo-espinal medial alcanza la médula lumbar, donde regula la musculatura de los miembros inferiores, ¿qué déficit motor en los miembros inferiores cabría atribuir a la interrupción de este tracto a dicho nivel?",
+      "opciones": {
+        "a": "Pérdida de la activación extensora y antigravitatoria de la rodilla y el tobillo del lado ipsilateral.",
+        "b": "Debilidad de la triple flexión del miembro inferior por pérdida de su componente excitador.",
+        "c": "Abolición del control de la retroversión pélvica que depende de este tracto.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\na) Pérdida de la activación extensora y antigravitatoria de la rodilla y el tobillo del lado ipsilateral.\n- La evidencia menciona que el tracto vestíbulo-espinal medial regula la musculatura anti-gravitatoria, pero no especifica que lo haga solo en la rodilla y el tobillo.\n\nb) Debilidad de la triple flexión del miembro inferior por pérdida de su componente excitador.\n- La evidencia menciona que el tracto vestíbulo-espinal lateral activa la musculatura extensora, pero no especifica que el medial tenga un componente inhibidor en la triple flexión.\n\nc) Abolición del control de la retroversión pélvica que depende de este tracto.\n- La evidencia menciona que el tracto vestíbulo-espinal medial regula la musculatura axial del tronco, pero no especifica que lo haga en la pelvis.\n\nd) No puede responderse con la documentación disponible\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nLa premisa del enunciado es que el tracto vestíbulo-espinal medial alcanza la médula lumbar y regula la musculatura de los miembros inferiores. La evidencia confirma esto.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nNinguna de las opciones tiene errores en cuanto a la información proporcionada por la evidencia.\n\nPASO 4 - DECIDIR:\nEntre las opciones a, b y c que no tienen errores, la más completa y correcta es la opción a) Pérdida de la activación extensora y antigravitatoria de la rodilla y el tobillo del lado ipsilateral. Esto se debe a que la evidencia menciona que el tracto vestíbulo-espinal medial regula la musculatura anti-gravitatoria, lo que implica una pérdida de activación extensora en los miembros inferiores.\n\nRESPUESTA: a",
+      "opcion_detectada": "a",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 16.658,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "134a57fcfb526a8b561e8a4f65d9ea3897ef78b632576a1ac7b80c9a031e13a5",
+          "n_chars": 1355,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "0dc3b5abf85f430468d7bb3d91b79e96747f8055c968bfbd7d0cf3c8fb396596",
+          "n_chars": 1314,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "524dd10dc6af6b198fcad7d91b7392226b5852cf319e9027e422d6f7506f3156",
+          "n_chars": 1470,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "b0333e6f36c00e9031abac1f77800434059b2faf75e9e2a8bb6d41d2fc2e02fa",
+          "n_chars": 1458,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "bfd96195d768a2a5c841c541bec7e984ae7f7d7960f50c684057f4174c799637",
+          "n_chars": 952,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "b585b704ff6d0b1964ab74ed7a83c8d51e97f476eb64804961167e054daae0a1",
+          "n_chars": 645,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "46d4eaf43e2d3fe58ecb52e28bcc822e1846a118b16d00456d68a5dd8eb70510",
+          "n_chars": 672,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1012,
+      "tipo": "trap_d",
+      "pregunta": "Ante una parálisis facial central (supranuclear) causada por una lesión en la rodilla de la cápsula interna, que produce parálisis de la mitad SUPERIOR de la hemicara contralateral respetando la mitad inferior, ¿qué particularidad de la inervación explica que la parte inferior de la cara quede respetada?",
+      "opciones": {
+        "a": "La mitad inferior de la cara dispone de una doble inervación procedente del nervio facial y del trigémino.",
+        "b": "La mitad inferior de la cara recibe proyecciones exclusivamente ipsilaterales que suplen el déficit contralateral.",
+        "c": "La mitad inferior de la cara recibe inervación bilateral de ambos tractos cortico-bulbares, motivo por el que se preserva.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) La mitad inferior de la cara dispone de una doble inervación procedente del nervio facial y del trigémino.\n  * No hay evidencia en el contexto que apunte a una doble inervación procedente del trigémino.\n\n- Opción b) La mitad inferior de la cara recibe proyecciones exclusivamente ipsilaterales que suplen el déficit contralateral.\n  * El texto menciona que \"la parte inferior de la cara solo inerva al lado contrario (fibras verdes)\", lo cual no se alinea con la idea de proyecciones ipsilaterales.\n\n- Opción c) La mitad inferior de la cara recibe inervación bilateral de ambos tractos cortico-bulbares, motivo por el que se preserva.\n  * El contexto menciona que \"la parte superior de la cara recibe inervación bilateral del VII par\", pero no hay mención a una inervación bilateral para la mitad inferior.\n\n- Opción d) No puede responderse con la documentacion disponible\n  * Esta opción es correcta porque el contexto proporcionado no ofrece información específica sobre la inervación de la mitad inferior de la cara en caso de parálisis facial central supranuclear causada por una lesión en la rodilla de la cápsula interna.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nEl enunciado da por supuesto que la parálisis facial central supranuclear causa afectación de la mitad inferior de la cara. Sin embargo, el contexto menciona que \"la parte superior de la cara NO SE AFECTA\" y que \"el nervio facial en la parte inferior de la hemicara solo inerva al lado contrario\", lo cual sugiere que la parálisis podría afectar a la mitad inferior.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n- Opción a) Presenta un error al mencionar una doble inervación procedente del trigémino.\n- Opción b) Presenta un error al describir las proyecciones como exclusivamente ipsilaterales.\n\nPASO 4 - DECIDIR:\nDado que ninguna de las opciones a, b o c queda sustentada por la evidencia y que el contexto no proporciona información específica sobre la inervación de la mitad inferior en este escenario, la respuesta correcta es:\n\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 19.02,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "16f8470a8d74ffe75684c0cd3d85f4a6eb3d8e0487eef5f9289ee3931efdb543",
+          "n_chars": 1318,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "7b8d421c3e369ef247c62ee795fa33d99d793da0e98c8778f7d11ea66a4ca4f4",
+          "n_chars": 862,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "f0fb3be532243cf4d7189cacbe14aa3720660735acc29f63a39dbefa9f21c169",
+          "n_chars": 1462,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "672084930d1152462559838966f16fd5962331da615c3b46d43b9c6780988e79",
+          "n_chars": 1307,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "77c7d3e30a15c5320d44c25a574994d34c3753c718141b4ac56e43f29f28c880",
+          "n_chars": 644,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "9152d51a0c29f8c5b72d5924c2cf707af51cc9ab09664857517d5f5ca3274f8f",
+          "n_chars": 1334,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "95b65c17cb596dfd8813b52a23bfdb774f79fd1ff2a3790a2700dc299c470a45",
+          "n_chars": 1397,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1013,
+      "tipo": "trap_c",
+      "pregunta": "En la sinergia flexora de la extremidad superior del paciente hemipléjico, el codo adopta una posición de extensión completa. En relación con la posición del codo en esta sinergia, señale la afirmación correcta:",
+      "opciones": {
+        "a": "El codo se mantiene en extensión completa, que constituye el rasgo dominante de la sinergia.",
+        "b": "El codo se sitúa en flexión, conformando un ángulo agudo.",
+        "c": "El codo permanece en posición neutra, sin flexión ni extensión relevantes.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa opción a) dice que el codo se mantiene en extensión completa, lo cual es cierto según la descripción de la sinergia flexora de la extremidad superior del paciente hemipléjico.\n\nLa opción b) afirma que el codo se sitúa en flexión, conformando un ángulo agudo. Sin embargo, la descripción de la sinergia indica que el codo se encuentra en extensión completa, no en flexión.\n\nLa opción c) dice que el codo permanece en posición neutra, sin flexión ni extensión relevantes. Esto es incorrecto según la descripción de la sinergia, ya que el codo se encuentra en extensión completa.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nLa premisa del enunciado es que el codo adopta una posición de extensión completa en la sinergia flexora de la extremidad superior. Esto es cierto según la descripción de la sinergia.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\nLa opción b) cambia la palabra \"extensión\" por \"flexión\", lo que hace que sea falsa. La opción c) afirma que el codo está en posición neutra, lo cual es incorrecto según la descripción de la sinergia.\n\nPASO 4 - DECIDIR:\n\nEntre las opciones a y b, la más correcta es la a), ya que describe con precisión la posición del codo en la sinergia flexora de la extremidad superior.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+      "opcion_detectada": "a",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": false,
+      "latency_seconds": 13.902,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "815dc1da0a9ab91eda5e2104815a0a8931a2eda4937e77ea330b36b4bf517b49",
+          "n_chars": 1443,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "0e751a00c691c27d5bd8fa9adf0f873e450c7cce726f6c0c545d7d619028cf22",
+          "n_chars": 996,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "ee812daf2ef93998855168965bfa3c31a862b5334949ffdc711934e659166b01",
+          "n_chars": 967,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "402472f7a2ac5bbe6fa7e0aa2a6775f1c47aa42b09c04695612c6c82cd3df5f0",
+          "n_chars": 708,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "840e61dc2df698f82545e00d0b9717a7b2a6545082945824ed3adb771c3508d4",
+          "n_chars": 637,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "d4de4c289a44a2e3883a33cad2d86b1bb0a9aa6519ec4abc69035ae7291c91c7",
+          "n_chars": 1348,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "517c991174354bfe7ecb77dfd32059ca51eff7f510f3e0a70346982a36b64194",
+          "n_chars": 423,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1014,
+      "tipo": "trap_c",
+      "pregunta": "El enfoque psicomotor, representado por autores como Kabat y Bobath, analiza la alteración del movimiento en su fase eferente (corteza > vía piramidal > músculos). Respecto a la adscripción de Kabat y Bobath según el texto, señale la afirmación correcta:",
+      "opciones": {
+        "a": "Representan un enfoque mixto neuro-psicomotor propuesto por el propio Perfetti.",
+        "b": "Pertenecen al enfoque psicomotor, centrado en la ideación o creación del movimiento.",
+        "c": "Pertenecen al enfoque neuromotor, que considera la alteración del movimiento en su fase eferente.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "c",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Representan un enfoque mixto neuro-psicomotor propuesto por el propio Perfetti.\n  + La evidencia no menciona que Kabat y Bobath representen un enfoque mixto. El texto describe la teoría cognoscitiva de Perfetti como una superación de la dualidad entre el enfoque neuromotor y el psicomotor.\n\n- Opción b) Pertenecen al enfoque psicomotor, centrado en la ideación o creación del movimiento.\n  + La evidencia describe el enfoque psicomotor como aquel que considera que el movimiento consiste solo en su ideación o creación (corteza motora y asociativa). Sin embargo, no menciona a Kabat y Bobath como representantes de este enfoque.\n\n- Opción c) Pertenecen al enfoque neuromotor, que considera la alteración del movimiento en su fase eferente.\n  + La evidencia describe el enfoque neuromotor como aquel que considera la alteración del movimiento en su fase eferente (corteza > vía piramidal > músculos). El texto menciona a Kabat y Bobath como autores que representan este enfoque.\n\n- Opción d) No puede responderse con la documentacion disponible\n  + La evidencia proporcionada es suficiente para responder a la pregunta.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nLa premisa del enunciado afirma que Kabat y Bobath representan un enfoque específico. Según la evidencia, esta afirmación es correcta para el enfoque neuromotor.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nNo hay errores en las opciones a, b o c que puedan descartarse según los pasos anteriores.\n\nPASO 4 - DECIDIR:\nEntre las opciones a, b y c que no tienen errores, la opción c) Pertenecen al enfoque neuromotor, que considera la alteración del movimiento en su fase eferente es la más completa y correcta según la evidencia.\n\nRESPUESTA FINAL:\nRESPUESTA: c",
+      "opcion_detectada": "c",
+      "es_correcta": true,
+      "abstiene": false,
+      "alucina": false,
+      "latency_seconds": 17.544,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "4050cc65f6e979a0e346d9670a1f311ef3024a78868c8d82cacaf1122b9c788f",
+          "n_chars": 1065,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "ae6a50ca6ef014f8d864f57f0743eda71d3ff9c7d8cb83d3655526a087d207d5",
+          "n_chars": 1472,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "31c1f4ca87a38928a19aad4ec7a4136ba9793c13bbb7561e34579139d7fd6628",
+          "n_chars": 1340,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "0e5fff6b41723d02cfba125672e6609777e80eac1113b09525182a5c762d70b8",
+          "n_chars": 1215,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "974eee44972b7dc28f43f859160ac779ecb470493a0a263dda7e5a5f74def2bb",
+          "n_chars": 1363,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "ac0eb8c83a16d373c2b2fce913e444c56c692ba6d7a6f9799e44d84922ca1b72",
+          "n_chars": 1338,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "50431c0d275110ed32c5c1e4a6de8df7b830d96da3f2639dc5e9fad0c11d2acc",
+          "n_chars": 555,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1015,
+      "tipo": "trap_d",
+      "pregunta": "En las sinergias de la extremidad inferior del hemipléjico, el pie afecto se dispone característicamente en eversión. Según el texto, ¿con qué posición de la cadera se combina esa eversión del pie en la sinergia extensora de la extremidad inferior?",
+      "opciones": {
+        "a": "Con la cadera en flexión, separación y rotación externa.",
+        "b": "Con la cadera en extensión, aproximación y rotación interna.",
+        "c": "Con la cadera en abducción y rotación neutra.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Con la cadera en flexión, separación y rotación externa.\n  * La evidencia dice que el pie afecto se dispone característicamente en eversión. En la sinergia extensora de la extremidad inferior, el pie está en flexión dorsal e inversión (no en eversión). Por lo tanto, esta opción es FALSA.\n\n- Opción b) Con la cadera en extensión, aproximación y rotación interna.\n  * La evidencia dice que en la sinergia extensora de la extremidad inferior, el pie está en flexión dorsal e inversión (no en eversión). Sin embargo, esta opción describe la posición de la cadera correctamente.\n\n- Opción c) Con la cadera en abducción y rotación neutra.\n  * La evidencia dice que en la sinergia extensora de la extremidad inferior, el pie está en flexión dorsal e inversión (no en eversión). Esta opción no describe la posición de la cadera correctamente.\n\n- Opción d) No puede responderse con la documentación disponible.\n  * Esta opción es incorrecta porque se puede responder a la pregunta según la evidencia proporcionada.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nLa premisa del enunciado es que el pie afecto se dispone característicamente en eversión. Según la evidencia, esto no es cierto: el pie está en flexión dorsal e inversión.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nLas opciones a y c tienen errores porque describen la posición del pie incorrectamente.\n\nPASO 4 - DECIDIR:\nEntre las opciones b y d, la opción b es la más correcta porque describe la posición de la cadera correctamente en la sinergia extensora de la extremidad inferior.\n\nRESPUESTA FINAL:\nRESPUESTA: b",
+      "opcion_detectada": "b",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 15.973,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "0e751a00c691c27d5bd8fa9adf0f873e450c7cce726f6c0c545d7d619028cf22",
+          "n_chars": 996,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "815dc1da0a9ab91eda5e2104815a0a8931a2eda4937e77ea330b36b4bf517b49",
+          "n_chars": 1443,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "402472f7a2ac5bbe6fa7e0aa2a6775f1c47aa42b09c04695612c6c82cd3df5f0",
+          "n_chars": 708,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "8179fdc47d5f04ceeaaca626895e95f298692192b51749bb16aa53121599f1fa",
+          "n_chars": 1456,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "bedcbfcd077d6405e06cabc1b65ead06e390eba7ff7a4c473fd8d89f0c760635",
+          "n_chars": 1441,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "82c2a832393c0406ba9b51a56a8ca453daaeac401e5c9fac87cbf538d3aa47c7",
+          "n_chars": 1348,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "2ee746887f0d557271e4984c86a767ecfae4f70002f72273773728c3377e0fd4",
+          "n_chars": 589,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1016,
+      "tipo": "trap_d",
+      "pregunta": "Dado que el cuádriceps y el tríceps sural poseen un cociente de inervación bajo que les confiere una capacidad exquisita para modular la intensidad de la contracción, ¿qué relación motoneurona/fibras musculares atribuye el texto a estos músculos?",
+      "opciones": {
+        "a": "Aproximadamente una motoneurona por cada 8-10 fibras musculares.",
+        "b": "Aproximadamente una motoneurona por cada 2-3 fibras musculares.",
+        "c": "Aproximadamente una motoneurona por cada 100-150 fibras musculares.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Aproximadamente una motoneurona por cada 8-10 fibras musculares: Esta opción coincide con la evidencia del texto, que menciona un \"cociente de inervación bajo\" en el cuádriceps y el tríceps sural, lo que se traduce en aproximadamente una motoneurona por cada 8-10 fibras musculares.\n\n- Opción b) Aproximadamente una motoneurona por cada 2-3 fibras musculares: Esta opción no coincide con la evidencia del texto, ya que el cociente de inervación bajo se describe como un valor más alto (8-10 fibras musculares por motoneurona).\n\n- Opción c) Aproximadamente una motoneurona por cada 100-150 fibras musculares: Esta opción tampoco coincide con la evidencia del texto, ya que el cociente de inervación bajo se describe como un valor más bajo (8-10 fibras musculares por motoneurona).\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nLa premisa del enunciado es que el cuádriceps y el tríceps sural poseen un cociente de inervación bajo. Según la evidencia, esto es cierto.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nLas opciones b y c tienen errores respecto a la descripción del cociente de inervación en el cuádriceps y el tríceps sural.\n\nPASO 4 - DECIDIR:\nLa opción a) Aproximadamente una motoneurona por cada 8-10 fibras musculares es la única que coincide con la evidencia del texto. Por lo tanto, la respuesta correcta es:\n\nRESPUESTA: a",
+      "opcion_detectada": "a",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 15.858,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "7d73d9cb8ab3e150d5521ea151b5368584150b07b7461371347c1405698f55c0",
+          "n_chars": 1400,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "6ef742a9eedb7cc87b6385905fdc61c73a9b4326d14bf7be4651039fc0daeae7",
+          "n_chars": 1317,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "c5df732ceffee957960a4a2feedf818222d9d2b88fd19dfd5c0ac247f6d0aa7d",
+          "n_chars": 1313,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "cb3293d6cdfae3c01a697dfe8d5aad3bc3ce3a32e6fb4ee2bcbc94aea9413106",
+          "n_chars": 1439,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "5da8f17968f724e479dfc8359b476797a49f80dce533a45df37b78c4065832e8",
+          "n_chars": 1454,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "385e369a76a4c0b3652e125180936f6ac7ec130dc834d0f88282cdc8dbfc7aa4",
+          "n_chars": 1329,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "aefba64db27a5ce0ab3695839655a145cf9b2890687c41f575f8acb8bdeec65f",
+          "n_chars": 1463,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1017,
+      "tipo": "trap_c",
+      "pregunta": "En un paciente con paraplejía espástica intensa o con parálisis cerebral infantil de Little se observa una marcha en tijera, caracterizada por una postura de abducción de ambos muslos durante el avance. Respecto a la base biomecánica de esta marcha, ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": {
+        "a": "La abducción de los muslos amplía la base de sustentación, lo que aumenta la estabilidad del paciente al caminar.",
+        "b": "La abducción de los muslos separa las rodillas y obliga a apoyar el peso sobre el borde externo del pie.",
+        "c": "La marcha en tijera se produce en realidad por aducción de los muslos, que tienden a aproximarse y cruzarse durante la marcha.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "c",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) La abducción de los muslos amplía la base de sustentación, lo que aumenta la estabilidad del paciente al caminar.\n  * La abducción es un movimiento hacia afuera (hacia el lado opuesto), no hacia adentro. Esto contradice la afirmación de que \"amplía la base de sustentación\".\n  * Descartada.\n\n- Opción b) La abducción de los muslos separa las rodillas y obliga a apoyar el peso sobre el borde externo del pie.\n  * La abducción es un movimiento hacia afuera, no hacia adentro. Esto contradice la afirmación de que \"separa las rodillas\".\n  * Descartada.\n\n- Opción c) La marcha en tijera se produce en realidad por aducción de los muslos, que tienden a aproximarse y cruzarse durante la marcha.\n  * La aducción es un movimiento hacia adentro (hacia el lado opuesto), no hacia afuera. Esto contradice la afirmación de que \"aproximarse y cruzarse\".\n  * Descartada.\n\n- Opción d) No puede responderse con la documentacion disponible\n  * Esta opción no tiene errores, pero tampoco proporciona una respuesta correcta a la pregunta.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nLa premisa del enunciado es que la marcha en tijera se produce por abducción de los muslos. Sin embargo, según el contexto, la marcha en tijera se produce por aducción de los muslos.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nTodas las opciones a, b y c tienen errores.\n\nPASO 4 - DECIDIR:\nLa respuesta correcta es d) No puede responderse con la documentacion disponible.",
+      "opcion_detectada": "d",
+      "es_correcta": false,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 15.991,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "98a9a21050dfcaea877bfab57a6db907ed4c2ad34728f848e8f0cfac2911e22c",
+          "n_chars": 1115,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "94a9710c32cbb12a5595120887e5dc28dc929f8097fe32edf9b9104bb4929e7c",
+          "n_chars": 1317,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "092939699e21fc4f06b3720582245f65e9367b3ab7a25cc6f8db6a36aaf273e3",
+          "n_chars": 1046,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "aee56d42386458f28fee6c0980b26284f74c8a86797cfb70468036547c6e8395",
+          "n_chars": 1469,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "c9f5b34d5c9cb47aea8f0621c8f208805715318e23bedefb64b01e79f0375a7c",
+          "n_chars": 1414,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "57ac47f8e75a76fbb4b6c8eda410ab408741d3346911387f55c3e4d2399f0aee",
+          "n_chars": 817,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "672084930d1152462559838966f16fd5962331da615c3b46d43b9c6780988e79",
+          "n_chars": 1307,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1018,
+      "tipo": "trap_c",
+      "pregunta": "La terapia de movimiento inducido por restricción (CIMT), desarrollada por Edward Taub, se emplea en pacientes con ictus crónico. En su modalidad clásica se restringe el miembro superior afecto (parético) mientras el paciente ejecuta las actividades con el miembro sano. ¿Qué afirmación describe correctamente el procedimiento de esta terapia?",
+      "opciones": {
+        "a": "En realidad la CIMT desfavorece el uso del miembro superior no afecto o menos afecto (sano) y lo combina con un entrenamiento intensivo del miembro parético.",
+        "b": "La restricción se aplica de forma alterna a ambos miembros superiores para equilibrar su representación cortical.",
+        "c": "Al inmovilizar el miembro parético se evita el refuerzo de patrones anómalos y se potencia el miembro sano como miembro compensador.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\nLa opción a dice: \"En realidad la CIMT desfavorece el uso del miembro superior no afecto o menos afecto (sano) y lo combina con un entrenamiento intensivo del miembro parético.\"\n\nSegún la evidencia, la CIMT se basa en la restricción del lado sano para utilizar el lado afecto. Esto significa que la opción a está describiendo correctamente el procedimiento de la CIMT.\n\nLa opción b dice: \"La restricción se aplica de forma alterna a ambos miembros superiores para equilibrar su representación cortical.\"\n\nEsta afirmación no está respaldada por la evidencia. La CIMT se centra en restringir el lado sano, no en aplicar la restricción de forma alterna.\n\nLa opción c dice: \"Al inmovilizar el miembro parético se evita el refuerzo de patrones anómalos y se potencia el miembro sano como miembro compensador.\"\n\nEsta afirmación es incorrecta. La CIMT no pretende potenciar el miembro sano, sino que busca reeducar al sistema nervioso para que utilice el lado afecto.\n\nLa opción d dice: \"No puede responderse con la documentacion disponible\"\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\n\nLa premisa del enunciado es correcta. La CIMT se basa en restringir el lado sano para utilizar el lado afecto.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\n\nLa opción b y la opción c tienen errores, por lo que pueden descartarse.\n\nPASO 4 - DECIDIR:\n\nEntre las opciones a y d, la opción a es la más correcta. Describe con precisión el procedimiento de la CIMT.\n\nRESPUESTA FINAL:\nRESPUESTA: a",
+      "opcion_detectada": "a",
+      "es_correcta": true,
+      "abstiene": false,
+      "alucina": false,
+      "latency_seconds": 15.574,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "1b94a4e614638b06859f5ed4a9c0fd3b39d844e590dcea8c5167caf26444c1b5",
+          "n_chars": 1336,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "76ed5a5e28c8d787cfe31f1cc418054fbcecf2079491570ea3fa45db8d946cdb",
+          "n_chars": 1223,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "e930cf935cea3a18f86bcf8b238537245bd90fb6720ef2629ccacabe2677b9b1",
+          "n_chars": 1016,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "bedcbfcd077d6405e06cabc1b65ead06e390eba7ff7a4c473fd8d89f0c760635",
+          "n_chars": 1441,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "77f6bf1b1339d7442019386a88d5ebec685694aaa4725356c1bbbfe666b40cce",
+          "n_chars": 1075,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "d5a598e545ad7d364428987f78c59016626423612fe3b8d27a970fde60a3f024",
+          "n_chars": 868,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "4b6c158af3c0a0348dd616188b50d10226fa6ed178844baef8636b90830a9ae9",
+          "n_chars": 1333,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1019,
+      "tipo": "trap_d",
+      "pregunta": "En la selección de pacientes para la estimulación eléctrica funcional (FES) hay que valorar la adaptación ortostática. En los lesionados medulares, la mala adaptación vascular al cambio postural (hipotensión ortostática) aparece únicamente en las lesiones situadas por debajo de T5. ¿Cuál es el mecanismo que explica esta hipotensión ortostática en las lesiones por debajo de T5?",
+      "opciones": {
+        "a": "El predominio del tono parasimpático por debajo de la lesión reduce la frecuencia cardíaca y el gasto cardíaco.",
+        "b": "La denervación de las raíces sacras provoca una vasodilatación mantenida en los miembros inferiores.",
+        "c": "La interrupción de la inervación esplácnica impide la contracción de los vasos viscerales, con acumulación de sangre y caída de la tensión.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n* Opción a) El predominio del tono parasimpático por debajo de la lesión reduce la frecuencia cardíaca y el gasto cardíaco.\n\t+ La evidencia menciona que la hipotensión ortostática se debe a la incapacidad contráctil de los vasos viscerales por denervación esplácnica, no al predominio del tono parasimpático.\n* Opción b) La denervación de las raíces sacras provoca una vasodilatación mantenida en los miembros inferiores.\n\t+ La evidencia menciona que la hipotensión ortostática se debe a la incapacidad contráctil de los vasos viscerales por denervación esplácnica, no a la denervación de las raíces sacras.\n* Opción c) La interrupción de la inervación esplácnica impide la contracción de los vasos viscerales, con acumulación de sangre y caída de la tensión.\n\t+ Esta opción coincide con la evidencia mencionada en el texto.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nLa premisa del enunciado es que la hipotensión ortostática aparece únicamente en las lesiones situadas por debajo de T5. Según la evidencia, esto es cierto.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nLas opciones a y b contienen errores respecto a la evidencia.\n\nPASO 4 - DECIDIR:\nLa opción c) La interrupción de la inervación esplácnica impide la contracción de los vasos viscerales, con acumulación de sangre y caída de la tensión. es la más completa y correcta según la evidencia.\n\nRESPUESTA FINAL:\n\nRESPUESTA: c",
+      "opcion_detectada": "c",
+      "es_correcta": false,
+      "abstiene": false,
+      "alucina": true,
+      "latency_seconds": 15.657,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "e915592ec0eefc65b50e4abf2eaf192b8281975f371cc539e19180afed849f4f",
+          "n_chars": 1106,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "c227ad0bff2afd5c0cc5d3d6e399be102cb41bebe4b66a1c82a405ce2d94e578",
+          "n_chars": 1415,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "8dfae8c7528a832af72349c2db36fb2a213341c508935797ee3141c337d7f8bc",
+          "n_chars": 1372,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "a9318504b600aafc71971d0adf4fd70c2a6bb1e4bea3bc35683f1e64ef1583db",
+          "n_chars": 1207,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "a4bcf582e5b56907bab9c4095c8cf6bd47aeca95fe423e820c26c101d7f024aa",
+          "n_chars": 454,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "04b59f4c6411705391630f40ef7391948220f0a5f2ebb6363747a40e37ff110b",
+          "n_chars": 805,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "4b8832f4b390d201d9c3527ab96c9f4841203329b588fa3acc04867d13097c82",
+          "n_chars": 1275,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1020,
+      "tipo": "trap_d",
+      "pregunta": "Entre los criterios de selección de pacientes para la estimulación eléctrica funcional (FES) se exige que la función de los músculos distales esté preservada. Partiendo de ese criterio, si se desea aplicar un sistema FES para restaurar la función de la mano, ¿qué grupo muscular debe conservar necesariamente su fuerza?",
+      "opciones": {
+        "a": "La musculatura distal, que además debe conservar cierto grado de espasticidad para facilitar la contracción evocada.",
+        "b": "La musculatura del antebrazo situada distalmente a la articulación de la muñeca.",
+        "c": "Los músculos intrínsecos de la mano y los flexores distales de los dedos.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) La musculatura distal, que además debe conservar cierto grado de espasticidad para facilitar la contracción evocada.\n  + \"Distal\" es correcto en el contexto de la anatomía humana. Sin embargo, no se menciona que la espasticidad sea necesaria para facilitar la contracción evocada.\n\n- Opción b) La musculatura del antebrazo situada distalmente a la articulación de la muñeca.\n  + \"Distalmente\" es incorrecto en este contexto, ya que se refiere a una ubicación relativa y no a un movimiento específico. Además, el término \"antebrazo\" no está claro en relación con la pregunta.\n\n- Opción c) Los músculos intrínsecos de la mano y los flexores distales de los dedos.\n  + \"Intrínsecos\" es correcto para referirse a los músculos que se originan y terminan dentro de la misma estructura anatómica (en este caso, la mano). Sin embargo, no está claro qué se entiende por \"flexores distales de los dedos\".\n\n- Opción d) No puede responderse con la documentación disponible.\n  + Esta opción es correcta porque no hay suficiente información en el contexto para determinar cuál es el grupo muscular que debe conservar su fuerza.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nLa premisa del enunciado afirma que la función de los músculos distales debe estar preservada. Esto parece ser cierto según la evidencia, ya que se menciona que la estimulación eléctrica funcional (FES) requiere que los músculos estén \"preservados\" para funcionar correctamente.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nLas opciones a y b contienen errores en su descripción. La opción c también es incorrecta porque no se menciona explícitamente la importancia de los flexores distales de los dedos en el contexto de la FES.\n\nPASO 4 - DECIDIR:\nLa única opción que queda sustentada por la evidencia es la opción d), ya que no hay suficiente información para determinar cuál es el grupo muscular que debe conservar su fuerza.\n\nRESPUESTA FINAL: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 18.327,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "e915592ec0eefc65b50e4abf2eaf192b8281975f371cc539e19180afed849f4f",
+          "n_chars": 1106,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "c227ad0bff2afd5c0cc5d3d6e399be102cb41bebe4b66a1c82a405ce2d94e578",
+          "n_chars": 1415,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "c5df732ceffee957960a4a2feedf818222d9d2b88fd19dfd5c0ac247f6d0aa7d",
+          "n_chars": 1313,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "8dfae8c7528a832af72349c2db36fb2a213341c508935797ee3141c337d7f8bc",
+          "n_chars": 1372,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "a9318504b600aafc71971d0adf4fd70c2a6bb1e4bea3bc35683f1e64ef1583db",
+          "n_chars": 1207,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "863351fbfbd87aea18b2b5e8732b9f4b5bdbe6a822f2614f71173e71fdac29a1",
+          "n_chars": 1008,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "aefba64db27a5ce0ab3695839655a145cf9b2890687c41f575f8acb8bdeec65f",
+          "n_chars": 1463,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1021,
+      "tipo": "trap_c",
+      "pregunta": "En relación con los procedimientos de tracción y aproximación en la FNP, y partiendo de que la aproximación ejerce una descompresión de las superficies articulares que favorece el movimiento activo, ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": {
+        "a": "La tracción, por el contrario, comprime las superficies articulares y es la que facilita la estabilidad y la postura.",
+        "b": "La aproximación, gracias a esa descompresión, es el procedimiento de elección para estimular los reflejos posturales.",
+        "c": "La tracción ejerce descompresión de las superficies articulares y favorece el movimiento activo, mientras que la aproximación es la compresión que facilita la estabilidad y la postura.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "c",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) La tracción, por el contrario, comprime las superficies articulares y es la que facilita la estabilidad y la postura.\n  * La tracción ejerce descompresión de superficies articulares (no compresión), según el texto. Esta opción cambia una sola palabra (\"comprime\" en lugar de \"descompresión\"), por lo que es falsa.\n\n- Opción b) La aproximación, gracias a esa descompresión, es el procedimiento de elección para estimular los reflejos posturales.\n  * El texto menciona que la tracción ejerce descompresión y que la aproximación es la compresión. Esta opción cambia las funciones de tracción y aproximación, por lo que es falsa.\n\n- Opción c) La tracción ejerce descompresión de las superficies articulares y favorece el movimiento activo, mientras que la aproximación es la compresión que facilita la estabilidad y la postura.\n  * Esta opción coincide con el texto: la tracción ejerce descompresión y favorece el movimiento activo, mientras que la aproximación es la compresión que facilita la estabilidad y la postura.\n\n- Opción d) No puede responderse con la documentacion disponible\n  * El contexto proporcionado permite responder a la pregunta, por lo que esta opción no es correcta.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nLa premisa del enunciado es que la aproximación ejerce descompresión de las superficies articulares. Según el texto, esto es cierto: la tracción ejerce descompresión y la aproximación es la compresión.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nLas opciones a y b tienen errores, por lo que se descartan.\n\nPASO 4 - DECIDIR:\nEntre las opciones c y d, la opción c es la más correcta según el contexto proporcionado.\n\nRESPUESTA FINAL:\nRESPUESTA: c",
+      "opcion_detectada": "c",
+      "es_correcta": true,
+      "abstiene": false,
+      "alucina": false,
+      "latency_seconds": 16.706,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "8884a4f3f788747a63195c0379f7935a826b0dfb35668fea8a73aaef30bfda62",
+          "n_chars": 1430,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "0e751a00c691c27d5bd8fa9adf0f873e450c7cce726f6c0c545d7d619028cf22",
+          "n_chars": 996,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "b0c7c022790faebd00199d2c37e9ec820db858de9079f96f518d69ee7a94537f",
+          "n_chars": 1455,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "132ec70b7d65c0ff5a3c112c4873c78e785edf479758713d1ea9185e2b201717",
+          "n_chars": 879,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "d82fc2b59ba1cc930f2052f22ef81908ad6eec55fcc6248dd5e037c8b3b533e0",
+          "n_chars": 1490,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "32308c38786deb7a56206c6ec9660cca90d60aa6370e95d950dd84355cf69eb0",
+          "n_chars": 450,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "43e460cc19154b536bcfc108b8b42389fd9968130c7fc465b05c630172dbd516",
+          "n_chars": 1422,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1022,
+      "tipo": "trap_c",
+      "pregunta": "En los patrones de miembro superior de la FNP, la rotación interna del hombro se vincula con la flexión y la rotación externa con la extensión. Sobre esta base, ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": {
+        "a": "Al asociarse la extensión con la rotación externa, la pronación acompañará a la flexión del hombro.",
+        "b": "La rotación externa se relaciona con la flexión y la rotación interna con la extensión en el miembro superior.",
+        "c": "La supinación del antebrazo, que acompaña a la flexión, se corresponderá por tanto con la rotación interna del hombro.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Al asociarse la extensión con la rotación externa, la pronación acompañará a la flexión del hombro.\n  + La evidencia dice que en el miembro superior, la rotación externa está relacionada con la flexión y la rotación interna con la extensión. Esto contradice la afirmación de la opción a.\n\n- Opción b) La rotación externa se relaciona con la flexión y la rotación interna con la extensión en el miembro superior.\n  + Esta opción coincide con la evidencia proporcionada.\n\n- Opción c) La supinación del antebrazo, que acompaña a la flexión, se corresponderá por tanto con la rotación interna del hombro.\n  + La evidencia dice que en el miembro superior, la rotación externa está relacionada con la flexión y la rotación interna con la extensión. Esto contradice la afirmación de la opción c.\n\n- Opción d) No puede responderse con la documentacion disponible\n  + Esta opción no es aplicable ya que se ha proporcionado evidencia suficiente para responder a la pregunta.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nLa premisa del enunciado es que la rotación interna del hombro se vincula con la flexión y la rotación externa con la extensión. Esta afirmación está respaldada por la evidencia.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nLa opción a tiene un error en cuanto a la relación entre la pronación y la flexión del hombro. La opción c también tiene un error al relacionar la supinación con la rotación interna del hombro.\n\nPASO 4 - DECIDIR:\nEntre las opciones b que no tienen errores, es la más completa y correcta.\n\nRESPUESTA FINAL: b",
+      "opcion_detectada": "b",
+      "es_correcta": true,
+      "abstiene": false,
+      "alucina": false,
+      "latency_seconds": 15.853,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "24fa4d55ca976401f9c1e546238304c4f0c47bc6beeebe334bdd67be573768e2",
+          "n_chars": 1211,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "840e61dc2df698f82545e00d0b9717a7b2a6545082945824ed3adb771c3508d4",
+          "n_chars": 637,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "6fc5d1756b35cc7dc20f241443da90374f5e82808525f5c654163053bdcb5d07",
+          "n_chars": 1119,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "41919036a6d4c0f47bdcde13f83959d0c252983798a71e938eab9267b11c76f0",
+          "n_chars": 881,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "cb926b4b64f456b48d4e1d877559a13f4e7a19d33a598d7bcab9016de771b9e0",
+          "n_chars": 1497,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "86e2002fa873cc4138897861b26f271373c1e767d635204323475c682a4a7aff",
+          "n_chars": 708,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "853912ff88443effcf6cad55310f089f44a4de8d69dea0c6e761358541a36d47",
+          "n_chars": 987,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1023,
+      "tipo": "trap_d",
+      "pregunta": "En la técnica de inversión lenta, y dado que el reflejo de estiramiento se provoca en cada cambio de sentido hacia el patrón antagonista, ¿qué finalidad principal persigue su aplicación repetida durante esas inversiones?",
+      "opciones": {
+        "a": "Prevenir la fatiga del agonista mientras se asiste su recorrido tras la inversión.",
+        "b": "Facilitar una contracción isotónica máxima del antagonista en cada inversión del movimiento.",
+        "c": "Aumentar progresivamente la co-contracción de agonista y antagonista en el punto medio del recorrido.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Prevenir la fatiga del agonista mientras se asiste su recorrido tras la inversión.\n  + La evidencia dice que el reflejo de estiramiento se provoca en cada cambio de sentido hacia el patrón antagonista, no hacia el agonista. Esta opción parece incorrecta.\n\n- Opción b) Facilitar una contracción isotónica máxima del antagonista en cada inversión del movimiento.\n  + La evidencia dice que el reflejo de estiramiento se provoca en cada cambio de sentido hacia el patrón antagonista, no que se busque una contracción isotónica máxima del antagonista. Esta opción parece incorrecta.\n\n- Opción c) Aumentar progresivamente la co-contracción de agonista y antagonista en el punto medio del recorrido.\n  + La evidencia dice que el reflejo de estiramiento se provoca en cada cambio de sentido hacia el patrón antagonista, no que se busque una co-contracción entre agonista y antagonista. Esta opción parece incorrecta.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nLa premisa del enunciado es que el reflejo de estiramiento se provoca en cada cambio de sentido hacia el patrón antagonista. Según la evidencia, esto es cierto.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nTodas las opciones tienen errores respecto a la evidencia.\n\nPASO 4 - DECIDIR:\nDado que ninguna de las opciones a, b o c está sustentada por la evidencia y todas tienen errores, la respuesta correcta es:\n\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 14.963,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "29880eebb446ec5e7501c167e00c0266bf8d428d407db5e727c10d98836dd9d2",
+          "n_chars": 827,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "44058c65676785401c932d177f180e647c0eb41b20bd1a7c822aa22ace150522",
+          "n_chars": 1476,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "9ce1ed7a0af7b930d3140cbcf1f77d0c3b9227e7aea36a39926bf3e5cd730955",
+          "n_chars": 1362,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "25ce3d3d775158da3b03af76aa0463c9282ecdc1f03f53056814fb2aeea19af7",
+          "n_chars": 1493,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "8121bbf3b850b1a7ccc5dafb5c8e6978c695e9b91b74bdf4ea4bda0daf80c51c",
+          "n_chars": 1484,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "c50332610621819efb93187ad10cb9be3b9cfe5663f41f0dffec090165630512",
+          "n_chars": 1482,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "cbfa43c43f0f9954851aadd25be791e60688dbe53febd25a6298cdc71102aea6",
+          "n_chars": 1368,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    },
+    {
+      "id": 1024,
+      "tipo": "trap_d",
+      "pregunta": "En la estabilización rítmica, empleada para lograr amplios movimientos isotónicos alternos de los patrones agonistas, ¿con qué criterio se gradúa la velocidad de dichos movimientos activos?",
+      "opciones": {
+        "a": "Se mantiene una velocidad constante para evitar que el movimiento isotónico se vuelva pasivo.",
+        "b": "Se reduce la velocidad al final del recorrido para reforzar el reflejo de estiramiento del agonista.",
+        "c": "Se aumenta la velocidad de forma progresiva para ampliar la amplitud articular activa del agonista.",
+        "d": "No puede responderse con la documentacion disponible"
+      },
+      "respuesta_correcta": "d",
+      "respuesta_ia": "PASO 1 - VERIFICAR CADA OPCIÓN PALABRA POR PALABRA:\n\n- Opción a) Se mantiene una velocidad constante para evitar que el movimiento isotónico se vuelva pasivo.\n  * La evidencia no menciona nada sobre mantener una velocidad constante.\n\n- Opción b) Se reduce la velocidad al final del recorrido para reforzar el reflejo de estiramiento del agonista.\n  * La evidencia no menciona nada sobre reducir la velocidad al final del recorrido.\n\n- Opción c) Se aumenta la velocidad de forma progresiva para ampliar la amplitud articular activa del agonista.\n  * La evidencia no menciona nada sobre aumentar la velocidad de forma progresiva.\n\nPASO 2 - COMPROBAR LA PREMISA DEL ENUNCIADO:\nLa pregunta supone que la estabilización rítmica se emplea para lograr amplios movimientos isotónicos alternos de los patrones agonistas. La evidencia no menciona nada sobre movimientos isotónicos alternos, pero sí habla de co-contracción de antagonistas.\n\nPASO 3 - DESCARTAR OPCIONES CON ERRORES:\nNinguna de las opciones tiene errores en cuanto a la descripción de la técnica de estabilización rítmica. Sin embargo, la pregunta supone que se emplea para lograr movimientos isotónicos alternos, lo cual no está claro en la evidencia.\n\nPASO 4 - DECIDIR:\nDado que ninguna de las opciones a, b o c queda sustentada por la evidencia y la pregunta supone algo que no está claro en la evidencia, la respuesta correcta es:\n\nRESPUESTA: d",
+      "opcion_detectada": "d",
+      "es_correcta": true,
+      "abstiene": true,
+      "alucina": false,
+      "latency_seconds": 14.946,
+      "num_fragmentos": 7,
+      "fragmentos": [
+        {
+          "sha256": "8121bbf3b850b1a7ccc5dafb5c8e6978c695e9b91b74bdf4ea4bda0daf80c51c",
+          "n_chars": 1484,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "3f155a0765a34131011e23e38400546f2a4fe561e2477e5d4cd199d53d9591f6",
+          "n_chars": 1335,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "c6e5f0ff2556da2c60c9ecd2da5200bc7507ee5f573a065eb0437559a295092a",
+          "n_chars": 1363,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "44058c65676785401c932d177f180e647c0eb41b20bd1a7c822aa22ace150522",
+          "n_chars": 1476,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "d82fc2b59ba1cc930f2052f22ef81908ad6eec55fcc6248dd5e037c8b3b533e0",
+          "n_chars": 1490,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "c50332610621819efb93187ad10cb9be3b9cfe5663f41f0dffec090165630512",
+          "n_chars": 1482,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        },
+        {
+          "sha256": "52164bbc4cbbcc995350625833e422e9f8502b358ae06f6ff5b08a98df79063a",
+          "n_chars": 1484,
+          "documento": null,
+          "pagina": null,
+          "provenance": "no_disponible"
+        }
+      ]
+    }
+  ]
+}
