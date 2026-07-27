@@ -130,6 +130,21 @@
       "title": "Exploratory retrieval campaign - 4 raw reports (4 models x with-RAG x 53 gold-standard questions = 212 inferences). Source of the article's recall@k = 88.7 % (47/53 in each file) and of the retrieved fragments replayed by Study P1. 'fragmentos' sanitised to {sha256, n_chars, documento, pagina}."
     },
     {
+      "name": "results_scale_campaign_sanitized",
+      "path": [
+        "results_scale_campaign_sanitized/report_llama3.3_70b_GPU_4090_20260725_SANITIZED.json",
+        "results_scale_campaign_sanitized/report_qwen2.5_72b_GPU_4090_20260725_SANITIZED.json",
+        "results_scale_campaign_sanitized/report_llama3.1_8b_GPU_Cluster_Amdahl_bge-m3_20260725_090008_SANITIZED.json",
+        "results_scale_campaign_sanitized/report_qwen2.5_7b_GPU_Cluster_Amdahl_bge-m3_20260725_090534_SANITIZED.json",
+        "results_scale_campaign_sanitized/report_deepseek-llm_7b_GPU_Cluster_Amdahl_bge-m3_20260725_091111_SANITIZED.json",
+        "results_scale_campaign_sanitized/report_medllama2_7b_GPU_Cluster_Amdahl_bge-m3_20260725_091459_SANITIZED.json",
+        "results_scale_campaign_sanitized/report_meditron_7b_GPU_Cluster_Amdahl_bge-m3_20260725_091714_SANITIZED.json"
+      ],
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Exploratory scale campaign - 7 raw reports (7 models from 7B to 72B x with-RAG x 53 gold-standard questions = 371 inferences), cluster RTX 4090, 25 July 2026. Source of Table 3 of the article. Retrieval identical across all seven: recall@k = 92.45 % (49/53) in every file. 'fragmentos' sanitised to {sha256, n_chars, documento, pagina}."
+    },
+    {
       "name": "rag_benefit_summary",
       "path": "aggregates/rag_benefit_summary.json",
       "format": "json",
@@ -260,7 +275,7 @@
       "path": "exploratory/datos_detallados_preguntas.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "title": "DEPRECATED preliminary campaign: 306 of the 493 per-question evaluation records (partial coverage; the rest was lost in the Fedora-to-Windows migration)",
+      "title": "SUPERSEDED earlier campaign (NOT the article Table 3; see results_scale_campaign_sanitized): 306 of the 493 per-question evaluation records (partial coverage; the rest was lost in the Fedora-to-Windows migration)",
       "dialect": {
         "delimiter": ",",
         "header": true
@@ -272,7 +287,7 @@
       "path": "exploratory/modelos_ranking.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "title": "DEPRECATED preliminary campaign: accuracy ranking of the 7 models, computed over the complete 493 evaluations",
+      "title": "SUPERSEDED earlier campaign (NOT the article Table 3; see results_scale_campaign_sanitized): accuracy ranking of the 7 models, computed over the complete 493 evaluations",
       "dialect": {
         "delimiter": ",",
         "header": true
@@ -284,7 +299,7 @@
       "path": "exploratory/embeddings_ranking.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "title": "DEPRECATED preliminary campaign: accuracy ranking of the 4 embedding models, computed over the complete 493 evaluations",
+      "title": "SUPERSEDED earlier campaign (NOT the article Table 3; see results_scale_campaign_sanitized): accuracy ranking of the 4 embedding models, computed over the complete 493 evaluations",
       "dialect": {
         "delimiter": ",",
         "header": true
@@ -296,7 +311,7 @@
       "path": "exploratory/resumen_ejecutivo.json",
       "format": "json",
       "mediatype": "application/json",
-      "title": "DEPRECATED preliminary campaign: executive summary over the complete 493 evaluations"
+      "title": "SUPERSEDED earlier campaign (NOT the article Table 3; see results_scale_campaign_sanitized): executive summary over the complete 493 evaluations"
     },
     {
       "name": "derived_metrics",

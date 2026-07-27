@@ -1,0 +1,4838 @@
+{
+  "header": {
+    "timestamp": "2026-07-25T09:18:06.407366",
+    "benchmark_engine_version": "3.0.0",
+    "model": "meditron:7b",
+    "device": "Cluster_Amdahl",
+    "mode": "GPU",
+    "param_size": "7b",
+    "python_version": "3.11.15",
+    "platform": "Linux-4.18.0-425.3.1.el8.x86_64-x86_64-with-glibc2.41",
+    "context_limit_tokens_for_small_window_models": 1200,
+    "small_window_model_detected": true,
+    "questions_file": "dataset_gold_standard.json",
+    "questions_count": 53,
+    "no_rag": false,
+    "oracle_context": false,
+    "oracle_k": 7,
+    "recall_overlap_threshold": 0.3,
+    "chunk_size": 1300,
+    "chunk_overlap": 300,
+    "context_max_tokens": 4800,
+    "retrieved_top_k": 8,
+    "embedding_model": "BAAI/bge-m3",
+    "query_expansion": true,
+    "redundancy_threshold": 0.86,
+    "question_timeout": 1800,
+    "hardware_type": "Cluster_GPU",
+    "is_vision_language_model": false,
+    "is_medical_legacy_model": true,
+    "prompt_language": "en",
+    "num_ctx": 8192,
+    "completed": true
+  },
+  "summary": {
+    "total": 53,
+    "processed": 53,
+    "correct": 0,
+    "incorrect": 0,
+    "unknown": 53,
+    "timeout": 0,
+    "recall_hits": 49,
+    "recall_at_k": 92.45283018867924,
+    "accuracy": 0.0
+  },
+  "questions": [
+    {
+      "id": 1,
+      "pregunta": "Sobre la anatomía de la cápsula y tractos, es correcto que: ",
+      "opciones": {
+        "a": "Lesión en la rodilla de la cápsula provoca caída de la mitad de la cara contralateral ",
+        "b": "El tracto cortico bulbar está solo en el área 6 ",
+        "c": "La mitad superior de la cara es inervada de manera contralateral "
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 2.439575672149658,
+      "fragmentos": [
+        {
+          "sha256": "bf97be30cd895f1d1b7ade52c9f853da607f1af6d6912bbfddff081df41ebb07",
+          "n_chars": 1246,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 9
+        },
+        {
+          "sha256": "fe4d4e127aab5f895528a36b97931506899ef3adff48bc342303563f475d8c3e",
+          "n_chars": 1149,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 10
+        },
+        {
+          "sha256": "2ea7fa1b88f2ccc31992e4b052ac1de6ee66b13886860767c4846ca7172c19e1",
+          "n_chars": 811,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 14
+        },
+        {
+          "sha256": "48992809348bac2b571af6aaaf4799829650ae0c7ff252b2c6727750ddd5e83b",
+          "n_chars": 1244,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 13
+        },
+        {
+          "sha256": "f15cb81daa635c87bc89e6f4590dea83aba1b29cb8807c4178161a629a8ed606",
+          "n_chars": 976,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 6
+        },
+        {
+          "sha256": "5208fe2a26bc8baade6f835173a44f6c2c0333adfa51e587437bc01abd714432",
+          "n_chars": 967,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 22
+        },
+        {
+          "sha256": "9e4f0584b6e6fef82b3fb38953165d32855cf96e152f23a0a0430a1124c636f2",
+          "n_chars": 647,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 23
+        },
+        {
+          "sha256": "6f4bed9aba9c5272d1dd4506011d9520d6668b7dc5f768d96f5a0c36b36ca645",
+          "n_chars": 1147,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 4
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.6667,
+      "retrieval_matched_tokens": [
+        "cara",
+        "caída",
+        "contralateral",
+        "cápsula",
+        "lesión",
+        "mitad",
+        "provoca",
+        "rodilla"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 1.0,
+        "b": 0.8333,
+        "c": 1.0
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 2,
+      "pregunta": "Es cierto que los arcos del pie los proporcionan la siguiente musculatura: ",
+      "opciones": {
+        "a": "Los peroneos laterales corto y largo, y el aductor del 5º dedo del pie configuran el arco externo ",
+        "b": "El tibial posterior, el aductor del dedo gordo y el flexor largo de los dedos configuran el arco interno ",
+        "c": "Los peroneos laterales corto y largo y el abductor del 5º dedo configuran el arco externo "
+      },
+      "respuesta_correcta": "c",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22768211364746094,
+      "fragmentos": [
+        {
+          "sha256": "ca332310a143621a2e2a483e88e784cc8a62f8af8942feaaf47cbd7588b27eb5",
+          "n_chars": 1032,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 24
+        },
+        {
+          "sha256": "3d3c00968f97343099ab46b54987b84e174478b31057391cbd5cb4e325b6307b",
+          "n_chars": 1059,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 25
+        },
+        {
+          "sha256": "cfab6138a39b0d24e9e875e0ee008dbef488a9cb3926e17eb6ed824b034e450c",
+          "n_chars": 809,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 25
+        },
+        {
+          "sha256": "bfd288e797c94a9754caaa788f4d46fde70f889dcf089faf2fcea0b2fc8b63d2",
+          "n_chars": 783,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 1
+        },
+        {
+          "sha256": "404220a5465a60b4193a17a449a32ffbf119014a34c3f33ee7519775166e1e0e",
+          "n_chars": 1058,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 4
+        },
+        {
+          "sha256": "28475395919099f7949ae1fabecfe817b00049dee60947563611afef919bbea5",
+          "n_chars": 909,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 28
+        },
+        {
+          "sha256": "39ad1c408d9a506ad951565aa9620934000e46fb12331a2c13ae0cc84a6a35e0",
+          "n_chars": 1113,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 29
+        },
+        {
+          "sha256": "f19017d135109a225af27bdfa14491368293859df3d1c5a99197ece476a82fc1",
+          "n_chars": 793,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 4
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.5333,
+      "retrieval_matched_tokens": [
+        "arco",
+        "arcos",
+        "corto",
+        "dedo",
+        "externo",
+        "largo",
+        "musculatura",
+        "pie"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.6,
+        "b": 0.8182,
+        "c": 0.5556
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 3,
+      "pregunta": "Al elevar el miembro superior para coger un objeto que está en un estante alto, se producen los siguientes movimientos de forma estratégica: ",
+      "opciones": {
+        "a": "Fijación de la cabeza humeral en la cavidad glenoidea por el supraespinoso, iniciación de la abducción del brazo por el deltoides y supraespinoso, y extensión del codo ",
+        "b": "Estabilización de la articulación glenohumeral por el supraespinoso, deslizamiento de la cabeza humeral sobre la cavidad glenoidea por el manguito rotador (supraespinoso e infraespinoso), y rotación externa de húmero ",
+        "c": "Estabilización de la articulación glenohumeral por el supraespinoso, deslizamiento de la cabeza humeral sobre la cavidad glenoidea por el manquito rotador, rotación externa de húmero por el infraespinoso y el redondo menor y báscula externa de escápula por trapecios superior e inferior y por el serrato anterior y extensión de codo por el tríceps braquial "
+      },
+      "respuesta_correcta": "c",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.2301626205444336,
+      "fragmentos": [
+        {
+          "sha256": "53512130b8215e728722cfcd43eda2bbe401499093d38186da0304e06151a1d4",
+          "n_chars": 1271,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 18
+        },
+        {
+          "sha256": "11f03e15f155949654a9dea8dde9cf274010216e6230685d517631a56e4fd333",
+          "n_chars": 518,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 13
+        },
+        {
+          "sha256": "8d06f9366d57d77f5a5f6b78435c981d81bb92d4cb23979063afbc47de5fb42b",
+          "n_chars": 1116,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 26
+        },
+        {
+          "sha256": "efa8c66df04f1320d814e521a4680e3bc49a35a38741bf35ef8ee9ad8ec77ffa",
+          "n_chars": 460,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 5
+        },
+        {
+          "sha256": "bd7d4c8e34c81d2e39212b299ec4ceb8325ac46a682fc00de96be705f7bf2d5f",
+          "n_chars": 1123,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 3
+        },
+        {
+          "sha256": "678365fc857caf038fa1e7c6c6fa51373d99a111c42e358a34425293a499cb57",
+          "n_chars": 809,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 18
+        },
+        {
+          "sha256": "36265e4e9635654a5e10b64bf7d270a6ff3c1e110903d51489b3e74c0f8eb6fe",
+          "n_chars": 1106,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 31
+        },
+        {
+          "sha256": "e76225465c7281eda39c223327f5e25bdd6f0de7a83b292aec7f5b778023f45c",
+          "n_chars": 364,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 30
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.5122,
+      "retrieval_matched_tokens": [
+        "anterior",
+        "cabeza",
+        "cavidad",
+        "deslizamiento",
+        "escápula",
+        "externa",
+        "glenohumeral",
+        "glenoidea",
+        "humeral",
+        "húmero",
+        "inferior",
+        "infraespinoso",
+        "menor",
+        "movimientos",
+        "producen",
+        "redondo",
+        "rotación",
+        "rotador",
+        "serrato",
+        "superior"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 1.0,
+        "b": 0.875,
+        "c": 0.7586
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1082
+    },
+    {
+      "id": 4,
+      "pregunta": "¿Qué tipo de modificación plástica representa el dibujo de la pregunta 10? ",
+      "opciones": {
+        "a": "Brote colateral ",
+        "b": "Potenciación sináptica ",
+        "c": "Reclutamiento de sinapsis silentes "
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.23386359214782715,
+      "fragmentos": [
+        {
+          "sha256": "dcef5b61256fed11adc4e1c4abf1ff84d28f58a42a9c4027a53dcbf9ee780da3",
+          "n_chars": 1275,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 1
+        },
+        {
+          "sha256": "61fa2fd52885a6618d58a138402ec0162bdacd7c0f8880b5665135ca2a018456",
+          "n_chars": 1001,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 25
+        },
+        {
+          "sha256": "1ec3e5ea4149606ab6b8c7358f945421fe9a37218d6476cb1bfd34dda6e09526",
+          "n_chars": 967,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 20
+        },
+        {
+          "sha256": "3336d446c4c727b1eb4ddd7270f0a8dc2fbf07e5ed5d852b4057a340017c1a83",
+          "n_chars": 1215,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 10
+        },
+        {
+          "sha256": "e8116c67a54921d15080d523296d435a8ce717a29f961dd00d48dcf598a0a5dc",
+          "n_chars": 1272,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 3
+        },
+        {
+          "sha256": "45f80e5953f09f62ff3f1aefb6db718b5529d6e8337f0bd6fa6b6d04d17fb9d6",
+          "n_chars": 1197,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 7
+        },
+        {
+          "sha256": "2c0c251b0d4436362b8e2de9fd07a5fab2f7e97e7196995862c414a64b149706",
+          "n_chars": 786,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 18
+        },
+        {
+          "sha256": "7a09ea4e3259f8b83eb8e8fc25a403a63586b3f9e387f2b0c7247df3081e3e81",
+          "n_chars": 1044,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 2
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": false,
+      "retrieval_overlap": 0.2222,
+      "retrieval_matched_tokens": [
+        "pregunta",
+        "qué"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.0,
+        "b": 0.0,
+        "c": 1.0
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 5,
+      "pregunta": "Según el principio de Henneman, la postura precede al movimiento porque: ",
+      "opciones": {
+        "a": "La musculatura fásica se recluta antes que la musculatura tónica ",
+        "b": "La musculatura que se recluta primero es activada por neuronas con un soma más pequeño ",
+        "c": "a y b son ciertas "
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.23218297958374023,
+      "fragmentos": [
+        {
+          "sha256": "bf02a183287f14299941c2ebbf380b16c5235a7face4f2e5e4ec1f0982946d05",
+          "n_chars": 769,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 28
+        },
+        {
+          "sha256": "411f3108cd2e940c26af3a915d8130e9af71705593b6c2d55e06f27a95191c7b",
+          "n_chars": 1031,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 27
+        },
+        {
+          "sha256": "7578910c4716765c7ec5d542d7d5e22930d12e5199f9b470da286106723758d9",
+          "n_chars": 1281,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 28
+        },
+        {
+          "sha256": "7450b25497edfccb65812af6aae557c527eb39bf10d5f82e9929f3fe9adeaa44",
+          "n_chars": 1224,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 30
+        },
+        {
+          "sha256": "f420351d6c42202f552fe651572ebc124bb5ab80fcbb2d5eba370cbb0be7cad7",
+          "n_chars": 867,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 1
+        },
+        {
+          "sha256": "96f7bf628e2a6e3c6bb2fdfa3c6657454f8b427295de2552635a39d1fd187077",
+          "n_chars": 1122,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 6
+        },
+        {
+          "sha256": "ba735ba4b46746ef34b63635f6d17ad51b5f399127c806d07d6d5caeab60a50d",
+          "n_chars": 553,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 2
+        },
+        {
+          "sha256": "a130d63cabdd8ad3c18cad12fbef0052061bb6fdd38a6a1c0b1e7b6122fb01b0",
+          "n_chars": 1093,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 6
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.6,
+      "retrieval_matched_tokens": [
+        "henneman",
+        "musculatura",
+        "más",
+        "neuronas",
+        "pequeño",
+        "primero",
+        "principio",
+        "según",
+        "soma"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.8,
+        "b": 0.75,
+        "c": 0.0
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 6,
+      "pregunta": "Señale la respuesta correcta sobre patrones de FNP: ",
+      "opciones": {
+        "a": "Patrones FLEX D1- FLEX D2 MS para inversión lenta ",
+        "b": "D1 FLEX BILATERAL: D2- EXT D1-FLEX ",
+        "c": "Opción correcta de FNP "
+      },
+      "respuesta_correcta": "c",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.2324075698852539,
+      "fragmentos": [
+        {
+          "sha256": "96f7bf628e2a6e3c6bb2fdfa3c6657454f8b427295de2552635a39d1fd187077",
+          "n_chars": 1122,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 6
+        },
+        {
+          "sha256": "cb0fe8d99f80720e6a343eb6bd21f7b962b49d1bd835808e8dcf7c9363d7818c",
+          "n_chars": 575,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 9
+        },
+        {
+          "sha256": "0c54038d32690d30152115ff6b011f07eb4a3dbcdbf9c11d0f05e63322f82e93",
+          "n_chars": 1188,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 21
+        },
+        {
+          "sha256": "6da104629a59f111b9be3d78ba5045237d65f4a31c25bbb8f66b3b91412aeccf",
+          "n_chars": 1158,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 9
+        },
+        {
+          "sha256": "cc7f6f8743b5b8cffa978ebefa82b9aaa316007af13fb75532f2f33d24dcdb32",
+          "n_chars": 1271,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 23
+        },
+        {
+          "sha256": "e9e0285128777a77848439b9af7afb23980994513f8c8b1df39c0222ee250181",
+          "n_chars": 1266,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 19
+        },
+        {
+          "sha256": "076677c0efa853024a2b4e6a516cf507be08e3801c97dac7ebc7e4edf81c3f80",
+          "n_chars": 212,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 5
+        },
+        {
+          "sha256": "9605e792de875c2c7fec49f4f17f2ad83145b424fb0b8b5d800c344c7802d086",
+          "n_chars": 1243,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 20
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.4286,
+      "retrieval_matched_tokens": [
+        "fnp",
+        "patrones",
+        "respuesta"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.75,
+        "b": 0.0,
+        "c": 0.3333
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 7,
+      "pregunta": "Para que un paciente pueda mover el MS derecho estando de pie y mantener el equilibrio, es necesario que se realicen ajustes posturales en: ",
+      "opciones": {
+        "a": "La musculatura del miembro inferior del mismo lado ",
+        "b": "La musculatura del miembro inferior del lado contrario ",
+        "c": "a y b son falsas "
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.2303769588470459,
+      "fragmentos": [
+        {
+          "sha256": "f677b65303a698add93c9a4672f7afa0d002456193bfe23b1eb938a402c6db4f",
+          "n_chars": 1156,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 24
+        },
+        {
+          "sha256": "f74de6bab303514cb00712fbb6342040f6235fdc34b113965c8283bd6d5661e0",
+          "n_chars": 1225,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 28
+        },
+        {
+          "sha256": "2a1df72ad65df0a5a3444b7b6ee866c138b210a05cf2c44f6a2db517eedcabe5",
+          "n_chars": 1253,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 26
+        },
+        {
+          "sha256": "e400faf8d7874311c675025f539de3d60fc955e755a05ff5f012b1b736a73272",
+          "n_chars": 872,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 26
+        },
+        {
+          "sha256": "ed87b6aee15d8a4c6c80c65a7c5e157f68cc18fc724d095b868887c01b2b69dc",
+          "n_chars": 1271,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 24
+        },
+        {
+          "sha256": "8d06f9366d57d77f5a5f6b78435c981d81bb92d4cb23979063afbc47de5fb42b",
+          "n_chars": 1116,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 26
+        },
+        {
+          "sha256": "ca332310a143621a2e2a483e88e784cc8a62f8af8942feaaf47cbd7588b27eb5",
+          "n_chars": 1032,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 24
+        },
+        {
+          "sha256": "ed8ce775b38b0a14ed0cce64613f89869be11d38fe4adaa31e609247b398ac18",
+          "n_chars": 810,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 25
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.5882,
+      "retrieval_matched_tokens": [
+        "ajustes",
+        "estando",
+        "inferior",
+        "lado",
+        "miembro",
+        "mismo",
+        "musculatura",
+        "paciente",
+        "pie",
+        "posturales"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 1.0,
+        "b": 0.8,
+        "c": 0.0
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 8,
+      "pregunta": "Según el concepto Bobath, las reacciones asociadas se caracterizan por: ",
+      "opciones": {
+        "a": "Relacionarse con el miembro más afecto (movimiento asociado) ",
+        "b": "Producirse en el miembro más espástico durante una actividad, como abducir el hombro al coger un cono ",
+        "c": "a y b son correctas "
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.2300863265991211,
+      "fragmentos": [
+        {
+          "sha256": "eb14ec5ec23bd9b22121906e5cc5f38cc7afcdf9ae628697b7dc9a30c4fe68a7",
+          "n_chars": 1242,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 1
+        },
+        {
+          "sha256": "75ddc25a8148f8ed9b83d5bb4853e05124a2822277750ea1bd45ca1730edae62",
+          "n_chars": 1269,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 2
+        },
+        {
+          "sha256": "4d45297b798515b648730ba16b063a075a16a38b55f939e9fa07fbbc5febc711",
+          "n_chars": 1161,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 3
+        },
+        {
+          "sha256": "7450b25497edfccb65812af6aae557c527eb39bf10d5f82e9929f3fe9adeaa44",
+          "n_chars": 1224,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 30
+        },
+        {
+          "sha256": "c1ec5a0955007572257d3d2b9eb7adb647b662dce8021c980d30a4013cc0b126",
+          "n_chars": 1199,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 21
+        },
+        {
+          "sha256": "d115008597eb4dc5e782a562a54305909c27734024a421aab8c6efdfdf5346ed",
+          "n_chars": 1178,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 2
+        },
+        {
+          "sha256": "d75a44e19588b1ea2fa1769c28a7e5044ab9ac5bbff31e39592b3f4895227521",
+          "n_chars": 1126,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 23
+        },
+        {
+          "sha256": "13f5a630007a4d59998bf14fdf97291800d547071f104b20f38b3e65cc504df2",
+          "n_chars": 1213,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 17
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.375,
+      "retrieval_matched_tokens": [
+        "asociadas",
+        "bobath",
+        "concepto",
+        "miembro",
+        "más",
+        "reacciones"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.6667,
+        "b": 0.5,
+        "c": 0.0
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 9,
+      "pregunta": "La estabilidad del tronco se consigue mediante extensibilidad y fuerza adecuadas en: ",
+      "opciones": {
+        "a": "Isquiotibiales, cuádriceps, multifidos, abdominales y pectoral mayor ",
+        "b": "Pectoral mayor, serrato anterior, multífidos, isquiotibiales, abdominales y cuádricpes ",
+        "c": "Isquiotibiales, cuádriceps, multifidos, abdominales, pectoral mayor, serrato anterior y suelo pélvico "
+      },
+      "respuesta_correcta": "c",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.2292494773864746,
+      "fragmentos": [
+        {
+          "sha256": "4813b33067a11b26ab0edf10ec75c000d3db257ee73ded1f630594eb142ca3e3",
+          "n_chars": 1104,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 24
+        },
+        {
+          "sha256": "35b30dc9e8f7ae9facaae81fb046449d31e48e0a08d2a54b1ad6022ba85452a0",
+          "n_chars": 972,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 27
+        },
+        {
+          "sha256": "478f2ea99186349568327da4c94fb52b5bba791d43cf51057b98e894aa350bed",
+          "n_chars": 975,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 13
+        },
+        {
+          "sha256": "aa3885764f164adfeb93258290782311d4044a9f79e2d4bca2da594d4cbc39a3",
+          "n_chars": 1187,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 0
+        },
+        {
+          "sha256": "28475395919099f7949ae1fabecfe817b00049dee60947563611afef919bbea5",
+          "n_chars": 909,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 28
+        },
+        {
+          "sha256": "40691e33d661344cd962fad86a5ab1b530e0c8555b4108026e1a7d84bf983ec2",
+          "n_chars": 1270,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 28
+        },
+        {
+          "sha256": "2a1df72ad65df0a5a3444b7b6ee866c138b210a05cf2c44f6a2db517eedcabe5",
+          "n_chars": 1253,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 26
+        },
+        {
+          "sha256": "24b5b4c18135fb6337d3e169d51c918a54545640058a761a036f10a7c08aebe2",
+          "n_chars": 1246,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 26
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.5882,
+      "retrieval_matched_tokens": [
+        "abdominales",
+        "cuádriceps",
+        "estabilidad",
+        "isquiotibiales",
+        "mayor",
+        "pectoral",
+        "pélvico",
+        "serrato",
+        "suelo",
+        "tronco"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.8333,
+        "b": 0.875,
+        "c": 0.9
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 10,
+      "pregunta": "Un paciente con un miembro superior derecho muy espástico provoca: ",
+      "opciones": {
+        "a": "La mayor carga de peso en la extremidad inferior derecha ",
+        "b": "Una falta de extensión selectiva de tronco y pelvis ",
+        "c": "a y b son ciertas "
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22879767417907715,
+      "fragmentos": [
+        {
+          "sha256": "840e61dc2df698f82545e00d0b9717a7b2a6545082945824ed3adb771c3508d4",
+          "n_chars": 637,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 32
+        },
+        {
+          "sha256": "e51a2b85a27844d9b0cecbca046b5b7c69eb760165cd50864324cb2f4209656d",
+          "n_chars": 1281,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 14
+        },
+        {
+          "sha256": "efa8c66df04f1320d814e521a4680e3bc49a35a38741bf35ef8ee9ad8ec77ffa",
+          "n_chars": 460,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 5
+        },
+        {
+          "sha256": "b7211cc509c2695612f0c66bb5406e37c63a6e3f04d8e7eb02c38672270260eb",
+          "n_chars": 1245,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 32
+        },
+        {
+          "sha256": "98a9a21050dfcaea877bfab57a6db907ed4c2ad34728f848e8f0cfac2911e22c",
+          "n_chars": 1115,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 7
+        },
+        {
+          "sha256": "5208fe2a26bc8baade6f835173a44f6c2c0333adfa51e587437bc01abd714432",
+          "n_chars": 967,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 22
+        },
+        {
+          "sha256": "3092f6d4b15cd0c0942edef75c4cbd4ea7bfd91415cc5af77b42c1e62fb47130",
+          "n_chars": 335,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 21
+        },
+        {
+          "sha256": "7a09ea4e3259f8b83eb8e8fc25a403a63586b3f9e387f2b0c7247df3081e3e81",
+          "n_chars": 1044,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 2
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.8333,
+      "retrieval_matched_tokens": [
+        "espástico",
+        "extensión",
+        "falta",
+        "miembro",
+        "muy",
+        "paciente",
+        "pelvis",
+        "selectiva",
+        "superior",
+        "tronco"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.8333,
+        "b": 1.0,
+        "c": 0.0
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1171
+    },
+    {
+      "id": 11,
+      "pregunta": "Tras un ICTUS, los tractos responsables de equilibrio y enderezamiento son: ",
+      "opciones": {
+        "a": "Tracto vestíbulo-espinal lateral y retículo espinal medial o pontino ",
+        "b": "Tracto corticoespinal lateral y fascículo grácil exclusivamente ",
+        "c": "Tracto espinotalámico lateral y tracto tectoespinal como única vía "
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.227463960647583,
+      "fragmentos": [
+        {
+          "sha256": "c1ec5a0955007572257d3d2b9eb7adb647b662dce8021c980d30a4013cc0b126",
+          "n_chars": 1199,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 21
+        },
+        {
+          "sha256": "e51a2b85a27844d9b0cecbca046b5b7c69eb760165cd50864324cb2f4209656d",
+          "n_chars": 1281,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 14
+        },
+        {
+          "sha256": "229523ca4e33c709aff650c24f8e61853362f13743ada921f581952c526b436f",
+          "n_chars": 819,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 33
+        },
+        {
+          "sha256": "0037fba70e6e1ae90e29cf6cd82bc12878c0ea154c6684e351467846e378e4bd",
+          "n_chars": 1294,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 18
+        },
+        {
+          "sha256": "40e50ec268a1fbf14cb1a9daf054bcee20c060e3c82eb5492086c7341b3ff128",
+          "n_chars": 426,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 15
+        },
+        {
+          "sha256": "ff831a9a9dcfca42a20d313589df6d1863ca2477fd1cea172a8845a633a454a7",
+          "n_chars": 1179,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 20
+        },
+        {
+          "sha256": "087a6e68ff5dd0151aea629fbed5675131244cafcc54189c1a0337c40ad585e7",
+          "n_chars": 1166,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 15
+        },
+        {
+          "sha256": "89b3b0909e6f59742bb4a9f3b5bd64e1a941760ef0233b96bb38e2f8089bbc05",
+          "n_chars": 1156,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 21
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.6923,
+      "retrieval_matched_tokens": [
+        "equilibrio",
+        "espinal",
+        "lateral",
+        "medial",
+        "pontino",
+        "responsables",
+        "retículo",
+        "tracto",
+        "vestíbulo"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.3333
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1196
+    },
+    {
+      "id": 12,
+      "pregunta": "¿Qué receptores actúan para disminuir la espasticidad del biceps braquial? ",
+      "opciones": {
+        "a": "Órgano tendinoso de Golgi, cuerpos de Ruffini y bolsa de cadena nucleica ",
+        "b": "Células de Merkel y Ruffini ",
+        "c": "otras que no son "
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.2312941551208496,
+      "fragmentos": [
+        {
+          "sha256": "4eb8851c939648c9c3dc19947c974f706053904be2108c0eaba60337d7f79d96",
+          "n_chars": 1206,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 20
+        },
+        {
+          "sha256": "164b4068180f19a0f593f6b09ada9a9a874030fd61665f09e7cc0d892d6b4d16",
+          "n_chars": 1107,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 16
+        },
+        {
+          "sha256": "7bb8866cdd896e9f7020270544789f71b46e786296715f2ad77cc98dcb09e200",
+          "n_chars": 1068,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 11
+        },
+        {
+          "sha256": "bc1ad683c60e4cf7ed9c760ae86976baf993e35b3abb99c22b60b95ac0e96fd2",
+          "n_chars": 1063,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 11
+        },
+        {
+          "sha256": "085bc535ae482e6b6f1fc5325952af3b0f7dbf2335d6c7e7429830c062c0478c",
+          "n_chars": 1172,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 13
+        },
+        {
+          "sha256": "11f03e15f155949654a9dea8dde9cf274010216e6230685d517631a56e4fd333",
+          "n_chars": 518,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 13
+        },
+        {
+          "sha256": "584abfc734c8d391a78a5f414ae1b672cc4529ece9ad8b194179ac1d47995eff",
+          "n_chars": 1168,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 10
+        },
+        {
+          "sha256": "ff831a9a9dcfca42a20d313589df6d1863ca2477fd1cea172a8845a633a454a7",
+          "n_chars": 1179,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 20
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.4667,
+      "retrieval_matched_tokens": [
+        "bolsa",
+        "cadena",
+        "disminuir",
+        "golgi",
+        "nucleica",
+        "tendinoso",
+        "órgano"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.875,
+        "b": 1.0,
+        "c": 1.0
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 13,
+      "pregunta": "¿Qué tipo de modificación plástica representa el dibujo de la pregunta 11? ",
+      "opciones": {
+        "a": "Brote regenerativo ",
+        "b": "Potenciación sináptica ",
+        "c": "Hipersensibilidad de denervación "
+      },
+      "respuesta_correcta": "c",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.2292032241821289,
+      "fragmentos": [
+        {
+          "sha256": "61fa2fd52885a6618d58a138402ec0162bdacd7c0f8880b5665135ca2a018456",
+          "n_chars": 1001,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 25
+        },
+        {
+          "sha256": "dcef5b61256fed11adc4e1c4abf1ff84d28f58a42a9c4027a53dcbf9ee780da3",
+          "n_chars": 1275,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 1
+        },
+        {
+          "sha256": "e8116c67a54921d15080d523296d435a8ce717a29f961dd00d48dcf598a0a5dc",
+          "n_chars": 1272,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 3
+        },
+        {
+          "sha256": "3336d446c4c727b1eb4ddd7270f0a8dc2fbf07e5ed5d852b4057a340017c1a83",
+          "n_chars": 1215,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 10
+        },
+        {
+          "sha256": "b3f569304286096f70299878878e6e618c8ff8758771d594a06b176964d76982",
+          "n_chars": 557,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 7
+        },
+        {
+          "sha256": "beb68474be8e24d989802ea90b9cf28f01f8d0aaa2869f9e141f5d9f29c94780",
+          "n_chars": 890,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 34
+        },
+        {
+          "sha256": "0acbe52d9605ad6eacada10916960c0de4fa5cd7ad71aa8aae96fecfe1740785",
+          "n_chars": 1146,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 37
+        },
+        {
+          "sha256": "b9eec4480eb43baa55b8ddbe319193660b0c4d77bd2091800fc96758ff8fdc6e",
+          "n_chars": 1009,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 15
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": false,
+      "retrieval_overlap": 0.2222,
+      "retrieval_matched_tokens": [
+        "representa",
+        "tipo"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.0,
+        "b": 0.0,
+        "c": 0.0
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1195
+    },
+    {
+      "id": 14,
+      "pregunta": "Para facilitar que un paciente se pueda poner de puntillas, es necesario que tenga fuerza suficiente en: ",
+      "opciones": {
+        "a": "Sóleo y gemelos ",
+        "b": "Sóleo, gemelos, cuádriceps y tibial posterior ",
+        "c": "Tibial anterior, cuádriceps, sóleo y gemelos "
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.2263658046722412,
+      "fragmentos": [
+        {
+          "sha256": "c785f32e0dcdfdf41159f4dc49784804da03f62f041a62ea32898fe9d8ba6932",
+          "n_chars": 831,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 26
+        },
+        {
+          "sha256": "e400faf8d7874311c675025f539de3d60fc955e755a05ff5f012b1b736a73272",
+          "n_chars": 872,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 26
+        },
+        {
+          "sha256": "e70eb64d21a36090aae3f83ff05b57e72b715989409440707a1136ad1da0dcf0",
+          "n_chars": 1124,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 29
+        },
+        {
+          "sha256": "8d06f9366d57d77f5a5f6b78435c981d81bb92d4cb23979063afbc47de5fb42b",
+          "n_chars": 1116,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 26
+        },
+        {
+          "sha256": "f677b65303a698add93c9a4672f7afa0d002456193bfe23b1eb938a402c6db4f",
+          "n_chars": 1156,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 24
+        },
+        {
+          "sha256": "1cc6b814bf152d6021587bc787e7d7c41d31c1dbd688f0643ebecaceb6d58538",
+          "n_chars": 1213,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 25
+        },
+        {
+          "sha256": "ca332310a143621a2e2a483e88e784cc8a62f8af8942feaaf47cbd7588b27eb5",
+          "n_chars": 1032,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 24
+        },
+        {
+          "sha256": "ed8ce775b38b0a14ed0cce64613f89869be11d38fe4adaa31e609247b398ac18",
+          "n_chars": 810,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 25
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.5,
+      "retrieval_matched_tokens": [
+        "cuádriceps",
+        "gemelos",
+        "paciente",
+        "poner",
+        "puntillas",
+        "sóleo",
+        "tibial"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 1.0,
+        "b": 0.8,
+        "c": 1.0
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1195
+    },
+    {
+      "id": 15,
+      "pregunta": "Respecto al PCC (Control Postural Central), para una sedestación correcta: ",
+      "opciones": {
+        "a": "Predomina el tono flexor mantenido en pectorales y dorsales ",
+        "b": "Se ejercen fuerzas anti-gravitatorias de la musculatura axial extensora para contrarrestar la fuerza contraria ",
+        "c": "a y b son falsas "
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22637486457824707,
+      "fragmentos": [
+        {
+          "sha256": "4955997c6daf8bfc437b842f9f2da464f949c6324d5a407f829eddce8435394f",
+          "n_chars": 1245,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 5
+        },
+        {
+          "sha256": "f3c0a4d8eeea2ea4f8cd1be94e0989751ce604f5f8efaa9c969359677dcd16f0",
+          "n_chars": 1086,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 22
+        },
+        {
+          "sha256": "2a1df72ad65df0a5a3444b7b6ee866c138b210a05cf2c44f6a2db517eedcabe5",
+          "n_chars": 1253,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 26
+        },
+        {
+          "sha256": "a5764b00433f58b7b3fafd18a19a80dd93659be53e54965f51d6a2698716439a",
+          "n_chars": 560,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 19
+        },
+        {
+          "sha256": "cfb41236f46e01795b4c6b3c621e95f7ac54c3b2397bee73505a12af413b5590",
+          "n_chars": 553,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 24
+        },
+        {
+          "sha256": "c785f32e0dcdfdf41159f4dc49784804da03f62f041a62ea32898fe9d8ba6932",
+          "n_chars": 831,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 26
+        },
+        {
+          "sha256": "917d804f7e487832a337a767fe509cdea4a6969bbde17ecf05704d30bb7015df",
+          "n_chars": 400,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 21
+        },
+        {
+          "sha256": "8d06f9366d57d77f5a5f6b78435c981d81bb92d4cb23979063afbc47de5fb42b",
+          "n_chars": 1116,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 26
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": false,
+      "retrieval_overlap": 0.2941,
+      "retrieval_matched_tokens": [
+        "central",
+        "control",
+        "correcta",
+        "musculatura",
+        "postural"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.3333,
+        "b": 0.4,
+        "c": 0.0
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1175
+    },
+    {
+      "id": 16,
+      "pregunta": "En la marcha en tapiz rodante, ¿qué sucede con una suspensión de peso mayor al 30%? ",
+      "opciones": {
+        "a": "El paciente caminará de puntillas ",
+        "b": "Aumenta automáticamente la fase de apoyo sin cambios en la zancada ",
+        "c": "Se elimina la necesidad de control postural del tronco "
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22747159004211426,
+      "fragmentos": [
+        {
+          "sha256": "f587657cdd9af4338d560f25bff1bcafecab4b4dfadf239d6d4489ad2b7f7398",
+          "n_chars": 552,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 18
+        },
+        {
+          "sha256": "d82974e3d3632529c71a1697f5f6719f68c4be070ca9ab5c99570eff34a2a9ef",
+          "n_chars": 1246,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 12
+        },
+        {
+          "sha256": "81661f81915e5c2107e71532698546101cfd75e78a534107217791903d78d212",
+          "n_chars": 1248,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 17
+        },
+        {
+          "sha256": "68144e143a5797a6db58aa0416ce5153de1cf5fdb34d1d734304449d381045c7",
+          "n_chars": 1290,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 17
+        },
+        {
+          "sha256": "6cec7bf498c98ae8f81f12ed2d1326ef85aaadaafff56d66f678f112bb2acebb",
+          "n_chars": 987,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 15
+        },
+        {
+          "sha256": "c8599b0e089d432d23e968d94ed3061cb24d54e70f2d054d858f5553cf7e641c",
+          "n_chars": 1246,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 16
+        },
+        {
+          "sha256": "f351b24671548202ea761417c8c05fef375cf4f02e294158958c3ead16950dc7",
+          "n_chars": 366,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 47
+        },
+        {
+          "sha256": "0037fba70e6e1ae90e29cf6cd82bc12878c0ea154c6684e351467846e378e4bd",
+          "n_chars": 1294,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 18
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.6364,
+      "retrieval_matched_tokens": [
+        "marcha",
+        "mayor",
+        "paciente",
+        "peso",
+        "rodante",
+        "suspensión",
+        "tapiz"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.6667,
+        "b": 0.4286,
+        "c": 0.6
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 17,
+      "pregunta": "Según los ejercicios de Germán, señale la respuesta correcta: ",
+      "opciones": {
+        "a": "Los ejercicios de segundo grado sirven para controlar las irradiaciones anormales al estiramiento ",
+        "b": "Los ejercicios de segundo grado eliminan de forma inmediata toda espasticidad ",
+        "c": "Los ejercicios de segundo grado están indicados solo en lesión periférica aguda "
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22786378860473633,
+      "fragmentos": [
+        {
+          "sha256": "7e6ed2494420668ded6a00c0a75d619e29d3f5f4d39e2c1a30994ad2eb6c615a",
+          "n_chars": 1080,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 19
+        },
+        {
+          "sha256": "3cbc28312f40cf8417666b126a298bfc7f05bf6e2178e3e6ffc142e8475e2f12",
+          "n_chars": 1118,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 22
+        },
+        {
+          "sha256": "8d289be260110910bc429a8bd67040ab660ebfb1b7f5d858c3ad558cfb2d4a97",
+          "n_chars": 1073,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 14
+        },
+        {
+          "sha256": "a2fdf0309a8c7ed6c2b43196fbfaf603193ec53257e61fb192ad26d4e85e1040",
+          "n_chars": 1230,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 19
+        },
+        {
+          "sha256": "6d9943beaec14feafeb2bbe735467963455dace3803ebae1a02a3cc2b0112526",
+          "n_chars": 371,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 14
+        },
+        {
+          "sha256": "b9eec4480eb43baa55b8ddbe319193660b0c4d77bd2091800fc96758ff8fdc6e",
+          "n_chars": 1009,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 15
+        },
+        {
+          "sha256": "c048730482824c86339c7119fa69cf97197012e7b5157d8959dfe470ba88ee28",
+          "n_chars": 1195,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 15
+        },
+        {
+          "sha256": "6815aa4504de6b31a672b52abbd27c50045f521bb863b66c8f513f6f095aca44",
+          "n_chars": 1297,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 17
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.5385,
+      "retrieval_matched_tokens": [
+        "anormales",
+        "correcta",
+        "ejercicios",
+        "estiramiento",
+        "grado",
+        "irradiaciones",
+        "segundo"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.875,
+        "b": 0.625,
+        "c": 0.5556
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 18,
+      "pregunta": "Respecto a la robótica, ¿qué permite el HapticWalker? ",
+      "opciones": {
+        "a": "Simular movimientos de subida y bajada de escaleras y deslizamientos ",
+        "b": "Aplicar únicamente entrenamiento isométrico de miembro superior ",
+        "c": "Sustituir por completo la valoración clínica funcional "
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22823548316955566,
+      "fragmentos": [
+        {
+          "sha256": "90102038375f22b5f4c2e3a3a81590fa1fad43ea8d730814df94504cb1cfa5e1",
+          "n_chars": 1200,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 49
+        },
+        {
+          "sha256": "8400996627b9c44d6325118e363c900721dff9e1818ea7402ad25a3e485b9153",
+          "n_chars": 1281,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 47
+        },
+        {
+          "sha256": "138e2a69442ef1bd57a3fe796d3d3ef2fdf39b85989487bc63f8602f873d6329",
+          "n_chars": 1207,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 13
+        },
+        {
+          "sha256": "59deb19803bc006b1c5ef9b755327e997b53f8bbc422278c868418a8e0aa24db",
+          "n_chars": 1224,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 48
+        },
+        {
+          "sha256": "7c3849840d426c438663a3cfaabe4ad5bd151c0c482ccb1948e82418fd6f04fb",
+          "n_chars": 330,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 49
+        },
+        {
+          "sha256": "caabdb2bd10c9f703a020a95a8b4b8dce0ee93075384c1f8c0fe5323d0e5cae2",
+          "n_chars": 1207,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 47
+        },
+        {
+          "sha256": "aa5655250e1b6884c7823ebd9f7f01e0fb5972c24df91e994efcdbca614b28c9",
+          "n_chars": 995,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 20
+        },
+        {
+          "sha256": "f351b24671548202ea761417c8c05fef375cf4f02e294158958c3ead16950dc7",
+          "n_chars": 366,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 47
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.6364,
+      "retrieval_matched_tokens": [
+        "bajada",
+        "deslizamientos",
+        "escaleras",
+        "hapticwalker",
+        "movimientos",
+        "permite",
+        "subida"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.8333,
+        "b": 0.1667,
+        "c": 0.4
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1191
+    },
+    {
+      "id": 19,
+      "pregunta": "Para que un paciente pueda levantar el pie derecho para dar un paso en la fase de oscilación, es necesario que se realicen ajustes posturales en: ",
+      "opciones": {
+        "a": "Aductores y abductores de cadera izquierda ",
+        "b": "Inversores y eversores del tobillo derecho ",
+        "c": "Inversores y eversores del tobillo derecho, en abductores y aductores de la cadera izquierda "
+      },
+      "respuesta_correcta": "c",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22955775260925293,
+      "fragmentos": [
+        {
+          "sha256": "8d06f9366d57d77f5a5f6b78435c981d81bb92d4cb23979063afbc47de5fb42b",
+          "n_chars": 1116,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 26
+        },
+        {
+          "sha256": "f74de6bab303514cb00712fbb6342040f6235fdc34b113965c8283bd6d5661e0",
+          "n_chars": 1225,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 28
+        },
+        {
+          "sha256": "0e259ffedd76979ea44fca8b980a515ded0a1b657fff17485fba10b83bd4d108",
+          "n_chars": 1015,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 23
+        },
+        {
+          "sha256": "e70eb64d21a36090aae3f83ff05b57e72b715989409440707a1136ad1da0dcf0",
+          "n_chars": 1124,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 29
+        },
+        {
+          "sha256": "bfd288e797c94a9754caaa788f4d46fde70f889dcf089faf2fcea0b2fc8b63d2",
+          "n_chars": 783,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 1
+        },
+        {
+          "sha256": "e400faf8d7874311c675025f539de3d60fc955e755a05ff5f012b1b736a73272",
+          "n_chars": 872,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 26
+        },
+        {
+          "sha256": "ed8ce775b38b0a14ed0cce64613f89869be11d38fe4adaa31e609247b398ac18",
+          "n_chars": 810,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 25
+        },
+        {
+          "sha256": "b19ae0c9151a364f25f2470cd3e8a2d45b818fdcb4f60a4e2ad6b28dff68a21a",
+          "n_chars": 251,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 28
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.65,
+      "retrieval_matched_tokens": [
+        "ajustes",
+        "cadera",
+        "dar",
+        "eversores",
+        "fase",
+        "inversores",
+        "levantar",
+        "oscilación",
+        "paciente",
+        "paso",
+        "pie",
+        "posturales",
+        "tobillo"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.25,
+        "b": 0.75,
+        "c": 0.5
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1186
+    },
+    {
+      "id": 20,
+      "pregunta": "Una lesión en la cápsula interna derecha provocará: ",
+      "opciones": {
+        "a": "Hemiplejia contralateral izquierda por afectación del tracto cortico-espinal lateral ",
+        "b": "Debilidad ipsilateral derecha y también izquierda por afectación del tracto cortico-espinal anterior ",
+        "c": "A y B son verdaderas debido a la decusación parcial "
+      },
+      "respuesta_correcta": "c",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22583365440368652,
+      "fragmentos": [
+        {
+          "sha256": "fe4d4e127aab5f895528a36b97931506899ef3adff48bc342303563f475d8c3e",
+          "n_chars": 1149,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 10
+        },
+        {
+          "sha256": "7b8d421c3e369ef247c62ee795fa33d99d793da0e98c8778f7d11ea66a4ca4f4",
+          "n_chars": 862,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 5
+        },
+        {
+          "sha256": "2ea7fa1b88f2ccc31992e4b052ac1de6ee66b13886860767c4846ca7172c19e1",
+          "n_chars": 811,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 14
+        },
+        {
+          "sha256": "f15cb81daa635c87bc89e6f4590dea83aba1b29cb8807c4178161a629a8ed606",
+          "n_chars": 976,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 6
+        },
+        {
+          "sha256": "41919036a6d4c0f47bdcde13f83959d0c252983798a71e938eab9267b11c76f0",
+          "n_chars": 881,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 2
+        },
+        {
+          "sha256": "7e82d7c1bff998fa793c4be4b23f859f8a5278ebc0290115931f410b49ddc03b",
+          "n_chars": 1093,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 0
+        },
+        {
+          "sha256": "6bd56b669fde2b32b20ac5519c5195ca794c9879b7c31795f3f68fd6259e76de",
+          "n_chars": 1144,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 18
+        },
+        {
+          "sha256": "4813b33067a11b26ab0edf10ec75c000d3db257ee73ded1f630594eb142ca3e3",
+          "n_chars": 1104,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 24
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.4444,
+      "retrieval_matched_tokens": [
+        "cápsula",
+        "derecha",
+        "interna",
+        "lesión"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.75,
+        "b": 0.8,
+        "c": 0.5
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 21,
+      "pregunta": "¿Qué receptores son los que se encargan de disminuir el tono flexor y llevar a una mano suelta? ",
+      "opciones": {
+        "a": "Órgano tendinoso de Golgi y Células de Merkel ",
+        "b": "Husos neuromusculares en su terminación primaria y corpúsculos de Pacini ",
+        "c": "Receptores nociceptivos cutáneos y terminaciones libres exclusivamente "
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.226945161819458,
+      "fragmentos": [
+        {
+          "sha256": "067f2a0dfbb4a1caa4ee3d820a12f5ca054eab11f04a5990873e266860d9a058",
+          "n_chars": 1219,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 10
+        },
+        {
+          "sha256": "bcd10ba242b76d531957cea35171302375d0c65b95c9bea9770e1da91c728d11",
+          "n_chars": 708,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 6
+        },
+        {
+          "sha256": "584abfc734c8d391a78a5f414ae1b672cc4529ece9ad8b194179ac1d47995eff",
+          "n_chars": 1168,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 10
+        },
+        {
+          "sha256": "7bb8866cdd896e9f7020270544789f71b46e786296715f2ad77cc98dcb09e200",
+          "n_chars": 1068,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 11
+        },
+        {
+          "sha256": "ce2086b891ae8ff8ace05cc0282b93bcda3a637301585c38ff2a67f8c7b510a0",
+          "n_chars": 1221,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 20
+        },
+        {
+          "sha256": "bc1ad683c60e4cf7ed9c760ae86976baf993e35b3abb99c22b60b95ac0e96fd2",
+          "n_chars": 1063,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 11
+        },
+        {
+          "sha256": "5f9603bc1c21ef07977038c78dbe4135fe8547306b4f3e5df80890a0d711c984",
+          "n_chars": 372,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 10
+        },
+        {
+          "sha256": "319946a40dcc5b3ade33f2d440004be4087eebf55e43ee2288c6a9c6aab5b825",
+          "n_chars": 1174,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 10
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.5,
+      "retrieval_matched_tokens": [
+        "células",
+        "flexor",
+        "mano",
+        "merkel",
+        "receptores",
+        "suelta",
+        "tono"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 1.0,
+        "b": 0.3333,
+        "c": 0.1667
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 22,
+      "pregunta": "La formación reticular se encuentra localizada en: ",
+      "opciones": {
+        "a": "Diencéfalo, bulbo raquídeo y protuberancia ",
+        "b": "Corteza prefrontal y lóbulo occipital exclusivamente ",
+        "c": "Cerebelo y ganglios basales sin participación troncoencefálica "
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.2273709774017334,
+      "fragmentos": [
+        {
+          "sha256": "7063be5ad99171c65f22318588f35b54ad2204120340959a7c8b8037b11af338",
+          "n_chars": 403,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 15
+        },
+        {
+          "sha256": "ff523aad4e8902728248bca0b2a7b4c1da06a7285932d4327bfa3255a8accc59",
+          "n_chars": 578,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 20
+        },
+        {
+          "sha256": "bbf78d19554a7558d7a90968afcd96b2cb5d1b026400951a662e3288310c7c0b",
+          "n_chars": 1278,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 18
+        },
+        {
+          "sha256": "c13d95050a33b59bcb1918f92140645b9132bc8062dd4cbb4ac94b426a764167",
+          "n_chars": 1171,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 17
+        },
+        {
+          "sha256": "26462d0435386e2532d028c9ec3abfb78dca1c8e47e614f5670e57fe5f066daa",
+          "n_chars": 1024,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 21
+        },
+        {
+          "sha256": "524e88b5f8625857b63a8522117e946bbb8c0da72f84327492657bb868ac2a01",
+          "n_chars": 1218,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 22
+        },
+        {
+          "sha256": "4bf6d7c72943114371ea2ad0d1db2b427bdf47f9f8594c25d9fe04bdc88ce4a7",
+          "n_chars": 941,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 23
+        },
+        {
+          "sha256": "cd17e42e2eb9eab948ca98f73536e9023d594ea5dbe3c0f7d1b5ddbe10e9a02d",
+          "n_chars": 1240,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 20
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.75,
+      "retrieval_matched_tokens": [
+        "bulbo",
+        "encuentra",
+        "formación",
+        "protuberancia",
+        "raquídeo",
+        "reticular"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.75,
+        "b": 0.2,
+        "c": 0.6667
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 23,
+      "pregunta": "¿Cuál es el FES no implantado más utilizado? ",
+      "opciones": {
+        "a": "Handmaster NESSH100 (incorrecto, es H200) ",
+        "b": "ActiGait (es implantado) ",
+        "c": "Opción por descarte (no implantado) "
+      },
+      "respuesta_correcta": "c",
+      "respuesta_ia": "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user's questions.\n",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.4097616672515869,
+      "fragmentos": [
+        {
+          "sha256": "d042fe34bdb8f5f7b1ad6f120d0f088ecff76d8992c55ec708fb65f3cfaeb64e",
+          "n_chars": 1238,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 28
+        },
+        {
+          "sha256": "8a8578191a216cd1d3ab2ce35c2339ecbb35f78c07bb333ef337b1f8bd69d4b5",
+          "n_chars": 1104,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 27
+        },
+        {
+          "sha256": "d36f68eae9584ea1cf6d9fa638a2e990b6113a751f735218d3f61ad0ccf0ed1e",
+          "n_chars": 742,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 32
+        },
+        {
+          "sha256": "d84b359fb42673ea720875f0dc69e74562f47f6eb37efa7eb9631d845bc58f74",
+          "n_chars": 323,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 26
+        },
+        {
+          "sha256": "797144d9e6851e0f51127577798103ff02907da13ad13c89c67351102884820f",
+          "n_chars": 1204,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 19
+        },
+        {
+          "sha256": "33995a2c47b51171770a0ecede1d94448df5078643e9671e1d81fda7a63032fd",
+          "n_chars": 408,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 30
+        }
+      ],
+      "num_fragmentos": 6,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.4286,
+      "retrieval_matched_tokens": [
+        "fes",
+        "más",
+        "utilizado"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.0,
+        "b": 1.0,
+        "c": 0.3333
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 784
+    },
+    {
+      "id": 24,
+      "pregunta": "Según el concepto Bobath, al analizar la marcha como movimiento, ¿qué tipo de movimiento corresponde a cada una de sus fases?",
+      "opciones": {
+        "a": "El inicio y el final son voluntarios (conscientes), mientras que el desarrollo durante la marcha es automático",
+        "b": "El inicio es automático, el desarrollo es voluntario y el final es automatizado",
+        "c": "Las tres fases (inicio, desarrollo y final) son movimientos automatizados que tuvieron que aprenderse y repetirse"
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22745490074157715,
+      "fragmentos": [
+        {
+          "sha256": "51fcc8eae8b3bd6b0f61ede9cc5b347fb0c3d2338dd10ae3104b9d172c0c3c44",
+          "n_chars": 1063,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 8
+        },
+        {
+          "sha256": "eb14ec5ec23bd9b22121906e5cc5f38cc7afcdf9ae628697b7dc9a30c4fe68a7",
+          "n_chars": 1242,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 1
+        },
+        {
+          "sha256": "76eb65b8a683c3e0d306965eb84c39a8b33d3b44b45939a2c2af52ef57ba8ad5",
+          "n_chars": 1228,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 4
+        },
+        {
+          "sha256": "4d45297b798515b648730ba16b063a075a16a38b55f939e9fa07fbbc5febc711",
+          "n_chars": 1161,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 3
+        },
+        {
+          "sha256": "5781297ccbb300b06b5f75bf6d109a59e50b13a816286115f16b9ec573044099",
+          "n_chars": 1204,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 11
+        },
+        {
+          "sha256": "53d153656c45997610073ea6b6f6a136f9c4ef0d79fbf997070f350ef39136a8",
+          "n_chars": 1251,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 3
+        },
+        {
+          "sha256": "96f7bf628e2a6e3c6bb2fdfa3c6657454f8b427295de2552635a39d1fd187077",
+          "n_chars": 1122,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 6
+        },
+        {
+          "sha256": "4050cc65f6e979a0e346d9670a1f311ef3024a78868c8d82cacaf1122b9c788f",
+          "n_chars": 1065,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 3
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.5263,
+      "retrieval_matched_tokens": [
+        "automático",
+        "durante",
+        "final",
+        "inicio",
+        "marcha",
+        "mientras",
+        "movimiento",
+        "qué",
+        "tipo",
+        "voluntarios"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.8889,
+        "b": 1.0,
+        "c": 0.7
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 25,
+      "pregunta": "En el concepto Bobath, respecto a los mecanismos de control del movimiento, ¿qué afirmacion describe correctamente el feed-forward (FF)?",
+      "opciones": {
+        "a": "Es la adaptacion del movimiento que ocurre mientras este se esta realizando, permitiendo correcciones en tiempo real",
+        "b": "Prepara el organismo para el movimiento, coincide con su inicio y participa en el procesamiento y almacenamiento de la informacion (memoria cinetica)",
+        "c": "Es exclusivamente un feedback externo de tipo auditivo o visual que aporta el fisioterapeuta cuando fallan las adaptaciones"
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22878050804138184,
+      "fragmentos": [
+        {
+          "sha256": "eb14ec5ec23bd9b22121906e5cc5f38cc7afcdf9ae628697b7dc9a30c4fe68a7",
+          "n_chars": 1242,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 1
+        },
+        {
+          "sha256": "76eb65b8a683c3e0d306965eb84c39a8b33d3b44b45939a2c2af52ef57ba8ad5",
+          "n_chars": 1228,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 4
+        },
+        {
+          "sha256": "e8cea3695751c6ef3c6a214b89d1337b1a641bf943f20b25c243984c2bc613c2",
+          "n_chars": 1245,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 6
+        },
+        {
+          "sha256": "51fcc8eae8b3bd6b0f61ede9cc5b347fb0c3d2338dd10ae3104b9d172c0c3c44",
+          "n_chars": 1063,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 8
+        },
+        {
+          "sha256": "d775526b4e3d2b7e54a84076662f8b26a84ef31e1c44ec5e8e27fb4f62e9ab1b",
+          "n_chars": 1147,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 9
+        },
+        {
+          "sha256": "f19017d135109a225af27bdfa14491368293859df3d1c5a99197ece476a82fc1",
+          "n_chars": 793,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 4
+        },
+        {
+          "sha256": "13f5a630007a4d59998bf14fdf97291800d547071f104b20f38b3e65cc504df2",
+          "n_chars": 1213,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 17
+        },
+        {
+          "sha256": "4050cc65f6e979a0e346d9670a1f311ef3024a78868c8d82cacaf1122b9c788f",
+          "n_chars": 1065,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 3
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.5909,
+      "retrieval_matched_tokens": [
+        "almacenamiento",
+        "bobath",
+        "coincide",
+        "concepto",
+        "feed",
+        "forward",
+        "inicio",
+        "memoria",
+        "movimiento",
+        "organismo",
+        "participa",
+        "prepara",
+        "procesamiento"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.5455,
+        "b": 0.8182,
+        "c": 0.5455
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 26,
+      "pregunta": "Según la cita de Berta Bobath sobre el tono postural normal, ¿cual es la caracteristica que debe cumplir?",
+      "opciones": {
+        "a": "Debe mantenerse siempre constante e igual independientemente de la tarea, ya que es identico al tono muscular de cada musculo",
+        "b": "Debe ser maximo en los movimientos selectivos finos como escribir, y minimo en las tareas de estabilizacion del tronco",
+        "c": "Debe ser lo suficientemente alto para actuar contra la gravedad, y suficientemente bajo para permitir el movimiento"
+      },
+      "respuesta_correcta": "c",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22968602180480957,
+      "fragmentos": [
+        {
+          "sha256": "51fcc8eae8b3bd6b0f61ede9cc5b347fb0c3d2338dd10ae3104b9d172c0c3c44",
+          "n_chars": 1063,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 8
+        },
+        {
+          "sha256": "4955997c6daf8bfc437b842f9f2da464f949c6324d5a407f829eddce8435394f",
+          "n_chars": 1245,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 5
+        },
+        {
+          "sha256": "eb14ec5ec23bd9b22121906e5cc5f38cc7afcdf9ae628697b7dc9a30c4fe68a7",
+          "n_chars": 1242,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 1
+        },
+        {
+          "sha256": "5fd2d03a1cf541b79216707499ee7a4b0baae72f4be626b9324feb023ef5fec9",
+          "n_chars": 1276,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 9
+        },
+        {
+          "sha256": "ec0837d65b4eff5ddccd58bbaa6d5b66825148a5ba415f1f1c5447c7c9ed1b1d",
+          "n_chars": 1255,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 14
+        },
+        {
+          "sha256": "ebdfdb19c680ee8fa5dd7bd01edde7515c4c64af5cc7d32935a9260fe547781d",
+          "n_chars": 1067,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 7
+        },
+        {
+          "sha256": "25e3a0babc1beda392a33e1fb8c90d12c8e7ce5153f10fe01138b59ac80ff800",
+          "n_chars": 713,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 8
+        },
+        {
+          "sha256": "26c06ed99a744e007bf1f1b46f9fab8635bafeb22a0e361a061fb3371e695d30",
+          "n_chars": 1115,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 8
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.7143,
+      "retrieval_matched_tokens": [
+        "actuar",
+        "alto",
+        "bajo",
+        "berta",
+        "bobath",
+        "contra",
+        "debe",
+        "gravedad",
+        "movimiento",
+        "normal",
+        "permitir",
+        "postural",
+        "ser",
+        "suficientemente",
+        "tono"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.3333,
+        "b": 0.5455,
+        "c": 1.0
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 27,
+      "pregunta": "Respecto a la velocidad de ejecucion como factor que influye en el tono postural, al pasar de sedestacion a bipedestacion (sentado a de pie), ¿como se distribuyen las fases?",
+      "opciones": {
+        "a": "La primera fase es rapida (aumenta el tono) y la segunda fase es lenta conforme el cuerpo se endereza",
+        "b": "La primera fase es lenta (mantiene o disminuye el tono) y la segunda fase es rapida en la maxima incidencia gravitacional",
+        "c": "Ambas fases se realizan a velocidad constante y baja para no aumentar la espasticidad"
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.2290205955505371,
+      "fragmentos": [
+        {
+          "sha256": "345800801965fcb2ac0e059ecdd9a88b1a90c8538a6ca43a526583890c0fa407",
+          "n_chars": 1117,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 18
+        },
+        {
+          "sha256": "5fd2d03a1cf541b79216707499ee7a4b0baae72f4be626b9324feb023ef5fec9",
+          "n_chars": 1276,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 9
+        },
+        {
+          "sha256": "d775526b4e3d2b7e54a84076662f8b26a84ef31e1c44ec5e8e27fb4f62e9ab1b",
+          "n_chars": 1147,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 9
+        },
+        {
+          "sha256": "a5764b00433f58b7b3fafd18a19a80dd93659be53e54965f51d6a2698716439a",
+          "n_chars": 560,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 19
+        },
+        {
+          "sha256": "26c06ed99a744e007bf1f1b46f9fab8635bafeb22a0e361a061fb3371e695d30",
+          "n_chars": 1115,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 8
+        },
+        {
+          "sha256": "015c07fb5599ed115fe5ecc62c34c7001231ae27c24adcd8cf7ae72f27f1a979",
+          "n_chars": 614,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 17
+        },
+        {
+          "sha256": "c785f32e0dcdfdf41159f4dc49784804da03f62f041a62ea32898fe9d8ba6932",
+          "n_chars": 831,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 26
+        },
+        {
+          "sha256": "35b30dc9e8f7ae9facaae81fb046449d31e48e0a08d2a54b1ad6022ba85452a0",
+          "n_chars": 972,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 27
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.6087,
+      "retrieval_matched_tokens": [
+        "aumenta",
+        "cuerpo",
+        "endereza",
+        "fase",
+        "fases",
+        "lenta",
+        "pasar",
+        "pie",
+        "postural",
+        "primera",
+        "segunda",
+        "sentado",
+        "tono",
+        "velocidad"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.8,
+        "b": 0.7273,
+        "c": 0.5
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 28,
+      "pregunta": "En el concepto Bobath, las reacciones de equilibrio se definen como los pequenos cambios de tono continuos para mantener el equilibrio ante minimos desplazamientos de peso. ¿Cual de las siguientes es una de las causas de esos constantes desplazamientos minimos de peso?",
+      "opciones": {
+        "a": "El movimiento del torax con la inspiracion y la espiracion (respiracion)",
+        "b": "La activacion voluntaria del cuadriceps al iniciar la marcha hacia un objetivo",
+        "c": "La reaccion de apoyo de la mano contraria al coger una botella alejada"
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.2288188934326172,
+      "fragmentos": [
+        {
+          "sha256": "c1ec5a0955007572257d3d2b9eb7adb647b662dce8021c980d30a4013cc0b126",
+          "n_chars": 1199,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 21
+        },
+        {
+          "sha256": "eb14ec5ec23bd9b22121906e5cc5f38cc7afcdf9ae628697b7dc9a30c4fe68a7",
+          "n_chars": 1242,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 1
+        },
+        {
+          "sha256": "8a99e215c8b0f6b16c2ad9c75fff37832544cdfe4f5a97ed34a77a8b30c453e2",
+          "n_chars": 1099,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 7
+        },
+        {
+          "sha256": "abe55281784ece9408fbf9b59e04bbe8aee4b45fcd71979611defa4e4e5236a3",
+          "n_chars": 1258,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 27
+        },
+        {
+          "sha256": "ed87b6aee15d8a4c6c80c65a7c5e157f68cc18fc724d095b868887c01b2b69dc",
+          "n_chars": 1271,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 24
+        },
+        {
+          "sha256": "89b3b0909e6f59742bb4a9f3b5bd64e1a941760ef0233b96bb38e2f8089bbc05",
+          "n_chars": 1156,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 21
+        },
+        {
+          "sha256": "c4d7e442ccb83d4ced4c970ddf2318d40b3c48ab6f9e9fc308f2cc04f9dc10ac",
+          "n_chars": 673,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 20
+        },
+        {
+          "sha256": "6950e0bbd6f483ab397f7cbb9bec46e7b4818b2ca91b20b509a67572b16a5ef1",
+          "n_chars": 1175,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 26
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.5417,
+      "retrieval_matched_tokens": [
+        "bobath",
+        "cambios",
+        "causas",
+        "concepto",
+        "constantes",
+        "desplazamientos",
+        "equilibrio",
+        "esos",
+        "mantener",
+        "movimiento",
+        "peso",
+        "reacciones",
+        "tono"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.2,
+        "b": 0.2857,
+        "c": 0.7143
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 29,
+      "pregunta": "Segun el concepto Bobath, al colocar a un paciente encamado en estado agudo en decubito supino con tratamiento postural correcto, las cinturas escapulares y la cintura pelviana deben quedar, respectivamente:",
+      "opciones": {
+        "a": "Las cinturas escapulares ligeramente por delante del PCC y la pelvis ligeramente por detras o por debajo del PCC, para lo cual se colocan dos almohadas en aspa",
+        "b": "Tanto las cinturas escapulares como la pelvis ligeramente por detras del PCC, colocando una unica almohada bajo los hombros",
+        "c": "Las cinturas escapulares ligeramente por detras del PCC y la pelvis ligeramente por delante del PCC, sin necesidad de almohadas"
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.23014187812805176,
+      "fragmentos": [
+        {
+          "sha256": "51fcc8eae8b3bd6b0f61ede9cc5b347fb0c3d2338dd10ae3104b9d172c0c3c44",
+          "n_chars": 1063,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 8
+        },
+        {
+          "sha256": "8a99e215c8b0f6b16c2ad9c75fff37832544cdfe4f5a97ed34a77a8b30c453e2",
+          "n_chars": 1099,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 7
+        },
+        {
+          "sha256": "61f151ec3ea2a1a4b4a96ceb5aca7d349e1ef88b12417a5b1e3e05c53e0fa6d4",
+          "n_chars": 1166,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 15
+        },
+        {
+          "sha256": "4955997c6daf8bfc437b842f9f2da464f949c6324d5a407f829eddce8435394f",
+          "n_chars": 1245,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 5
+        },
+        {
+          "sha256": "d9364a20db88833e3443d8d54e2ade833b6b39878a06ab5ed95c48b5b6a5287b",
+          "n_chars": 1242,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 28
+        },
+        {
+          "sha256": "b1d72925d176e4012d9940a6493c6332f847a3e499e38d41f11b15fe14311c58",
+          "n_chars": 1024,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 21
+        },
+        {
+          "sha256": "f3c0a4d8eeea2ea4f8cd1be94e0989751ce604f5f8efaa9c969359677dcd16f0",
+          "n_chars": 1086,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 22
+        },
+        {
+          "sha256": "6af6dd2601efa8151ada141364ccaf8f5bb42736efa8abc28e9a8901e451634d",
+          "n_chars": 728,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 21
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.4194,
+      "retrieval_matched_tokens": [
+        "agudo",
+        "almohadas",
+        "aspa",
+        "cintura",
+        "colocar",
+        "correcto",
+        "delante",
+        "estado",
+        "ligeramente",
+        "pcc",
+        "pelviana",
+        "postural",
+        "tratamiento"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.6923,
+        "b": 0.6667,
+        "c": 0.8
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 30,
+      "pregunta": "En relacion con la eleccion de la base de sustentacion y el area de apoyo y su efecto sobre el tono postural, senale la afirmacion correcta para preparar el paso de sedestacion a bipedestacion:",
+      "opciones": {
+        "a": "Conviene un asiento blando y hondo con la nalga y todo el muslo apoyados, porque a mayor area de apoyo mayor tono postural",
+        "b": "Conviene que solo las nalgas y un tercio del muslo esten en contacto con el asiento, porque a menor area de apoyo mayor es el tono que permite luchar contra la gravedad",
+        "c": "El grado de apoyo es indiferente, ya que el tono postural depende exclusivamente de la posicion de la cabeza y no de la base de sustentacion"
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22849750518798828,
+      "fragmentos": [
+        {
+          "sha256": "345800801965fcb2ac0e059ecdd9a88b1a90c8538a6ca43a526583890c0fa407",
+          "n_chars": 1117,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 18
+        },
+        {
+          "sha256": "a5764b00433f58b7b3fafd18a19a80dd93659be53e54965f51d6a2698716439a",
+          "n_chars": 560,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 19
+        },
+        {
+          "sha256": "05150e8dec1e4eea7873d0e05387fdd30486c40298e328041968bf84d085a3a0",
+          "n_chars": 1239,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 19
+        },
+        {
+          "sha256": "ad0b2c717ccd6fde3d5d3f053adbdc78614d1e2cfd221421de9e839cd62beb7a",
+          "n_chars": 1090,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 23
+        },
+        {
+          "sha256": "16783a4412476237834ed60ecf7bac35c5765cd08784ee8d0ab15babc66cbf5a",
+          "n_chars": 787,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 23
+        },
+        {
+          "sha256": "1cc6b814bf152d6021587bc787e7d7c41d31c1dbd688f0643ebecaceb6d58538",
+          "n_chars": 1213,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 25
+        },
+        {
+          "sha256": "25e3a0babc1beda392a33e1fb8c90d12c8e7ce5153f10fe01138b59ac80ff800",
+          "n_chars": 713,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 8
+        },
+        {
+          "sha256": "c785f32e0dcdfdf41159f4dc49784804da03f62f041a62ea32898fe9d8ba6932",
+          "n_chars": 831,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 26
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.4688,
+      "retrieval_matched_tokens": [
+        "apoyo",
+        "asiento",
+        "base",
+        "contacto",
+        "contra",
+        "gravedad",
+        "luchar",
+        "mayor",
+        "menor",
+        "muslo",
+        "nalgas",
+        "porque",
+        "postural",
+        "tercio",
+        "tono"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.7857,
+        "b": 0.7778,
+        "c": 0.4545
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 31,
+      "pregunta": "Respecto al decubito prono como posicion de partida en el tratamiento del paciente neurologico, segun el documento es cierto que:",
+      "opciones": {
+        "a": "Esta recomendado de entrada porque alinea correctamente la cintura pelviana, que queda por delante del PCC favoreciendo la extension de cadera",
+        "b": "Esta desaconsejado de entrada porque predomina el tono de los flexores, aparecen problemas respiratorios sobre todo en mayores y disminuyen la vigilancia y la percepcion",
+        "c": "Es la posicion mas utilizada como punto de partida de la terapia porque aumenta el tono extensor del tronco"
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22884154319763184,
+      "fragmentos": [
+        {
+          "sha256": "4352b0871b2145602d3f1d67a422492462615fb6ef28b184877dd70da54534b5",
+          "n_chars": 1179,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 23
+        },
+        {
+          "sha256": "fc7333b87684198c8d505663fa80fcd840ef67495ff56ba8ade17af60bf7592f",
+          "n_chars": 1065,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 23
+        },
+        {
+          "sha256": "9eedfef5e21d7b40cd70f1784d98bfe7e8cfac9d30a9ab3ba6333ebd928ac562",
+          "n_chars": 1117,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 16
+        },
+        {
+          "sha256": "3e3796969b5705a011144bd98b6546e968da68c6f6b0bfa2c55b64a9589b7811",
+          "n_chars": 1268,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 44
+        },
+        {
+          "sha256": "b1d72925d176e4012d9940a6493c6332f847a3e499e38d41f11b15fe14311c58",
+          "n_chars": 1024,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 21
+        },
+        {
+          "sha256": "9e4f0584b6e6fef82b3fb38953165d32855cf96e152f23a0a0430a1124c636f2",
+          "n_chars": 647,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 23
+        },
+        {
+          "sha256": "814ab610de5f42880efe75377a1b2b0d5d1a6bccbf46485f8d309137d6addf41",
+          "n_chars": 1172,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 13
+        },
+        {
+          "sha256": "d9ddf2028c48e90994596ab9f239009dcbf2afb3513921a3c1c2ee4cb058bef3",
+          "n_chars": 1238,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 9
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.5926,
+      "retrieval_matched_tokens": [
+        "aparecen",
+        "disminuyen",
+        "esta",
+        "flexores",
+        "mayores",
+        "partida",
+        "porque",
+        "predomina",
+        "problemas",
+        "prono",
+        "respiratorios",
+        "sobre",
+        "todo",
+        "tono",
+        "tratamiento",
+        "vigilancia"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.5714,
+        "b": 0.9375,
+        "c": 0.7273
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 32,
+      "pregunta": "Sobre el tipo de reorganizacion de los mecanismos neuronales denominado recuperacion de la eficacia sinaptica, senale la opcion correcta:",
+      "opciones": {
+        "a": "Tiene lugar en un ictus transitorio, durante las primeras 24/48 horas, en el que el edema impide por compresion estructural la transmision de impulsos y produce una excitacion disminuida que luego se recupera",
+        "b": "Se produce cuando el cuerpo de la neurona presinaptica muere de forma irreversible y una fibra proxima genera un brote colateral",
+        "c": "Consiste en el aumento del tamano de los terminales presinapticos cuando la neurona postsinaptica solo es inervada por una neurona"
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.23075413703918457,
+      "fragmentos": [
+        {
+          "sha256": "f2dbedd343bab5cc03586b55510c89cf1b4e8c3bc479d269e3647f49430dc5fb",
+          "n_chars": 1279,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 5
+        },
+        {
+          "sha256": "42d5e53322ff4635b725ee66d2d5bd27c56f8a6e69b7c09dd9f6797145d1874a",
+          "n_chars": 1271,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 6
+        },
+        {
+          "sha256": "1b281a8d1f824f76b54afcb821060a0565a1a06e85a01ffb73530894ec3c00c7",
+          "n_chars": 503,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 4
+        },
+        {
+          "sha256": "cb595b31301c4bc9112ad638e20541210e450dc355717f5c32d76ae5022b0e94",
+          "n_chars": 1262,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 3
+        },
+        {
+          "sha256": "2d78f0030a58ea5f3d0dec99c18639975f45f4cda00a9693d892e7a7ed965978",
+          "n_chars": 1091,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 10
+        },
+        {
+          "sha256": "7348d2973d179244a9ca70f95fb90224a79e85a7c469b57ae829bac84612c8e3",
+          "n_chars": 1186,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 12
+        },
+        {
+          "sha256": "22d912ce2c3f9d3a3569216265d801261e85e382cea5a84ed0fb0bfd9ece41b8",
+          "n_chars": 1272,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 24
+        },
+        {
+          "sha256": "ec0837d65b4eff5ddccd58bbaa6d5b66825148a5ba415f1f1c5447c7c9ed1b1d",
+          "n_chars": 1255,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 14
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.5,
+      "retrieval_matched_tokens": [
+        "disminuida",
+        "durante",
+        "edema",
+        "eficacia",
+        "estructural",
+        "horas",
+        "ictus",
+        "impide",
+        "impulsos",
+        "luego",
+        "lugar",
+        "primeras",
+        "produce",
+        "tiene",
+        "transitorio"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.7778,
+        "b": 0.5385,
+        "c": 0.3
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1199
+    },
+    {
+      "id": 33,
+      "pregunta": "Segun el apartado de comunicacion del concepto Bobath, en relacion con el uso de las manos del fisioterapeuta es correcto afirmar que:",
+      "opciones": {
+        "a": "Las manos deben mover pasivamente a la persona para conducir el movimiento completo en lugar de esperar una reaccion del paciente",
+        "b": "Las manos no han de mover pasivamente a la persona, sino estimular activamente el movimiento, situandose alli donde vaya a producirse la reaccion del paciente",
+        "c": "El uso de las manos solo influye en la sensibilidad cutanea y nunca modifica el tono postural del paciente"
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.2274336814880371,
+      "fragmentos": [
+        {
+          "sha256": "eb14ec5ec23bd9b22121906e5cc5f38cc7afcdf9ae628697b7dc9a30c4fe68a7",
+          "n_chars": 1242,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 1
+        },
+        {
+          "sha256": "8a99e215c8b0f6b16c2ad9c75fff37832544cdfe4f5a97ed34a77a8b30c453e2",
+          "n_chars": 1099,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 7
+        },
+        {
+          "sha256": "d75a44e19588b1ea2fa1769c28a7e5044ab9ac5bbff31e39592b3f4895227521",
+          "n_chars": 1126,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 23
+        },
+        {
+          "sha256": "e8cea3695751c6ef3c6a214b89d1337b1a641bf943f20b25c243984c2bc613c2",
+          "n_chars": 1245,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 6
+        },
+        {
+          "sha256": "453f5e677e2dec7728ade92389f76ad35c86d38f65641f561d865c3e0ff7e4a4",
+          "n_chars": 936,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 29
+        },
+        {
+          "sha256": "7450b25497edfccb65812af6aae557c527eb39bf10d5f82e9929f3fe9adeaa44",
+          "n_chars": 1224,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 30
+        },
+        {
+          "sha256": "c607764eefc8d6fb58f83beb1784d582a2f4917fcdefdd6f1db0830cccdbc727",
+          "n_chars": 1146,
+          "documento": "02_bobath_principios_tratamiento.pdf",
+          "pagina": 29
+        },
+        {
+          "sha256": "5b8f87556819165bf9ade46065cef3a871f54e1d55b46ccb34c9255e695085d8",
+          "n_chars": 1218,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 11
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.5769,
+      "retrieval_matched_tokens": [
+        "activamente",
+        "bobath",
+        "concepto",
+        "donde",
+        "estimular",
+        "han",
+        "manos",
+        "mover",
+        "movimiento",
+        "paciente",
+        "pasivamente",
+        "persona",
+        "producirse",
+        "sino",
+        "vaya"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.5833,
+        "b": 0.8125,
+        "c": 0.5455
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1199
+    },
+    {
+      "id": 34,
+      "pregunta": "Un paciente sufre una lesión que destruye bilateralmente todas las estructuras del telencefalo y del diencefalo, respetando exclusivamente los tractos rubro-espinal, reticulo-espinal y vestibulo-espinal. ¿Que postura presentara y por que?",
+      "opciones": {
+        "a": "Postura de descerebracion, con las cuatro extremidades en extension, porque la perdida del rubro-espinal impide cualquier flexion",
+        "b": "Postura de decorticacion, con los miembros superiores en flexion y los inferiores en extension, porque el rubro-espinal (intacto) mantiene la flexion del miembro superior mientras reticulo-espinal y vestibulo-espinal mantienen la extension de los inferiores",
+        "c": "Hemiplejia flacida bilateral sin alteracion del tono, porque al respetarse los tres tractos descendentes citados no se produce ningun desequilibrio postural"
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22980475425720215,
+      "fragmentos": [
+        {
+          "sha256": "6bfdbf3711f050ab2cb3ddd1bfdd6baf3bdcca28473f75e21ffb3ff001289c3c",
+          "n_chars": 1183,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 4
+        },
+        {
+          "sha256": "2ea7fa1b88f2ccc31992e4b052ac1de6ee66b13886860767c4846ca7172c19e1",
+          "n_chars": 811,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 14
+        },
+        {
+          "sha256": "86bb0bdf0c84ad03c0c09f92a305ad6e1dcee4db7f356415cebf9b483c8581c0",
+          "n_chars": 1239,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 14
+        },
+        {
+          "sha256": "a34502f6ad3e2c3f40e09bb749f7362882ffc630698fc68a81b4dca42a2f4c11",
+          "n_chars": 749,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 4
+        },
+        {
+          "sha256": "aa3885764f164adfeb93258290782311d4044a9f79e2d4bca2da594d4cbc39a3",
+          "n_chars": 1187,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 0
+        },
+        {
+          "sha256": "de3adece1dd8d971f6b3b946d9a74d47408c160bfc2fc09cc737cb89e0774eba",
+          "n_chars": 1234,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 15
+        },
+        {
+          "sha256": "087a6e68ff5dd0151aea629fbed5675131244cafcc54189c1a0337c40ad585e7",
+          "n_chars": 1166,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 15
+        },
+        {
+          "sha256": "c766717e807e93f2d28a6f9f7c635e8ece6cbe88ce7bc17e04d88d948fdc2440",
+          "n_chars": 1087,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 1
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.3548,
+      "retrieval_matched_tokens": [
+        "espinal",
+        "inferiores",
+        "lesión",
+        "mantiene",
+        "miembros",
+        "paciente",
+        "porque",
+        "postura",
+        "rubro",
+        "superiores",
+        "tractos"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.5,
+        "b": 0.5556,
+        "c": 0.5
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 35,
+      "pregunta": "Respecto a los dos tractos reticuloespinales y su accion sobre la musculatura axial del tronco, senale la afirmacion correcta:",
+      "opciones": {
+        "a": "El tracto reticuloespinal pontino (medial) excita la musculatura axial extensora del tronco, mientras que el bulbar (lateral) la inhibe, permitiendo la flexion del tronco; tienen acciones contrarias y no actuan a la vez",
+        "b": "El tracto reticuloespinal bulbar (lateral) excita la musculatura axial extensora del tronco, mientras que el pontino (medial) la inhibe para permitir la flexion del tronco",
+        "c": "Ambos tractos reticuloespinales excitan simultaneamente la musculatura axial extensora del tronco, reforzandose mutuamente para la sedestacion erguida"
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.2294600009918213,
+      "fragmentos": [
+        {
+          "sha256": "61fa2fd52885a6618d58a138402ec0162bdacd7c0f8880b5665135ca2a018456",
+          "n_chars": 1001,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 25
+        },
+        {
+          "sha256": "59281a52a637da4296ddf8b3ef2dd3a228c1d2e49e910d916fb3914d035cde13",
+          "n_chars": 1156,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 18
+        },
+        {
+          "sha256": "7b7419a62fbc30af30d7bd394edffc788e7e6036437c8b0aae785a3ec5be6e47",
+          "n_chars": 1159,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 25
+        },
+        {
+          "sha256": "de24546f87cc4e0a7b16c73ec60f3998d73b44951280df3f4ebe6017f7e545d9",
+          "n_chars": 1124,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 18
+        },
+        {
+          "sha256": "ff831a9a9dcfca42a20d313589df6d1863ca2477fd1cea172a8845a633a454a7",
+          "n_chars": 1179,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 20
+        },
+        {
+          "sha256": "087a6e68ff5dd0151aea629fbed5675131244cafcc54189c1a0337c40ad585e7",
+          "n_chars": 1166,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 15
+        },
+        {
+          "sha256": "ff523aad4e8902728248bca0b2a7b4c1da06a7285932d4327bfa3255a8accc59",
+          "n_chars": 578,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 20
+        },
+        {
+          "sha256": "cd17e42e2eb9eab948ca98f73536e9023d594ea5dbe3c0f7d1b5ddbe10e9a02d",
+          "n_chars": 1240,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 20
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.5172,
+      "retrieval_matched_tokens": [
+        "acciones",
+        "axial",
+        "bulbar",
+        "contrarias",
+        "excita",
+        "extensora",
+        "lateral",
+        "medial",
+        "musculatura",
+        "pontino",
+        "reticuloespinal",
+        "tienen",
+        "tracto",
+        "tronco",
+        "vez"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.8,
+        "b": 0.8667,
+        "c": 0.5385
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 36,
+      "pregunta": "En cuanto al origen y la decusacion del tracto rubro-espinal (TRE), es correcto que:",
+      "opciones": {
+        "a": "Se origina en las neuronas parvocelulares de la formacion reticular pontina y se decusa en la decusacion de las piramides del bulbo",
+        "b": "Se origina en las neuronas magnocelulares del nucleo rojo y se decusa en la decusacion tegmental ventral, descendiendo por el cordon lateral de la medula entremezclado con el TCE lateral",
+        "c": "Se origina en el nucleo de Deiters y desciende ipsilateral sin decusarse hasta la medula lumbar"
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22784757614135742,
+      "fragmentos": [
+        {
+          "sha256": "48992809348bac2b571af6aaaf4799829650ae0c7ff252b2c6727750ddd5e83b",
+          "n_chars": 1244,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 13
+        },
+        {
+          "sha256": "2ea7fa1b88f2ccc31992e4b052ac1de6ee66b13886860767c4846ca7172c19e1",
+          "n_chars": 811,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 14
+        },
+        {
+          "sha256": "7fd96a1e472f7e028c8ef9f0171e9a5d019c513983d56d933ceb932accb6b0b2",
+          "n_chars": 822,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 11
+        },
+        {
+          "sha256": "7e82d7c1bff998fa793c4be4b23f859f8a5278ebc0290115931f410b49ddc03b",
+          "n_chars": 1093,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 0
+        },
+        {
+          "sha256": "f15cb81daa635c87bc89e6f4590dea83aba1b29cb8807c4178161a629a8ed606",
+          "n_chars": 976,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 6
+        },
+        {
+          "sha256": "e071e863392fb1e3e792f83e59466795dd5d45b1d93945c16895fd4739f4d394",
+          "n_chars": 413,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 12
+        },
+        {
+          "sha256": "de24546f87cc4e0a7b16c73ec60f3998d73b44951280df3f4ebe6017f7e545d9",
+          "n_chars": 1124,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 18
+        },
+        {
+          "sha256": "5dcba17d8148eeaf4dd57e88b73b67a476a2598bca14764ee9c0d8154eb29bc1",
+          "n_chars": 487,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 4
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.3182,
+      "retrieval_matched_tokens": [
+        "espinal",
+        "magnocelulares",
+        "neuronas",
+        "origina",
+        "rojo",
+        "rubro",
+        "tracto"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.3,
+        "b": 0.5333,
+        "c": 0.5
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1110
+    },
+    {
+      "id": 37,
+      "pregunta": "Sobre los dos tractos vestibuloespinales y su patron de proyeccion y accion, senale la opcion correcta:",
+      "opciones": {
+        "a": "El tracto vestibuloespinal lateral tiene proyeccion ipsilateral, llega a todos los niveles medulares y activa la musculatura extensora y antigravitatoria inhibiendo la flexora",
+        "b": "El tracto vestibuloespinal lateral tiene proyeccion bilateral, no llega a la medula lumbar e inhibe la musculatura axial del tronco",
+        "c": "El tracto vestibuloespinal medial se origina solo en el nucleo lateral (de Deiters), llega a la medula lumbar y activa la musculatura extensora antigravitatoria"
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22654223442077637,
+      "fragmentos": [
+        {
+          "sha256": "7b7419a62fbc30af30d7bd394edffc788e7e6036437c8b0aae785a3ec5be6e47",
+          "n_chars": 1159,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 25
+        },
+        {
+          "sha256": "61fa2fd52885a6618d58a138402ec0162bdacd7c0f8880b5665135ca2a018456",
+          "n_chars": 1001,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 25
+        },
+        {
+          "sha256": "087a6e68ff5dd0151aea629fbed5675131244cafcc54189c1a0337c40ad585e7",
+          "n_chars": 1166,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 15
+        },
+        {
+          "sha256": "7b8d421c3e369ef247c62ee795fa33d99d793da0e98c8778f7d11ea66a4ca4f4",
+          "n_chars": 862,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 5
+        },
+        {
+          "sha256": "1f599390bf1e627c283eb9771af1ce501f17aec40590d076c84af0c56e0ef206",
+          "n_chars": 1144,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 22
+        },
+        {
+          "sha256": "ff831a9a9dcfca42a20d313589df6d1863ca2477fd1cea172a8845a633a454a7",
+          "n_chars": 1179,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 20
+        },
+        {
+          "sha256": "cfab6138a39b0d24e9e875e0ee008dbef488a9cb3926e17eb6ed824b034e450c",
+          "n_chars": 809,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 25
+        },
+        {
+          "sha256": "954cd0b51d06d0fb028467fabc2b4dcdf78a09165ed168a077ca190edb79db1a",
+          "n_chars": 1264,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 29
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.56,
+      "retrieval_matched_tokens": [
+        "activa",
+        "antigravitatoria",
+        "extensora",
+        "flexora",
+        "ipsilateral",
+        "lateral",
+        "llega",
+        "medulares",
+        "musculatura",
+        "niveles",
+        "sobre",
+        "todos",
+        "tracto",
+        "vestibuloespinal"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.875,
+        "b": 0.8462,
+        "c": 0.8
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 38,
+      "pregunta": "Respecto a la importancia clinica del tracto corticoespinal (TCE) en la decusacion de las piramides, es correcto afirmar que:",
+      "opciones": {
+        "a": "El 100% de los axones del TCE se cruzan en la decusacion de las piramides, por lo que una lesion nunca produce sintomas ipsilaterales",
+        "b": "Aproximadamente un 80% de los axones del TCE se cruzan en la decusacion de las piramides y terminan en las MNI alfa y gamma que controlan los movimientos de las extremidades distales, sobre todo manos y dedos",
+        "c": "El TCE no establece contacto con motoneuronas inferiores alfa, ya que termina exclusivamente en interneuronas del asta posterior"
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.2272648811340332,
+      "fragmentos": [
+        {
+          "sha256": "2680daac46aced79c69b87ad07f189fdbf59c4d919a4f194f0ffb15d2c0d9c32",
+          "n_chars": 282,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 19
+        },
+        {
+          "sha256": "36fe0066ac61558d78f9779adf5ffa2f13def34eb72f69afa9be634119e75287",
+          "n_chars": 1201,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 2
+        },
+        {
+          "sha256": "378028a05a418ef2852cc797af3bc2d55abda82732cc9e76ba8ef4d7c42c5773",
+          "n_chars": 935,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 3
+        },
+        {
+          "sha256": "59281a52a637da4296ddf8b3ef2dd3a228c1d2e49e910d916fb3914d035cde13",
+          "n_chars": 1156,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 18
+        },
+        {
+          "sha256": "86bb0bdf0c84ad03c0c09f92a305ad6e1dcee4db7f356415cebf9b483c8581c0",
+          "n_chars": 1239,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 14
+        },
+        {
+          "sha256": "79fa9b9c6ce48b081f395a3540ad0739854c4a48eaee2a7bddb0c6d5fe582cec",
+          "n_chars": 1124,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 2
+        },
+        {
+          "sha256": "e071e863392fb1e3e792f83e59466795dd5d45b1d93945c16895fd4739f4d394",
+          "n_chars": 413,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 12
+        },
+        {
+          "sha256": "76a15d38b387e3c295e940258861bcda0d21c827cec0fb78b380a7462cce50e7",
+          "n_chars": 828,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 1
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.68,
+      "retrieval_matched_tokens": [
+        "alfa",
+        "aproximadamente",
+        "axones",
+        "controlan",
+        "corticoespinal",
+        "cruzan",
+        "dedos",
+        "distales",
+        "extremidades",
+        "gamma",
+        "importancia",
+        "manos",
+        "mni",
+        "movimientos",
+        "tce",
+        "terminan",
+        "tracto"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.4,
+        "b": 0.8889,
+        "c": 0.7273
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1140
+    },
+    {
+      "id": 39,
+      "pregunta": "Respecto a la evolucion historica del metodo de Carlo Perfetti, cual fue la secuencia correcta de denominaciones que ha recibido a lo largo de su desarrollo?",
+      "opciones": {
+        "a": "Comenzo llamandose Facilitacion Cortical Superior, despues Control Secuencial Progresivo, hasta llamarse por ahora Ejercicio Terapeutico Cognoscitivo",
+        "b": "Comenzo llamandose Control Secuencial Progresivo, despues Ejercicio Terapeutico Cognoscitivo, hasta llamarse por ahora Facilitacion Cortical Superior",
+        "c": "Comenzo llamandose Ejercicio Terapeutico Cognoscitivo, despues Facilitacion Cortical Superior, hasta llamarse por ahora Control Secuencial Progresivo"
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22990965843200684,
+      "fragmentos": [
+        {
+          "sha256": "5ab6cf232b44e3a492390a5a65df129424f3be606235283b039af9e4d9ca6035",
+          "n_chars": 1000,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 0
+        },
+        {
+          "sha256": "35816acdd10760712f8e8579cd6b3906263a99191bdf7c67fa4e0f4d2726474a",
+          "n_chars": 1288,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 22
+        },
+        {
+          "sha256": "f3a8b2e83c1caf53d8ee3197d212f32a6eab99690b6833f1600f2f07b1b6e8b7",
+          "n_chars": 847,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 0
+        },
+        {
+          "sha256": "aa5655250e1b6884c7823ebd9f7f01e0fb5972c24df91e994efcdbca614b28c9",
+          "n_chars": 995,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 20
+        },
+        {
+          "sha256": "334f8e4c2289f9539bffddacbeff89b6a15abfb62d414f509a9ab80b1437acd2",
+          "n_chars": 1037,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 5
+        },
+        {
+          "sha256": "9306900205e2ce9ae82c9fa6e8a9436566886694b031f2b7726768e187633eba",
+          "n_chars": 1196,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 21
+        },
+        {
+          "sha256": "12efc796732690b2d8089e837f20fdad2d648075fd1d308f3dc7afc880c1c1d6",
+          "n_chars": 1143,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 21
+        },
+        {
+          "sha256": "e8116c67a54921d15080d523296d435a8ce717a29f961dd00d48dcf598a0a5dc",
+          "n_chars": 1272,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 3
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.4828,
+      "retrieval_matched_tokens": [
+        "ahora",
+        "carlo",
+        "cognoscitivo",
+        "control",
+        "cortical",
+        "desarrollo",
+        "ejercicio",
+        "hasta",
+        "largo",
+        "llamarse",
+        "perfetti",
+        "progresivo",
+        "secuencial",
+        "superior"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.6667,
+        "b": 0.6667,
+        "c": 0.6667
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 40,
+      "pregunta": "En la descripcion de los componentes del deficit especifico motor del paciente hemiplejico, que afirmacion sobre las sinergias de la extremidad inferior es correcta segun el documento?",
+      "opciones": {
+        "a": "En la sinergia flexora de la extremidad inferior el pie se situa en flexion plantar e inversion, mientras que la autora describe con frecuencia el pie afectado en eversion",
+        "b": "En la sinergia extensora de la extremidad inferior el pie aparece en flexion plantar e inversion, y la autora nunca encontro un paciente con el pie afectado en eversion",
+        "c": "En la sinergia extensora de la extremidad inferior la cadera se presenta en flexion, separacion y rotacion externa, y el pie en flexion dorsal"
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.23468661308288574,
+      "fragmentos": [
+        {
+          "sha256": "f339a36b0770881e0bd88515a74991bb63fcbe406369549694af2f83fb7b4031",
+          "n_chars": 868,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 6
+        },
+        {
+          "sha256": "6a1f989b2f7b622d2167f36ea668dc8c8749e4b5d7e85411133389a32ffb2a0b",
+          "n_chars": 1134,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 6
+        },
+        {
+          "sha256": "334f8e4c2289f9539bffddacbeff89b6a15abfb62d414f509a9ab80b1437acd2",
+          "n_chars": 1037,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 5
+        },
+        {
+          "sha256": "beb68474be8e24d989802ea90b9cf28f01f8d0aaa2869f9e141f5d9f29c94780",
+          "n_chars": 890,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 34
+        },
+        {
+          "sha256": "1eb580926ae728c680d5740b1ee5b2c298f99f6c9eab8686089db9e06bcbe8d1",
+          "n_chars": 1184,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 10
+        },
+        {
+          "sha256": "a46f08f5fc24d56c754006202c1f71d1c8105629fc386d513192ead4c72c9c38",
+          "n_chars": 1092,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 9
+        },
+        {
+          "sha256": "21bd97e16e559681367b9efd34965646a03005c53043095a85a56b86bba0d96a",
+          "n_chars": 1252,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 9
+        },
+        {
+          "sha256": "50fdfbe42438582b3e99713fedaf8ad7ede9ec4ec91462d472dcbc45545e9472",
+          "n_chars": 473,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 13
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.4444,
+      "retrieval_matched_tokens": [
+        "afectado",
+        "aparece",
+        "autora",
+        "extensora",
+        "extremidad",
+        "inferior",
+        "nunca",
+        "paciente",
+        "pie",
+        "plantar",
+        "sinergia",
+        "sinergias"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.6,
+        "b": 0.7333,
+        "c": 0.6667
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 41,
+      "pregunta": "Al comparar la irradiacion fisiologica con la patologica del paciente hemiplejico, cual de las siguientes diferencias cualitativas describe correctamente el documento?",
+      "opciones": {
+        "a": "La irradiacion del hemiplejico activa cada vez grupos musculares distintos y con un caracter funcional plenamente adaptado a la tarea motora",
+        "b": "La diferencia cualitativa consiste en un umbral mas bajo para la aparicion de la irradiacion y una mayor intensidad de la misma",
+        "c": "La irradiacion en el paciente hemiplejico activa siempre los mismos grupos musculares, que son los que aparecen en los esquemas sinergicos y que no revisten ningun caracter funcional respecto a la tarea motora"
+      },
+      "respuesta_correcta": "c",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.23108983039855957,
+      "fragmentos": [
+        {
+          "sha256": "882468babca37b78dd641df1264a67c132046f2300e50f2f7f3e1f9457b602d4",
+          "n_chars": 855,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 8
+        },
+        {
+          "sha256": "f339a36b0770881e0bd88515a74991bb63fcbe406369549694af2f83fb7b4031",
+          "n_chars": 868,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 6
+        },
+        {
+          "sha256": "5e616d33a64a48f692d4e20b79444843cc85d965cbabb2881e4aed7376753d00",
+          "n_chars": 1001,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 1
+        },
+        {
+          "sha256": "1eb580926ae728c680d5740b1ee5b2c298f99f6c9eab8686089db9e06bcbe8d1",
+          "n_chars": 1184,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 10
+        },
+        {
+          "sha256": "889024b6294d1eb68055c87b24752ea6a467194d94e9e26a7a53870b8e3901b1",
+          "n_chars": 623,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 7
+        },
+        {
+          "sha256": "01acb5e851fa9b6f62b7db57f7878354a3c3ca00234cd31a1daab4853943c615",
+          "n_chars": 1227,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 8
+        },
+        {
+          "sha256": "54671fe3c33b15440069689d93a28154988d1817e32e1b84b4fadc7a4b670fb0",
+          "n_chars": 1042,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 15
+        },
+        {
+          "sha256": "b9eec4480eb43baa55b8ddbe319193660b0c4d77bd2091800fc96758ff8fdc6e",
+          "n_chars": 1009,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 15
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.5,
+      "retrieval_matched_tokens": [
+        "activa",
+        "aparecen",
+        "cualitativas",
+        "diferencias",
+        "esquemas",
+        "funcional",
+        "grupos",
+        "mismos",
+        "motora",
+        "musculares",
+        "paciente",
+        "revisten",
+        "siempre",
+        "tarea"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.5714,
+        "b": 0.4545,
+        "c": 0.6667
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1183
+    },
+    {
+      "id": 42,
+      "pregunta": "Sobre las alteraciones del reclutamiento motor y la capacidad del sistema nervioso para modular la contraccion, que afirmacion es correcta segun el documento?",
+      "opciones": {
+        "a": "La capacidad de modificacion es exquisita en musculos con un cociente de inervacion bajo, como la mano o el ojo, y menos fina en musculos como el cuadriceps o el triceps sural, con cociente de inervacion mas elevado",
+        "b": "La capacidad de modificacion es mas fina en musculos con cociente de inervacion elevado, como el cuadriceps, y peor en la mano o el ojo",
+        "c": "El sistema nervioso modifica la intensidad de la contraccion unicamente variando el numero de unidades motoras (componente espacial), sin poder alterar la frecuencia de descarga"
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.2290329933166504,
+      "fragmentos": [
+        {
+          "sha256": "3336d446c4c727b1eb4ddd7270f0a8dc2fbf07e5ed5d852b4057a340017c1a83",
+          "n_chars": 1215,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 10
+        },
+        {
+          "sha256": "1eb580926ae728c680d5740b1ee5b2c298f99f6c9eab8686089db9e06bcbe8d1",
+          "n_chars": 1184,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 10
+        },
+        {
+          "sha256": "8f5adbeab013653c3b2d682587d8c57ccea88e94e14db6c2ac99f3917ddb526f",
+          "n_chars": 686,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 1
+        },
+        {
+          "sha256": "c31b20990dbd25a467f769e9f35d29556bd1403bec22e2d54dada0f85a9ba586",
+          "n_chars": 1109,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 43
+        },
+        {
+          "sha256": "48992809348bac2b571af6aaaf4799829650ae0c7ff252b2c6727750ddd5e83b",
+          "n_chars": 1244,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 13
+        },
+        {
+          "sha256": "164b4068180f19a0f593f6b09ada9a9a874030fd61665f09e7cc0d892d6b4d16",
+          "n_chars": 1107,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 16
+        },
+        {
+          "sha256": "9f612d5e7ee4bd52b73edb337c58b59cc2e26ec3d578d6409960deff31f181bb",
+          "n_chars": 480,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 15
+        },
+        {
+          "sha256": "08d5aeb6352574318ebba81d09170db38f3f7044e76f020f0b3467bf8d2f7ad3",
+          "n_chars": 1090,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 33
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.5357,
+      "retrieval_matched_tokens": [
+        "alteraciones",
+        "bajo",
+        "capacidad",
+        "cociente",
+        "elevado",
+        "exquisita",
+        "fina",
+        "mano",
+        "motor",
+        "nervioso",
+        "ojo",
+        "reclutamiento",
+        "sistema",
+        "sobre",
+        "sural"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.625,
+        "b": 0.5,
+        "c": 0.5294
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1199
+    },
+    {
+      "id": 43,
+      "pregunta": "Respecto a la ejecucion de los ejercicios de primer grado del ETC, que conducta es correcta segun el documento si durante el ejercicio aparece una contraccion voluntaria de los musculos implicados en la tarea?",
+      "opciones": {
+        "a": "Se solicitan contracciones voluntarias de forma activa-asistida y, si aparecen, se refuerzan para progresar antes hacia el segundo grado",
+        "b": "Durante su ejecucion no se piden contracciones voluntarias de los musculos implicados y, si esto ocurriese, no se debe continuar con la ejecucion del ejercicio",
+        "c": "Se permiten las contracciones voluntarias siempre que el paciente mantenga el control visual de la articulacion movilizada"
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22718477249145508,
+      "fragmentos": [
+        {
+          "sha256": "7e6ed2494420668ded6a00c0a75d619e29d3f5f4d39e2c1a30994ad2eb6c615a",
+          "n_chars": 1080,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 19
+        },
+        {
+          "sha256": "8d289be260110910bc429a8bd67040ab660ebfb1b7f5d858c3ad558cfb2d4a97",
+          "n_chars": 1073,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 14
+        },
+        {
+          "sha256": "c95c4b64baff707f047b6e8f51e1de8c73c5144d7f10fe23737f94f345d0babf",
+          "n_chars": 1180,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 15
+        },
+        {
+          "sha256": "413abc92c58e15f6c359f8aaff9e356d8a809ca6674ff043cbfa293b72f5ee6b",
+          "n_chars": 1238,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 14
+        },
+        {
+          "sha256": "1c288735a7c3999212c7a58e1e2e2c927e1a3b18967d00ff0d0c524ee44f98f1",
+          "n_chars": 1126,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 23
+        },
+        {
+          "sha256": "674ddb9403f23490d9af80e128449e57608e825dfda210d4d03417f36c9e1f7d",
+          "n_chars": 1102,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 16
+        },
+        {
+          "sha256": "6bf4bb3b71e2c02d55d2db838789557065f81ed9479523319784c0633469c092",
+          "n_chars": 502,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 19
+        },
+        {
+          "sha256": "01acb5e851fa9b6f62b7db57f7878354a3c3ca00234cd31a1daab4853943c615",
+          "n_chars": 1227,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 8
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.6,
+      "retrieval_matched_tokens": [
+        "continuar",
+        "contracciones",
+        "debe",
+        "durante",
+        "ejercicio",
+        "ejercicios",
+        "esto",
+        "etc",
+        "grado",
+        "implicados",
+        "ocurriese",
+        "piden",
+        "primer",
+        "tarea",
+        "voluntarias"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.5385,
+        "b": 0.8333,
+        "c": 0.5
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 44,
+      "pregunta": "Un paciente con ICTUS presenta dificultad para la dorsiflexion de tobillo y, a diferencia de la marcha en estepage, realiza un movimiento de circunduccion de cadera con elevacion de la pelvis para salvar el equino durante la oscilacion. Segun el documento, ¿que combinacion de hallazgos determina que adopte esta marcha en guadana o de segador y no la marcha en estepage?",
+      "opciones": {
+        "a": "Espasticidad de soleo y gemelos junto con debilidad de la musculatura pretibial",
+        "b": "Debilidad de los flexores de cadera junto con sinergia extensora",
+        "c": "Contractura del soleo junto con miedo a que la extremidad inferior claudique"
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22665119171142578,
+      "fragmentos": [
+        {
+          "sha256": "5e616d33a64a48f692d4e20b79444843cc85d965cbabb2881e4aed7376753d00",
+          "n_chars": 1001,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 1
+        },
+        {
+          "sha256": "16a54386668ce520a5e0720a774b01aec14bcf8230b4a83f3153b585bcb9882b",
+          "n_chars": 1253,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 2
+        },
+        {
+          "sha256": "4bf03164158c1c8d5d0606f42818ef3af9cf397ed3f2bed7d77f30e8f476c62f",
+          "n_chars": 608,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 2
+        },
+        {
+          "sha256": "b7431e4db694770867660be80c9694155d92ca30d6acb404a868e2083300c905",
+          "n_chars": 1127,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 6
+        },
+        {
+          "sha256": "404220a5465a60b4193a17a449a32ffbf119014a34c3f33ee7519775166e1e0e",
+          "n_chars": 1058,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 4
+        },
+        {
+          "sha256": "bfd288e797c94a9754caaa788f4d46fde70f889dcf089faf2fcea0b2fc8b63d2",
+          "n_chars": 783,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 1
+        },
+        {
+          "sha256": "1967bd7c06a03462df6a4deb33d83d8e8bd698693757a73de4d694aa10a92483",
+          "n_chars": 1083,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 2
+        },
+        {
+          "sha256": "59d2ab12c84f1636d4531e2934f310ed4f5f0672f692019038a8a43427a6ae82",
+          "n_chars": 1205,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 3
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.4545,
+      "retrieval_matched_tokens": [
+        "cadera",
+        "debilidad",
+        "dificultad",
+        "durante",
+        "equino",
+        "estepage",
+        "extensora",
+        "flexores",
+        "ictus",
+        "marcha",
+        "movimiento",
+        "paciente",
+        "segador",
+        "sinergia",
+        "tobillo"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.7143,
+        "b": 0.8333,
+        "c": 0.4286
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 45,
+      "pregunta": "Al diferenciar la marcha en estepage de origen central (hemiplejia/ICTUS) de la causada por afectacion del nervio ciatico popliteo externo (CPE), el dato clinico clave segun el documento es:",
+      "opciones": {
+        "a": "Solo el paciente con lesion del CPE presenta apoyo inicial sobre la punta del pie",
+        "b": "El paciente hemiplejico presenta ademas afectacion del miembro superior (flexion de codo, rotacion interna de hombro), mientras que el de lesion aislada del CPE no",
+        "c": "El paciente con lesion del CPE incrementa la flexion de cadera y rodilla, compensacion que no aparece en la hemiplejia"
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22786688804626465,
+      "fragmentos": [
+        {
+          "sha256": "5e616d33a64a48f692d4e20b79444843cc85d965cbabb2881e4aed7376753d00",
+          "n_chars": 1001,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 1
+        },
+        {
+          "sha256": "404220a5465a60b4193a17a449a32ffbf119014a34c3f33ee7519775166e1e0e",
+          "n_chars": 1058,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 4
+        },
+        {
+          "sha256": "1967bd7c06a03462df6a4deb33d83d8e8bd698693757a73de4d694aa10a92483",
+          "n_chars": 1083,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 2
+        },
+        {
+          "sha256": "16a54386668ce520a5e0720a774b01aec14bcf8230b4a83f3153b585bcb9882b",
+          "n_chars": 1253,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 2
+        },
+        {
+          "sha256": "e424a79b5f172f7f51c4a256222a800a2679a4e9a5a759bd776f2c6d240c9fdc",
+          "n_chars": 1179,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 0
+        },
+        {
+          "sha256": "cd366f002949f865293e3c4c79209e4cce4629e5e027ea07662e0e1aaf50bbab",
+          "n_chars": 1206,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 5
+        },
+        {
+          "sha256": "840e61dc2df698f82545e00d0b9717a7b2a6545082945824ed3adb771c3508d4",
+          "n_chars": 637,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 32
+        },
+        {
+          "sha256": "f339a36b0770881e0bd88515a74991bb63fcbe406369549694af2f83fb7b4031",
+          "n_chars": 868,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 6
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.3636,
+      "retrieval_matched_tokens": [
+        "codo",
+        "cpe",
+        "diferenciar",
+        "externo",
+        "hombro",
+        "ictus",
+        "marcha",
+        "miembro",
+        "mientras",
+        "nervio",
+        "paciente",
+        "superior"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.9,
+        "b": 0.5625,
+        "c": 0.4
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 46,
+      "pregunta": "En un lesionado medular, respecto a las contraindicaciones autonomicas de la FES de bipedestacion y marcha, ¿que afirmacion sobre la susceptibilidad a la disreflexia autonomica es correcta segun el documento?",
+      "opciones": {
+        "a": "Las lesiones de nivel T5 y superiores son muy susceptibles, y a partir de D11 e inferiores suele no producirse",
+        "b": "Solo aparece en lesiones por debajo de T10, por interrupcion completa del simpatico sacro",
+        "c": "Es independiente del nivel lesional porque depende unicamente del estado de la piel donde se colocan los electrodos"
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22968482971191406,
+      "fragmentos": [
+        {
+          "sha256": "1ec3e5ea4149606ab6b8c7358f945421fe9a37218d6476cb1bfd34dda6e09526",
+          "n_chars": 967,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 20
+        },
+        {
+          "sha256": "be610e55a58f24bd3ad1844a16da8b702da5fef468d3f13e7c6d1c59cf70e7a8",
+          "n_chars": 1286,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 20
+        },
+        {
+          "sha256": "0e259ffedd76979ea44fca8b980a515ded0a1b657fff17485fba10b83bd4d108",
+          "n_chars": 1015,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 23
+        },
+        {
+          "sha256": "8a8578191a216cd1d3ab2ce35c2339ecbb35f78c07bb333ef337b1f8bd69d4b5",
+          "n_chars": 1104,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 27
+        },
+        {
+          "sha256": "9e4f0584b6e6fef82b3fb38953165d32855cf96e152f23a0a0430a1124c636f2",
+          "n_chars": 647,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 23
+        },
+        {
+          "sha256": "005e201bb68da685be22a01c6e06e709d10b06572c4e6a065d2b14a48174058b",
+          "n_chars": 1183,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 27
+        },
+        {
+          "sha256": "0db603589990546b41562f971e3922077abdeab13dab64a4ca51b3a717137e99",
+          "n_chars": 951,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 22
+        },
+        {
+          "sha256": "a4425ea96ee2fe71479875f877c4186dc007562742e462c3b0d19d8446b8c0b6",
+          "n_chars": 648,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 42
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.36,
+      "retrieval_matched_tokens": [
+        "disreflexia",
+        "inferiores",
+        "muy",
+        "nivel",
+        "partir",
+        "producirse",
+        "suele",
+        "superiores",
+        "susceptibles"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 1.0,
+        "b": 0.25,
+        "c": 0.4545
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1183
+    },
+    {
+      "id": 47,
+      "pregunta": "Sobre los parametros de la corriente en estimulacion electrica funcional (FES) y el estudio de Kesar et al. en FES antiequino, el documento concluye que:",
+      "opciones": {
+        "a": "Una frecuencia fija de 30 Hz logra mejor correccion del equino que una frecuencia modulada, al mantener constante el reclutamiento",
+        "b": "Debe emplearse una frecuencia inferior a 20 Hz para minimizar la fatiga, ya que por encima de ese valor no se obtiene contraccion util",
+        "c": "La frecuencia modulada (p. ej. variar entre 20 y 40 Hz) disminuye la fatiga muscular, y en el estudio el grupo con frecuencia variable logro mayor dorsiflexion de tobillo y menor flexion de rodilla"
+      },
+      "respuesta_correcta": "c",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22685837745666504,
+      "fragmentos": [
+        {
+          "sha256": "1371257ff484299fd52a2bb5fd80b2859508c4a1cabb66d53f2be5cfec4bc338",
+          "n_chars": 1296,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 25
+        },
+        {
+          "sha256": "a3e2331cf654b23d032973518777f6967ca39c1c1906c1bd62f06d12ba62ba56",
+          "n_chars": 1156,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 19
+        },
+        {
+          "sha256": "797144d9e6851e0f51127577798103ff02907da13ad13c89c67351102884820f",
+          "n_chars": 1204,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 19
+        },
+        {
+          "sha256": "0e259ffedd76979ea44fca8b980a515ded0a1b657fff17485fba10b83bd4d108",
+          "n_chars": 1015,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 23
+        },
+        {
+          "sha256": "d84b359fb42673ea720875f0dc69e74562f47f6eb37efa7eb9631d845bc58f74",
+          "n_chars": 323,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 26
+        },
+        {
+          "sha256": "cfab6138a39b0d24e9e875e0ee008dbef488a9cb3926e17eb6ed824b034e450c",
+          "n_chars": 809,
+          "documento": "03_sistemas_motores_descendentes.pdf",
+          "pagina": 25
+        },
+        {
+          "sha256": "3336d446c4c727b1eb4ddd7270f0a8dc2fbf07e5ed5d852b4057a340017c1a83",
+          "n_chars": 1215,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 10
+        }
+      ],
+      "num_fragmentos": 7,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": false,
+      "retrieval_overlap": 0.2857,
+      "retrieval_matched_tokens": [
+        "antiequino",
+        "estudio",
+        "fes",
+        "frecuencia",
+        "kesar",
+        "mayor",
+        "modulada",
+        "muscular"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.5,
+        "b": 0.25,
+        "c": 0.4706
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1075
+    },
+    {
+      "id": 48,
+      "pregunta": "Respecto al exoesqueleto Lokomat aplicado a la reeducacion de la marcha, el documento senala que produce una marcha similar a la fisiologica pero con alteraciones notables del patron consistentes en:",
+      "opciones": {
+        "a": "Restriccion de la traslacion lateral normal del centro de gravedad y restriccion de la rotacion de cadera",
+        "b": "Contacto permanente del pie con una plataforma de trayectoria eliptica que dirige el movimiento distal",
+        "c": "Liberacion completa de las rodillas para permitir el acceso del terapeuta y la facilitacion manual"
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.2272815704345703,
+      "fragmentos": [
+        {
+          "sha256": "59deb19803bc006b1c5ef9b755327e997b53f8bbc422278c868418a8e0aa24db",
+          "n_chars": 1224,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 48
+        },
+        {
+          "sha256": "e424a79b5f172f7f51c4a256222a800a2679a4e9a5a759bd776f2c6d240c9fdc",
+          "n_chars": 1179,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 0
+        },
+        {
+          "sha256": "d82974e3d3632529c71a1697f5f6719f68c4be070ca9ab5c99570eff34a2a9ef",
+          "n_chars": 1246,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 12
+        },
+        {
+          "sha256": "8400996627b9c44d6325118e363c900721dff9e1818ea7402ad25a3e485b9153",
+          "n_chars": 1281,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 47
+        },
+        {
+          "sha256": "40e50ec268a1fbf14cb1a9daf054bcee20c060e3c82eb5492086c7341b3ff128",
+          "n_chars": 426,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 15
+        },
+        {
+          "sha256": "d2f85ce061916415d38d1799a5d59f25ac427e7c48dbc6f56939d63500b5fe5c",
+          "n_chars": 954,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 48
+        },
+        {
+          "sha256": "d9364a20db88833e3443d8d54e2ade833b6b39878a06ab5ed95c48b5b6a5287b",
+          "n_chars": 1242,
+          "documento": "01_bobath_concepto.pdf",
+          "pagina": 28
+        },
+        {
+          "sha256": "66d347627e4da159d415841ce537e00e7fb2e8ca7862d3ef14761fb738b7f9b9",
+          "n_chars": 413,
+          "documento": "05_bloques_3_4_tecnicas.pdf",
+          "pagina": 48
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.5,
+      "retrieval_matched_tokens": [
+        "alteraciones",
+        "cadera",
+        "centro",
+        "gravedad",
+        "lateral",
+        "lokomat",
+        "marcha",
+        "normal",
+        "notables",
+        "pero",
+        "produce",
+        "similar"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.625,
+        "b": 0.7778,
+        "c": 0.375
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 49,
+      "pregunta": "En la estabilización rítmica, técnica dirigida al antagonista, ¿qué tipo de actividad muscular se busca y cuál es su característica esencial respecto a la resistencia?",
+      "opciones": {
+        "a": "Se busca una contracción isotónica concéntrica alternante de los agonistas, aplicando la mayor resistencia posible hasta vencer el patrón rotador",
+        "b": "Se emplea la contracción isométrica de patrones antagonistas buscando la co-contracción de antagonistas, sin realizar tanta resistencia como para que aparezca la contracción isotónica",
+        "c": "Se persigue el movimiento activo libre del agonista en todo el recorrido, sin resistencia manual del fisioterapeuta para evitar la fatiga"
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.22855496406555176,
+      "fragmentos": [
+        {
+          "sha256": "0b859b761d02d6938971219df43e28e0a84abd05e898856f20ac9d37c48b564d",
+          "n_chars": 1212,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 11
+        },
+        {
+          "sha256": "9e2f49da191de39966c700e4c7ba35eaa0b582a2f008ab2ee0d081233f9303a8",
+          "n_chars": 1273,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 20
+        },
+        {
+          "sha256": "10d04d36341ac55fafd793eb1eecd5ff183ac99f55bcf71f5a4231088a91d12a",
+          "n_chars": 1257,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 18
+        },
+        {
+          "sha256": "0c54038d32690d30152115ff6b011f07eb4a3dbcdbf9c11d0f05e63322f82e93",
+          "n_chars": 1188,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 21
+        },
+        {
+          "sha256": "9be9c7f4b35d8d4ead7cb7f80b797fe15fa538a83275b5fe9a882479785ac8b6",
+          "n_chars": 598,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 20
+        },
+        {
+          "sha256": "f0168fbf0164dff66c3baeda6c4d2f4680ae78e36e12f4b7052e6df86388e4c8",
+          "n_chars": 905,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 14
+        },
+        {
+          "sha256": "0dd18d93eb1b94be4150a0146a4fb4731c7f5613bdec7b02083f7c79ba529577",
+          "n_chars": 1121,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 19
+        },
+        {
+          "sha256": "8eb307056305a1770665885d0dfc35ae2e28b625d8143e445a3f0ab618c8272c",
+          "n_chars": 613,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 19
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.5769,
+      "retrieval_matched_tokens": [
+        "antagonistas",
+        "aparezca",
+        "contracción",
+        "emplea",
+        "estabilización",
+        "isométrica",
+        "isotónica",
+        "muscular",
+        "patrones",
+        "realizar",
+        "resistencia",
+        "rítmica",
+        "sin",
+        "tanta",
+        "técnica"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.7857,
+        "b": 0.9167,
+        "c": 0.6154
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 50,
+      "pregunta": "Respecto al componente rotador en los patrones de FNP, ¿cuál es su papel en la elongación y en la ejecución del patrón según el documento?",
+      "opciones": {
+        "a": "El componente rotador es el primero que se considera al estirar el patrón completo y el último que sale en la contracción muscular",
+        "b": "El componente rotador es el que permite la elongación máxima del patrón; se considera en primer y último término al estirar porque elonga las fibras, y es el primero que sale al iniciar una contracción muscular",
+        "c": "El componente rotador es irrelevante para la elongación, ya que ésta depende únicamente del componente principal de flexión o extensión"
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.2285594940185547,
+      "fragmentos": [
+        {
+          "sha256": "cc7f6f8743b5b8cffa978ebefa82b9aaa316007af13fb75532f2f33d24dcdb32",
+          "n_chars": 1271,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 23
+        },
+        {
+          "sha256": "53e4779bc56f2ee65861892543b9afb0b128b1d76aa4f58a29bdd133e9c51dc2",
+          "n_chars": 818,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 12
+        },
+        {
+          "sha256": "1fec51ecd43f1f563bc23a00ae9a2fdc2270869ee036abd0952c0f27789417d6",
+          "n_chars": 1144,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 3
+        },
+        {
+          "sha256": "9ca1da79fc715f433b8b150aa15b3901c8f158b1ae49377cb959642ffff498f4",
+          "n_chars": 1187,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 7
+        },
+        {
+          "sha256": "41919036a6d4c0f47bdcde13f83959d0c252983798a71e938eab9267b11c76f0",
+          "n_chars": 881,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 2
+        },
+        {
+          "sha256": "cc853843ac7d097de7f72ea549139bb46fcb0465c3e3500ba8f2b57a87c0c42c",
+          "n_chars": 1259,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 21
+        },
+        {
+          "sha256": "8c8adcf1a471a3642f7c870e6f31afc0c7205371bd9675d92e47e3110816683d",
+          "n_chars": 1048,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 8
+        },
+        {
+          "sha256": "6a5e3c5a1914caf6ca7ed3dca3dbf83c369410d0c974b9d802594259b0e72318",
+          "n_chars": 1253,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 14
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.5556,
+      "retrieval_matched_tokens": [
+        "componente",
+        "considera",
+        "contracción",
+        "elonga",
+        "estirar",
+        "fibras",
+        "muscular",
+        "patrón",
+        "porque",
+        "primer",
+        "primero",
+        "rotador",
+        "sale",
+        "término",
+        "último"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 1.0,
+        "b": 0.9474,
+        "c": 0.6
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 51,
+      "pregunta": "Sobre la concordancia entre pivote distal y componentes proximales en miembros inferiores, según la FNP, ¿qué afirmación es correcta?",
+      "opciones": {
+        "a": "La eversión concuerda con la abducción y rotación interna de cadera, y la inversión con la aducción y rotación externa de cadera",
+        "b": "La eversión concuerda con la aducción y rotación externa de cadera, y la inversión con la abducción y rotación interna de cadera",
+        "c": "La dorsiflexión concuerda con la extensión de cadera y la plantiflexión con la flexión de cadera"
+      },
+      "respuesta_correcta": "a",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.2265641689300537,
+      "fragmentos": [
+        {
+          "sha256": "6fc5d1756b35cc7dc20f241443da90374f5e82808525f5c654163053bdcb5d07",
+          "n_chars": 1119,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 4
+        },
+        {
+          "sha256": "f2565d9bf028c7712b17899510f3fde9932e15d83545a2a65d85f475a9eb146c",
+          "n_chars": 1036,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 15
+        },
+        {
+          "sha256": "a130d63cabdd8ad3c18cad12fbef0052061bb6fdd38a6a1c0b1e7b6122fb01b0",
+          "n_chars": 1093,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 6
+        },
+        {
+          "sha256": "bd7d4c8e34c81d2e39212b299ec4ceb8325ac46a682fc00de96be705f7bf2d5f",
+          "n_chars": 1123,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 3
+        },
+        {
+          "sha256": "7f4e69615def8daeef2a0ed804cc3c9c98033863cc481e94d0ec7d294b0e29b1",
+          "n_chars": 1060,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 15
+        },
+        {
+          "sha256": "a46f08f5fc24d56c754006202c1f71d1c8105629fc386d513192ead4c72c9c38",
+          "n_chars": 1092,
+          "documento": "04_perfetti_etc.pdf",
+          "pagina": 9
+        },
+        {
+          "sha256": "41919036a6d4c0f47bdcde13f83959d0c252983798a71e938eab9267b11c76f0",
+          "n_chars": 881,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 2
+        },
+        {
+          "sha256": "175dfaa30c9f8b0f27f13c10aae7f8eb339251f9d07a3d13ba53ffaae2529912",
+          "n_chars": 473,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 3
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.6087,
+      "retrieval_matched_tokens": [
+        "cadera",
+        "componentes",
+        "concuerda",
+        "distal",
+        "eversión",
+        "externa",
+        "fnp",
+        "inferiores",
+        "interna",
+        "inversión",
+        "miembros",
+        "pivote",
+        "proximales",
+        "rotación"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.7778,
+        "b": 0.7778,
+        "c": 1.0
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 52,
+      "pregunta": "En relación con las indicaciones y contraindicaciones del reflejo de estiramiento como procedimiento básico de facilitación, ¿qué afirmación es correcta?",
+      "opciones": {
+        "a": "Está indicado para mantener la estabilidad postural y contraindicado únicamente cuando el paciente colabora bien",
+        "b": "Está indicado para iniciar el movimiento voluntario y aumentar la rapidez de respuesta en musculatura débil, y está contraindicado en pacientes con dolor",
+        "c": "Está indicado para relajar la musculatura espástica mediante movimientos súbitos y contraindicado solo en musculatura sana"
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.23085784912109375,
+      "fragmentos": [
+        {
+          "sha256": "b481d8310a4b6140c58761348f6926eeb5454728df49612a8f2dff79f2b95f35",
+          "n_chars": 1138,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 22
+        },
+        {
+          "sha256": "cc7f6f8743b5b8cffa978ebefa82b9aaa316007af13fb75532f2f33d24dcdb32",
+          "n_chars": 1271,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 23
+        },
+        {
+          "sha256": "52394512ebba423be328083a39bbb4722bdbacf8adedda2eb4092c85859df7a6",
+          "n_chars": 1129,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 16
+        },
+        {
+          "sha256": "852b089bc9980f64706065eefd976239a46b4c56c2275bf9f72aaf1e4dc7e850",
+          "n_chars": 944,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 22
+        },
+        {
+          "sha256": "a0016488812da74764ca04c17e13506b9b4ebbb2ce1dc10298b3aa1d7ee7d63d",
+          "n_chars": 1193,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 1
+        },
+        {
+          "sha256": "814ab610de5f42880efe75377a1b2b0d5d1a6bccbf46485f8d309137d6addf41",
+          "n_chars": 1172,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 13
+        },
+        {
+          "sha256": "53e4779bc56f2ee65861892543b9afb0b128b1d76aa4f58a29bdd133e9c51dc2",
+          "n_chars": 818,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 12
+        },
+        {
+          "sha256": "9be9c7f4b35d8d4ead7cb7f80b797fe15fa538a83275b5fe9a882479785ac8b6",
+          "n_chars": 598,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 20
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.5833,
+      "retrieval_matched_tokens": [
+        "aumentar",
+        "contraindicado",
+        "dolor",
+        "débil",
+        "estiramiento",
+        "indicado",
+        "iniciar",
+        "movimiento",
+        "musculatura",
+        "pacientes",
+        "rapidez",
+        "reflejo",
+        "respuesta",
+        "voluntario"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.6364,
+        "b": 1.0,
+        "c": 0.7273
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    },
+    {
+      "id": 53,
+      "pregunta": "Respecto al sincronismo normal y al desarrollo del patrón en la FNP, ¿qué afirmación refleja correctamente el documento?",
+      "opciones": {
+        "a": "El proceso normal de desarrollo es de distal a proximal, mientras que el sincronismo normal es de próximo a distal",
+        "b": "El proceso normal de desarrollo es próximo-distal, mientras que el sincronismo normal es de distal a proximal, iniciándose el movimiento desde la rotación",
+        "c": "Tanto el proceso de desarrollo como el sincronismo normal son de próximo a distal, y el movimiento se inicia siempre desde el componente principal de flexión"
+      },
+      "respuesta_correcta": "b",
+      "respuesta_ia": "",
+      "opcion_detectada": "desconocida",
+      "es_correcta": false,
+      "timed_out": false,
+      "latency_seconds": 0.23010897636413574,
+      "fragmentos": [
+        {
+          "sha256": "7f4e69615def8daeef2a0ed804cc3c9c98033863cc481e94d0ec7d294b0e29b1",
+          "n_chars": 1060,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 15
+        },
+        {
+          "sha256": "0b859b761d02d6938971219df43e28e0a84abd05e898856f20ac9d37c48b564d",
+          "n_chars": 1212,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 11
+        },
+        {
+          "sha256": "f2565d9bf028c7712b17899510f3fde9932e15d83545a2a65d85f475a9eb146c",
+          "n_chars": 1036,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 15
+        },
+        {
+          "sha256": "bf488118b4f82f0acb35dc94efe4325cba1ee32022079b5b16b57a27be3d5c22",
+          "n_chars": 1247,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 18
+        },
+        {
+          "sha256": "cc7f6f8743b5b8cffa978ebefa82b9aaa316007af13fb75532f2f33d24dcdb32",
+          "n_chars": 1271,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 23
+        },
+        {
+          "sha256": "96f7bf628e2a6e3c6bb2fdfa3c6657454f8b427295de2552635a39d1fd187077",
+          "n_chars": 1122,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 6
+        },
+        {
+          "sha256": "a130d63cabdd8ad3c18cad12fbef0052061bb6fdd38a6a1c0b1e7b6122fb01b0",
+          "n_chars": 1093,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 6
+        },
+        {
+          "sha256": "6fc5d1756b35cc7dc20f241443da90374f5e82808525f5c654163053bdcb5d07",
+          "n_chars": 1119,
+          "documento": "06_fnp_facilitacion_neuromuscular.pdf",
+          "pagina": 4
+        }
+      ],
+      "num_fragmentos": 8,
+      "context_truncated_for_small_window": true,
+      "retrieval_recall_hit": true,
+      "retrieval_overlap": 0.6,
+      "retrieval_matched_tokens": [
+        "desarrollo",
+        "desde",
+        "distal",
+        "fnp",
+        "movimiento",
+        "normal",
+        "patrón",
+        "proceso",
+        "proximal",
+        "próximo",
+        "rotación",
+        "sincronismo"
+      ],
+      "oracle_context_used": false,
+      "option_evidence_scores": {
+        "a": 0.875,
+        "b": 0.8333,
+        "c": 0.7857
+      },
+      "answer_confidence": 0.0,
+      "effective_retrieved_top_k": 8,
+      "context_token_count": 1200
+    }
+  ]
+}

@@ -47,6 +47,8 @@ Two experiments underpin the paper, and both are published here in full:
 | Options offered | `a` / `b` / `c` — abstention is forbidden by design (anti-refusal clinical framing) | `a` / `b` / `c` / **`d) No puede responderse con la documentación disponible`** — abstention is a legitimate answer |
 | Headline result | RAG improves **4/4** models; pooled **+12.7 pp** over 212 paired evaluations (McNemar *p* ≈ 0.001) | Pooled hallucination falls from **64.7 %** to **30.2 %**, with coverage essentially unchanged (85.9 % → 84.0 %) |
 
+Preceding both, and also published here in full, is the **exploratory campaign along the scale axis**: 7 models from 7B to 72B parameters × with-RAG × the same 53 questions = **371 inferences**, all seven under identical retrieval (`recall@k = 92.45 %`) and on the same cluster RTX 4090. It is the source of **Table 3** and of the accuracy-latency contrast the paper draws between scale and interactivity (88.68 % at 149.6 s against 75.47 % at 3.5 s). It lives in `results_scale_campaign_sanitized/`.
+
 Two further analyses are also published: an adjudicated **taxonomy of the 131 erroneous P1 responses** (five mutually exclusive categories, T1–T5) and a **blind detectability panel** in which **three LLM judges** (two weak local models and one frontier model) rate how detectable each error is without access to the ground truth. The panel contains **no independent human rater**: see [point 6 below](#6-there-is-no-independent-human-validation).
 
 > ### Warning: P1 and P2 accuracies are NOT comparable with each other
@@ -67,9 +69,10 @@ Two further analyses are also published: an adjudicated **taxonomy of the 131 er
 | `results_ablation_p1/` | The 8 raw reports of Study P1 (4 models × 2 arms), 53 records each = **424 inferences**, including each model's full free-text reasoning. These reports carry **no corpus fragments**. |
 | `results_hallucination_p2_sanitized/` | The 24 raw reports of Study P2 (4 models × 2 arms × 3 banks) = **760 inferences**. The retrieved context (`fragmentos`) has been **replaced by SHA-256 hashes** — see below. |
 | `results_retrieval_exploratory_sanitized/` | The 4 raw reports of the exploratory retrieval campaign over the definitive 9-document index (4 models × with-RAG × 53 questions) = **212 inferences**. They are the **source of the article's `recall@k = 88.7 %`** (47/53 in each of the four) and they hold the **retrieved context that Study P1 replayed**, so they close the provenance chain of `results_ablation_p1/`. `fragmentos` is hashed here too. **Their accuracy figures are not P1's** — see the dictionary in the folder. |
+| `results_scale_campaign_sanitized/` | The 7 raw reports of the **exploratory campaign along the scale axis** (7 models from 7B to 72B × with-RAG × 53 questions) = **371 inferences**, run on the cluster RTX 4090 on 25 July 2026. They are the **source of Table 3 of the article**. Retrieval is identical across all seven (`recall@k = 92.45 %`, 49/53 in every file), so any difference in accuracy belongs to the generator alone. `fragmentos` is hashed here too. **Their accuracy figures are not P1's** — see the dictionary in the folder. |
 | `aggregates/` | 16 pre-computed summary and per-item analysis files: RAG benefit, hallucination, error taxonomy (including the two LLM judges' pre-labelling), detectability panel, retrieval provenance, resolution of the unparsed answers and distractor effect. |
 | `annotation/` | The review material and the answer keys for the detectability panel and the error taxonomy. **Despite the file names, it holds no independent human ratings** — see [point 6](#6-there-is-no-independent-human-validation). |
-| `exploratory/` | Partial raw data and rankings from the preliminary scale-oriented campaign. **Deprecated** — see the caveats below and in `exploratory/DATA_DICTIONARY.md`. |
+| `exploratory/` | Partial raw data and rankings from an **earlier, superseded** preliminary campaign: 493 evaluations over a 17-question bank on the CPU cluster. **Deprecated, and not the campaign the article reports** — the article's scale campaign is `results_scale_campaign_sanitized/`. See the caveats below and in `exploratory/DATA_DICTIONARY.md`. |
 | `code/` | The study's source code: an **analysis layer** (13 files) runnable against the published data alone, an **inference layer** (9 scripts) published for inspection, and `reproduce.py`, which verifies the whole study with one command. **MIT licence**, separate from the data. See [The code](#the-code). |
 
 Field names inside the data files are in **Spanish** (`pregunta`, `respuesta_ia`, `es_correcta`, `abstiene`, `alucina`, …). Every field is documented **in English** in the `DATA_DICTIONARY.md` of its folder.
@@ -128,7 +131,7 @@ The 24 raw reports of Study P2 originally carried, for every question in the wit
 
 This preserves the scientific function of the field while removing only the protected text itself. A reader who holds a licensed copy of the corpus can rebuild the chunks with the published parameters, hash them, and **verify exactly which passage was retrieved for every question** — without a single line of protected text being redistributed here. Document and page are resolvable only for the `original` bank (via `aggregates/chunk_provenance.json`); for the TRAP and OOD banks no provenance mapping exists, and those fragments carry `"documento": null, "pagina": null, "provenance": "no_disponible"`. The full schema is documented in `results_hallucination_p2_sanitized/DATA_DICTIONARY.md`.
 
-The same treatment is applied to the four reports of `results_retrieval_exploratory_sanitized/` (1 472 fragments, **all** of them carrying document and page, since they belong to the `original` bank). The P1 reports never contained the retrieved passages, so they required no such treatment — and the context they consumed is not lost: they **replayed** the fragments of those four exploratory reports, whose 1 472 hashes match, position for position, the ones published for P2.
+The same treatment is applied to the four reports of `results_retrieval_exploratory_sanitized/` (1 472 fragments, **all** of them carrying document and page, since they belong to the `original` bank) and to the seven reports of `results_scale_campaign_sanitized/` (2 947 fragments, likewise **all** carrying document and page). The P1 reports never contained the retrieved passages, so they required no such treatment — and the context they consumed is not lost: they **replayed** the fragments of those four exploratory reports, whose 1 472 hashes match, position for position, the ones published for P2.
 
 ### 4. Long verbatim quotations of the corpus were redacted, in every free-text field
 
@@ -140,19 +143,20 @@ The models were instructed to ground their answers in the retrieved evidence, an
 
 where *N* is the number of words removed. Only the overlapping span is replaced; the surrounding text (the model's own reasoning, or the rest of the field) is preserved untouched.
 
-This affects **43 spans across 13 files, 2 468 words removed in total**, the longest span being 101 words and the shortest 50. By folder:
+This affects **64 spans across 16 files, 3 676 words removed in total**, the longest span being 101 words and the shortest 50. By folder:
 
 | Folder | Spans | Files | Words removed |
 |---|---|---|---|
 | `results_ablation_p1/` | 9 | 2 | 550 |
 | `results_hallucination_p2_sanitized/` | 9 | 4 | 490 |
 | `results_retrieval_exploratory_sanitized/` | 6 | 3 | 350 |
+| `results_scale_campaign_sanitized/` | 21 | 3 | 1 208 |
 | `datasets/` | 4 | 1 | 231 |
 | `aggregates/` | 15 | 3 | 847 |
 | `code/` | **0** | 0 | 0 |
-| **Total** | **43** | **13** | **2 468** |
+| **Total** | **64** | **16** | **3 676** |
 
-By field: **24** in `respuesta_ia` (1 390 words — the three report folders, all in the with-RAG arm), **14** in `cita_soporte` (796 words — 7 in `aggregates/taxonomia_errores.json` and 7 in `aggregates/errores_prelabel.json`, which carries the same judge citations), **4** in `traza_cita` (231 words — `datasets/dataset_gold_standard.json`) and **1** in `cola` (51 words — `aggregates/resolucion_no_parseadas.json`). **No script under `code/` contains a redacted span**: no published script reproduces 50 or more consecutive words of the corpus.
+By field: **45** in `respuesta_ia` (2 598 words — the four report folders, all in the with-RAG arm), **14** in `cita_soporte` (796 words — 7 in `aggregates/taxonomia_errores.json` and 7 in `aggregates/errores_prelabel.json`, which carries the same judge citations), **4** in `traza_cita` (231 words — `datasets/dataset_gold_standard.json`) and **1** in `cola` (51 words — `aggregates/resolucion_no_parseadas.json`). **No script under `code/` contains a redacted span**: no published script reproduces 50 or more consecutive words of the corpus.
 
 For the two evidence fields the provenance is retained so the field still does its job: `dataset_gold_standard.json` keeps its `documento_fuente` and `traza_pagina` siblings, and in `taxonomia_errores.json` the marker is followed by an explicit `Ref.: <document>, p. <page>`. `dataset_trap_validado.json` was audited and required no redaction (longest overlap: 49 words).
 
@@ -160,11 +164,15 @@ For the two evidence fields the provenance is retained so the field still does i
 
 **The complete, unredacted raw data is held by the authors and is available on reasonable request for verification purposes** — for instance, to a reviewer or editor who needs to audit the full model outputs — subject to the copyright constraints of the underlying teaching corpus.
 
-### 5. The preliminary exploratory campaign is only partially preserved
+### 5. An earlier preliminary campaign is superseded, and only partially preserved
 
-The article's opening campaign comprised **493 automated evaluations** across 7 models and 4 embedding models on dual hardware (a local GPU workstation and an HPC CPU cluster). Only **306 of those 493** per-item records survive, and they are published in `exploratory/datos_detallados_preguntas.csv`. The remainder was measured under Fedora and was not preserved through the project's migration to Windows. Every surviving row belongs to the HPC-cluster half of the campaign (`device = Cluster_Amdahl`, `mode = CPU`).
+**The scale campaign the article reports is published in full.** It is `results_scale_campaign_sanitized/`: **371 evaluations**, 7 models × 53 questions, all seven under identical retrieval and on the same cluster GPU. Every cell of Table 3 is re-derivable from those files, and `recall@k = 92.45 %` is byte-identical in all seven. Nothing about that campaign is missing.
 
-The three aggregate files in `exploratory/` (`modelos_ranking.csv`, `embeddings_ranking.csv`, `resumen_ejecutivo.json`) were computed at the time over the **complete 493 evaluations** and are preserved exactly as they were produced; they therefore **cannot be recomputed from the 306 surviving rows**. This gap is why the article's reproducibility checklist answers `[partially]` on the public availability of all data sets. It affects only the exploratory phase, which is explicitly deprecated and used in the paper as motivation, never as evidence: it ran on a different embedding configuration, different hardware and a simpler answer-extraction routine. **The two definitive experiments (P1, 424 inferences; P2, 760 inferences) are preserved in full**, and every claim of the paper rests on those.
+What is only partially preserved is an **earlier campaign that the published one superseded**, kept in `exploratory/` for the historical record. It comprised **493 automated evaluations** across 7 models and 4 embedding models on dual hardware, over a **17-question** preliminary bank that is not the 53-item gold standard. Only **306 of those 493** per-item records survive, in `exploratory/datos_detallados_preguntas.csv`; the remainder was measured under Fedora and was not preserved through the project's migration to Windows. Every surviving row belongs to the HPC-cluster half (`device = Cluster_Amdahl`, `mode = CPU`).
+
+The three aggregate files in `exploratory/` (`modelos_ranking.csv`, `embeddings_ranking.csv`, `resumen_ejecutivo.json`) were computed at the time over the **complete 493 evaluations** and are preserved exactly as they were produced; they therefore **cannot be recomputed from the 306 surviving rows**.
+
+> **Do not read the numbers in `exploratory/` against the article.** They belong to the superseded campaign: a different question bank, a different retrieval configuration and a simpler answer-extraction routine. The `58.82 %` best-model accuracy recorded in `exploratory/resumen_ejecutivo.json` is **not** a figure of the article, and no claim in the paper rests on it. The article's opening campaign is the 371-evaluation one, and the two definitive experiments (P1, 424 inferences; P2, 760 inferences) are preserved in full.
 
 ### 6. There is no independent human validation
 
@@ -220,6 +228,13 @@ clinical-rag-neurophysio-data/
 │   │                                         (47/53) and of the fragments P1 replayed.
 │   ├── report_{model}_GPU_Local_Win11_9doc_{tag}_bge-m3_{timestamp}_SANITIZED.json
 │   └── DATA_DICTIONARY.md
+├── results_scale_campaign_sanitized/  Scale campaign — 7 reports × 53 = 371 inferences.
+│   │                                  Source of Table 3. recall@k = 92.45 % (49/53),
+│   │                                  identical in all seven. Cluster RTX 4090.
+│   ├── report_{model}_GPU_{node}_{...}_SANITIZED.json
+│   └── DATA_DICTIONARY.md            includes the ollama ps residency lines: 100 % GPU
+│                                     for the 7-8B models; 49/54 GB and 52/48 and 56/44
+│                                     CPU/GPU splits for the 70-72B ones
 ├── aggregates/                            16 files
 │   ├── rag_benefit_summary.json                     P1 per-model accuracy, delta, CI, McNemar
 │   ├── hallucination_summary.json                   P2 per-model and pooled rates
@@ -242,7 +257,8 @@ clinical-rag-neurophysio-data/
 │   ├── detectabilidad_humano_CLAVE.json   the ground-truth key that de-blinds those 80 cases (no ratings)
 │   ├── taxonomia_para_anotar.csv          annotation template: the 131 endorsed error labels
 │   └── DATA_DICTIONARY.md
-└── exploratory/                           DEPRECATED preliminary campaign (306 of 493 rows)
+└── exploratory/                           SUPERSEDED earlier campaign (306 of 493 rows,
+    │                                       17-question bank) — NOT the article's Table 3
     ├── datos_detallados_preguntas.csv
     ├── modelos_ranking.csv
     ├── embeddings_ranking.csv
@@ -344,6 +360,8 @@ El trabajo se sostiene sobre dos experimentos, publicados aquí íntegramente:
 | Opciones ofrecidas | `a` / `b` / `c` — la abstención está prohibida por diseño (encuadre clínico anti-rechazo) | `a` / `b` / `c` / **`d) No puede responderse con la documentación disponible`** — la abstención es una respuesta legítima |
 | Resultado principal | El RAG mejora a **4/4** modelos; agregado de **+12,7 pp** sobre 212 pares (McNemar *p* ≈ 0,001) | La alucinación agregada cae del **64,7 %** al **30,2 %**, con la cobertura prácticamente intacta (85,9 % → 84,0 %) |
 
+Por delante de ambos, y publicada aquí también íntegramente, está la **campaña exploratoria del eje de escala**: 7 modelos de 7B a 72B parámetros × con RAG × las mismas 53 preguntas = **371 inferencias**, los siete con la misma recuperación (`recall@k = 92,45 %`) y en la misma RTX 4090 del clúster. Es el origen de la **Tabla 3** y del contraste precisión-latencia que el artículo traza entre escala e interactividad (88,68 % a 149,6 s frente a 75,47 % a 3,5 s). Está en `results_scale_campaign_sanitized/`.
+
 Se publican además dos análisis complementarios: una **taxonomía adjudicada de las 131 respuestas erróneas de P1** (cinco categorías mutuamente excluyentes, T1–T5) y un **panel ciego de detectabilidad** en el que **tres jueces LLM** (dos modelos locales débiles y uno de frontera) valoran hasta qué punto cada error es detectable sin acceso a la solución. El panel **no incluye ningún evaluador humano independiente**: véase el [punto 6](#6-no-hay-validación-humana-independiente).
 
 > ### Advertencia: las precisiones de P1 y P2 NO son comparables entre sí
@@ -364,9 +382,10 @@ Se publican además dos análisis complementarios: una **taxonomía adjudicada d
 | `results_ablation_p1/` | Los 8 reports crudos del estudio P1 (4 modelos × 2 brazos), 53 registros cada uno = **424 inferencias**, con el razonamiento libre completo de cada modelo. Estos reports **no contienen fragmentos del corpus**. |
 | `results_hallucination_p2_sanitized/` | Los 24 reports crudos del estudio P2 (4 modelos × 2 brazos × 3 bancos) = **760 inferencias**. El contexto recuperado (`fragmentos`) se ha **sustituido por hashes SHA-256** (véase más abajo). |
 | `results_retrieval_exploratory_sanitized/` | Los 4 reports crudos de la campaña exploratoria de recuperación sobre el índice definitivo de 9 documentos (4 modelos × con RAG × 53 preguntas) = **212 inferencias**. Son el **origen del `recall@k = 88,7 %` del artículo** (47/53 en cada uno de los cuatro) y contienen el **contexto recuperado que el estudio P1 reutilizó**, con lo que cierran la cadena de procedencia de `results_ablation_p1/`. Aquí `fragmentos` también va hasheado. **Sus cifras de precisión no son las de P1**: véase el diccionario de la carpeta. |
+| `results_scale_campaign_sanitized/` | Los 7 reports crudos de la **campaña exploratoria del eje de escala** (7 modelos de 7B a 72B × con RAG × 53 preguntas) = **371 inferencias**, ejecutadas en la RTX 4090 del clúster el 25 de julio de 2026. Son el **origen de la Tabla 3 del artículo**. La recuperación es idéntica en los siete (`recall@k = 92,45 %`, 49/53 en cada fichero), de modo que cualquier diferencia de precisión pertenece solo al generador. Aquí `fragmentos` también va hasheado. **Sus cifras de precisión no son las de P1**: véase el diccionario de la carpeta. |
 | `aggregates/` | 16 ficheros de resumen precalculado y de análisis por ítem: beneficio del RAG, alucinación, taxonomía de errores (incluido el pre-etiquetado de los dos jueces LLM), panel de detectabilidad, procedencia del *retrieval*, resolución de las respuestas no parseables y efecto de los distractores. |
 | `annotation/` | El material de revisión y las claves del panel de detectabilidad y de la taxonomía de errores. **Pese a los nombres de los ficheros, no contiene valoraciones humanas independientes** — véase el [punto 6](#6-no-hay-validación-humana-independiente). |
-| `exploratory/` | Crudos parciales y rankings de la campaña preliminar de escala. **Fase deprecada** — véanse las salvedades más abajo y en `exploratory/DATA_DICTIONARY.md`. |
+| `exploratory/` | Crudos parciales y rankings de una campaña preliminar **anterior y superada**: 493 evaluaciones sobre un banco de 17 preguntas en el clúster de CPU. **Deprecada, y no es la campaña que reporta el artículo** — la campaña de escala del artículo es `results_scale_campaign_sanitized/`. Véanse las salvedades más abajo y en `exploratory/DATA_DICTIONARY.md`. |
 | `code/` | El código fuente del estudio: una **capa de análisis** (13 ficheros) ejecutable solo con los datos publicados, una **capa de inferencia** (9 scripts) publicada para inspección, y `reproduce.py`, que verifica el estudio entero con un solo comando. **Licencia MIT**, distinta de la de los datos. Véase [El código](#el-código). |
 
 Los nombres de campo de los ficheros están en **español** (`pregunta`, `respuesta_ia`, `es_correcta`, `abstiene`, `alucina`…). Todos ellos se documentan **en inglés** en el `DATA_DICTIONARY.md` de su carpeta.
@@ -425,7 +444,7 @@ Los 24 reports crudos de P2 llevaban originalmente, para cada pregunta del brazo
 
 Esto preserva la función científica del campo y elimina únicamente el texto protegido. Quien disponga de una copia lícita del corpus puede reconstruir los *chunks* con los parámetros publicados, hashearlos y **verificar exactamente qué fragmento se recuperó para cada pregunta**, sin que aquí se redistribuya una sola línea de material protegido. Documento y página solo son resolubles para el banco `original` (vía `aggregates/chunk_provenance.json`); para los bancos TRAP y OOD no existe mapa de procedencia, y esos fragmentos llevan `"documento": null, "pagina": null, "provenance": "no_disponible"`. El esquema completo se documenta en `results_hallucination_p2_sanitized/DATA_DICTIONARY.md`.
 
-El mismo tratamiento se aplica a los cuatro reports de `results_retrieval_exploratory_sanitized/` (1 472 fragmentos, **todos** con documento y página, por pertenecer al banco `original`). Los reports de P1 nunca contuvieron los fragmentos recuperados, de modo que no necesitaron este tratamiento, y el contexto que consumieron no se ha perdido: **reutilizaron** los fragmentos de esos cuatro reports exploratorios, cuyos 1 472 hashes coinciden, posición a posición, con los publicados para P2.
+El mismo tratamiento se aplica a los cuatro reports de `results_retrieval_exploratory_sanitized/` (1 472 fragmentos, **todos** con documento y página, por pertenecer al banco `original`) y a los siete de `results_scale_campaign_sanitized/` (2 947 fragmentos, igualmente **todos** con documento y página). Los reports de P1 nunca contuvieron los fragmentos recuperados, de modo que no necesitaron este tratamiento, y el contexto que consumieron no se ha perdido: **reutilizaron** los fragmentos de esos cuatro reports exploratorios, cuyos 1 472 hashes coinciden, posición a posición, con los publicados para P2.
 
 ### 4. Las citas literales largas del corpus se redactaron, en todos los campos de texto libre
 
@@ -437,19 +456,20 @@ A los modelos se les pidió fundamentar su respuesta en la evidencia recuperada 
 
 donde *N* es el número de palabras retiradas. Solo se sustituye el tramo solapado; el texto circundante (el razonamiento propio del modelo, o el resto del campo) queda intacto.
 
-Afecta a **43 tramos repartidos en 13 ficheros, 2 468 palabras retiradas en total**, el tramo más largo de 101 palabras y el más corto de 50. Por carpeta:
+Afecta a **64 tramos repartidos en 16 ficheros, 3 676 palabras retiradas en total**, el tramo más largo de 101 palabras y el más corto de 50. Por carpeta:
 
 | Carpeta | Tramos | Ficheros | Palabras retiradas |
 |---|---|---|---|
 | `results_ablation_p1/` | 9 | 2 | 550 |
 | `results_hallucination_p2_sanitized/` | 9 | 4 | 490 |
 | `results_retrieval_exploratory_sanitized/` | 6 | 3 | 350 |
+| `results_scale_campaign_sanitized/` | 21 | 3 | 1 208 |
 | `datasets/` | 4 | 1 | 231 |
 | `aggregates/` | 15 | 3 | 847 |
 | `code/` | **0** | 0 | 0 |
-| **Total** | **43** | **13** | **2 468** |
+| **Total** | **64** | **16** | **3 676** |
 
-Por campo: **24** en `respuesta_ia` (1 390 palabras — las tres carpetas de reports, todos en el brazo con RAG), **14** en `cita_soporte` (796 palabras — 7 en `aggregates/taxonomia_errores.json` y 7 en `aggregates/errores_prelabel.json`, que arrastra las mismas citas del juez), **4** en `traza_cita` (231 palabras — `datasets/dataset_gold_standard.json`) y **1** en `cola` (51 palabras — `aggregates/resolucion_no_parseadas.json`). **Ningún script de `code/` contiene tramos redactados**: ningún script publicado reproduce 50 o más palabras consecutivas del corpus.
+Por campo: **45** en `respuesta_ia` (2 598 palabras — las cuatro carpetas de reports, todos en el brazo con RAG), **14** en `cita_soporte` (796 palabras — 7 en `aggregates/taxonomia_errores.json` y 7 en `aggregates/errores_prelabel.json`, que arrastra las mismas citas del juez), **4** en `traza_cita` (231 palabras — `datasets/dataset_gold_standard.json`) y **1** en `cola` (51 palabras — `aggregates/resolucion_no_parseadas.json`). **Ningún script de `code/` contiene tramos redactados**: ningún script publicado reproduce 50 o más palabras consecutivas del corpus.
 
 En los dos campos de evidencia se conserva la procedencia para que el campo siga cumpliendo su función: `dataset_gold_standard.json` mantiene sus campos hermanos `documento_fuente` y `traza_pagina`, y en `taxonomia_errores.json` el marcador va seguido de una referencia explícita `Ref.: <documento>, p. <página>`. `dataset_trap_validado.json` se auditó y no necesitó redacción (solapamiento máximo: 49 palabras).
 
@@ -457,11 +477,15 @@ En los dos campos de evidencia se conserva la procedencia para que el campo siga
 
 **Los datos crudos completos y sin redactar obran en poder de los autores y están disponibles bajo petición razonada con fines de verificación** —por ejemplo, para una persona revisora o editora que necesite auditar las salidas íntegras de los modelos—, sujeto a las restricciones de derechos del corpus docente subyacente.
 
-### 5. Los crudos de la campaña exploratoria preliminar solo se conservan parcialmente
+### 5. Una campaña preliminar anterior quedó superada, y solo se conserva parcialmente
 
-La campaña inicial del artículo constó de **493 evaluaciones automatizadas** sobre 7 modelos y 4 modelos de *embeddings* en hardware dual (una estación de trabajo con GPU local y un clúster HPC de CPU). Solo sobreviven **306 de esas 493** filas por ítem, y son las que se publican en `exploratory/datos_detallados_preguntas.csv`. El resto se midió bajo Fedora y no se conservó en la migración del proyecto a Windows. Todas las filas supervivientes pertenecen a la mitad ejecutada en el clúster HPC (`device = Cluster_Amdahl`, `mode = CPU`).
+**La campaña de escala que reporta el artículo se publica íntegra.** Es `results_scale_campaign_sanitized/`: **371 evaluaciones**, 7 modelos × 53 preguntas, los siete con la misma recuperación y en la misma GPU del clúster. Toda celda de la Tabla 3 puede volver a derivarse desde esos ficheros, y el `recall@k = 92,45 %` es idéntico en los siete. De esa campaña no falta nada.
 
-Los tres ficheros agregados de `exploratory/` (`modelos_ranking.csv`, `embeddings_ranking.csv`, `resumen_ejecutivo.json`) se calcularon en su día sobre las **493 evaluaciones completas** y se conservan tal y como se produjeron; por tanto **no pueden recomputarse a partir de las 306 filas supervivientes**. Este hueco es la razón de que la lista de comprobación de reproducibilidad del artículo responda `[partially]` a la disponibilidad pública de todos los conjuntos de datos. Afecta únicamente a la fase exploratoria, explícitamente deprecada y usada en el artículo como motivación y nunca como evidencia: se ejecutó con otra configuración de *embeddings*, otro hardware y una extracción de respuesta más simple. **Los dos experimentos definitivos (P1, 424 inferencias; P2, 760 inferencias) se conservan íntegros**, y sobre ellos descansa toda afirmación del artículo.
+Lo que solo se conserva parcialmente es una **campaña anterior, que la publicada dejó superada**, guardada en `exploratory/` como registro histórico. Constó de **493 evaluaciones automatizadas** sobre 7 modelos y 4 modelos de *embeddings* en hardware dual, sobre un banco preliminar de **17 preguntas** que no es el gold standard de 53 ítems. Solo sobreviven **306 de esas 493** filas por ítem, en `exploratory/datos_detallados_preguntas.csv`; el resto se midió bajo Fedora y no se conservó en la migración del proyecto a Windows. Todas las filas supervivientes pertenecen a la mitad ejecutada en el clúster HPC (`device = Cluster_Amdahl`, `mode = CPU`).
+
+Los tres ficheros agregados de `exploratory/` (`modelos_ranking.csv`, `embeddings_ranking.csv`, `resumen_ejecutivo.json`) se calcularon en su día sobre las **493 evaluaciones completas** y se conservan tal y como se produjeron; por tanto **no pueden recomputarse a partir de las 306 filas supervivientes**.
+
+> **No contrastes las cifras de `exploratory/` con el artículo.** Pertenecen a la campaña superada: otro banco de preguntas, otra configuración de recuperación y una extracción de respuesta más simple. El `58,82 %` de mejor modelo que recoge `exploratory/resumen_ejecutivo.json` **no** es una cifra del artículo, y ninguna afirmación del texto descansa sobre ella. La campaña inicial del artículo es la de 371 evaluaciones, y los dos experimentos definitivos (P1, 424 inferencias; P2, 760 inferencias) se conservan íntegros.
 
 ### 6. No hay validación humana independiente
 
@@ -517,6 +541,13 @@ clinical-rag-neurophysio-data/
 │   │                                         (47/53) y de los fragmentos que reutilizó P1.
 │   ├── report_{modelo}_GPU_Local_Win11_9doc_{tag}_bge-m3_{timestamp}_SANITIZED.json
 │   └── DATA_DICTIONARY.md
+├── results_scale_campaign_sanitized/  Campaña de escala — 7 reports × 53 = 371 inferencias.
+│   │                                  Origen de la Tabla 3. recall@k = 92,45 % (49/53),
+│   │                                  idéntico en los siete. RTX 4090 del clúster.
+│   ├── report_{model}_GPU_{node}_{...}_SANITIZED.json
+│   └── DATA_DICTIONARY.md            incluye las líneas de residencia de ollama ps: 100 %
+│                                     GPU en los 7-8B; 49/54 GB y repartos 52/48 y 56/44
+│                                     CPU/GPU en los 70-72B
 ├── aggregates/                            16 ficheros
 │   ├── rag_benefit_summary.json                     precisión, delta, IC y McNemar por modelo (P1)
 │   ├── hallucination_summary.json                   tasas por modelo y agregadas (P2)
@@ -539,7 +570,8 @@ clinical-rag-neurophysio-data/
 │   ├── detectabilidad_humano_CLAVE.json   la clave de verdad-terreno que desciega esos 80 casos (sin valoraciones)
 │   ├── taxonomia_para_anotar.csv          plantilla de anotación: las 131 etiquetas de error respaldadas
 │   └── DATA_DICTIONARY.md
-└── exploratory/                           campaña preliminar DEPRECADA (306 de 493 filas)
+└── exploratory/                           campaña anterior SUPERADA (306 de 493 filas,
+    │                                       banco de 17 preguntas) — NO es la Tabla 3
     ├── datos_detallados_preguntas.csv
     ├── modelos_ranking.csv
     ├── embeddings_ranking.csv

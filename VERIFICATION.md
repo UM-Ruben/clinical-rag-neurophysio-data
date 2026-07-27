@@ -98,13 +98,13 @@ Nine pattern families (e-mail addresses, Windows/Unix absolute paths, user home 
 ## EN — Caveats (please read)
 
 **(a) The exploratory CSV is partial: 306 of 493 evaluations.**
-`exploratory/datos_detallados_preguntas.csv` contains **306 rows**, whereas the preliminary exploration reported in the article comprises **493 evaluations**. The remaining 187 were run on the original Fedora workstation and their per-question raw records were not preserved through the migration to Windows. The aggregate rankings that the article actually cites (`modelos_ranking.csv`, `embeddings_ranking.csv`) are complete and were computed at the time from the full 493; only the per-question detail is partial. This is why item 4 of the reproducibility checklist is declared **[partially]**.
+`exploratory/datos_detallados_preguntas.csv` contains **306 rows** of a **493-evaluation** campaign. **This is not the campaign reported in the article.** The article's opening campaign is the 371-evaluation scale campaign published in full in `results_scale_campaign_sanitized/`; the 493-evaluation one is an earlier effort over a 17-question preliminary bank, superseded and kept only for the historical record. The remaining 187 were run on the original Fedora workstation and their per-question raw records were not preserved through the migration to Windows. The aggregate rankings (`modelos_ranking.csv`, `embeddings_ranking.csv`) are complete and were computed at the time from the full 493; only the per-question detail is partial. No figure in the article is taken from them. Item 4 of the reproducibility checklist remains **[partially]** on account of this historical gap, not of any gap in the data the article uses.
 
-**(b) Seven old cluster raw files are NOT published.**
-Seven raw result files from the early cluster runs (deprecated protocol, partial coverage) still embed verbatim passages of the teaching corpus. They are excluded on three independent grounds: they are deprecated, they are incomplete, and they carry third-party copyright. None of the article's reported figures depends on them.
+**(b) The seven cluster raw files ARE now published, sanitised.**
+*Superseded in this revision.* Earlier releases withheld the seven raw files of the cluster scale campaign because they embed verbatim passages of the teaching corpus. They are the source of **Table 3** of the article, so withholding them left the paper's opening campaign unsupported. They are now published in `results_scale_campaign_sanitized/` under exactly the treatment applied to the other report folders: `fragmentos` replaced by SHA-256 digests (2 947 fragments, all resolved to document and page) and long verbatim quotations redacted (21 spans, 1 208 words). The complete Slurm job log is still withheld - it interleaves the retrieved context of every query and reproduces the corpus at length; only the GPU-residency lines are extracted, quoted verbatim in the folder's `DATA_DICTIONARY.md`.
 
 **(c) Retrieved passages are published as SHA-256 hashes, not as text.**
-The teaching corpus is third-party copyrighted material and is not redistributable. In the Protocol-2 reports the retrieved `fragmentos` are therefore given as SHA-256 digests of the exact UTF-8 string, plus its character count and (for the `original` bank) its source document and page. Anyone holding a licensed copy of the corpus can hash their own chunks and verify that the retrieval was exactly the one reported — without the corpus ever being redistributed here.
+The teaching corpus is third-party copyrighted material and is not redistributable. In the Protocol-2 reports, in `results_retrieval_exploratory_sanitized/` and in `results_scale_campaign_sanitized/`, the retrieved `fragmentos` are therefore given as SHA-256 digests of the exact UTF-8 string, plus its character count and (for the `original` bank) its source document and page. Anyone holding a licensed copy of the corpus can hash their own chunks and verify that the retrieval was exactly the one reported — without the corpus ever being redistributed here.
 
 **(d) Verbatim corpus text in free-text fields: long quotations redacted, short ones kept.**
 The models were prompted to ground their answers in the retrieved evidence and they quote it frequently; the hand-built evidence fields (`traza_cita`, `cita_soporte`) were, by construction, copied from the corpus.
@@ -113,7 +113,7 @@ The models were prompted to ground their answers in the retrieved evidence and t
 
 **Reference used.** Overlap is measured against the **nine complete source documents** (full text extracted with PyMuPDF), *not* against the retrieved chunks. This is a correction of method: an earlier version of this audit compared only against the chunks in the retrieval cache and was therefore blind to quotations that straddle a chunk boundary. Each document is additionally indexed a second time with running headers and footers removed, so that the token stream is continuous across page breaks (a quotation spanning a page boundary is otherwise not contiguous in the extracted text). Two tokenisations are used (*normalised*: lower-cased, accents and punctuation stripped; and *strict*: whitespace-split, punctuation and case preserved). The **most conservative** outcome is applied: a span is redacted if **any** of the four (document variant × tokenisation) combinations reports ≥ 50 consecutive words.
 
-- **Long quotations (≥ 50 consecutive words): redacted.** **43** spans reach that length, spread over **13 files**, the longest being 101 words and the shortest 50, **2 468 words removed in total**. Each was replaced in place by the literal marker `[CITA REDACTADA: N palabras del corpus fuente, retiradas por derechos de autor]`, where *N* is the number of words removed. Only the overlapping span is replaced; the surrounding text (the model's own reasoning, or the remainder of the field) is preserved untouched.
+- **Long quotations (≥ 50 consecutive words): redacted.** **64** spans reach that length, spread over **16 files**, the longest being 101 words and the shortest 50, **3 676 words removed in total**. Each was replaced in place by the literal marker `[CITA REDACTADA: N palabras del corpus fuente, retiradas por derechos de autor]`, where *N* is the number of words removed. Only the overlapping span is replaced; the surrounding text (the model's own reasoning, or the remainder of the field) is preserved untouched.
 
   **By folder** (every figure below was obtained by counting the markers in the published files):
 
@@ -122,12 +122,13 @@ The models were prompted to ground their answers in the retrieved evidence and t
   | `results_ablation_p1/` | 9 (over 7 answers) | 2 | 550 |
   | `results_hallucination_p2_sanitized/` | 9 (over 7 answers) | 4 | 490 |
   | `results_retrieval_exploratory_sanitized/` | 6 (over 5 answers) | 3 | 350 |
+  | `results_scale_campaign_sanitized/` | 21 | 3 | 1 208 |
   | `datasets/` | 4 | 1 (`dataset_gold_standard.json`) | 231 |
   | `aggregates/` | 15 | 3 | 847 |
   | `code/` | **0** | 0 | 0 |
-  | **Total** | **43** | **13** | **2 468** |
+  | **Total** | **64** | **16** | **3 676** |
 
-  **By field:** **24** in `respuesta_ia` (1 390 words — the three report folders, all in the with-RAG arm); **14** in `cita_soporte` (796 words — 7 in `aggregates/taxonomia_errores.json` and 7 in `aggregates/errores_prelabel.json`, which carries the same judge citations, at the same array indices 12, 18, 50, 83, 85, 90, 123); **4** in `traza_cita` (231 words — `datasets/dataset_gold_standard.json`, longest 66 words); **1** in `cola` (51 words — `aggregates/resolucion_no_parseadas.json`).
+  **By field:** **45** in `respuesta_ia` (2 598 words — the four report folders, all in the with-RAG arm); **14** in `cita_soporte` (796 words — 7 in `aggregates/taxonomia_errores.json` and 7 in `aggregates/errores_prelabel.json`, which carries the same judge citations, at the same array indices 12, 18, 50, 83, 85, 90, 123); **4** in `traza_cita` (231 words — `datasets/dataset_gold_standard.json`, longest 66 words); **1** in `cola` (51 words — `aggregates/resolucion_no_parseadas.json`).
 
   The three files of `aggregates/` that carry redactions are `taxonomia_errores.json` (7 spans, 398 words), `errores_prelabel.json` (7 spans, 398 words) and `resolucion_no_parseadas.json` (1 span, 51 words). `errores_prelabel_juez2.json` carries **none**.
 
@@ -314,7 +315,7 @@ A los modelos se les pidió fundamentar la respuesta en la evidencia recuperada 
 
 **Referencia utilizada.** El solapamiento se mide contra los **nueve documentos fuente completos** (texto íntegro extraído con PyMuPDF), *no* contra los *chunks* recuperados. Esto corrige un fallo de método: una versión anterior de esta auditoría comparaba solo contra los *chunks* de la caché de recuperación y era, por tanto, ciega a las citas que cruzan una frontera de *chunk*. Cada documento se indexa además una segunda vez eliminando las cabeceras y pies de página recurrentes, de modo que el flujo de tokens sea continuo entre páginas (si no, una cita que cruza un salto de página no aparece como contigua en el texto extraído). Se emplean dos tokenizaciones (*normalizada*: minúsculas, sin tildes ni puntuación; y *estricta*: separación solo por espacios, conservando puntuación y mayúsculas). Se aplica el criterio **más conservador**: un tramo se redacta si **cualquiera** de las cuatro combinaciones (variante de documento × tokenización) alcanza ≥ 50 palabras consecutivas.
 
-- **Citas largas (≥ 50 palabras consecutivas): redactadas.** **43** tramos alcanzan esa longitud, repartidos en **13 ficheros**, el más largo de 101 palabras y el más corto de 50, **2 468 palabras retiradas en total**. Cada uno se ha sustituido *in situ* por el marcador literal `[CITA REDACTADA: N palabras del corpus fuente, retiradas por derechos de autor]`, donde *N* es el número de palabras retiradas. Solo se sustituye el tramo solapado: el texto circundante (el razonamiento propio del modelo, o el resto del campo) queda intacto.
+- **Citas largas (≥ 50 palabras consecutivas): redactadas.** **64** tramos alcanzan esa longitud, repartidos en **16 ficheros**, el más largo de 101 palabras y el más corto de 50, **3 676 palabras retiradas en total**. Cada uno se ha sustituido *in situ* por el marcador literal `[CITA REDACTADA: N palabras del corpus fuente, retiradas por derechos de autor]`, donde *N* es el número de palabras retiradas. Solo se sustituye el tramo solapado: el texto circundante (el razonamiento propio del modelo, o el resto del campo) queda intacto.
 
   **Por carpeta** (todas las cifras que siguen se han obtenido contando los marcadores en los ficheros publicados):
 
@@ -323,12 +324,13 @@ A los modelos se les pidió fundamentar la respuesta en la evidencia recuperada 
   | `results_ablation_p1/` | 9 (en 7 respuestas) | 2 | 550 |
   | `results_hallucination_p2_sanitized/` | 9 (en 7 respuestas) | 4 | 490 |
   | `results_retrieval_exploratory_sanitized/` | 6 (en 5 respuestas) | 3 | 350 |
+  | `results_scale_campaign_sanitized/` | 21 | 3 | 1 208 |
   | `datasets/` | 4 | 1 (`dataset_gold_standard.json`) | 231 |
   | `aggregates/` | 15 | 3 | 847 |
   | `code/` | **0** | 0 | 0 |
-  | **Total** | **43** | **13** | **2 468** |
+  | **Total** | **64** | **16** | **3 676** |
 
-  **Por campo:** **24** en `respuesta_ia` (1 390 palabras — las tres carpetas de reports, todos en el brazo con RAG); **14** en `cita_soporte` (796 palabras — 7 en `aggregates/taxonomia_errores.json` y 7 en `aggregates/errores_prelabel.json`, que arrastra las mismas citas del juez, en los mismos índices de array 12, 18, 50, 83, 85, 90 y 123); **4** en `traza_cita` (231 palabras — `datasets/dataset_gold_standard.json`, el mayor de 66 palabras); **1** en `cola` (51 palabras — `aggregates/resolucion_no_parseadas.json`).
+  **Por campo:** **45** en `respuesta_ia` (2 598 palabras — las cuatro carpetas de reports, todos en el brazo con RAG); **14** en `cita_soporte` (796 palabras — 7 en `aggregates/taxonomia_errores.json` y 7 en `aggregates/errores_prelabel.json`, que arrastra las mismas citas del juez, en los mismos índices de array 12, 18, 50, 83, 85, 90 y 123); **4** en `traza_cita` (231 palabras — `datasets/dataset_gold_standard.json`, el mayor de 66 palabras); **1** en `cola` (51 palabras — `aggregates/resolucion_no_parseadas.json`).
 
   Los tres ficheros de `aggregates/` con redacciones son `taxonomia_errores.json` (7 tramos, 398 palabras), `errores_prelabel.json` (7 tramos, 398 palabras) y `resolucion_no_parseadas.json` (1 tramo, 51 palabras). `errores_prelabel_juez2.json` **no lleva ninguna**.
 
