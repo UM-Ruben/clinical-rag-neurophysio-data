@@ -1,5 +1,7 @@
 # VERIFICATION / VERIFICACIÓN
 
+> **Version note / Nota de versión:** This document audits the July 2026 historical release. The September 2026 manuscript scores one additional P1 response as incorrect and updates the affected detectability label. Its current totals are reproduced in [revision_2026_09](revision_2026_09/README.md). / Este documento audita la versión histórica de julio. Las cifras vigentes del manuscrito revisado se verifican en [revision_2026_09](revision_2026_09/README.md).
+
 **Audit date / Fecha de la auditoría:** 2026-07-11
 **Scope / Alcance:** every file published in this repository, checked against the figures reported in the article.
 

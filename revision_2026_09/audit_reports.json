@@ -1,0 +1,1272 @@
+{
+  "protocolo": "P1_sysrole_anti_rechazo",
+  "modelos": [
+    {
+      "model": "llama3.1:8b",
+      "label": "Llama-3.1-8B",
+      "n": 53,
+      "acc_sin_rag": 56.6,
+      "acc_con_rag": 79.25,
+      "delta_rag_pp": 22.64,
+      "paired_ci95": "[+8.0, +37.2]",
+      "mcnemar_p": 0.0075,
+      "significativo": true,
+      "b_mejora": 15,
+      "c_empeora": 3,
+      "errores_con": 11,
+      "errores_sin": 23,
+      "mcnemar_p_holm": 0.0302
+    },
+    {
+      "model": "neurofisio-qlora",
+      "label": "QLoRA neurofisio",
+      "n": 53,
+      "acc_sin_rag": 64.15,
+      "acc_con_rag": 75.47,
+      "delta_rag_pp": 11.32,
+      "paired_ci95": "[-2.3, +24.9]",
+      "mcnemar_p": 0.1796,
+      "significativo": false,
+      "b_mejora": 10,
+      "c_empeora": 4,
+      "errores_con": 13,
+      "errores_sin": 19,
+      "mcnemar_p_holm": 0.5012
+    },
+    {
+      "model": "qwen2.5:7b",
+      "label": "Qwen-2.5-7B",
+      "n": 53,
+      "acc_sin_rag": 67.92,
+      "acc_con_rag": 69.81,
+      "delta_rag_pp": 1.89,
+      "paired_ci95": "[-12.6, +16.3]",
+      "mcnemar_p": 1.0,
+      "significativo": false,
+      "b_mejora": 8,
+      "c_empeora": 7,
+      "errores_con": 16,
+      "errores_sin": 17,
+      "mcnemar_p_holm": 1.0
+    },
+    {
+      "model": "thewindmom/llama3-med42-8b",
+      "label": "Med42-8B",
+      "n": 53,
+      "acc_sin_rag": 62.26,
+      "acc_con_rag": 75.47,
+      "delta_rag_pp": 13.21,
+      "paired_ci95": "[-2.7, +29.1]",
+      "mcnemar_p": 0.1671,
+      "significativo": false,
+      "b_mejora": 13,
+      "c_empeora": 6,
+      "errores_con": 13,
+      "errores_sin": 20,
+      "mcnemar_p_holm": 0.5012
+    }
+  ],
+  "errores": [
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "con",
+      "id": 2,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "desconocida",
+      "len_respuesta": 1379
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "con",
+      "id": 4,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "b",
+      "len_respuesta": 1000
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "con",
+      "id": 8,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1160
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "con",
+      "id": 13,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "desconocida",
+      "len_respuesta": 1121
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "con",
+      "id": 14,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1500
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "con",
+      "id": 15,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 865
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "con",
+      "id": 19,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "b",
+      "len_respuesta": 1538
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "con",
+      "id": 20,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "a",
+      "len_respuesta": 1932
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "con",
+      "id": 34,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "a",
+      "len_respuesta": 1975
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "con",
+      "id": 40,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1163
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "con",
+      "id": 51,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "c",
+      "len_respuesta": 1614
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 1,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "c",
+      "len_respuesta": 1808
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 4,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "c",
+      "len_respuesta": 707
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 5,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1137
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 8,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1198
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 10,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1239
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 13,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "b",
+      "len_respuesta": 1717
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 14,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "a",
+      "len_respuesta": 1602
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 16,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "b",
+      "len_respuesta": 1369
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 19,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "b",
+      "len_respuesta": 2011
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 20,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "a",
+      "len_respuesta": 1639
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 21,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "b",
+      "len_respuesta": 1891
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 27,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "b",
+      "len_respuesta": 1704
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 32,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "b",
+      "len_respuesta": 2224
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 33,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 2036
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 34,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1575
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 40,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1585
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 41,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "a",
+      "len_respuesta": 1773
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 43,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "a",
+      "len_respuesta": 1589
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 44,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1810
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 45,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "a",
+      "len_respuesta": 2168
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 48,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "b",
+      "len_respuesta": 1452
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 49,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "a",
+      "len_respuesta": 1151
+    },
+    {
+      "modelo": "llama3.1:8b",
+      "tag": "llama8b",
+      "arm": "sin",
+      "id": 53,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "a",
+      "len_respuesta": 2016
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "con",
+      "id": 2,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "b",
+      "len_respuesta": 1469
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "con",
+      "id": 4,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "b",
+      "len_respuesta": 1735
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "con",
+      "id": 6,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "b",
+      "len_respuesta": 1546
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "con",
+      "id": 7,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "b",
+      "len_respuesta": 1514
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "con",
+      "id": 8,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "a",
+      "len_respuesta": 1553
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "con",
+      "id": 10,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 898
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "con",
+      "id": 13,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "desconocida",
+      "len_respuesta": 434
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "con",
+      "id": 14,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1314
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "con",
+      "id": 15,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 831
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "con",
+      "id": 19,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "b",
+      "len_respuesta": 1577
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "con",
+      "id": 20,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "a",
+      "len_respuesta": 1806
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "con",
+      "id": 34,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "a",
+      "len_respuesta": 1530
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "con",
+      "id": 51,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "c",
+      "len_respuesta": 1577
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "sin",
+      "id": 1,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "c",
+      "len_respuesta": 1453
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "sin",
+      "id": 4,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "c",
+      "len_respuesta": 863
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "sin",
+      "id": 5,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1155
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "sin",
+      "id": 6,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "a",
+      "len_respuesta": 1636
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "sin",
+      "id": 7,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "b",
+      "len_respuesta": 1409
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "sin",
+      "id": 8,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1225
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "sin",
+      "id": 10,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 996
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "sin",
+      "id": 13,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "b",
+      "len_respuesta": 1556
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "sin",
+      "id": 14,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "a",
+      "len_respuesta": 1441
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "sin",
+      "id": 16,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "b",
+      "len_respuesta": 2256
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "sin",
+      "id": 20,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "desconocida",
+      "len_respuesta": 1836
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "sin",
+      "id": 24,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "b",
+      "len_respuesta": 1571
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "sin",
+      "id": 40,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1326
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "sin",
+      "id": 42,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "b",
+      "len_respuesta": 1793
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "sin",
+      "id": 43,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "a",
+      "len_respuesta": 1380
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "sin",
+      "id": 44,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1656
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "sin",
+      "id": 48,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "b",
+      "len_respuesta": 1347
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "sin",
+      "id": 51,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "desconocida",
+      "len_respuesta": 2195
+    },
+    {
+      "modelo": "neurofisio-qlora",
+      "tag": "qlora",
+      "arm": "sin",
+      "id": 53,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "a",
+      "len_respuesta": 1655
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "con",
+      "id": 1,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "c",
+      "len_respuesta": 1554
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "con",
+      "id": 2,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "b",
+      "len_respuesta": 1518
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "con",
+      "id": 4,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "b",
+      "len_respuesta": 1115
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "con",
+      "id": 6,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "a",
+      "len_respuesta": 1290
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "con",
+      "id": 8,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1533
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "con",
+      "id": 10,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1636
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "con",
+      "id": 14,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1368
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "con",
+      "id": 17,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "c",
+      "len_respuesta": 1683
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "con",
+      "id": 19,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "b",
+      "len_respuesta": 1776
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "con",
+      "id": 27,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "b",
+      "len_respuesta": 1755
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "con",
+      "id": 35,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "desconocida",
+      "len_respuesta": 2009
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "con",
+      "id": 37,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "c",
+      "len_respuesta": 2128
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "con",
+      "id": 40,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "desconocida",
+      "len_respuesta": 2306
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "con",
+      "id": 46,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "desconocida",
+      "len_respuesta": 2231
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "con",
+      "id": 51,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "c",
+      "len_respuesta": 1636
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "con",
+      "id": 53,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "a",
+      "len_respuesta": 2231
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "sin",
+      "id": 1,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "c",
+      "len_respuesta": 1332
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "sin",
+      "id": 4,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "b",
+      "len_respuesta": 2017
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "sin",
+      "id": 5,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1086
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "sin",
+      "id": 6,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "b",
+      "len_respuesta": 1510
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "sin",
+      "id": 7,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "b",
+      "len_respuesta": 1540
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "sin",
+      "id": 8,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "a",
+      "len_respuesta": 1212
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "sin",
+      "id": 10,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1810
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "sin",
+      "id": 13,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "b",
+      "len_respuesta": 1717
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "sin",
+      "id": 14,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "a",
+      "len_respuesta": 1209
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "sin",
+      "id": 19,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "b",
+      "len_respuesta": 1413
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "sin",
+      "id": 40,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "desconocida",
+      "len_respuesta": 1608
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "sin",
+      "id": 41,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "b",
+      "len_respuesta": 1879
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "sin",
+      "id": 42,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "c",
+      "len_respuesta": 2647
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "sin",
+      "id": 44,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "a",
+      "len_respuesta": 1665
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "sin",
+      "id": 45,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "a",
+      "len_respuesta": 1644
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "sin",
+      "id": 50,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 2122
+    },
+    {
+      "modelo": "qwen2.5:7b",
+      "tag": "qwen7b",
+      "arm": "sin",
+      "id": 51,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "c",
+      "len_respuesta": 1523
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "con",
+      "id": 2,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "b",
+      "len_respuesta": 1068
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "con",
+      "id": 3,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "b",
+      "len_respuesta": 2515
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "con",
+      "id": 4,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "desconocida",
+      "len_respuesta": 1475
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "con",
+      "id": 6,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "a",
+      "len_respuesta": 1542
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "con",
+      "id": 10,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1198
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "con",
+      "id": 13,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "desconocida",
+      "len_respuesta": 1289
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "con",
+      "id": 14,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 383
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "con",
+      "id": 20,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "a",
+      "len_respuesta": 1210
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "con",
+      "id": 25,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "desconocida",
+      "len_respuesta": 545
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "con",
+      "id": 27,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "b",
+      "len_respuesta": 674
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "con",
+      "id": 31,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "desconocida",
+      "len_respuesta": 1108
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "con",
+      "id": 39,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "c",
+      "len_respuesta": 881
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "con",
+      "id": 51,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "desconocida",
+      "len_respuesta": 578
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "sin",
+      "id": 1,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "c",
+      "len_respuesta": 1191
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "sin",
+      "id": 2,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "b",
+      "len_respuesta": 1560
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "sin",
+      "id": 3,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "desconocida",
+      "len_respuesta": 2592
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "sin",
+      "id": 4,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "c",
+      "len_respuesta": 1535
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "sin",
+      "id": 6,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "a",
+      "len_respuesta": 1499
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "sin",
+      "id": 8,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 963
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "sin",
+      "id": 10,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1365
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "sin",
+      "id": 15,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1212
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "sin",
+      "id": 16,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "desconocida",
+      "len_respuesta": 908
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "sin",
+      "id": 20,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "a",
+      "len_respuesta": 1496
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "sin",
+      "id": 24,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "b",
+      "len_respuesta": 1416
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "sin",
+      "id": 25,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1479
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "sin",
+      "id": 28,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "c",
+      "len_respuesta": 1419
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "sin",
+      "id": 32,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "desconocida",
+      "len_respuesta": 899
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "sin",
+      "id": 35,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "b",
+      "len_respuesta": 921
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "sin",
+      "id": 40,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1234
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "sin",
+      "id": 41,
+      "respuesta_correcta": "c",
+      "opcion_detectada": "a",
+      "len_respuesta": 1543
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "sin",
+      "id": 43,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "c",
+      "len_respuesta": 1319
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "sin",
+      "id": 48,
+      "respuesta_correcta": "a",
+      "opcion_detectada": "b",
+      "len_respuesta": 1704
+    },
+    {
+      "modelo": "thewindmom/llama3-med42-8b",
+      "tag": "med42",
+      "arm": "sin",
+      "id": 50,
+      "respuesta_correcta": "b",
+      "opcion_detectada": "a",
+      "len_respuesta": 1481
+    }
+  ],
+  "correcciones": [
+    {
+      "modelo": "llama3.1:8b",
+      "arm": "con",
+      "id": 2,
+      "parser_original": "c",
+      "respuesta_final": "Ninguna de las anteriores",
+      "opcion_corregida": "desconocida",
+      "motivo": "P1 exige elegir a, b o c; la respuesta final no elige ninguna"
+    }
+  ],
+  "total_errores": 132,
+  "discrepancias": []
+}

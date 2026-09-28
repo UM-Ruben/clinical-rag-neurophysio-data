@@ -7,7 +7,7 @@ This repository is published under **two licences**, one for the data and one fo
 | What | Licence | Full text |
 |---|---|---|
 | **The data** — the three question banks (Gold Standard, TRAP, OOD), the model responses and per-question records, the aggregate results, the error taxonomy, the detectability panel, the annotation files and all documentation | **CC BY 4.0** | [`LICENSE`](LICENSE) |
-| **The code** — everything under `code/`: the analysis layer, the inference layer and `reproduce.py` | **MIT** | [`code/LICENSE-CODE`](code/LICENSE-CODE) |
+| **The code** — everything under `code/` and the Python scripts under `revision_2026_09/` | **MIT** | [`code/LICENSE-CODE`](code/LICENSE-CODE) |
 
 The two are deliberately different. CC BY 4.0 is the appropriate licence for a research dataset, whose value lies in being cited; MIT is the customary licence for software, and lets the scripts be reused, modified and embedded in other projects without carrying a data licence's attribution machinery. Both apply only to **material created by the authors**.
 
@@ -34,7 +34,7 @@ Este repositorio se publica bajo **dos licencias**, una para los datos y otra pa
 | Qué | Licencia | Texto completo |
 |---|---|---|
 | **Los datos** — los tres bancos de preguntas (Gold Standard, TRAP, OOD), las respuestas de los modelos y los registros por pregunta, los resultados agregados, la taxonomía de errores, el panel de detectabilidad, los ficheros de anotación y toda la documentación | **CC BY 4.0** | [`LICENSE`](LICENSE) |
-| **El código** — todo lo que hay bajo `code/`: la capa de análisis, la de inferencia y `reproduce.py` | **MIT** | [`code/LICENSE-CODE`](code/LICENSE-CODE) |
+| **El código** — todo lo que hay bajo `code/` y los scripts Python de `revision_2026_09/` | **MIT** | [`code/LICENSE-CODE`](code/LICENSE-CODE) |
 
 Son distintas a propósito. La CC BY 4.0 es la licencia adecuada para un conjunto de datos de investigación, cuyo valor está en que se cite; la MIT es la licencia habitual del software y permite reutilizar, modificar e incrustar los scripts en otros proyectos sin arrastrar la maquinaria de atribución propia de una licencia de datos. Ambas se aplican únicamente al **material de creación propia de los autores**.
 

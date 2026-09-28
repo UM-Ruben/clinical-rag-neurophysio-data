@@ -1,11 +1,13 @@
 # clinical-rag-neurophysio-data
 
+> **September 2026 manuscript correction / Corrección del manuscrito (septiembre de 2026):** The revised article scores one Llama-3.1-8B with-RAG response by its final statement, yielding **42/53 (79.25%)**, **+22.64 pp**, and **132 P1 errors** across models. The original reports and historical release below remain preserved. See [revision_2026_09](revision_2026_09/README.md) for reproducible corrected P1 and detectability results, the definition of the 88.7% lexical-overlap proxy, and remaining study limits. / El artículo revisado puntúa una respuesta de Llama por su conclusión final: **42/53 (79,25 %)**, **+22,64 puntos** y **132 errores P1**. Los reports y el análisis histórico de abajo se conservan; la [revisión reproducible](revision_2026_09/README.md) documenta las cifras vigentes y sus límites.
+
 Research data accompanying the article **"Las Bondades del RAG"** (*The Benefits of RAG*) — an empirical quantification of the benefit of context retrieval in a lightweight, private, on-premise clinical assistant for neurophysiotherapy in Spanish.
 
 **Authors:** Rubén Fernández García (<ruben.fernandezg@um.es>), José Manuel García Carrasco (<jmgarcia@um.es>) — Universidad de Murcia, Spain.
 **Article status:** submitted to the *Journal of Artificial Intelligence Research* (JAIR), **under review**.
 **Data license:** [CC BY 4.0](LICENSE) — see the [scope note](#license): short third-party quotations are excluded.
-**Code license:** [MIT](code/LICENSE-CODE) — the code in `code/` is licensed separately from the data.
+**Code license:** [MIT](code/LICENSE-CODE) — the code in `code/` and the Python scripts in `revision_2026_09/` are licensed separately from the data.
 
 > This repository contains **the data and the code**. The **teaching corpus is not** published (third-party copyright), and neither is the **QLoRA fine-tuning pipeline**, whose training data derives from that corpus. See [What is NOT included and why](#what-is-not-included-and-why).
 >

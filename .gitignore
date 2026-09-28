@@ -15,6 +15,7 @@ retrieval_cache_*.json
 
 # The teaching corpus itself, and any extracted plain text
 *.pdf
+!revision_2026_09/fig_roc_detectabilidad.pdf
 *.txt
 !code/requirements.txt
 !code/requirements-inference.txt

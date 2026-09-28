@@ -2,9 +2,10 @@ cff-version: 1.2.0
 message: "If you use this dataset, please cite both the dataset and the article it accompanies (see preferred-citation)."
 title: "clinical-rag-neurophysio-data: research data for the empirical quantification of the benefit of Retrieval-Augmented Generation in a lightweight on-premise clinical assistant for neurophysiotherapy in Spanish"
 type: dataset
-version: "1.0.0"
-date-released: '2026-07-11'
-# Two licences: the data are CC BY 4.0 (see LICENSE); the code under code/ is MIT
+version: "1.0.1"
+date-released: '2026-09-28'
+# Two licences: the data are CC BY 4.0 (see LICENSE); code under code/ and
+# revision_2026_09/*.py is MIT.
 # (see code/LICENSE-CODE). NOTICE.md is the authoritative statement of the scope of each.
 license:
   - CC-BY-4.0
@@ -31,17 +32,18 @@ abstract: >-
   four models, with and without RAG, over three banks (the 53 answerable items, 24
   TRAP items carrying a false premise in the stem, and 18 out-of-distribution items
   that the corpus cannot answer), for a total of 760 inferences. Also published are
-  the three question banks, an adjudicated taxonomy of the 131 erroneous responses of
-  Study P1 across five mutually exclusive categories, a blind error-detectability
+  the three question banks, an adjudicated taxonomy of the 131 erroneous responses in
+  the historical Study P1 release across five mutually exclusive categories, a blind error-detectability
   panel with three LLM judges (two weak local models and one frontier model), the
   retrieval provenance of the 368 chunks retrieved for the 53 answerable questions,
-  and the pre-computed aggregates behind every figure reported in the article. There
+  and the pre-computed aggregates of that release. A reproducible September 2026
+  addendum in revision_2026_09 supplies the corrected P1 and detectability results. There
   is no independent human annotator: the frontier judge produced the taxonomy and
   detectability labels, and the author reviewed and endorsed them without
   modification (131 of 131 categories unchanged), so no human-machine agreement is
   published or computable. Accuracies of the two protocols are not comparable with
   each other, as the number of options and the abstention policy differ. The source
-  code is published under code/ (MIT licence, distinct from the CC BY 4.0 of the
+  code is published under code/ and revision_2026_09/*.py (MIT licence, distinct from the CC BY 4.0 of the
   data): an analysis layer that regenerates every regenerable aggregate from the
   published data alone, verifiable with a single command (python code/reproduce.py,
   exit 0 when everything matches), and an inference layer published for inspection,
@@ -64,7 +66,7 @@ keywords:
   - reproducibility
 preferred-citation:
   type: article
-  title: "Las Bondades del RAG"
+  title: "The Benefits of RAG for Clinical AI Assistants Using Lightweight LLMs: Limitations and Trade-offs"
   authors:
     - family-names: "Fernández García"
       given-names: "Rubén"

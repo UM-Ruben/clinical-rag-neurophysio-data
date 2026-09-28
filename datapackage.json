@@ -2,8 +2,8 @@
   "profile": "data-package",
   "name": "clinical-rag-neurophysio-data",
   "title": "Clinical RAG in neurophysiotherapy (Spanish): research data",
-  "description": "Research data accompanying the article 'Las Bondades del RAG' (The Benefits of RAG), under review at the Journal of Artificial Intelligence Research. Contains the three question banks, the raw inference records of the two definitive experiments (Study P1, ablation with/without RAG, 424 inferences; Study P2, hallucination with abstention permitted, 760 inferences), the pre-computed aggregates behind every figure of the article, the review material of the error taxonomy and the detectability panel, the four raw reports of the exploratory retrieval campaign (212 inferences) that are the source of the article's recall@k = 88.7 % and of the retrieved fragments replayed by Study P1, and the partially preserved raw data of the deprecated preliminary campaign. IMPORTANT: there is no independent human annotator in this dataset. The blind detectability panel is composed of three language models (two weak local, one frontier); the files under annotation/ hold the frontier judge's own labels, which the author reviewed and endorsed without modification (taxonomy: 131/131 categories unchanged; detectability: all 240 values identical). No human-machine agreement is published, because none can be computed. The source code IS published, under code/ (MIT licence, distinct from the CC BY 4.0 of the data): an analysis layer (13 files) that regenerates every regenerable aggregate from the published data alone -- `python code/reproduce.py` re-derives them and cross-checks them field by field, exit 0 when everything matches -- and an inference layer (9 scripts) published for inspection only, since running it requires the corpus and/or a local Ollama server. The teaching corpus is NOT published (third-party copyright), and neither is the QLoRA fine-tuning pipeline, whose training data derives from that corpus: consequently the QLoRA arm is NOT reproducible by third parties, while the other three models (llama3.1:8b, qwen2.5:7b, thewindmom/llama3-med42-8b, all public on Ollama) are. aggregates/distractor_efecto.json has no producer script and is the one file reproduce.py does not vouch for. In Study P2 and in the exploratory retrieval reports the retrieved passages are given as SHA-256 digests. recall@k is an automatic token-overlap heuristic (threshold 0.35), not a human relevance judgement: see caveat (e) of VERIFICATION.md. Accuracies of protocols P1 and P2 are not comparable with each other. Every field is documented in the DATA_DICTIONARY.md of its folder.",
-  "version": "1.0.0",
+  "description": "Version 1.0.1 adds revision_2026_09 with the corrected final-answer scoring for P1, updated detectability results and ROC figure. The original reports and aggregates described below are retained as the July 2026 historical release. Research data accompanying the article 'Las Bondades del RAG' (The Benefits of RAG), under review at the Journal of Artificial Intelligence Research. Contains the three question banks, the raw inference records of the two definitive experiments (Study P1, ablation with/without RAG, 424 inferences; Study P2, hallucination with abstention permitted, 760 inferences), the pre-computed aggregates of the historical release, the review material of the error taxonomy and the detectability panel, the four raw reports of the exploratory retrieval campaign (212 inferences) that are the source of the article's recall@k = 88.7 % and of the retrieved fragments replayed by Study P1, and the partially preserved raw data of the deprecated preliminary campaign. IMPORTANT: there is no independent human annotator in this dataset. The blind detectability panel is composed of three language models (two weak local, one frontier); the files under annotation/ hold the frontier judge's own labels, which the author reviewed and endorsed without modification (taxonomy: 131/131 categories unchanged; detectability: all 240 values identical). No human-machine agreement is published, because none can be computed. The source code IS published, under code/ (MIT licence, distinct from the CC BY 4.0 of the data): an analysis layer (13 files) that regenerates every regenerable aggregate from the published data alone -- `python code/reproduce.py` re-derives them and cross-checks them field by field, exit 0 when everything matches -- and an inference layer (9 scripts) published for inspection only, since running it requires the corpus and/or a local Ollama server. The teaching corpus is NOT published (third-party copyright), and neither is the QLoRA fine-tuning pipeline, whose training data derives from that corpus: consequently the QLoRA arm is NOT reproducible by third parties, while the other three models (llama3.1:8b, qwen2.5:7b, thewindmom/llama3-med42-8b, all public on Ollama) are. aggregates/distractor_efecto.json has no producer script and is the one file reproduce.py does not vouch for. In Study P2 and in the exploratory retrieval reports the retrieved passages are given as SHA-256 digests. recall@k is an automatic token-overlap heuristic (threshold 0.35), not a human relevance judgement: see caveat (e) of VERIFICATION.md. Accuracies of protocols P1 and P2 are not comparable with each other. Every field is documented in the DATA_DICTIONARY.md of its folder.",
+  "version": "1.0.1",
   "created": "2026-07-11",
   "homepage": "https://github.com/UM-Ruben/clinical-rag-neurophysio-data",
   "keywords": [
@@ -26,7 +26,7 @@
       "name": "MIT",
       "path": "https://opensource.org/licenses/MIT",
       "title": "MIT License",
-      "scope": "The source code under code/ only. See code/LICENSE-CODE."
+      "scope": "The source code under code/ and the Python scripts under revision_2026_09/."
     }
   ],
   "contributors": [
@@ -395,6 +395,26 @@
       "format": "py",
       "title": "Inference layer: published for inspection, NOT runnable by third parties",
       "description": "9 scripts covering the retrieval engine, the two experimental protocols, the LLM judges and the question-bank builders. They are published to be read, not executed: they require the nine copyrighted corpus PDFs (not distributable) and/or a local Ollama server. Each file states this in its header."
+    },
+    {
+      "name": "revision_2026_09_p1",
+      "path": "revision_2026_09/rag_benefit_summary.json",
+      "title": "Corrected P1 summary for the revised manuscript"
+    },
+    {
+      "name": "revision_2026_09_audit",
+      "path": "revision_2026_09/audit_reports.json",
+      "title": "Corrected audit from the unchanged P1 raw reports"
+    },
+    {
+      "name": "revision_2026_09_detectability",
+      "path": "revision_2026_09/detectability_resumen.json",
+      "title": "Detectability with corrected P1 answer label"
+    },
+    {
+      "name": "revision_2026_09_roc",
+      "path": "revision_2026_09/fig_roc_detectabilidad.pdf",
+      "title": "ROC figure consistent with corrected labels"
     }
   ]
 }

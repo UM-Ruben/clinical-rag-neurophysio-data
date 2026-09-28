@@ -1,0 +1,39 @@
+MIT License
+
+Copyright (c) 2026 Rubén Fernández García, José Manuel García Carrasco
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+NOTE / NOTA
+
+This MIT license covers ONLY the source code in this `code/` directory.
+
+The data files published elsewhere in this repository keep their own license
+(see the repository LICENSE and NOTICE.md). The source corpus of nine PDF
+documents is copyrighted teaching material and is NOT distributed here under
+any license.
+
+Esta licencia MIT cubre UNICAMENTE el codigo fuente de este directorio `code/`.
+
+Los ficheros de datos publicados en el resto del repositorio conservan su
+propia licencia (vease el LICENSE del repositorio y NOTICE.md). El corpus
+fuente de nueve documentos PDF es material docente con derechos de autor y NO
+se distribuye aqui bajo ninguna licencia.
