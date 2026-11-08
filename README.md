@@ -1,11 +1,39 @@
 # clinical-rag-neurophysio-data
 
+## Current manuscript and analysis package - 8 November 2026
+
+**Beyond Accuracy: Retrieval and Abstention in Lightweight Neurophysiotherapy Question Answering**
+
+Authors: Rubén Fernández García and José Manuel García, Universidad de Murcia, Spain.
+Corresponding author: ruben.fernandezg@um.es.
+
+The manuscript has been prepared for submission to *Applied Intelligence*. This repository does not claim that the article has been accepted or is currently under review.
+
+The current analysis package is **[Online Resource 1 (ESM_1.zip)](ESM_1.zip)**, identified for the 8 November 2026 submission and containing the scientific reanalysis of 25 October 2026.
+
+| Analysis | Retained reference questions | P1 recorded responses analysed | P2 recorded responses analysed |
+| --- | ---: | ---: | ---: |
+| Primary | 49 | 392 | 728 |
+| Sensitivity | 51 | 408 | 744 |
+
+P2 also includes the original 18 corpus-unanswerable and 24 false-premise questions per model and condition. The reanalysis preserves the original responses and judge scores; it does not add new model inference. The archive includes the retained-item definitions, extraction ledgers, statistical scripts, corrected results and separate computational cross-checks. See its README for reproduction commands, rights and limitations.
+
+**Version precedence:** use `final_results.json` inside `ESM_1.zip` for the current manuscript results. The existing folders, root aggregates and September revision remain historical records and have not been overwritten. The older 53-question / 424-P1 / 760-P2 summaries and related percentages below do not represent the current retained-item analysis.
+
+No external funding was received for this study. Manual checking of the 42 added questions was performed by the authors against the source teaching material. No independent clinical validation is claimed. Computational cross-checking is not clinical review.
+
+The third-party teaching corpus, QLoRA training dataset, adapter weights and complete training pipeline are not supplied. The archive supports downstream statistical reanalysis; it does not provide complete end-to-end inference reproducibility.
+
+## Historical release documentation (superseded for current manuscript results)
+
+The documentation below is preserved to explain the original release. Any historical manuscript title, table numbering, experiment scope or result should be interpreted in that context. It is not the current submission's metadata or conclusion.
+
 > **September 2026 manuscript correction / Corrección del manuscrito (septiembre de 2026):** The revised article scores one Llama-3.1-8B with-RAG response by its final statement, yielding **42/53 (79.25%)**, **+22.64 pp**, and **132 P1 errors** across models. The original reports and historical release below remain preserved. See [revision_2026_09](revision_2026_09/README.md) for reproducible corrected P1 and detectability results, the definition of the 88.7% lexical-overlap proxy, and remaining study limits. / El artículo revisado puntúa una respuesta de Llama por su conclusión final: **42/53 (79,25 %)**, **+22,64 puntos** y **132 errores P1**. Los reports y el análisis histórico de abajo se conservan; la [revisión reproducible](revision_2026_09/README.md) documenta las cifras vigentes y sus límites.
 
 Research data accompanying the article **"Las Bondades del RAG"** (*The Benefits of RAG*) — an empirical quantification of the benefit of context retrieval in a lightweight, private, on-premise clinical assistant for neurophysiotherapy in Spanish.
 
-**Authors:** Rubén Fernández García (<ruben.fernandezg@um.es>), José Manuel García Carrasco (<jmgarcia@um.es>) — Universidad de Murcia, Spain.
-**Article status:** submitted to the *Journal of Artificial Intelligence Research* (JAIR), **under review**.
+**Authors:** Rubén Fernández García (<ruben.fernandezg@um.es>), José Manuel García (<jmgarcia@um.es>) — Universidad de Murcia, Spain.
+**Manuscript status:** see the current-version notice above. No journal acceptance or current peer-review status is claimed.
 **Data license:** [CC BY 4.0](LICENSE) — see the [scope note](#license): short third-party quotations are excluded.
 **Code license:** [MIT](code/LICENSE-CODE) — the code in `code/` and the Python scripts in `revision_2026_09/` are licensed separately from the data.
 
@@ -322,7 +350,7 @@ Anyone reusing this dataset should treat those fields as third-party quotations 
 
 ## How to cite
 
-Please cite **the article** as the primary reference and **this dataset** as the data source. Machine-readable metadata for both is in [`CITATION.cff`](CITATION.cff), which GitHub renders through the *Cite this repository* button. The article is currently under review at JAIR; the citation will be updated when it is published.
+Please cite **the article** as the primary reference and **this dataset** as the data source. Machine-readable metadata for both is in [`CITATION.cff`](CITATION.cff), which GitHub renders through the *Cite this repository* button. The historical citation metadata will be updated if the manuscript is published; no journal acceptance or current peer-review status is claimed.
 
 ## Contact
 
@@ -635,7 +663,7 @@ Quien reutilice este conjunto de datos debe tratar esos campos como citas de ter
 
 ## Cómo citar
 
-Cite **el artículo** como referencia principal y **este conjunto de datos** como fuente de los datos. Los metadatos legibles por máquina de ambos están en [`CITATION.cff`](CITATION.cff), que GitHub convierte en una cita lista para usar mediante el botón *Cite this repository*. El artículo está actualmente en revisión en JAIR; la cita se actualizará cuando se publique.
+Cite **el artículo** como referencia principal y **este conjunto de datos** como fuente de los datos. Los metadatos legibles por máquina de ambos están en [`CITATION.cff`](CITATION.cff), que GitHub convierte en una cita lista para usar mediante el botón *Cite this repository*. Los metadatos históricos de cita se actualizarán si se publica el manuscrito; no se afirma aceptación ni revisión actual por ninguna revista.
 
 ## Contacto
 
